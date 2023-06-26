@@ -1,17 +1,15 @@
 {
-  "name": "nuxt-argon-dashboard-2-pro",
-  "version": "2.0.0",
+  "name": "currencies-showroom-fe",
+  "description": "A Vue.js Project",
+  "version": "1.1.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "SEE LICENSE IN <https://www.creative-tim.com/license>",
-  "description": "Nuxt version of Argon Dashboard 2 PRO by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/nuxt-argon-dashboard-pro/",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-nuxt-argon-dashboard-pro/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-nuxt-argon-dashboard-pro.git"
+  "author": {
+    "name": "Suhaib Ahmad",
+    "url": "https://Suhaib.dev",
+    "github": "https://github.com/makkahwi",
+    "facebook": "https://facebook.com/makkahwi",
+    "linkedin": "https://linkedin.com/in/makkahwi",
+    "email": "SuhaibAhmadAi@hotmail.com"
   },
   "scripts": {
     "build": "nuxt build",

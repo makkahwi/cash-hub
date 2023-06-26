@@ -1,6 +1,6 @@
 <!--
 =========================================================
-* Nuxt Argon Dashboard 2 PRO - v2.0.0
+* Currencies Collection Showroom - v2.0.0
 =========================================================
 * Product Page: https://creative-tim.com/product/nuxt-argon-dashboard-pro
 * Copyright 2022 Creative Tim (https://www.creative-tim.com)

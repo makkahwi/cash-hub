@@ -3,14 +3,14 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: "Nuxt Argon Dashboard 2 PRO",
+      title: "Currencies Collection Showroom",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
           name: "description",
-          content: "Nuxt Argon Dashboard 2 PRO by Creative Tim",
+          content: "Currencies Collection Showroom by Creative Tim",
         },
       ],
       link: [
