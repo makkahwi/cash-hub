@@ -1,6 +1,7 @@
 <template>
   <main class="main-content position-relative max-height-vh-100 h-100">
     <NavbarTransparent />
+
     <div
       class="page-header position-relative"
       :style="{
@@ -8,55 +9,44 @@
         backgroundSize: 'cover',
       }"
     >
-      <span class="mask bg-gradient-success opacity-6"></span>
+      <span class="mask bg-gradient-dark opacity-7" />
+
       <div class="container pb-10 pb-lg-9 pt-7 postion-relative z-index-2">
         <div class="row">
-          <div class="mx-auto text-center col-md-6 mt-4">
-            <h3 class="text-white">See our pricing</h3>
-            <p class="text-white">
-              You have Free Unlimited Updates and Premium Support on each
-              package.
+          <div class="mx-auto text-left col-md-6 my-4">
+            <h2 class="text-white my-4">Currencies Collection Showroom</h2>
+
+            <h4 class="text-white text-justify my-4">
+              A web app to publish my collection of currencies from all over the
+              world to all over the world
+            </h4>
+
+            <p class="text-white text-justify">
+              Collectors could clone this project & deploy it to enlist their
+              currencies. The public could just browse their showrooms right
+              away.
             </p>
+
+            <button type="button" class="btn btn-success btn-xs mb-0 p-3">
+              Browse My Collection
+            </button>
+
+            <button type="button" class="btn btn-white btn-xs mb-0 mx-3 p-3">
+              Build Your Showroom
+            </button>
           </div>
-        </div>
-        <div class="row">
-          <div class="mx-auto text-center col-lg-4 col-md-6 col-7">
-            <div class="mt-5 nav-wrapper position-relative z-index-2">
-              <ul
-                id="tabs-pricing"
-                class="flex-row p-1 nav nav-pills nav-fill"
-                role="tablist"
-              >
-                <li class="nav-item">
-                  <a
-                    id="tabs-iconpricing-tab-1"
-                    class="mb-0 nav-link active"
-                    data-bs-toggle="tab"
-                    href="#monthly"
-                    role="tab"
-                    aria-controls="monthly"
-                    aria-selected="true"
-                    >Monthly</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    id="tabs-iconpricing-tab-2"
-                    class="mb-0 nav-link"
-                    data-bs-toggle="tab"
-                    href="#annual"
-                    role="tab"
-                    aria-controls="annual"
-                    aria-selected="false"
-                    >Annual</a
-                  >
-                </li>
-              </ul>
-            </div>
+
+          <div class="mx-auto text-center col-md-6 my-4">
+            <img
+              src="@/assets/img/header.png"
+              class="navbar-brand-img mb-2 w-100"
+              alt="main_logo"
+            />
           </div>
         </div>
       </div>
     </div>
+
     <div class="mt-n8">
       <div class="container">
         <div class="tab-content tab-space">
@@ -64,7 +54,7 @@
             <div class="row">
               <div class="mb-4 col-lg-4 mb-lg-0">
                 <PricingCard
-                  badge="Starter"
+                  badge="Full-Detail Listing"
                   :price="{ currency: '$', value: '59' }"
                   :specifications="[
                     { label: '2 team members', includes: true },
@@ -81,9 +71,10 @@
                   }"
                 />
               </div>
+
               <div class="mb-4 col-lg-4 mb-lg-0">
                 <PricingCard
-                  badge="premium"
+                  badge="Automated Market Evaluation"
                   :price="{ currency: '$', value: '89' }"
                   :specifications="[
                     { label: '10 team members', includes: true },
@@ -100,6 +91,7 @@
                   }"
                 />
               </div>
+
               <div class="mb-4 col-lg-4 mb-lg-0">
                 <PricingCard
                   badge="Enterprise"
@@ -121,6 +113,7 @@
               </div>
             </div>
           </div>
+
           <div id="annual" class="tab-pane">
             <div class="row">
               <div class="mb-4 col-lg-4 mb-lg-0">
@@ -142,6 +135,7 @@
                   }"
                 />
               </div>
+
               <div class="mb-4 col-lg-4 mb-lg-0">
                 <PricingCard
                   badge="premium"
@@ -161,6 +155,7 @@
                   }"
                 />
               </div>
+
               <div class="mb-4 col-lg-4 mb-lg-0">
                 <PricingCard
                   badge="Enterprise"
@@ -185,12 +180,14 @@
         </div>
       </div>
     </div>
+
     <div class="container my-6">
       <div class="row">
         <div class="mx-auto text-center col-8">
           <h6 class="opacity-5">More than 50+ brands trust Soft</h6>
         </div>
       </div>
+
       <div class="mt-4 row">
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
@@ -199,6 +196,7 @@
             alt="logo_coinbase"
           />
         </div>
+
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
             class="w-100 opacity-9"
@@ -206,6 +204,7 @@
             alt="logo_nasa"
           />
         </div>
+
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
             class="w-100 opacity-9"
@@ -213,6 +212,7 @@
             alt="logo_netflix"
           />
         </div>
+
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
             class="w-100 opacity-9"
@@ -220,6 +220,7 @@
             alt="logo_pinterest"
           />
         </div>
+
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
             class="w-100 opacity-9"
@@ -227,6 +228,7 @@
             alt="logo_spotify"
           />
         </div>
+
         <div class="mb-4 col-lg-2 col-md-4 col-6">
           <img
             class="w-100 opacity-9"
@@ -235,15 +237,18 @@
           />
         </div>
       </div>
+
       <div class="mt-8 row">
         <div class="mx-auto text-center col-md-6">
           <h2>Frequently Asked Questions</h2>
+
           <p>
             A lot of people don&#39;t appreciate the moment until it’s passed.
             I&#39;m not trying my hardest, and I&#39;m not trying to do
           </p>
         </div>
       </div>
+
       <div class="row">
         <div class="mx-auto col-md-10">
           <div id="accordionRental" class="accordion">
@@ -262,6 +267,7 @@
                 moment until it’s passed.
               </template>
             </accordion-item>
+
             <accordion-item accordion-id="headingTwo" collapse-id="collapseTwo">
               <template #question>How can i make the payment?</template>
               <template #answer>
@@ -286,6 +292,7 @@
               <template #question
                 >How much time does it take to receive the order?</template
               >
+
               <template #answer>
                 The time is now for it to be okay to be great. People in this
                 world shun people for being great. For being a bright color. For
@@ -305,6 +312,7 @@
               collapse-id="collapseFour"
             >
               <template #question>Can I resell the products?</template>
+
               <template #answer>
                 I always felt like I could do anything. That’s the main thing
                 people are controlled by! Thoughts- their perception of
@@ -345,9 +353,32 @@
         </div>
       </div>
     </div>
+
+    <div class="mx-auto text-center col-md-6 my-4">
+      <h4 class="text-dark my-4">You would like to have your own</h4>
+
+      <h2 class="text-success my-4">Currencies Showroom?</h2>
+
+      <p class="text-dark">
+        You may visit this link & follow the instructions to build your own
+      </p>
+
+      <p class="text-dark">(You don't need to be a coder to do it)</p>
+
+      <button
+        type="button"
+        href="https://github.com/makkahwi/currencies-showroom"
+        target="_blank"
+        class="btn btn-success btn-xs mb-0 mx-3 p-3 px-5"
+      >
+        Have It Now
+      </button>
+    </div>
+
     <AppFooter />
   </main>
 </template>
+
 <script setup>
 import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
 import PricingCard from "@/pagesComponents/pages/pricing/PricingCard.vue";
@@ -355,7 +386,7 @@ import AppFooter from "~~/examples/Footer/Centered.vue";
 import AccordionItem from "@/pagesComponents/pages/pricing//AccordionItem.vue";
 import setNavPills from "@/assets/js/nav-pills.js";
 
-import headerImg from "@/assets/img/pricing-header-bg.jpg";
+import headerImg from "@/assets/img/currencies.jpg";
 
 definePageMeta({
   layout: false,
