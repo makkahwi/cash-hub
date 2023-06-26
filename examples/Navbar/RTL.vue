@@ -62,7 +62,7 @@
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item d-flex align-items-center">
             <NuxtLink
-              to="/authentication/signin/basic"
+              to="/login"
               class="px-0 nav-link font-weight-bold"
               :class="
                 navStore.navFixed && !navStore.darkMode

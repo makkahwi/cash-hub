@@ -173,11 +173,8 @@
                 </template>
               </SidenavCollapseItem>
 
-              <SidenavItem
-                to="/pages/pricing-page"
-                mini-icon="P"
-                text="Pricing Page"
-              />
+              <SidenavItem to="/landing" mini-icon="P" text="Landing" />
+
               <SidenavItem to="/pages/rtl-page" mini-icon="R" text="RTL" />
               <SidenavItem to="/pages/widgets" mini-icon="W" text="Widgets" />
               <SidenavItem to="/pages/charts" mini-icon="C" text="Charts" />
@@ -323,45 +320,7 @@
                 text="Sign In"
               >
                 <template #nav-child-item>
-                  <SidenavItem
-                    to="/authentication/signin/basic"
-                    mini-icon="B"
-                    text="Basic"
-                  />
-                  <SidenavItem
-                    to="/authentication/signin/cover"
-                    mini-icon="C"
-                    text="Cover"
-                  />
-                  <SidenavItem
-                    to="/authentication/signin/illustration"
-                    mini-icon="I"
-                    text="Illustration"
-                  />
-                </template>
-              </SidenavCollapseItem>
-
-              <SidenavCollapseItem
-                refer="signupExample"
-                mini-icon="S"
-                text="Sign Up"
-              >
-                <template #nav-child-item>
-                  <SidenavItem
-                    to="/authentication/signup/basic"
-                    mini-icon="B"
-                    text="Basic"
-                  />
-                  <SidenavItem
-                    to="/authentication/signup/cover"
-                    mini-icon="C"
-                    text="Cover"
-                  />
-                  <SidenavItem
-                    to="/authentication/signup/illustration"
-                    mini-icon="I"
-                    text="Illustration"
-                  />
+                  <SidenavItem to="/login" mini-icon="B" text="Basic" />
                 </template>
               </SidenavCollapseItem>
 
@@ -372,67 +331,9 @@
               >
                 <template #nav-child-item>
                   <SidenavItem
-                    to="/authentication/reset/basic"
+                    to="/password-reset"
                     mini-icon="B"
                     text="Basic"
-                  />
-                  <SidenavItem
-                    to="/authentication/reset/cover"
-                    mini-icon="C"
-                    text="Cover"
-                  />
-                  <SidenavItem
-                    to="/authentication/reset/illustration"
-                    mini-icon="I"
-                    text="Illustration"
-                  />
-                </template>
-              </SidenavCollapseItem>
-
-              <SidenavCollapseItem
-                refer="lockExample"
-                mini-icon="L"
-                text="Lock"
-              >
-                <template #nav-child-item>
-                  <SidenavItem
-                    to="/authentication/lock/basic"
-                    mini-icon="B"
-                    text="Basic"
-                  />
-                  <SidenavItem
-                    to="/authentication/lock/cover"
-                    mini-icon="C"
-                    text="Cover"
-                  />
-                  <SidenavItem
-                    to="/authentication/lock/illustration"
-                    mini-icon="I"
-                    text="Illustration"
-                  />
-                </template>
-              </SidenavCollapseItem>
-
-              <SidenavCollapseItem
-                refer="StepExample"
-                mini-icon="2"
-                text="2-Step Verification"
-              >
-                <template #nav-child-item>
-                  <SidenavItem
-                    to="/authentication/verification/basic"
-                    mini-icon="B"
-                    text="Basic"
-                  />
-                  <SidenavItem
-                    to="/authentication/verification/cover"
-                    mini-icon="C"
-                    text="Cover"
-                  />
-                  <SidenavItem
-                    to="/authentication/verification/illustration"
-                    mini-icon="I"
-                    text="Illustration"
                   />
                 </template>
               </SidenavCollapseItem>
@@ -444,12 +345,12 @@
               >
                 <template #nav-child-item>
                   <SidenavItem
-                    to="/authentication/error/error404"
+                    to="/error/error404"
                     mini-icon="E"
                     text="Error 404"
                   />
                   <SidenavItem
-                    to="/authentication/error/error500"
+                    to="/error/error500"
                     mini-icon="E"
                     text="Error 500"
                   />

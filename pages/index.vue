@@ -1,3 +1,3 @@
 <script setup>
-await navigateTo("/pages/pricing-page");
+await navigateTo("/landing");
 </script>
