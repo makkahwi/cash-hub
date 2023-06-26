@@ -73,7 +73,7 @@
               :style="{
                 backgroundImage:
                   'url(' +
-                  'https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg' +
+                  'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg' +
                   ')',
                 backgroundSize: 'cover',
               }"

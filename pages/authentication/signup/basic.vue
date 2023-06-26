@@ -10,7 +10,7 @@
     <div
       class="page-header min-vh-100"
       style="
-        background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/signup-basic.jpg');
+        background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-basic.jpg');
       "
     >
       <span class="mask bg-gradient-dark opacity-6"></span>

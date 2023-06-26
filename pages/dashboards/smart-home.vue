@@ -89,7 +89,7 @@
                 role="tabpanel"
                 aria-labelledby="cam1"
                 style="
-                  background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/smart-home-1.jpg');
+                  background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smart-home-1.jpg');
                   background-size: cover;
                 "
               >
@@ -109,7 +109,7 @@
                 role="tabpanel"
                 aria-labelledby="cam2"
                 style="
-                  background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/smart-home-2.jpg');
+                  background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smart-home-2.jpg');
                   background-size: cover;
                 "
               >
@@ -129,7 +129,7 @@
                 role="tabpanel"
                 aria-labelledby="cam3"
                 style="
-                  background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/smart-home-3.jpg');
+                  background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smart-home-3.jpg');
                   background-size: cover;
                 "
               >

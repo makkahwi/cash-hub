@@ -132,25 +132,19 @@
           </div>
         </div>
         <hr class="horizontal dark my-sm-4" />
-        <a
-          class="btn btn-success w-100"
-          href="https://www.arromi.net/product/vue-argon-dashboard-pro"
+        <a class="btn btn-success w-100" href="https://www.arromi.net"
           >Buy now</a
         >
-        <a
-          class="btn bg-gradient-dark w-100"
-          href="https://www.arromi.net/product/vue-argon-dashboard"
+        <a class="btn bg-gradient-dark w-100" href="https://www.arromi.net"
           >Free demo</a
         >
-        <a
-          class="btn btn-outline-dark w-100"
-          href="https://www.arromi.net/learning-lab/vue/overview/argon-dashboard/"
+        <a class="btn btn-outline-dark w-100" href="https://www.arromi.net"
           >View documentation</a
         >
         <div class="text-center w-100">
           <a
             class="github-button"
-            href="https://github.com/arromicreatives/ct-nuxt-argon-dashboard-pro"
+            href="https://github.com"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
@@ -166,7 +160,7 @@
             <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
           </a>
           <a
-            href="https://www.facebook.com/sharer/sharer.php?u=https://www.arromi.net/product/nuxt-argon-dashboard-pro"
+            href="https://www.facebook.com/"
             class="mb-0 btn btn-dark me-2"
             target="_blank"
           >

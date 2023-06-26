@@ -274,15 +274,15 @@
             }"
             :social="[
               {
-                link: 'https://www.facebook.com/arromicreatives',
+                link: 'https://www.facebook.com/',
                 icon: 'fab fa-facebook fa-lg',
               },
               {
-                link: 'https://twitter.com/arromicreatives',
+                link: 'https://twitter.com/',
                 icon: 'fab fa-twitter fa-lg',
               },
               {
-                link: 'https://www.instagram.com/arromicreatives/',
+                link: 'https://www.instagram.com/',
                 icon: 'fab fa-instagram fa-lg',
               },
             ]"

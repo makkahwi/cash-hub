@@ -113,13 +113,13 @@
             <div class="row mt-4">
               <h6 class="mb-2">Other programs</h6>
               <ComplexBackgroundCard
-                image="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/window-desk.jpg"
+                image="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/window-desk.jpg"
                 description="User #hashtag in a photo on social media and get $10 for each purchase you make."
                 :action="{ route: 'javascript:;', label: 'Read more' }"
               />
               <ComplexBackgroundCard
                 class="mt-4 mt-lg-0"
-                image="https://demos.arromi.net/soft-ui-dashboard-pro/assets/img/office-dark.jpg"
+                image="https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/office-dark.jpg"
                 description="Send the invitation link to 10 friends and get a 50%
                           coupon to use on any purchase."
                 :action="{ route: 'javascript:;', label: 'Read more' }"
@@ -189,7 +189,7 @@ export default {
           values: ["$130.992", "$9.500", "13"],
           info: "Refund rate is lower with 97% than other products",
           image:
-            "https://demos.arromi.net/argon-dashboard-pro/assets/img/team-1.jpg",
+            "https://demos.creative-tim.com/argon-dashboard-pro/assets/img/team-1.jpg",
           icon: "bold-down text-success",
         },
         {
@@ -197,7 +197,7 @@ export default {
           order: "12.821",
           values: ["$80.250", "$4.200", "40"],
           image:
-            "https://demos.arromi.net/soft-ui-dashboard-pro/assets/img/team-2.jpg",
+            "https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/team-2.jpg",
           icon: "bold-down text-success",
         },
         {
@@ -205,7 +205,7 @@ export default {
           order: "2.421",
           values: ["$40.600", "$9.430", "54"],
           image:
-            "https://demos.arromi.net/soft-ui-dashboard-pro/assets/img/team-3.jpg",
+            "https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/team-3.jpg",
           icon: "bold-up text-danger",
         },
         {
@@ -213,7 +213,7 @@ export default {
           order: "5.921",
           values: ["$91.300", "$7.364", "5"],
           image:
-            "https://demos.arromi.net/soft-ui-dashboard-pro/assets/img/team-4.jpg",
+            "https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/team-4.jpg",
           icon: "bold-down text-success",
         },
 
@@ -223,7 +223,7 @@ export default {
           values: ["$140.925", "$20.531", "121"],
           info: "Refund rate is higher with 70% than other products",
           image:
-            "https://demos.arromi.net/soft-ui-dashboard-pro/assets/img/team-5.jpg",
+            "https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/team-5.jpg",
           icon: "bold-up text-danger",
         },
       ],

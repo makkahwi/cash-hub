@@ -128,7 +128,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/adidas-hoodie.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/adidas-hoodie.jpg"
                           alt="hoodie"
                         />
                         <h6 class="my-auto ms-3">BKLGO Full Zip Hoodie</h6>
@@ -181,7 +181,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/macbook-pro.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/macbook-pro.jpg"
                           alt="mac"
                         />
                         <h6 class="my-auto ms-3">MacBook Pro</h6>
@@ -233,7 +233,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/metro-chair.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/metro-chair.jpg"
                           alt="metro-chair"
                         />
                         <h6 class="my-auto ms-3">Metro Bar Stool</h6>
@@ -283,7 +283,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/alchimia-chair.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/alchimia-chair.jpg"
                           alt="alchimia"
                         />
                         <h6 class="my-auto ms-3">Alchimia Chair</h6>
@@ -335,7 +335,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/fendi-coat.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/fendi-coat.jpg"
                           alt="fendi"
                         />
                         <h6 class="my-auto ms-3">Fendi Gradient Coat</h6>
@@ -385,7 +385,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/off-white-jacket.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/off-white-jacket.jpg"
                           alt="off_white"
                         />
                         <h6 class="my-auto ms-3">Off White Cotton Bomber</h6>
@@ -436,7 +436,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yohji-yamamoto.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yohji-yamamoto.jpg"
                           alt="yohji"
                         />
                         <h6 class="my-auto ms-3">Y-3 Yohji Yamamoto</h6>
@@ -487,7 +487,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/mcqueen-shirt.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/mcqueen-shirt.jpg"
                           alt="mcqueen"
                         />
                         <h6 class="my-auto ms-3">Alexander McQueen</h6>
@@ -538,7 +538,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yellow-chair.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/yellow-chair.jpg"
                           alt="coco"
                         />
                         <h6 class="my-auto ms-3">Luin Floor Lamp</h6>
@@ -588,7 +588,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/heron-tshirt.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/heron-tshirt.jpg"
                           alt="heron"
                         />
                         <h6 class="my-auto ms-3">Heron Preston T-shirt</h6>
@@ -641,7 +641,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/living-chair.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/living-chair.jpg"
                           alt="coco"
                         />
                         <h6 class="my-auto ms-3">Gray Living Chair</h6>
@@ -691,7 +691,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/orange-sofa.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/orange-sofa.jpg"
                           alt="yohji"
                         />
                         <h6 class="my-auto ms-3">Derbyshire Orange Sofa</h6>
@@ -742,7 +742,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/burberry.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/burberry.jpg"
                           alt="undercover"
                         />
                         <h6 class="my-auto ms-3">Burberry Low-Tops</h6>
@@ -792,7 +792,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/d&g-skirt.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/d&g-skirt.jpg"
                           alt="D&G"
                         />
                         <h6 class="my-auto ms-3">Dolce & Gabbana Skirt</h6>
@@ -845,7 +845,7 @@
                         </div>
                         <img
                           class="w-10 ms-3"
-                          src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/undercover.jpg"
+                          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/undercover.jpg"
                           alt="undercover"
                         />
                         <h6 class="my-auto ms-3">Undercover T-shirt</h6>

@@ -28,7 +28,7 @@
               <div class="col-12">
                 <img
                   class="mt-3 shadow-lg w-100 border-radius-lg"
-                  src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-page.jpg"
+                  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-page.jpg"
                   alt="product_image"
                 />
               </div>

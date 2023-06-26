@@ -6,7 +6,7 @@
     <div
       class="page-header align-items-start min-vh-50 pt-5 pb-11"
       style="
-        background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/signup-cover.jpg');
+        background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-cover.jpg');
         background-position: top;
       "
     >

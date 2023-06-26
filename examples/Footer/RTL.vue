@@ -30,7 +30,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://www.arromi.net/presentation"
+                href="https://www.arromi.net/"
                 class="nav-link text-muted"
                 target="_blank"
                 >About Us</a
@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://www.arromi.net/blog"
+                href="https://www.arromi.net/"
                 class="nav-link text-muted"
                 target="_blank"
                 >Blog</a
@@ -46,7 +46,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://www.arromi.net/license"
+                href="https://www.arromi.net/"
                 class="nav-link pe-0 text-muted"
                 target="_blank"
                 >License</a

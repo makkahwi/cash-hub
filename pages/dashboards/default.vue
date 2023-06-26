@@ -225,7 +225,7 @@
                 },
                 {
                   brand: {
-                    logo: 'https://demos.arromi.net/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-webdev.svg',
+                    logo: 'https://arromi.net',
                     name: 'Webdev',
                   },
                   badge: { text: 'working', color: 'info' },

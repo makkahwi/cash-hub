@@ -1059,7 +1059,7 @@
                   <li class="p-0 border-0 nav-item list-group-item">
                     <a
                       class="py-2 dropdown-item ps-3 border-radius-md"
-                      href="https://www.arromi.net/learning-lab/vue/overview/argon-dashboard/"
+                      href="https://www.arromi.net"
                     >
                       <div class="d-flex">
                         <div class="h-10 mt-1 icon me-3 d-flex">
@@ -1082,7 +1082,7 @@
                   <li class="p-0 border-0 nav-item list-group-item">
                     <a
                       class="py-2 dropdown-item ps-3 border-radius-md"
-                      href="https://www.arromi.net/learning-lab/vue/colors/argon-dashboard/"
+                      href="https://www.arromi.net"
                     >
                       <div class="d-flex">
                         <div class="h-10 mt-1 icon me-3 d-flex">
@@ -1104,7 +1104,7 @@
                   <li class="p-0 border-0 nav-item list-group-item">
                     <a
                       class="py-2 dropdown-item ps-3 border-radius-md"
-                      href="https://www.arromi.net/learning-lab/vue/alerts/argon-dashboard/"
+                      href="https://www.arromi.net"
                     >
                       <div class="d-flex">
                         <div class="h-10 mt-1 icon me-3 d-flex">
@@ -1127,7 +1127,7 @@
                   <li class="p-0 border-0 nav-item list-group-item">
                     <a
                       class="py-2 dropdown-item ps-3 border-radius-md"
-                      href="https://www.arromi.net/learning-lab/vue/datepicker/argon-dashboard/"
+                      href="https://www.arromi.net"
                     >
                       <div class="d-flex">
                         <div class="h-10 mt-1 icon me-3 d-flex">
@@ -1149,7 +1149,7 @@
                   <li class="p-0 border-0 nav-item list-group-item">
                     <a
                       class="py-2 dropdown-item ps-3 border-radius-md"
-                      href="https://www.arromi.net/learning-lab/vue/utilities/argon-dashboard/"
+                      href="https://www.arromi.net"
                     >
                       <div class="d-flex">
                         <div class="h-10 mt-1 icon me-3 d-flex">
@@ -1284,7 +1284,7 @@
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a
-              href="https://www.arromi.net/product/vue-argon-dashboard-pro"
+              href="https://www.arromi.net"
               class="mb-0 btn btn-sm me-1"
               :class="btnBackground ? btnBackground : 'bg-white text-dark'"
               onclick="smoothToPricing('pricing-soft-ui')"
