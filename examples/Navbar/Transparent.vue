@@ -69,13 +69,14 @@
 
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <a
-              href="https://www.arromi.net"
+            <NuxtLink
+              to="/authentication/signin/cover"
               class="mb-0 btn btn-sm me-1"
               :class="btnBackground ? btnBackground : 'bg-white text-dark'"
               onclick="smoothToPricing('pricing-soft-ui')"
-              >Login</a
             >
+              Login
+            </NuxtLink>
           </li>
         </ul>
       </div>

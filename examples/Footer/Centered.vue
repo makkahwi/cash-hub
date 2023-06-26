@@ -3,29 +3,26 @@
     <div class="container">
       <div class="row">
         <div class="mx-auto mb-4 text-center col-lg-8">
-          <a
-            href="javascript:;"
-            target="_blank"
+          <NuxtLink
+            to="/dashboards/default"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Home
-          </a>
+          </NuxtLink>
 
-          <a
-            href="javascript:;"
-            target="_blank"
+          <NuxtLink
+            to="/dashboards/default"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Showroom
-          </a>
+          </NuxtLink>
 
-          <a
-            href="javascript:;"
-            target="_blank"
+          <NuxtLink
+            to="/dashboards/default"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Get Yours
-          </a>
+          </NuxtLink>
         </div>
 
         <div class="mx-auto my-4 text-center col-lg-8">
