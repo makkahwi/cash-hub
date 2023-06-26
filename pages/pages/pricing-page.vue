@@ -7,6 +7,7 @@
       :style="{
         backgroundImage: 'url(' + headerImg + ')',
         backgroundSize: 'cover',
+        backgroundPosition: 'center top',
       }"
     >
       <span class="mask bg-gradient-dark opacity-7" />
