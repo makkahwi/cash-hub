@@ -314,48 +314,25 @@
           </template>
           <template #list>
             <ul class="nav ms-4">
-              <SidenavCollapseItem
-                refer="signinExample"
-                mini-icon="S"
-                text="Sign In"
-              >
-                <template #nav-child-item>
-                  <SidenavItem to="/login" mini-icon="B" text="Basic" />
-                </template>
-              </SidenavCollapseItem>
+              <SidenavItem to="/login" mini-icon="B" text="Login" />
 
-              <SidenavCollapseItem
-                refer="resetExample"
-                mini-icon="R"
-                text="Reset Password"
-              >
-                <template #nav-child-item>
-                  <SidenavItem
-                    to="/password-reset"
-                    mini-icon="B"
-                    text="Basic"
-                  />
-                </template>
-              </SidenavCollapseItem>
+              <SidenavItem
+                to="/password-reset"
+                mini-icon="B"
+                text="Password Reset"
+              />
 
-              <SidenavCollapseItem
-                refer="errorExample"
+              <SidenavItem
+                to="/error/error404"
                 mini-icon="E"
-                text="Error"
-              >
-                <template #nav-child-item>
-                  <SidenavItem
-                    to="/error/error404"
-                    mini-icon="E"
-                    text="Error 404"
-                  />
-                  <SidenavItem
-                    to="/error/error500"
-                    mini-icon="E"
-                    text="Error 500"
-                  />
-                </template>
-              </SidenavCollapseItem>
+                text="Error 404"
+              />
+
+              <SidenavItem
+                to="/error/error500"
+                mini-icon="E"
+                text="Error 500"
+              />
             </ul>
           </template>
         </sidenav-collapse>
