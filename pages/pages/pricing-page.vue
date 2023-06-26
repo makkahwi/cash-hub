@@ -365,14 +365,13 @@
 
       <p class="text-dark">(You don't need to be a coder to do it)</p>
 
-      <button
-        type="button"
+      <a
         href="https://github.com/makkahwi/currencies-showroom"
         target="_blank"
-        class="btn btn-success btn-xs mb-0 mx-3 p-3 px-5"
+        class="btn btn-success btn-xs mt-3 mx-3 p-3 px-5"
       >
         Have It Now
-      </button>
+      </a>
     </div>
 
     <AppFooter />
