@@ -14,14 +14,14 @@
             to="/dashboards/default"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
-            Showroom
+            My Showroom
           </NuxtLink>
 
           <NuxtLink
             to="/dashboards/default"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
-            Get Yours
+            Get Your Showroom
           </NuxtLink>
         </div>
 

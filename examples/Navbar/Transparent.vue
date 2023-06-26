@@ -32,7 +32,7 @@
         <ul class="mx-auto navbar-nav navbar-nav-hover">
           <li class="mx-2 nav-item dropdown dropdown-hover">
             <NuxtLink
-              to="/dashboards/default"
+              to="/"
               class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center"
             >
               Home
@@ -44,7 +44,7 @@
               to="/dashboards/default"
               class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center"
             >
-              Get Showroom
+              My Showroom
             </NuxtLink>
           </li>
 
@@ -53,7 +53,7 @@
               to="/dashboards/default"
               class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center"
             >
-              Get Yours
+              Get Your Showroom
             </NuxtLink>
           </li>
 
