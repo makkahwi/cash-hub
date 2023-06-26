@@ -1,3 +1,3 @@
 <script setup>
-await navigateTo("/dashboards/default");
+await navigateTo("/pages/pricing-page");
 </script>
