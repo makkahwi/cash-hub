@@ -9,7 +9,7 @@
               <div class="text-center col-xl-5 col-lg-6">
                 <img
                   class="mx-auto shadow-lg w-100 border-radius-lg"
-                  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb.jpg"
+                  src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb.jpg"
                   alt="chair"
                 />
                 <div
@@ -24,13 +24,13 @@
                     itemtype="http://schema.org/ImageObject"
                   >
                     <a
-                      href="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
+                      href="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
                       itemprop="contentUrl"
                       data-size="500x600"
                     >
                       <img
                         class="w-100 min-height-100 max-height-100 border-radius-lg shadow"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
+                        src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
                         alt="Image description"
                       />
                     </a>
@@ -42,13 +42,13 @@
                     itemtype="http://schema.org/ImageObject"
                   >
                     <a
-                      href="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
+                      href="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
                       itemprop="contentUrl"
                       data-size="500x600"
                     >
                       <img
                         class="w-100 min-height-100 max-height-100 border-radius-lg shadow"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
+                        src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
                         itemprop="thumbnail"
                         alt="Image description"
                       />
@@ -61,13 +61,13 @@
                     itemtype="http://schema.org/ImageObject"
                   >
                     <a
-                      href="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
+                      href="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
                       itemprop="contentUrl"
                       data-size="500x600"
                     >
                       <img
                         class="w-100 min-height-100 max-height-100 border-radius-lg shadow"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
+                        src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
                         itemprop="thumbnail"
                         alt="Image description"
                       />
@@ -80,13 +80,13 @@
                     itemtype="http://schema.org/ImageObject"
                   >
                     <a
-                      href="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
+                      href="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
                       itemprop="contentUrl"
                       data-size="500x600"
                     >
                       <img
                         class="w-100 min-height-100 max-height-100 border-radius-lg shadow"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
+                        src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
                         itemprop="thumbnail"
                         alt="Image description"
                       />
@@ -98,13 +98,13 @@
                     itemtype="http://schema.org/ImageObject"
                   >
                     <a
-                      href="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-5.jpg"
+                      href="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-5.jpg"
                       itemprop="contentUrl"
                       data-size="500x600"
                     >
                       <img
                         class="w-100 min-height-100 max-height-100 border-radius-lg shadow"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-5.jpg"
+                        src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-5.jpg"
                         itemprop="thumbnail"
                         alt="Image description"
                       />

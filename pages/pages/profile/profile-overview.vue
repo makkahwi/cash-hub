@@ -274,15 +274,15 @@
             }"
             :social="[
               {
-                link: 'https://www.facebook.com/CreativeTim/',
+                link: 'https://www.facebook.com/arromicreatives',
                 icon: 'fab fa-facebook fa-lg',
               },
               {
-                link: 'https://twitter.com/creativetim',
+                link: 'https://twitter.com/arromicreatives',
                 icon: 'fab fa-twitter fa-lg',
               },
               {
-                link: 'https://www.instagram.com/creativetimofficial/',
+                link: 'https://www.instagram.com/arromicreatives/',
                 icon: 'fab fa-instagram fa-lg',
               },
             ]"

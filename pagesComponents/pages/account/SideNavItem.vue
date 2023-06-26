@@ -296,7 +296,7 @@
             <p class="text-sm font-weight-bold my-auto ps-sm-2">
               Connected account
             </p>
-            <h6 class="text-sm ms-auto me-3 my-auto">hello@creative-tim.com</h6>
+            <h6 class="text-sm ms-auto me-3 my-auto">hello@arromi.net</h6>
             <ArgonButton
               color="danger"
               variant="gradient"

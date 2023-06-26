@@ -13,7 +13,7 @@
         :dropdown="[
           {
             label: 'Last 7 days',
-            route: 'https://creative-tim.com/',
+            route: 'https://arromi.net/',
           },
           {
             label: 'Last week',
@@ -179,7 +179,7 @@ export default {
           values: ["$130.992", "$9.500", "13"],
           info: "Refund rate is lower with 97% than other products",
           image:
-            "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/blue-shoe.jpg",
+            "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/blue-shoe.jpg",
           icon: "bold-down text-success",
         },
         {
@@ -187,7 +187,7 @@ export default {
           order: "8.232",
           values: ["$80.250", "$4.200", "40"],
           image:
-            "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-mug.jpg",
+            "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-mug.jpg",
           icon: "bold-down text-success",
         },
         {
@@ -195,7 +195,7 @@ export default {
           order: "2.421",
           values: ["$40.600", "$9.430", "54"],
           image:
-            "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-chair.jpg",
+            "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-chair.jpg",
           icon: "bold-up text-danger",
         },
         {
@@ -203,7 +203,7 @@ export default {
           order: "5.921",
           values: ["$91.300", "$7.364", "5"],
           image:
-            "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/bang-sound.jpg",
+            "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/bang-sound.jpg",
           icon: "bold-down text-success",
         },
         {
@@ -212,7 +212,7 @@ export default {
           values: ["$140.925", "$20.531", "121"],
           info: "Refund rate is higher with 70% than other products",
           image:
-            "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/photo-tools.jpg",
+            "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/ecommerce/photo-tools.jpg",
           icon: "bold-up text-danger",
         },
       ],

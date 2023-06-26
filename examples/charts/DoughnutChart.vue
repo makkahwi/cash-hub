@@ -15,7 +15,7 @@ defineProps({
         type: "donut",
       },
       colors: ["#2152ff", "#3A416F", "#f53939", "#a8b8d8", "#4BB543"],
-      labels: ["Creative Tim", "Github", "Bootsnipp", "Dev.to", "Codeinwp"],
+      labels: ["Arromi Creatives", "Github", "Bootsnipp", "Dev.to", "Codeinwp"],
       dataLabels: {
         enabled: false,
       },

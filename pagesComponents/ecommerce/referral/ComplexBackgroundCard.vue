@@ -29,7 +29,7 @@ defineProps({
   image: {
     type: String,
     default:
-      "'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/window-desk.jpg'",
+      "'https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/window-desk.jpg'",
   },
   description: {
     type: String,

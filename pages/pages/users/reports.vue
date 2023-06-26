@@ -48,7 +48,7 @@
         <ReviewCard
           title="Reviews"
           description="More than
-          <b>1,500,000</b> developers used Creative Tim's products and over
+          <b>1,500,000</b> developers used Arromi Creatives's products and over
           <b>700,000</b> projects were created."
           :reviews="[
             {

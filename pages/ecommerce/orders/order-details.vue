@@ -32,7 +32,7 @@
                 <div class="d-flex">
                   <div>
                     <ArgonButton
-                      img="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
+                      img="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/smartwatch.jpg"
                       class="me-3"
                       size="xxl"
                       border-radius="lg"

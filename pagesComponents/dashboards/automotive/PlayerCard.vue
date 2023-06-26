@@ -73,7 +73,7 @@
               <small class="align-top text-sm">Km</small>
             </h3>
             <p class="text-body opacity-8 mb-1 ms-3">
-              Distance to Creative Tim
+              Distance to Arromi Creatives
             </p>
           </div>
         </div>

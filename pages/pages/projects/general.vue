@@ -10,7 +10,7 @@
               :badge="{ color: 'dark', label: '+15% since last week' }"
               description="They're slowed down by their perception of themselves."
               :action="{
-                route: 'https://creative-tim.com',
+                route: 'https://arromi.net',
                 label: 'View more',
               }"
             />
@@ -93,7 +93,7 @@
               todo: 'Check status',
               date: '24 March 2019',
               id: '#2414_VR4sf3',
-              company: 'Creative Tim',
+              company: 'Arromi Creatives',
               action: [
                 { route: 'javascript:;', label: 'Action' },
                 { route: 'javascript:;', label: 'Some other action' },

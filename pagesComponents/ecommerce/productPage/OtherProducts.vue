@@ -38,7 +38,7 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
+                    src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-1.jpg"
                     class="avatar avatar-md me-3"
                     alt="table image"
                   />
@@ -81,7 +81,7 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
+                    src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-2.jpg"
                     class="avatar avatar-md me-3"
                     alt="table image"
                   />
@@ -124,7 +124,7 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
+                    src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-3.jpg"
                     class="avatar avatar-md me-3"
                     alt="table image"
                   />
@@ -167,7 +167,7 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
+                    src="https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/product-thumb-4.jpg"
                     class="avatar avatar-md me-3"
                     alt="table image"
                   />

@@ -10,7 +10,7 @@
     <div
       class="page-header min-vh-100"
       style="
-        background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/error-500.jpg');
+        background-image: url('https://raw.githubusercontent.com/arromicreatives/public-assets/master/argon-dashboard-pro/assets/img/error-500.jpg');
       "
     >
       <span class="mask bg-gradient-warning opacity-4"></span>

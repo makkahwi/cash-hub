@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "Currencies Collection Showroom by Creative Tim",
+          content: "Currencies Collection Showroom by Arromi Creatives",
         },
       ],
       link: [

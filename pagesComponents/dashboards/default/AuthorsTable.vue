@@ -33,15 +33,13 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg"
+                    src="https://demos.arromi.net/soft-ui-design-system-pro/assets/img/team-2.jpg"
                     class="avatar avatar-sm me-3"
                   />
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">John Michael</h6>
-                  <p class="text-xs text-secondary mb-0">
-                    john@creative-tim.com
-                  </p>
+                  <p class="text-xs text-secondary mb-0">john@arromi.net</p>
                 </div>
               </div>
             </td>
@@ -72,15 +70,13 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg"
+                    src="https://demos.arromi.net/soft-ui-design-system-pro/assets/img/team-3.jpg"
                     class="avatar avatar-sm me-3"
                   />
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Alexa Liras</h6>
-                  <p class="text-xs text-secondary mb-0">
-                    alexa@creative-tim.com
-                  </p>
+                  <p class="text-xs text-secondary mb-0">alexa@arromi.net</p>
                 </div>
               </div>
             </td>
@@ -111,15 +107,13 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-4.jpg"
+                    src="https://demos.arromi.net/soft-ui-design-system-pro/assets/img/team-4.jpg"
                     class="avatar avatar-sm me-3"
                   />
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Laurent Perrier</h6>
-                  <p class="text-xs text-secondary mb-0">
-                    laurent@creative-tim.com
-                  </p>
+                  <p class="text-xs text-secondary mb-0">laurent@arromi.net</p>
                 </div>
               </div>
             </td>
@@ -150,15 +144,13 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg"
+                    src="https://demos.arromi.net/soft-ui-design-system-pro/assets/img/team-3.jpg"
                     class="avatar avatar-sm me-3"
                   />
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Michael Levi</h6>
-                  <p class="text-xs text-secondary mb-0">
-                    michael@creative-tim.com
-                  </p>
+                  <p class="text-xs text-secondary mb-0">michael@arromi.net</p>
                 </div>
               </div>
             </td>
@@ -189,15 +181,13 @@
               <div class="d-flex px-2 py-1">
                 <div>
                   <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg"
+                    src="https://demos.arromi.net/soft-ui-design-system-pro/assets/img/team-2.jpg"
                     class="avatar avatar-sm me-3"
                   />
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Richard Gran</h6>
-                  <p class="text-xs text-secondary mb-0">
-                    richard@creative-tim.com
-                  </p>
+                  <p class="text-xs text-secondary mb-0">richard@arromi.net</p>
                 </div>
               </div>
             </td>

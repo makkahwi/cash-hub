@@ -404,7 +404,7 @@ const stories = [
   },
   {
     name: "Tao G",
-    img: "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-9.jpg",
+    img: "https://raw.githubusercontent.com/arromicreatives/public-assets/master/soft-ui-design-system/assets/img/team-9.jpg",
   },
 ];
 

@@ -134,39 +134,39 @@
         <hr class="horizontal dark my-sm-4" />
         <a
           class="btn btn-success w-100"
-          href="https://www.creative-tim.com/product/vue-argon-dashboard-pro"
+          href="https://www.arromi.net/product/vue-argon-dashboard-pro"
           >Buy now</a
         >
         <a
           class="btn bg-gradient-dark w-100"
-          href="https://www.creative-tim.com/product/vue-argon-dashboard"
+          href="https://www.arromi.net/product/vue-argon-dashboard"
           >Free demo</a
         >
         <a
           class="btn btn-outline-dark w-100"
-          href="https://www.creative-tim.com/learning-lab/vue/overview/argon-dashboard/"
+          href="https://www.arromi.net/learning-lab/vue/overview/argon-dashboard/"
           >View documentation</a
         >
         <div class="text-center w-100">
           <a
             class="github-button"
-            href="https://github.com/creativetimofficial/ct-nuxt-argon-dashboard-pro"
+            href="https://github.com/arromicreatives/ct-nuxt-argon-dashboard-pro"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star creativetimofficial/vue-argon-dashboard-pro on GitHub"
+            aria-label="Star arromicreatives/vue-argon-dashboard-pro on GitHub"
             >Star</a
           >
           <h6 class="mt-3">Thank you for sharing!</h6>
           <a
-            href="https://twitter.com/intent/tweet?text=Check%20Vue%20Argon%20Dashboard%20PRO%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fnuxt-argon-dashboard-pro"
+            href="https://twitter.com/"
             class="mb-0 btn btn-dark me-2"
             target="_blank"
           >
             <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
           </a>
           <a
-            href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/nuxt-argon-dashboard-pro"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://www.arromi.net/product/nuxt-argon-dashboard-pro"
             class="mb-0 btn btn-dark me-2"
             target="_blank"
           >
