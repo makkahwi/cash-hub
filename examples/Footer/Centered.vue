@@ -1,4 +1,3 @@
-im
 <template>
   <footer class="py-5 footer">
     <div class="container">
@@ -7,88 +6,96 @@ im
           <a
             href="javascript:;"
             target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
+            class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
-            Company
+            Home
           </a>
+
           <a
             href="javascript:;"
             target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
+            class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
-            About Us
+            Showroom
           </a>
+
           <a
             href="javascript:;"
             target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
+            class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
-            Team
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
-          >
-            Products
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
-          >
-            Blog
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="mb-2 text-secondary me-xl-5 me-3 mb-sm-0"
-          >
-            Pricing
+            Get Yours
           </a>
         </div>
-        <div class="mx-auto mt-2 mb-4 text-center col-lg-8">
+
+        <div class="mx-auto my-4 text-center col-lg-8">
           <a
-            href="javascript:;"
-            target="_blank"
-            class="text-secondary me-xl-4 me-4"
-          >
-            <span class="text-lg fab fa-dribbble"></span>
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="text-secondary me-xl-4 me-4"
-          >
-            <span class="text-lg fab fa-twitter"></span>
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="text-secondary me-xl-4 me-4"
-          >
-            <span class="text-lg fab fa-instagram"></span>
-          </a>
-          <a
-            href="javascript:;"
-            target="_blank"
-            class="text-secondary me-xl-4 me-4"
-          >
-            <span class="text-lg fab fa-pinterest"></span>
-          </a>
-          <a
-            href="javascript:;"
+            href="https://github.com/makkahwi"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
             <span class="text-lg fab fa-github"></span>
           </a>
+
+          <a
+            href="https://linkedin.com/in/makkahwi/"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fab fa-linkedin"></span>
+          </a>
+
+          <a
+            href="https://facebook.com/makkahwi"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fab fa-facebook"></span>
+          </a>
+
+          <a
+            href="https://instagram.com/makkahwi"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fab fa-instagram"></span>
+          </a>
+
+          <a
+            href="https://wasap.my/962788424973"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fab fa-whatsapp"></span>
+          </a>
+
+          <a
+            href="https://t.me/makkahwi"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fab fa-telegram"></span>
+          </a>
+
+          <a
+            href="mailto:SuhaibAhmadAi@hotmail.com"
+            target="_blank"
+            class="text-secondary me-xl-4 me-4"
+          >
+            <span class="text-lg fa fa-envelope"></span>
+          </a>
         </div>
       </div>
+
       <div class="row">
-        <div class="mx-auto mt-1 text-center col-8">
+        <div class="mx-auto mt-4 text-center col-lg-8">
           <p class="mb-0 text-secondary">
-            Copyright © {{ new Date().getFullYear() }} by Arromi Creatives.
+            Crafted with Care by
+            <a href="https://suhaib.dev/" target="_blank" class="text-secondary"
+              >Suhaib Ahmad</a
+            >
+            ©
+            {{ new Date().getFullYear() }}
           </p>
         </div>
       </div>
@@ -97,7 +104,5 @@ im
 </template>
 
 <script>
-export default {
-  name: "AppFooter",
-};
+export default { name: "AppFooter" };
 </script>
