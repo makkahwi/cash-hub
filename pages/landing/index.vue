@@ -17,24 +17,23 @@
           <div class="mx-auto text-left col-md-6 my-4">
             <h2 class="text-white my-4">Currencies Collection Showroom</h2>
 
-            <h4 class="text-white text-justify my-4">
-              A web app to publish my collection of currencies from all over the
-              world to all over the world
-            </h4>
+            <NuxtLink to="#about" class="btn btn-success btn-xs mb-0 p-3">
+              Find Out More
+            </NuxtLink>
 
-            <p class="text-white text-justify">
-              Collectors could clone this project & deploy it to enlist their
-              currencies. The public could just browse their showrooms right
-              away.
-            </p>
+            <NuxtLink
+              to="/my-showroom"
+              class="btn btn-success btn-xs mb-0 mx-3 p-3"
+            >
+              Browse My Showroom
+            </NuxtLink>
 
-            <button type="button" class="btn btn-success btn-xs mb-0 p-3">
-              Browse My Collection
-            </button>
-
-            <button type="button" class="btn btn-white btn-xs mb-0 mx-3 p-3">
+            <NuxtLink
+              to="/get-your-showroom"
+              class="btn btn-white btn-xs mb-0 p-3"
+            >
               Build Your Showroom
-            </button>
+            </NuxtLink>
           </div>
 
           <div class="mx-auto text-center col-md-6 my-4">
@@ -182,7 +181,7 @@
       </div>
     </div>
 
-    <div class="container my-6">
+    <div class="container my-6" id="about">
       <div class="row">
         <div class="mx-auto text-center col-8">
           <h6 class="opacity-5">More than 50+ brands trust Soft</h6>
@@ -366,13 +365,12 @@
 
       <p class="text-dark">(You don't need to be a coder to do it)</p>
 
-      <a
-        href="https://github.com/makkahwi/currencies-showroom"
-        target="_blank"
+      <NuxtLink
+        to="/get-your-showroom"
         class="btn btn-success btn-xs mt-3 mx-3 p-3 px-5"
       >
         Have It Now
-      </a>
+      </NuxtLink>
     </div>
 
     <AppFooter />
