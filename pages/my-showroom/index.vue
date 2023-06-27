@@ -326,7 +326,83 @@
           </table>
         </div>
 
-        <div class="p-2 py-4">List View</div>
+        <div class="p-2 py-4">
+          <table class="table table-flush">
+            <tbody>
+              <tr>
+                <td class="row">
+                  <div class="col-md-2">
+                    <img
+                      src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/team-1.jpg"
+                      class="w-100"
+                    />
+                  </div>
+
+                  <div class="col-md-8 row">
+                    <div class="col-md-2">Continent</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Asia</span>
+                    </div>
+
+                    <div class="col-md-2">Nation</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Jordan</span>
+                    </div>
+
+                    <div class="col-md-2">Currency</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">JOD</span>
+                    </div>
+
+                    <div class="col-md-2">Type</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Banknote</span>
+                    </div>
+
+                    <div class="col-md-2">Unit</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Dinar</span>
+                    </div>
+
+                    <div class="col-md-2">Value</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">50</span>
+                    </div>
+
+                    <div class="col-md-2">Circability</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Circuable</span>
+                    </div>
+
+                    <div class="col-md-2">Issue Year</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">2022</span>
+                    </div>
+
+                    <div class="col-md-2">Dissolved</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">No</span>
+                    </div>
+
+                    <div class="col-md-2">Collection Date</div>
+                    <div class="col-md-2">
+                      <span class="font-weight-bolder">Feb 2023</span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 align-middle text-center py-5">
+                    <button
+                      type="button"
+                      class="btn btn-success d-flex justify-content-center align-items-center"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
