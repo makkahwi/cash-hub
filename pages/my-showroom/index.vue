@@ -291,12 +291,23 @@
                 >
                   Collection Date
                 </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Details
+                </th>
               </tr>
             </thead>
 
             <tbody>
-              <tr>
-                <td class="text-sm font-weight-normal">'photo'</td>
+              <tr class="align-middle">
+                <td class="text-sm font-weight-normal">
+                  <img
+                    src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/team-1.jpg"
+                    class="w-100"
+                  />
+                </td>
                 <td class="text-sm font-weight-normal">Asia</td>
                 <td class="text-sm font-weight-normal">Jordan</td>
                 <td class="text-sm font-weight-normal">JOD</td>
@@ -307,6 +318,9 @@
                 <td class="text-sm font-weight-normal">2022</td>
                 <td class="text-sm font-weight-normal">No</td>
                 <td class="text-sm font-weight-normal">Feb 2023</td>
+                <td class="text-sm font-weight-normal">
+                  <a class="text-decoration-underline" href="#">View</a>
+                </td>
               </tr>
             </tbody>
           </table>
