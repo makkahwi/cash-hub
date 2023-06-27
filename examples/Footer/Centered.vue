@@ -4,21 +4,21 @@
       <div class="row">
         <div class="mx-auto mb-4 text-center col-lg-8">
           <NuxtLink
-            to="/dashboards/default"
+            to="/landing"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Home
           </NuxtLink>
 
           <NuxtLink
-            to="/dashboards/default"
+            to="/my-showroom"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             My Showroom
           </NuxtLink>
 
           <NuxtLink
-            to="/dashboards/default"
+            to="/get-your-showroom"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Get Your Showroom
