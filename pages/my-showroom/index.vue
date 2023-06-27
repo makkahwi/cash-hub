@@ -304,7 +304,7 @@
               <tr class="align-middle">
                 <td class="text-sm font-weight-normal">
                   <img
-                    src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/team-1.jpg"
+                    src="https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg"
                     class="w-100"
                   />
                 </td>
@@ -333,7 +333,7 @@
                 <td class="row">
                   <div class="col-md-2">
                     <img
-                      src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/team-1.jpg"
+                      src="https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg"
                       class="w-100"
                     />
                   </div>
@@ -403,6 +403,20 @@
             </tbody>
           </table>
         </div>
+
+        <div class="p-2 py-4 row">
+          <div class="col-md-3 my-3 card py-4 border border-2">
+            <DefaultProjectCard
+              title="Jordan Dinar"
+              img="https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg"
+              label="JOD 50 Banknote"
+              :action="{
+                color: 'success',
+                label: 'View Details',
+              }"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -416,6 +430,7 @@ import AppFooter from "~~/examples/Footer/Centered.vue";
 import setNavPills from "@/assets/js/nav-pills.js";
 import headerImg from "@/assets/img/currencies.jpg";
 import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard.vue";
+import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard.vue";
 
 definePageMeta({
   layout: false,
