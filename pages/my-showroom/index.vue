@@ -198,6 +198,124 @@
       </div>
     </div>
 
+    <div class="container my-6">
+      <div class="mx-auto text-center">
+        <h5>List</h5>
+      </div>
+
+      <div class="mx-auto my-3 mb-5 text-center">
+        <p>List of detailed currency pieces</p>
+      </div>
+
+      <div class="card p-4">
+        <div class="mb-4">
+          <label class="custom-control-label"> View Type </label>
+
+          <select
+            class="form-control"
+            :style="{ width: '300px' }"
+            name="view-type"
+          >
+            <option value="table" selected>Table</option>
+            <option value="list">List</option>
+            <option value="grid">Grid</option>
+          </select>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Photo
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Continent
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Nation
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Currency
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Type
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Unit
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Value
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Circability
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Issue Year
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Dissolved
+                </th>
+
+                <th
+                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                >
+                  Collection Date
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-sm font-weight-normal">'photo'</td>
+                <td class="text-sm font-weight-normal">Asia</td>
+                <td class="text-sm font-weight-normal">Jordan</td>
+                <td class="text-sm font-weight-normal">JOD</td>
+                <td class="text-sm font-weight-normal">Banknote</td>
+                <td class="text-sm font-weight-normal">Dinar</td>
+                <td class="text-sm font-weight-normal">50</td>
+                <td class="text-sm font-weight-normal">Circuable</td>
+                <td class="text-sm font-weight-normal">2022</td>
+                <td class="text-sm font-weight-normal">No</td>
+                <td class="text-sm font-weight-normal">Feb 2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-2 py-4">List View</div>
+      </div>
+    </div>
+
     <AppFooter />
   </main>
 </template>
@@ -207,7 +325,6 @@ import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
 import AppFooter from "~~/examples/Footer/Centered.vue";
 import setNavPills from "@/assets/js/nav-pills.js";
 import headerImg from "@/assets/img/currencies.jpg";
-import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard.vue";
 import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard.vue";
 
 definePageMeta({
