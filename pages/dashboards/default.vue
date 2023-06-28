@@ -387,6 +387,7 @@ import InfoCard from "~~/pagesComponents/dashboards/default/InfoCard.vue";
 definePageMeta({
   layout: "default",
 });
+
 const cardData = [
   {
     title: "Today's Money",

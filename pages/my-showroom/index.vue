@@ -273,18 +273,6 @@
                 <th
                   class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                 >
-                  Issue Year
-                </th>
-
-                <th
-                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                >
-                  Dissolved
-                </th>
-
-                <th
-                  class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                >
                   Collection Date
                 </th>
 
@@ -302,6 +290,7 @@
                   <img
                     src="https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg"
                     class="w-100"
+                    :style="{ maxWidth: '150px' }"
                   />
                 </td>
                 <td class="text-sm font-weight-normal">Asia</td>
@@ -311,8 +300,6 @@
                 <td class="text-sm font-weight-normal">Dinar</td>
                 <td class="text-sm font-weight-normal">50</td>
                 <td class="text-sm font-weight-normal">Circuable</td>
-                <td class="text-sm font-weight-normal">2022</td>
-                <td class="text-sm font-weight-normal">No</td>
                 <td class="text-sm font-weight-normal">Feb 2023</td>
                 <td class="text-sm font-weight-normal">
                   <a class="text-decoration-underline" href="#">View</a>
@@ -331,6 +318,7 @@
                     <img
                       src="https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg"
                       class="w-100"
+                      :style="{ maxWidth: '200px' }"
                     />
                   </div>
 
@@ -370,16 +358,6 @@
                       <span class="font-weight-bolder">Circuable</span>
                     </div>
 
-                    <div class="col-md-2">Issue Year</div>
-                    <div class="col-md-2">
-                      <span class="font-weight-bolder">2022</span>
-                    </div>
-
-                    <div class="col-md-2">Dissolved</div>
-                    <div class="col-md-2">
-                      <span class="font-weight-bolder">No</span>
-                    </div>
-
                     <div class="col-md-2">Collection Date</div>
                     <div class="col-md-2">
                       <span class="font-weight-bolder">Feb 2023</span>
@@ -410,6 +388,7 @@
                 color: 'success',
                 label: 'View Details',
               }"
+              description="Feb 2023"
             />
           </div>
         </div>
