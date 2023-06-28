@@ -35,7 +35,7 @@
       <div class="row">
         <div class="mx-auto my-3 mb-5 col-md-11 text-justify">
           <p>
-            There are two possible options to build your own copy of CSS at the
+            There are two possible options to build your own copy of CCS at the
             time, and later on we'll offer more options. Both options are about
             acquiring free-of-charge servers to host your CCS, n then easily
             deploy the code to the servers to start inserting your own data.

@@ -160,6 +160,8 @@
               name="endDate"
             />
           </div>
+
+          <button class="btn btn-success mt-4 float-end">Filter</button>
         </div>
       </div>
     </div>
