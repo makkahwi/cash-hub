@@ -174,14 +174,14 @@
           <p>Overview of shown data</p>
         </div>
 
-        <div class="mx-auto my-3 mb-5 col-md-7 text-center row">
+        <div class="mx-auto my-3 mb-5 col-md-12 text-center row">
           <div
             v-for="{
               title,
               value,
               icon: { component, background, shape },
             } of statsData"
-            class="col-lg-3 col-sm-6 p-2"
+            class="col-lg-2 col-sm-6 p-2"
           >
             <DefaultCounterCard
               color="success"
@@ -190,10 +190,6 @@
               class="h-100"
             />
           </div>
-        </div>
-
-        <div class="mx-auto my-3 mb-5 col-md-5 text-center">
-          <p>Map</p>
         </div>
       </div>
     </div>
