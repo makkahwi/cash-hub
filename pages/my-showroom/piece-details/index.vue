@@ -22,6 +22,8 @@
               </div>
 
               <div class="mx-auto col-lg-5">
+                id {{ this.$route.query.id }}
+
                 <h3 class="mt-4 mt-lg-0">JOD 50</h3>
 
                 <table class="w-100 table-responsive">

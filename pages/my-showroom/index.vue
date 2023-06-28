@@ -302,7 +302,15 @@
                 <td class="text-sm font-weight-normal">Circuable</td>
                 <td class="text-sm font-weight-normal">Feb 2023</td>
                 <td class="text-sm font-weight-normal">
-                  <a class="text-decoration-underline" href="#">View</a>
+                  <NuxtLink
+                    class="text-decoration-underline"
+                    :to="{
+                      path: '/my-showroom/piece-details',
+                      query: { id: 4 },
+                    }"
+                  >
+                    View
+                  </NuxtLink>
                 </td>
               </tr>
             </tbody>
@@ -365,12 +373,15 @@
                   </div>
 
                   <div class="col-md-2 align-middle text-center py-5">
-                    <button
-                      type="button"
+                    <NuxtLink
                       class="btn btn-success d-flex justify-content-center align-items-center"
+                      :to="{
+                        path: '/my-showroom/piece-details',
+                        query: { id: 4 },
+                      }"
                     >
                       View Details
-                    </button>
+                    </NuxtLink>
                   </div>
                 </td>
               </tr>
@@ -387,6 +398,10 @@
               :action="{
                 color: 'success',
                 label: 'View Details',
+                link: {
+                  path: '/my-showroom/piece-details',
+                  query: { id: 4 },
+                },
               }"
               description="Feb 2023"
             />

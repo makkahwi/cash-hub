@@ -18,13 +18,14 @@
         {{ description }}
       </p>
       <div class="d-flex align-items-center justify-content-between">
-        <button
+        <NuxtLink
           type="button"
           class="mb-0 btn btn-sm"
+          :to="action.link"
           :class="`btn-outline-${action.color}`"
         >
           {{ action.label }}
-        </button>
+        </NuxtLink>
         <div class="mt-2 avatar-group">
           <a
             v-for="({ image: authorImage, name }, index) of authors"
