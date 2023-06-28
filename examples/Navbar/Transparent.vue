@@ -8,7 +8,7 @@
         class="navbar-brand font-weight-bolder ms-lg-0 ms-3"
         :class="darkMode ? 'text-black' : 'text-white'"
         to="/"
-        >Currencies Collection Showroom</NuxtLink
+        >CCS</NuxtLink
       >
       <button
         class="shadow-none navbar-toggler ms-2"

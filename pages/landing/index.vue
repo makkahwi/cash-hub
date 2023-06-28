@@ -15,7 +15,9 @@
       <div class="container pb-10 pb-lg-9 pt-7 postion-relative z-index-2">
         <div class="row">
           <div class="mx-auto text-left col-md-6 my-4">
-            <h2 class="text-white my-4">Currencies Collection Showroom</h2>
+            <h2 class="text-white my-4">
+              Currencies Collection Showroom (CCS)
+            </h2>
 
             <h4 class="text-white my-4 mb-5">
               Are you a currency collector n wanna build an online catalog for

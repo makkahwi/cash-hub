@@ -27,7 +27,7 @@
 
         <div class="mx-auto my-4 text-center col-lg-8">
           <a
-            href="https://github.com/makkahwi"
+            href="https://www.github.com/arromi.creatives"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
@@ -35,7 +35,7 @@
           </a>
 
           <a
-            href="https://linkedin.com/in/makkahwi/"
+            href="https://www.linkedin.com/arromi.creatives"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
@@ -43,7 +43,7 @@
           </a>
 
           <a
-            href="https://facebook.com/makkahwi"
+            href="https://www.facebook.com/arromi.creatives"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
@@ -51,7 +51,7 @@
           </a>
 
           <a
-            href="https://instagram.com/makkahwi"
+            href="https://www.instagram.com/arromi.creatives"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
@@ -75,7 +75,7 @@
           </a>
 
           <a
-            href="mailto:SuhaibAhmadAi@hotmail.com"
+            href="mailto:arromi.creatives@gmail.com"
             target="_blank"
             class="text-secondary me-xl-4 me-4"
           >
@@ -88,8 +88,8 @@
         <div class="mx-auto mt-4 text-center col-lg-8">
           <p class="mb-0 text-secondary">
             Crafted with Care by
-            <a href="https://suhaib.dev/" target="_blank" class="text-secondary"
-              >Suhaib Ahmad</a
+            <a href="https://arromi.net/" target="_blank" class="text-secondary"
+              >Arromi Creatives</a
             >
             ©
             {{ new Date().getFullYear() }}
