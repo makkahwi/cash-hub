@@ -63,8 +63,8 @@
 
       <div class="mt-4 row">
         <h4 class="text-dark my-4">
-          A web app to publish collection of currencies of a collector to all
-          over the world
+          A web app for collectors to publish thier collection of currencies to
+          all the world
         </h4>
 
         <p class="text-dark">
@@ -82,7 +82,7 @@
                   <ComplexProjectCard
                     icon="ni ni-box-2"
                     title="Full-Detail Listing"
-                    description="You may enlist all the details you could imagine about your collections."
+                    description="You could enlist all the details you could ever think of about your currencies collection."
                   />
                 </div>
 
@@ -98,7 +98,7 @@
                   <ComplexProjectCard
                     icon="ni ni-box-2"
                     title="Best Techs Envolved"
-                    description="This has been built with Vue.Js 3 for frontend & Django of Python for backend, which were the best techs to serve the project and its purposes."
+                    description="Techs of Vue.Js 3 & Django of Python were the best to serve the project and its purposes."
                   />
                 </div>
               </div>
@@ -175,11 +175,11 @@
         <div class="mx-auto text-center col-md-6">
           <h2>Future Works</h2>
 
-          <p>
+          <p class="mt-6">
             This is an open-source project with potential to expand its uses
             (like any other sort of collection showrooming or even other uses
             like photos gallery) and get fund to turn it into a profitable
-            project like turning it into a SaaS product.
+            project (like turning it into a SaaS product).
           </p>
         </div>
       </div>
