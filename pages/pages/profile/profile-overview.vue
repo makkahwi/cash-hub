@@ -556,6 +556,6 @@ onMounted(() => {
   setTooltip(bootstrap);
 });
 definePageMeta({
-  layout: "profile-layout",
+  layout: false,
 });
 </script>

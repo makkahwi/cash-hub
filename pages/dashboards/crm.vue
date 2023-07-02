@@ -220,6 +220,6 @@ import RankingListCard from "@/examples/cards/RankingListCard.vue";
 import PlaceholderCard from "@/examples/cards/PlaceholderCard.vue";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

@@ -100,6 +100,6 @@ import RadarChart from "~~/pagesComponents/pages/widgets/RadarChart.vue";
 import PolarChart from "~~/pagesComponents/pages/widgets/PolarChart.vue";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

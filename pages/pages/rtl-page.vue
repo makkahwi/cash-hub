@@ -248,6 +248,6 @@ import TimelineItem from "~~/examples/cards/TimelineItem.vue";
 import bulbIcon from "@/assets/img/small-logos/icon-bulb.svg";
 
 definePageMeta({
-  layout: "rtl",
+  layout: false,
 });
 </script>

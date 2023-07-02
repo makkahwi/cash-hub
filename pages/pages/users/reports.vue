@@ -87,6 +87,6 @@ import ReviewCard from "~~/pagesComponents/pages/users/ReviewCard.vue";
 import Table from "~~/pagesComponents/pages/users/Table.vue";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

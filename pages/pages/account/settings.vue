@@ -22,7 +22,7 @@ import SideNav from "~~/pagesComponents/pages/account/SideNav.vue";
 import SideNavItem from "~~/pagesComponents/pages/account/SideNavItem.vue";
 import setNavPills from "~~/assets/js/nav-pills";
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   name: "Settings",

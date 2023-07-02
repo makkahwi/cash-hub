@@ -316,6 +316,6 @@ onMounted(() => {
   setNavPills();
 });
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

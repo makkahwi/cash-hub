@@ -153,7 +153,7 @@
 
 <script>
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   name: "Notifications",

@@ -77,7 +77,7 @@ import Profile from "~~/pagesComponents/pages/users/Profile.vue";
 import UserAddress from "~~/pagesComponents/pages/users/Address.vue";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   name: "NewUser",

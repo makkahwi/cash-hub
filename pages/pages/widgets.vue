@@ -234,6 +234,6 @@ import TimelineList from "~~/examples/cards/TimelineList.vue";
 import TimelineItem from "~~/examples/cards/TimelineItem.vue";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

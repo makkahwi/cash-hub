@@ -153,6 +153,6 @@ import TodoList from "@/pagesComponents/pages/projects/TodoList.vue";
 import image from "@/assets/img/team-3.jpg";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

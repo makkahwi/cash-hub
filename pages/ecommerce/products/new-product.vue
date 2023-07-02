@@ -257,7 +257,7 @@ import Pricing from "~~/pagesComponents/ecommerce/products/Pricing.vue";
 import setNavPills from "~~/assets/js/nav-pills";
 
 definePageMeta({
-  layout: "profile-layout",
+  layout: false,
 });
 export default {
   components: {
