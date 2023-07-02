@@ -1,10 +1,8 @@
 <template>
-  <main class="main-content position-relative max-height-vh-100 h-100">
-    <NavbarTransparent />
-
+  <div>
     <HeaderSection />
 
-    <div class="py-4 container-fluid">
+    <div class="py-4 px-7 container-fluid">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -135,18 +133,14 @@
         </div>
       </div>
     </div>
-
-    <AppFooter />
-  </main>
+  </div>
 </template>
 
 <script setup>
 import RelatedPieces from "./RelatedPieces.vue";
-import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
-import AppFooter from "~~/examples/Footer/Centered.vue";
 import HeaderSection from "../Header.vue";
 
 definePageMeta({
-  layout: false,
+  layout: "landing",
 });
 </script>

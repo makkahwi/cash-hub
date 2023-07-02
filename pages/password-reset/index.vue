@@ -1,8 +1,5 @@
 <template>
-  <NuxtLayout name="authentication">
-    <template #navbar>
-      <NavbarTransparent btn-background="bg-gradient-success" />
-    </template>
+  <div>
     <div
       class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
       style="
@@ -69,18 +66,14 @@
         </div>
       </div>
     </div>
-    <template #footer>
-      <FooterCentered />
-    </template>
-  </NuxtLayout>
+  </div>
 </template>
 
 <script setup>
-import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
-import FooterCentered from "@/examples/Footer/Centered.vue";
 definePageMeta({
-  layout: false,
+  layout: "landing",
 });
+
 useHead({
   bodyAttrs: {
     class: "bg-gray-200",
