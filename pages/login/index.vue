@@ -48,6 +48,12 @@
                   </ArgonButton>
                 </div>
               </form>
+
+              <NuxtLink to="/login">
+                <p class="mt-4 text-muted text-sm">
+                  Get Password Reset Link @ Your Email
+                </p>
+              </NuxtLink>
             </div>
           </div>
         </div>
