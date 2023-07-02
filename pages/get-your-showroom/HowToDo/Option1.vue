@@ -133,8 +133,4 @@
 
 <script setup>
 import AccordionItem from "@/pagesComponents/pages/pricing//AccordionItem.vue";
-
-definePageMeta({
-  layout: false,
-});
 </script>

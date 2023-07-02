@@ -128,7 +128,7 @@ import EmailCard from "@/pagesComponents/dashboards/vr/EmailCard.vue";
 import TodoCard from "@/pagesComponents/dashboards/vr/TodoCard.vue";
 import MiniPlayerCard from "@/examples/cards/MiniPlayerCard.vue";
 definePageMeta({
-  layout: false,
+  layout: "vr-layout",
 });
 export default {
   name: "VrDeFault",

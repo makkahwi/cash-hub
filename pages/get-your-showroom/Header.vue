@@ -25,8 +25,4 @@
 
 <script setup>
 import headerImg from "@/assets/img/currencies.jpg";
-
-definePageMeta({
-  layout: false,
-});
 </script>

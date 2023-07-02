@@ -385,7 +385,7 @@ import CreditCard from "~~/pagesComponents/dashboards/default/CreditCard.vue";
 import InfoCard from "~~/pagesComponents/dashboards/default/InfoCard.vue";
 
 definePageMeta({
-  layout: false,
+  layout: "default",
 });
 
 const cardData = [

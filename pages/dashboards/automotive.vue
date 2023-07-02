@@ -68,6 +68,6 @@ import CardDetail from "~~/pagesComponents/dashboards/automotive/CardDetail.vue"
 import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard.vue";
 import PlayerCard from "~~/pagesComponents/dashboards/automotive/PlayerCard.vue";
 definePageMeta({
-  layout: false,
+  layout: "default",
 });
 </script>

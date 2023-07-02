@@ -82,6 +82,6 @@
 </template>
 <script setup>
 definePageMeta({
-  layout: false,
+  layout: "landing",
 });
 </script>

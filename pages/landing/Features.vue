@@ -101,8 +101,4 @@
 <script setup>
 import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard.vue";
 import PricingCard from "@/pagesComponents/pages/pricing/PricingCard.vue";
-
-definePageMeta({
-  layout: false,
-});
 </script>

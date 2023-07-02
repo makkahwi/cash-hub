@@ -218,8 +218,4 @@
 
 <script setup>
 import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard.vue";
-
-definePageMeta({
-  layout: false,
-});
 </script>

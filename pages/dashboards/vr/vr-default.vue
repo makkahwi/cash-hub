@@ -212,7 +212,7 @@ import ProgressTrackCard from "~~/pagesComponents/dashboards/default/ProgressTra
 import TodoList from "~~/pagesComponents/dashboards/default/TodoList.vue";
 
 definePageMeta({
-  layout: false,
+  layout: "vr-layout",
 });
 export default {
   name: "VrDeFault",
