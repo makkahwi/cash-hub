@@ -2,11 +2,16 @@
   <div>
     <HeaderSection />
 
-    <div class="py-4 px-7 container-fluid">
+    <div
+      class="py-4 px-4 container-fluid"
+      :style="{
+        marginTop: `-90px`,
+      }"
+    >
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body px-5">
               <h5 class="mb-4">Piece Details</h5>
 
               <div class="row">
