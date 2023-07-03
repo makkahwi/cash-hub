@@ -1,20 +1,20 @@
 <template>
   <NuxtLayout name="authentication">
     <template #navbar>
-      <NavbarTransparent btn-background="bg-gradient-success" />
+      <Navbar btn-background="bg-gradient-success" />
     </template>
 
-    <main class="main-content position-relative max-height-vh-100 h-100">
+    <main class="main-content position-relative max-height-vh-100 h-100 w-100">
       <slot />
 
-      <AppFooter />
+      <Footer />
     </main>
   </NuxtLayout>
 </template>
 
 <script setup>
-import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
-import AppFooter from "~~/examples/Footer/Centered.vue";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import setNavPills from "@/assets/js/nav-pills.js";
 
 onMounted(() => {
