@@ -119,22 +119,22 @@
       </div>
 
       <div class="mx-auto col-md-3 multisteps-form__content">
-        <h6 class="my-3">Per Issuing Date</h6>
+        <h6 class="my-3">Per Issuing Year</h6>
 
         <div class="mb-3">
-          <label>Start Date</label>
+          <label>Start Year</label>
           <input
             class="multisteps-form__input form-control"
-            type="date"
+            type="number" min="1800" :max="new Date().getFullYear()" step="1" :value="new Date().getFullYear()" 
             name="startDate"
           />
         </div>
 
         <div>
-          <label>End Date</label>
+          <label>End Year</label>
           <input
             class="multisteps-form__input form-control"
-            type="date"
+            type="number" min="1800" :max="new Date().getFullYear()" step="1" :value="new Date().getFullYear()"
             name="endDate"
           />
         </div>
