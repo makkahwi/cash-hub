@@ -138,5 +138,5 @@
 </template>
 
 <script setup>
-import PageSection from "../../components/PageSection";
+import PageSection from "@/components/PageSection";
 </script>

@@ -123,7 +123,7 @@
 </template>
 
 <script setup>
-import PageSection from "../../../components/PageSection";
+import PageSection from "@/components/PageSection";
 import RelatedPieces from "./RelatedPieces";
 import HeaderSection from "../Header";
 

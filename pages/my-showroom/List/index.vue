@@ -209,6 +209,6 @@
 </template>
 
 <script setup>
-import PageSection from "../../components/PageSection";
+import PageSection from "@/components/PageSection";
 import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard";
 </script>
