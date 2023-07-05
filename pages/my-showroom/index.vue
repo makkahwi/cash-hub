@@ -22,9 +22,12 @@
   });
 
   const filters = reactive({
-    value: {},
-    update(newFilters) {
-      this.value = newFilters;
+    value: {
+      startDate: new Date().getFullYear(),
+      endDate: new Date().getFullYear()
+    },
+    update(newFilter) {
+      this.value = {...this.value , ...newFilter};
     }
   })
 
