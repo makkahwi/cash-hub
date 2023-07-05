@@ -4,8 +4,6 @@
 
     <AboutSection />
 
-    <FeaturesSection />
-
     <FutureWorkSection />
 
     <GetYoursSection />
@@ -15,7 +13,6 @@
 <script setup>
 import HeaderSection from "./landing/Header";
 import AboutSection from "./landing/About";
-import FeaturesSection from "./landing/Features";
 import FutureWorkSection from "./landing/FutureWork";
 import GetYoursSection from "./landing/GetYours";
 
