@@ -3,7 +3,7 @@
     <div class="mb-6" v-if="title || subtitle">
       <h3 :class="`text-${color} mb-4`">{{title}}</h3>
       
-      <h5 :class="`text-${color} opacity-5`">{{subtitle}}</h5>
+      <h5 :class="`text-${color} opacity-8`">{{subtitle}}</h5>
     </div>
 
     <slot />
