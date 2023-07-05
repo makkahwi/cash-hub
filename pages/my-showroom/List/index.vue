@@ -17,11 +17,11 @@
         </select>
       </div>
 
-      <TableView v-if="type.value == 'table'" />
+      <TableView v-if="type.value == 'table'" :currencies="currencies" />
 
-      <ListView v-if="type.value == 'list'" />
+      <ListView v-if="type.value == 'list'" :currencies="currencies" />
 
-      <GridView  v-if="type.value == 'grid'"/>
+      <GridView  v-if="type.value == 'grid'" :currencies="currencies" />
     </div>
   </PageSection>
 </template>
@@ -38,5 +38,12 @@
     update(newView) {
       this.value = newView;
     }
+  })
+
+  defineProps({
+    currencies: {
+      type: Array,
+      default: [],
+    },
   })
 </script>
