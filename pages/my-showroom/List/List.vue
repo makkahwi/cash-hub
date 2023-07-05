@@ -44,7 +44,7 @@
 
             <div class="col-md-2">Circability</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">Circuable</span>
+              <span class="font-weight-bolder">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</span>
             </div>
 
             <div class="col-md-2">Collected @</div>

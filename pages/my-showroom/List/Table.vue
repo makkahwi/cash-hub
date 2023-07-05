@@ -80,7 +80,7 @@
           <td class="text-sm font-weight-normal">{{type}}</td>
           <td class="text-sm font-weight-normal">{{name}}</td>
           <td class="text-sm font-weight-normal">{{value}}</td>
-          <td class="text-sm font-weight-normal">Circuable</td>
+          <td class="text-sm font-weight-normal">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</td>
           <td class="text-sm font-weight-normal">{{date}}</td>
           <td class="text-sm font-weight-normal">
             <NuxtLink

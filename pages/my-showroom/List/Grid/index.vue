@@ -10,7 +10,7 @@
           :img="fPhoto"
           :label="code + ' ' + value+ ' ' + type"
           :action="{
-            color: 'success',
+            color: mostRecentEdition === order ? 'success' : 'danger',
             label: 'View Details',
             link: {
               path: '/my-showroom/piece-details',
