@@ -1,5 +1,5 @@
 <template>
-  <PageSection title="Statistics" subtitle="Overview of shown data" color="light">
+  <PageSection title="Statistics" subtitle="Overview of shown data" bg="light">
     <div class="row g-0 text-center">
       <div
         v-for="{
