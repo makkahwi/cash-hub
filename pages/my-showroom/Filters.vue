@@ -1,14 +1,6 @@
 <template>
-  <div class="container my-6">
-    <div class="mt-8 row">
-      <div class="mx-auto col-md-12 text-center">
-        <h5>Filters</h5>
-      </div>
-
-      <div class="mx-auto my-3 mb-5 col-md-11 text-center">
-        <p>Filter what you wanna see of the collection</p>
-      </div>
-
+  <PageSection title="Filters" subtitle="Filter what you wanna see of the collection">
+    <div class="row text-start">
       <div class="mx-auto col-md-3 multisteps-form__content">
         <h6 class="my-3">Per Type</h6>
 
@@ -142,5 +134,9 @@
         <button class="btn btn-success mt-4 float-end">Filter</button>
       </div>
     </div>
-  </div>
+  </PageSection>
 </template>
+
+<script setup>
+import PageSection from "../../components/PageSection";
+</script>

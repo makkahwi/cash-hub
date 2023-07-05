@@ -1,36 +1,27 @@
 <template>
-  <div class="container my-6">
-    <div class="mt-8 row">
-      <div class="mx-auto col-md-12 text-center">
-        <h5>Statistics</h5>
-      </div>
-
-      <div class="mx-auto my-3 mb-5 col-md-10 text-center">
-        <p>Overview of shown data</p>
-      </div>
-
-      <div class="mx-auto my-3 mb-5 col-md-12 text-center row">
-        <div
-          v-for="{
-            title,
-            value,
-            icon: { component, background, shape },
-          } of statsData"
-          class="col-lg-2 col-sm-6 p-2"
-        >
-          <DefaultCounterCard
-            color="success"
-            :count="value"
-            :title="title"
-            class="h-100"
-          />
-        </div>
+  <PageSection title="Statistics" subtitle="Overview of shown data" color="light">
+    <div class="row g-0 text-center">
+      <div
+        v-for="{
+          title,
+          value,
+          icon: { component, background, shape },
+        } of statsData"
+        class="col-lg-2 col-sm-6 p-2"
+      >
+        <DefaultCounterCard
+          color="success"
+          :count="value"
+          :title="title"
+          class="h-100"
+        />
       </div>
     </div>
-  </div>
+  </PageSection>
 </template>
 
 <script setup>
+import PageSection from "../../components/PageSection";
 import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard";
 
 definePageMeta({

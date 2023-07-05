@@ -1,16 +1,8 @@
 <template>
-  <div class="container my-6">
-    <div class="mx-auto text-center">
-      <h5>List</h5>
-    </div>
-
-    <div class="mx-auto my-3 mb-5 text-center">
-      <p>List of detailed currency pieces</p>
-    </div>
-
+  <PageSection title="List" subtitle="List of detailed currency pieces">
     <div class="card p-4">
-      <div class="mb-4">
-        <label class="custom-control-label"> View Type </label>
+      <div class="mb-4 text-start">
+        <label> View Type </label>
 
         <select
           class="form-control"
@@ -213,9 +205,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </PageSection>
 </template>
 
 <script setup>
+import PageSection from "../../components/PageSection";
 import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard";
 </script>

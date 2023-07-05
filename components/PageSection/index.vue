@@ -1,8 +1,10 @@
 <template>
   <div :class="`w-100 m-${m} p-${p} text-center bg-${color} overflow-hidden`" :id="sectionId">
-    <h3 class="mb-6">{{title}}</h3>
-    
-    <h6 class="opacity-5">{{subtitle}}</h6>
+    <div class="mb-6">
+      <h3>{{title}}</h3>
+      
+      <h5 class="opacity-5">{{subtitle}}</h5>
+    </div>
 
     <slot />
   </div>
