@@ -4,7 +4,7 @@
       <div class="row">
         <div class="mx-auto mb-4 text-center col-lg-8">
           <NuxtLink
-            to="/landing"
+            to="/"
             class="mb-2 text-secondary me-xl-5 mx-2 mb-sm-0"
           >
             Home

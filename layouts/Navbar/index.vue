@@ -33,7 +33,7 @@
         <ul class="mx-auto navbar-nav navbar-nav-hover">
           <li class="mx-2 nav-item dropdown dropdown-hover">
             <NuxtLink
-              to="/landing"
+              to="/"
               class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
             >
               Home

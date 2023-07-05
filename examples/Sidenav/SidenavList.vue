@@ -173,7 +173,7 @@
                 </template>
               </SidenavCollapseItem>
 
-              <SidenavItem to="/landing" mini-icon="P" text="Landing" />
+              <SidenavItem to="/" mini-icon="P" text="Landing" />
 
               <SidenavItem to="/pages/rtl-page" mini-icon="R" text="RTL" />
               <SidenavItem to="/pages/widgets" mini-icon="W" text="Widgets" />
