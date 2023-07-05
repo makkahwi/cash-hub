@@ -9,22 +9,8 @@
           your collections? This is it
         </h4>
 
-        <NuxtLink to="#about" class="btn btn-success btn-xs mb-0 p-3">
-          Find Out More
-        </NuxtLink>
-
-        <NuxtLink
-          to="/my-showroom"
-          class="btn btn-success btn-xs mb-0 mx-3 p-3"
-        >
-          Browse My Showroom
-        </NuxtLink>
-
-        <NuxtLink
-          to="/get-your-showroom"
-          class="btn btn-white btn-xs mb-0 p-3"
-        >
-          Build Your Showroom
+        <NuxtLink v-for="({to, title }, i) of buttons" :to="to" :key="i" class="btn btn-success btn-xs mb-0 mx-1 p-3">
+          {{title}}
         </NuxtLink>
       </div>
 
@@ -41,4 +27,10 @@
 
 <script setup>
 import PageHeader from "@/components/PageHeader";
+
+const buttons = [
+  {to: "#about", title: "Find Out More"},
+  {to: "/my-showroom", title: "Browse My Showroom"},
+  {to: "/get-your-showroom", title: "Build Your Showroom"},
+]
 </script>

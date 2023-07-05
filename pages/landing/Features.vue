@@ -1,26 +1,10 @@
 <template>
     <div class="row">
-      <div class="mb-4 col-lg-4 mb-lg-0">
+      <div v-for="({icon, title, desc}, index) of features" :key="index" class="mb-4 col-lg-4 mb-lg-0">
         <ComplexProjectCard
           icon="ni ni-box-2"
-          title="Full-Detail Listing"
-          description="You could enlist all the details you could ever think of about your currencies collection."
-        />
-      </div>
-
-      <div class="mb-4 col-lg-4 mb-lg-0">
-        <ComplexProjectCard
-          icon="ni ni-box-2"
-          title="Automated Market Evaluation"
-          description="Once you enlist a currency, the system added up its circular value to total value estimation."
-        />
-      </div>
-
-      <div class="mb-4 col-lg-4 mb-lg-0">
-        <ComplexProjectCard
-          icon="ni ni-box-2"
-          title="Best Techs Envolved"
-          description="Techs of Vue.Js 3 & Django of Python were the best to serve the project and its purposes."
+          :title="title"
+          :description="desc"
         />
       </div>
     </div>        
@@ -28,4 +12,10 @@
 
 <script setup>
 import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard";
+
+const features = [
+  {icon: "", title: "Full-Detail Listing", desc: "You could enlist all the details you could ever think of about your currencies collection."},
+  {icon: "", title: "Automated Market Evaluation", desc: "Once you enlist a currency, the system added up its circular value to total value estimation."},
+  {icon: "", title: "Best Techs Envolved", desc: "Techs of Vue.Js 3 & Django of Python were the best to serve the project and its purposes."},
+]
 </script>
