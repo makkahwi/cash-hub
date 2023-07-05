@@ -30,10 +30,9 @@
 
               <form role="form">
                 <ArgonInput
-                  id="password"
                   type="password"
-                  placeholder="Password"
-                  aria-label="password"
+                  placeholder="Will be available soon"
+                  disabled
                 />
 
                 <div class="text-center">

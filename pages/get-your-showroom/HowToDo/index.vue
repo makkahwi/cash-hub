@@ -2,21 +2,24 @@
   <PageSection title="How To Do">
     <div class="row">
       <div class="col-md-12 mb-5">
-        <p class="text-justify">
+        <p class="text-center">
+          Will be available soon
+        </p>
+        <!-- <p class="text-justify">
           There are two possible options to build your own copy of CCS at the
           time, and later on we'll offer more options. Both options are about
           acquiring free-of-charge servers to host your CCS, n then easily
           deploy the code to the servers to start inserting your own data.
-        </p>
+        </p> -->
       </div>
 
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <Option1 />
       </div>
 
       <div class="col-md-6">
         <Option2 />
-      </div>
+      </div> -->
     </div>
   </PageSection>
 </template>
