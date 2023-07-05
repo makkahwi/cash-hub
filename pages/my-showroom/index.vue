@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderSection />
+    <PageHeader title="My Showroom" subtitle="Here is my collecion of currencies" />
 
     <FiltersSection />
 
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import HeaderSection from "./Header";
+import PageHeader from "@/components/PageHeader";
 import FiltersSection from "./Filters";
 import StatisticsSection from "./Statistics";
 import ListSection from "./List";
