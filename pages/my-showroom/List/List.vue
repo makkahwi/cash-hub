@@ -11,7 +11,7 @@
             />
           </div>
 
-          <div class="col-md-8 row">
+          <div class="col-md-8 row text-start">
             <div class="col-md-2">Continent</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">Asia</span>
@@ -47,7 +47,7 @@
               <span class="font-weight-bolder">Circuable</span>
             </div>
 
-            <div class="col-md-2">Collection Date</div>
+            <div class="col-md-2">Collected @</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">Feb 2023</span>
             </div>

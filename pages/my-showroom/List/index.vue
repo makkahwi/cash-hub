@@ -38,5 +38,5 @@
     update(newView) {
       this.value = newView;
     }
-})
+  })
 </script>

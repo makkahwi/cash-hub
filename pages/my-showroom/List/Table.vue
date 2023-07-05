@@ -54,7 +54,7 @@
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
-            Collection Date
+            Collected @
           </th>
 
           <th
@@ -84,7 +84,7 @@
           <td class="text-sm font-weight-normal">Feb 2023</td>
           <td class="text-sm font-weight-normal">
             <NuxtLink
-              class="text-decoration-underline"
+              class="text-decoration-underline btn btn-success btn-sm"
               :to="{
                 path: '/my-showroom/piece-details',
                 query: { id: 4 },
