@@ -1,9 +1,9 @@
 <template>
-  <div :class="`w-100 m-${m} p-${p} text-center bg-${color} overflow-hidden`" :id="sectionId">
+  <div :class="`w-100 m-${m} p-${p} text-center bg-${bg} overflow-hidden`" :id="sectionId">
     <div class="mb-6">
-      <h3>{{title}}</h3>
+      <h3 :class="`text-${color} mb-4`">{{title}}</h3>
       
-      <h5 class="opacity-5">{{subtitle}}</h5>
+      <h5 :class="`text-${color} opacity-5`">{{subtitle}}</h5>
     </div>
 
     <slot />
@@ -19,6 +19,10 @@ export default {
       default: "",
     },
     color: {
+      type: String,
+      default: "dark",
+    },
+    bg: {
       type: String,
       default: "transparent",
     },

@@ -1,5 +1,5 @@
 <template>
-  <PageSection color="light" title="Future Works">
+  <PageSection bg="light" title="Future Works">
     <p>
       This is an open-source project with potential to expand its uses (like
       any other sort of collection showrooming or even other uses like photos
