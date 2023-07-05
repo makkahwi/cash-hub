@@ -1,7 +1,5 @@
 <template>
-  <div class="col-12">
-    <h5 class="ms-3">Related Pieces</h5>
-
+  <PageSection subtitle="Related Pieces">
     <div class="table table-responsive">
       <table class="table align-items-center mb-0 text-center">
         <thead>
@@ -179,5 +177,9 @@
         </tbody>
       </table>
     </div>
-  </div>
+  </PageSection>
 </template>
+
+<script setup>
+import PageSection from "../../../components/PageSection";
+</script>
