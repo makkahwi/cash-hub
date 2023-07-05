@@ -42,6 +42,7 @@
                     variant="gradient"
                     size="lg"
                     class="mt-3 mb-0"
+                    disabled
                   >
                     Access
                   </ArgonButton>
