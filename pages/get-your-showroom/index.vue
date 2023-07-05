@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import HeaderSection from "./Header.vue";
+import HeaderSection from "./Header";
 import HowToDoSection from "./HowToDo";
 
 definePageMeta({

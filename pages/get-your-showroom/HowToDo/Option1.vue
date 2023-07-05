@@ -132,5 +132,5 @@
 </template>
 
 <script setup>
-import AccordionItem from "@/pagesComponents/pages/pricing//AccordionItem.vue";
+import AccordionItem from "@/pagesComponents/pages/pricing//AccordionItem";
 </script>

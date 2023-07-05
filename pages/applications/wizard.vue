@@ -60,9 +60,9 @@
 </template>
 
 <script>
-import About from "~~/pagesComponents/applications/wizard/About.vue";
-import Account from "~~/pagesComponents/applications/wizard/Account.vue";
-import WizardAddress from "~~/pagesComponents/applications/wizard/Address.vue";
+import About from "~~/pagesComponents/applications/wizard/About";
+import Account from "~~/pagesComponents/applications/wizard/Account";
+import WizardAddress from "~~/pagesComponents/applications/wizard/Address";
 export default {
   name: "Wizard",
   components: { About, Account, WizardAddress },

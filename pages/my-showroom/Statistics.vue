@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard.vue";
+import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard";
 
 definePageMeta({
   layout: false,

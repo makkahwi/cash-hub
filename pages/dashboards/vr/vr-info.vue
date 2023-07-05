@@ -122,11 +122,11 @@ import image1 from "@/assets/img/team-1.jpg";
 import image2 from "@/assets/img/team-2.jpg";
 import image3 from "@/assets/img/team-3.jpg";
 import image4 from "@/assets/img/team-4.jpg";
-import CalendarCard from "@/pagesComponents/dashboards/vr/CalendarCard.vue";
-import MessagesCard from "@/pagesComponents/dashboards/vr/MessagesCard.vue";
-import EmailCard from "@/pagesComponents/dashboards/vr/EmailCard.vue";
-import TodoCard from "@/pagesComponents/dashboards/vr/TodoCard.vue";
-import MiniPlayerCard from "@/examples/cards/MiniPlayerCard.vue";
+import CalendarCard from "@/pagesComponents/dashboards/vr/CalendarCard";
+import MessagesCard from "@/pagesComponents/dashboards/vr/MessagesCard";
+import EmailCard from "@/pagesComponents/dashboards/vr/EmailCard";
+import TodoCard from "@/pagesComponents/dashboards/vr/TodoCard";
+import MiniPlayerCard from "@/examples/cards/MiniPlayerCard";
 definePageMeta({
   layout: "vr-layout",
 });

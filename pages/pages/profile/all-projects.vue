@@ -315,8 +315,8 @@
   </div>
 </template>
 <script setup>
-import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard.vue";
-import PlaceholderCard from "~~/examples/cards/PlaceholderCard.vue";
+import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard";
+import PlaceholderCard from "~~/examples/cards/PlaceholderCard";
 import team2 from "@/assets/img/team-2.jpg";
 import team3 from "@/assets/img/team-3.jpg";
 import team4 from "@/assets/img/team-4.jpg";

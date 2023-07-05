@@ -217,5 +217,5 @@
 </template>
 
 <script setup>
-import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard.vue";
+import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard";
 </script>

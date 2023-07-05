@@ -371,18 +371,18 @@ import DE from "~/assets/img/icons/flags/DE.png";
 import GB from "~/assets/img/icons/flags/GB.png";
 import BR from "~/assets/img/icons/flags/BR.png";
 
-import CategoriesList from "@/examples/cards/CategoriesList.vue";
-import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard.vue";
-import GradientLineChart from "~~/examples/charts/GradientLineChart.vue";
-import Carousel from "~~/pagesComponents/dashboards/default/Carousel.vue";
-import MemberCard from "~~/pagesComponents/dashboards/default/MemberCard.vue";
-import AuthorsTable from "~~/pagesComponents/dashboards/default/AuthorsTable.vue";
-import PostCard from "~~/examples/cards/PostCard.vue";
-import TodoList from "~~/pagesComponents/dashboards/default/TodoList.vue";
-import ProgressTrackCard from "~~/pagesComponents/dashboards/default/ProgressTrackCard.vue";
-import ProjectCard from "~~/pagesComponents/dashboards/default/ProjectCard.vue";
-import CreditCard from "~~/pagesComponents/dashboards/default/CreditCard.vue";
-import InfoCard from "~~/pagesComponents/dashboards/default/InfoCard.vue";
+import CategoriesList from "@/examples/cards/CategoriesList";
+import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard";
+import GradientLineChart from "~~/examples/charts/GradientLineChart";
+import Carousel from "~~/pagesComponents/dashboards/default/Carousel";
+import MemberCard from "~~/pagesComponents/dashboards/default/MemberCard";
+import AuthorsTable from "~~/pagesComponents/dashboards/default/AuthorsTable";
+import PostCard from "~~/examples/cards/PostCard";
+import TodoList from "~~/pagesComponents/dashboards/default/TodoList";
+import ProgressTrackCard from "~~/pagesComponents/dashboards/default/ProgressTrackCard";
+import ProjectCard from "~~/pagesComponents/dashboards/default/ProjectCard";
+import CreditCard from "~~/pagesComponents/dashboards/default/CreditCard";
+import InfoCard from "~~/pagesComponents/dashboards/default/InfoCard";
 
 definePageMeta({
   layout: "default",

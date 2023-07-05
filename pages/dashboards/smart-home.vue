@@ -302,12 +302,12 @@
 </template>
 
 <script setup>
-import WeatherCard from "~~/pagesComponents/dashboards/smartHome/WeatherCard.vue";
-import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard.vue";
-import ReportsDoughnutChart from "~~/examples/charts/ReportsDoughnutChart.vue";
-import ThinBarChart from "~~/examples/charts/ThinBarChart.vue";
-import ControllerCard from "~~/examples/cards/ControllerCard.vue";
-import PlaceholderCard from "~~/examples/cards/PlaceholderCard.vue";
+import WeatherCard from "~~/pagesComponents/dashboards/smartHome/WeatherCard";
+import DefaultCounterCard from "~~/examples/cards/DefaultCounterCard";
+import ReportsDoughnutChart from "~~/examples/charts/ReportsDoughnutChart";
+import ThinBarChart from "~~/examples/charts/ThinBarChart";
+import ControllerCard from "~~/examples/cards/ControllerCard";
+import PlaceholderCard from "~~/examples/cards/PlaceholderCard";
 
 import setNavPills from "@/assets/js/nav-pills.js";
 

@@ -244,7 +244,7 @@
 </template>
 
 <script setup>
-import Calendar from "@/examples/Calendar.vue";
-import DefaultItem from "@/examples/cards/DefaultItem.vue";
-import MiniGradientLineChart from "@/examples/charts/MiniGradientLineChart.vue";
+import Calendar from "@/examples/Calendar";
+import DefaultItem from "@/examples/cards/DefaultItem";
+import MiniGradientLineChart from "@/examples/charts/MiniGradientLineChart";
 </script>

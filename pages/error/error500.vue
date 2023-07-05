@@ -46,8 +46,8 @@
 </template>
 
 <script setup>
-import NavbarTransparent from "@/examples/Navbar/Transparent.vue";
-import FooterCentered from "@/examples/Footer/Centered.vue";
+import NavbarTransparent from "@/examples/Navbar/Transparent";
+import FooterCentered from "@/examples/Footer/Centered";
 
 definePageMeta({
   layout: false,

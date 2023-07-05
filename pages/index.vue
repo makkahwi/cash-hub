@@ -13,11 +13,11 @@
 </template>
 
 <script setup>
-import HeaderSection from "./landing/Header.vue";
-import AboutSection from "./landing/About.vue";
-import FeaturesSection from "./landing/Features.vue";
-import FutureWorkSection from "./landing/FutureWork.vue";
-import GetYoursSection from "./landing/GetYours.vue";
+import HeaderSection from "./landing/Header";
+import AboutSection from "./landing/About";
+import FeaturesSection from "./landing/Features";
+import FutureWorkSection from "./landing/FutureWork";
+import GetYoursSection from "./landing/GetYours";
 
 definePageMeta({
   layout: "landing",

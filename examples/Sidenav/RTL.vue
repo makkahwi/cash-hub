@@ -21,7 +21,7 @@
   </aside>
 </template>
 <script setup>
-import SidenavList from "./SidenavList.vue";
+import SidenavList from "./SidenavList";
 import logo from "@/assets/logo.svg";
 
 import { useNavStore } from "~~/stores/NavStore";

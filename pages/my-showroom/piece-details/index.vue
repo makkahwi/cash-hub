@@ -142,8 +142,8 @@
 </template>
 
 <script setup>
-import RelatedPieces from "./RelatedPieces.vue";
-import HeaderSection from "../Header.vue";
+import RelatedPieces from "./RelatedPieces";
+import HeaderSection from "../Header";
 
 definePageMeta({
   layout: "landing",

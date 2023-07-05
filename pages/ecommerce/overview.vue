@@ -148,11 +148,11 @@
 </template>
 
 <script>
-import ChannelsCard from "~~/pagesComponents/ecommerce/overview/ChannelsCard.vue";
-import RevenueCard from "~~/pagesComponents/ecommerce/overview/RevenueCard.vue";
-import BarChartHorizontal from "~~/examples/charts/BarChartHorizontal.vue";
-import OrdersListCard from "@/examples/cards/OrdersListCard.vue";
-import DefaultStatisticsCard from "~~/pagesComponents/ecommerce/overview/DefaultStatisticsCard.vue";
+import ChannelsCard from "~~/pagesComponents/ecommerce/overview/ChannelsCard";
+import RevenueCard from "~~/pagesComponents/ecommerce/overview/RevenueCard";
+import BarChartHorizontal from "~~/examples/charts/BarChartHorizontal";
+import OrdersListCard from "@/examples/cards/OrdersListCard";
+import DefaultStatisticsCard from "~~/pagesComponents/ecommerce/overview/DefaultStatisticsCard";
 
 // images
 import US from "@/assets/img/icons/flags/US.png";

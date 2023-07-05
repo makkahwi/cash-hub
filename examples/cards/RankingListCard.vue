@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import RankingList from "./RankingList.vue";
+import RankingList from "./RankingList";
 defineProps({
   card: {
     type: Object,

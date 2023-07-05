@@ -147,8 +147,8 @@
 </template>
 
 <script>
-import TimelineList from "~~/examples/cards/TimelineList.vue";
-import TimelineItem from "~~/examples/cards/TimelineItem.vue";
+import TimelineList from "~~/examples/cards/TimelineList";
+import TimelineItem from "~~/examples/cards/TimelineItem";
 definePageMeta({
   layout: false,
 });

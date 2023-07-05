@@ -167,10 +167,10 @@
 </template>
 
 <script>
-import OutlinedCounterCard from "~~/pagesComponents/ecommerce/referral/OutlinedCounterCard.vue";
-import TransparentInfoCard from "~~/pagesComponents/ecommerce/referral/TransparentInfoCard.vue";
-import ComplexBackgroundCard from "~~/pagesComponents/ecommerce/referral/ComplexBackgroundCard.vue";
-import OrdersListCard from "@/examples/cards/OrdersListCard.vue";
+import OutlinedCounterCard from "~~/pagesComponents/ecommerce/referral/OutlinedCounterCard";
+import TransparentInfoCard from "~~/pagesComponents/ecommerce/referral/TransparentInfoCard";
+import ComplexBackgroundCard from "~~/pagesComponents/ecommerce/referral/ComplexBackgroundCard";
+import OrdersListCard from "@/examples/cards/OrdersListCard";
 
 export default {
   name: "Referral",

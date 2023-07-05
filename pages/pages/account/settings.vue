@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import NavPill from "~~/pagesComponents/pages/account/NavPill.vue";
-import SideNav from "~~/pagesComponents/pages/account/SideNav.vue";
-import SideNavItem from "~~/pagesComponents/pages/account/SideNavItem.vue";
+import NavPill from "~~/pagesComponents/pages/account/NavPill";
+import SideNav from "~~/pagesComponents/pages/account/SideNav";
+import SideNavItem from "~~/pagesComponents/pages/account/SideNavItem";
 import setNavPills from "~~/assets/js/nav-pills";
 definePageMeta({
   layout: false,

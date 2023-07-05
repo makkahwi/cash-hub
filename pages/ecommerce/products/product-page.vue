@@ -278,7 +278,7 @@
 // eslint-disable-next-line import/no-named-as-default
 import Choices from "choices.js";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import OtherProducts from "~~/pagesComponents/ecommerce/productPage/OtherProducts.vue";
+import OtherProducts from "~~/pagesComponents/ecommerce/productPage/OtherProducts";
 import "photoswipe/style.css";
 
 onMounted(() => {

@@ -341,10 +341,10 @@
   </div>
 </template>
 <script setup>
-import SidenavCollapse from "./SidenavCollapse.vue";
-import SidenavCollapseItem from "./SidenavCollapseItem.vue";
-import SidenavCard from "./SidenavCard.vue";
-import SidenavItem from "./SidenavItem.vue";
+import SidenavCollapse from "./SidenavCollapse";
+import SidenavCollapseItem from "./SidenavCollapseItem";
+import SidenavCard from "./SidenavCard";
+import SidenavItem from "./SidenavItem";
 import { useNavStore } from "~~/stores/NavStore";
 const navStore = useNavStore();
 

@@ -275,11 +275,11 @@
   </div>
 </template>
 <script setup>
-import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard.vue";
-import DefaultDoughnutChart from "@/pagesComponents/applications/analytics/DefaultDoughnutChart.vue";
-import SocialCard from "@/pagesComponents/applications/analytics/SocialCard.vue";
-import AnalyticsCard from "@/pagesComponents/applications/analytics/AnalyticsCard.vue";
-import DefaultLineChart from "~~/examples/charts/DefaultLineChart.vue";
+import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard";
+import DefaultDoughnutChart from "@/pagesComponents/applications/analytics/DefaultDoughnutChart";
+import SocialCard from "@/pagesComponents/applications/analytics/SocialCard";
+import AnalyticsCard from "@/pagesComponents/applications/analytics/AnalyticsCard";
+import DefaultLineChart from "~~/examples/charts/DefaultLineChart";
 import setTooltip from "@/assets/js/tooltip.js";
 import { useNavStore } from "@/stores/NavStore";
 

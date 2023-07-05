@@ -28,8 +28,8 @@
 </template>
 
 <script setup>
-import Option1 from "./Option1.vue";
-import Option2 from "./Option2.vue";
+import Option1 from "./Option1";
+import Option2 from "./Option2";
 
 definePageMeta({
   layout: false,

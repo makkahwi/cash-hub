@@ -99,6 +99,6 @@
 </template>
 
 <script setup>
-import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard.vue";
-import PricingCard from "@/pagesComponents/pages/pricing/PricingCard.vue";
+import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard";
+import PricingCard from "@/pagesComponents/pages/pricing/PricingCard";
 </script>
