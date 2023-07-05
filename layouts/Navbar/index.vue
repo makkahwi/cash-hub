@@ -44,15 +44,6 @@
                 {{title}}
               </NuxtLink>
             </li>
-
-            <li class="mx-2 nav-item dropdown dropdown-hover">
-              <NuxtLink
-                to="/dashboards/default"
-                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
-              >
-                Dashboard
-              </NuxtLink>
-            </li>
           </ul>
 
           <ul class="navbar-nav d-lg-block d-none">
