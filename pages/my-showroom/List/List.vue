@@ -1,7 +1,7 @@
 <template>
   <table class="table table-flush">
     <tbody>
-      <tr  v-for="({name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
+      <tr  v-for="({id,name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
         <td class="row">
           <div class="col-md-2">
             <img
@@ -58,7 +58,7 @@
               class="btn btn-success d-flex justify-content-center align-items-center"
               :to="{
                 path: '/my-showroom/piece-details',
-                query: { id: 4 },
+                query: { id },
               }"
             >
               View Details

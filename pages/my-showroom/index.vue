@@ -31,6 +31,7 @@
   const currencies = reactive({
     value: [
       {
+        id: 1,
         name: "Dinar",
         code: "JOD",
         mostRecentEdition: 5,
@@ -51,6 +52,7 @@
         valuePerUSD: 0.71
       },
       {
+        id: 2,
         name: "Dinar",
         code: "JOD",
         mostRecentEdition: 5,
@@ -71,6 +73,7 @@
         valuePerUSD: 0.71
       },
       {
+        id: 3,
         name: "Dinar",
         code: "JOD",
         mostRecentEdition: 5,
@@ -91,6 +94,7 @@
         valuePerUSD: 0.71
       },
       {
+        id: 4,
         name: "Dinar",
         code: "JOD",
         mostRecentEdition: 5,
@@ -111,6 +115,7 @@
         valuePerUSD: 0.71
       },
       {
+        id: 5,
         name: "Dinar",
         code: "JOD",
         mostRecentEdition: 5,

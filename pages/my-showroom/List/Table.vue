@@ -66,7 +66,7 @@
       </thead>
 
       <tbody>
-        <tr class="align-middle" v-for="({name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
+        <tr class="align-middle" v-for="({id,name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
           <td class="text-sm font-weight-normal">
             <img
               :src="fPhoto"
@@ -87,7 +87,7 @@
               class="text-decoration-underline btn btn-success btn-sm"
               :to="{
                 path: '/my-showroom/piece-details',
-                query: { id: 4 },
+                query: { id },
               }"
             >
               View
