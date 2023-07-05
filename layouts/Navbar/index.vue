@@ -32,30 +32,16 @@
           class="pt-3 pb-2 collapse navbar-collapse w-100 py-lg-0"
         >
           <ul class="mx-auto navbar-nav navbar-nav-hover">
-            <li class="mx-2 nav-item dropdown dropdown-hover">
+            <li 
+              v-for="({to, title}, i) of links"
+              class="mx-2 nav-item dropdown dropdown-hover"
+              :key="i"
+            >
               <NuxtLink
-                to="/"
+                :to="to"
                 class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
               >
-                Home
-              </NuxtLink>
-            </li>
-
-            <li class="mx-2 nav-item dropdown dropdown-hover">
-              <NuxtLink
-                to="/my-showroom"
-                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
-              >
-                My Showroom
-              </NuxtLink>
-            </li>
-
-            <li class="mx-2 nav-item dropdown dropdown-hover">
-              <NuxtLink
-                to="/get-your-showroom"
-                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
-              >
-                Get Your Showroom
+                {{title}}
               </NuxtLink>
             </li>
 
@@ -85,3 +71,7 @@
     </nav>
   </div>
 </template>
+
+<script setup>
+  import { links } from "@/consts.js"
+</script>

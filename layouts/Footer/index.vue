@@ -3,82 +3,24 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <NuxtLink
-          to="/"
+          v-for="({to, title}, i) of links"
+          :to="to"
           class="text-secondary mx-2"
+          :key="i"
         >
-          Home
-        </NuxtLink>
-
-        <NuxtLink
-          to="/my-showroom"
-          class="text-secondary mx-2"
-        >
-          My Showroom
-        </NuxtLink>
-
-        <NuxtLink
-          to="/get-your-showroom"
-          class="text-secondary mx-2"
-        >
-          Get Your Showroom
+          {{title}}
         </NuxtLink>
       </div>
 
       <div class="col-lg-8 my-5 text-center">
         <a
-          href="https://www.github.com/arromi.creatives"
+          v-for="({link, icon}, i) of socialMediaLinks"
+          :href="link"
           target="_blank"
           class="text-secondary me-4"
+          :key="i"
         >
-          <span class="text-lg fab fa-github"></span>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/arromi.creatives"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fab fa-linkedin"></span>
-        </a>
-
-        <a
-          href="https://www.facebook.com/arromi.creatives"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fab fa-facebook"></span>
-        </a>
-
-        <a
-          href="https://www.instagram.com/arromi.creatives"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fab fa-instagram"></span>
-        </a>
-
-        <a
-          href="https://wasap.my/962788424973"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fab fa-whatsapp"></span>
-        </a>
-
-        <a
-          href="https://t.me/makkahwi"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fab fa-telegram"></span>
-        </a>
-
-        <a
-          href="mailto:arromi.creatives@gmail.com"
-          target="_blank"
-          class="text-secondary me-4"
-        >
-          <span class="text-lg fa fa-envelope"></span>
+          <span :class="`text-lg ${icon}`"></span>
         </a>
       </div>
       
@@ -98,4 +40,5 @@
 
 <script setup>
   import PageSection from "@/components/PageSection"
+  import { links, socialMediaLinks } from "@/consts.js"
 </script>
