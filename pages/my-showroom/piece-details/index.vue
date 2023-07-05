@@ -1,7 +1,7 @@
 <template>
-  <HeaderSection />
+  <PageHeader title="Piece Details" />
 
-  <PageSection title="Piece Details">
+  <PageSection>
     <div class="row">
       <div class="text-center col-xl-5 col-lg-6">
         <img
@@ -125,7 +125,7 @@
 <script setup>
 import PageSection from "@/components/PageSection";
 import RelatedPieces from "./RelatedPieces";
-import HeaderSection from "../Header";
+import PageHeader from "@/components/PageHeader";
 
 definePageMeta({
   layout: "landing",
