@@ -1,5 +1,5 @@
 <template>
-  <PageSection sectionId="about" title="About CCS">
+  <PageSection sectionId="about" :title="`About ${productName.short}`">
     <h4 class="text-dark">
       A web app for collectors to publish thier collection of currencies to
       all the world
@@ -15,6 +15,7 @@
 </template>
 
 <script setup>
-import PageSection from "@/components/PageSection";
-import FeaturesSection from "./Features";
+  import PageSection from "@/components/PageSection";
+  import FeaturesSection from "./Features";
+  import {productName} from "@/consts.js"
 </script>

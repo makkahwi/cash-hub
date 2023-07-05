@@ -6,9 +6,9 @@
           Will be available soon
         </p>
         <!-- <p class="text-justify">
-          There are two possible options to build your own copy of CCS at the
+          There are two possible options to build your own copy of {{productName.short}} at the
           time, and later on we'll offer more options. Both options are about
-          acquiring free-of-charge servers to host your CCS, n then easily
+          acquiring free-of-charge servers to host your {{productName.short}}, n then easily
           deploy the code to the servers to start inserting your own data.
         </p> -->
       </div>
@@ -26,11 +26,13 @@
 
 
 <script setup>
-import PageSection from "@/components/PageSection";
-import Option1 from "./Option1";
-import Option2 from "./Option2";
+  import PageSection from "@/components/PageSection";
+  import Option1 from "./Option1";
+  import Option2 from "./Option2";
+  import {productName} from "@/consts.js"
 
-definePageMeta({
-  layout: false,
-});
+
+  definePageMeta({
+    layout: false,
+  });
 </script>

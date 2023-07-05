@@ -12,4 +12,9 @@ export const socialMediaLinks = [
     { link: "https://wasap.my/962788424973", icon: "fab fa-whatsapp" },
     { link: "https://t.me/makkahwi", icon: "fab fa-telegram" },
     { link: "mailto:arromi.creatives@gmail.com", icon: "fa fa-envelope" },
-  ]
+  ];
+
+export const productName = {
+  full: "Currencies Collection Showroom",
+  short: "CCS"
+}

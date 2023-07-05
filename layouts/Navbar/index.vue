@@ -8,7 +8,7 @@
           class="navbar-brand font-weight-bolder text-black"
           to="/"
         >
-          CCS
+          {{productName.short}}
         </NuxtLink>
 
         <button
@@ -65,4 +65,5 @@
 
 <script setup>
   import { links } from "@/consts.js"
+  import {productName} from "@/consts.js"
 </script>
