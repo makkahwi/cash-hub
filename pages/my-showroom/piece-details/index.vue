@@ -152,7 +152,7 @@
     }
   });
 
-  const getPieceDetails = () => getCurrency(route.query.id).then(res => console.log(res.data));
+  const getPieceDetails = () => getCurrency(route.query.id).then(res => console.log(res.data._rawValue));
 
   getPieceDetails();
 </script>

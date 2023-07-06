@@ -120,7 +120,7 @@ import PageSection from "@/components/PageSection";
     },  
   })
 
-  const getRelatedList = () => getRelatedCurrencies(props.pieceId).then(res => console.log(res.data));
+  const getRelatedList = () => getRelatedCurrencies(props.pieceId).then(res => console.log(res.data._rawValue));
 
   getRelatedList();
 </script>
