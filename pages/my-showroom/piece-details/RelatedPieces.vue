@@ -65,7 +65,7 @@
 
             <td>{{value}}</td>
 
-            <td class="align-middle text-sm">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</td>
+            <td :class="`align-middle text-sm fw-bold text-${mostRecentEdition === order ? 'success' : 'danger'}`">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</td>
 
             <td class="align-middle">
               <span class="text-secondary text-sm">{{date}}</span>

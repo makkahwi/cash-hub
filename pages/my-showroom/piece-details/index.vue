@@ -56,7 +56,7 @@
 
             <tr>
               <td class="font-weight-bold">Circability</td>
-              <td class="font-weight-bolder badge badge-success">                
+              <td :class="`font-weight-bolder badge badge-${piece.value.mostRecentEdition === piece.value.order ? 'success' : 'danger'}`">                
                 {{piece.value.mostRecentEdition === piece.value.order ? "Circuable" : "Outdated"}}
               </td>
             </tr>
