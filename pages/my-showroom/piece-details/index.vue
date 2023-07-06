@@ -110,7 +110,7 @@
     </div>
   </PageSection>
   
-  <related-pieces :pieceId="route.query.id" />
+  <RelatedPieces :pieceId="route.query.id" />
 </template>
 
 <script setup>
