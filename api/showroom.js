@@ -1,5 +1,7 @@
-export const getCurrencies = (filters) => useFetch("https://fakestoreapi.com/products");
+const baseUrl = "https://fakestoreapi.com";
 
-export const getCurrency = (id) => useFetch(`https://fakestoreapi.com/products/${id}`);
+export const getCurrencies = (filters) => useFetch(`${baseUrl}/products`);
 
-export const getRelatedCurrencies = (id) => useFetch("https://fakestoreapi.com/products");
+export const getCurrency = (id) => useFetch(`${baseUrl}/products/${id}`);
+
+export const getRelatedCurrencies = (id) => useFetch(`${baseUrl}/products`);
