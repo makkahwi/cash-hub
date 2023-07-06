@@ -5,7 +5,7 @@
         v-for="{
           title,
           value,
-        } of statsData"
+        } of statsData()"
         class="col-lg-2 col-sm-6 p-2"
       >
         <DefaultCounterCard
@@ -30,7 +30,7 @@
     },
   });
 
-  const statsData = [
+  const statsData = () => [
     {
       title: "Count of Banknotes",
       value: "554",
