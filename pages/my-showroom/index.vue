@@ -145,7 +145,7 @@
     }
   })
 
-  const filterData = () => getCurrencies(filters.value).then(res => console.log(res.data._rawValue));
+  const filterData = () => getCurrencies(filters.value).then(res => currencies.update(res.data._rawValue.data.map(({attributes, id}) => ({id, ...attributes}))));
 
   filterData();
 </script>

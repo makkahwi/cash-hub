@@ -72,7 +72,16 @@
             </td>
 
             <td class="align-middle text-sm">
-              <a class="btn btn-success" href="#"> View </a>
+              <NuxtLink
+                class="btn btn-success btn-sm text-white"
+                :to="{
+                  path: '/my-showroom/piece-details',
+                  query: { id },
+                }"
+                external
+              >
+                View
+              </NuxtLink>
             </td>
           </tr>
         </tbody>
@@ -120,7 +129,7 @@ import PageSection from "@/components/PageSection";
     },  
   })
 
-  const getRelatedList = () => getRelatedCurrencies(props.pieceId).then(res => console.log(res.data._rawValue));
+  const getRelatedList = () => getRelatedCurrencies(props.pieceId).then(res => list.update(res.data._rawValue.data.map(({attributes, id}) => ({id, ...attributes}))));
 
   getRelatedList();
 </script>
