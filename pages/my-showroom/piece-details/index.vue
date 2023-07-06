@@ -110,7 +110,7 @@
     </div>
   </PageSection>
   
-  <related-pieces />
+  <related-pieces :pieceId="route.query.id" />
 </template>
 
 <script setup>
@@ -119,6 +119,7 @@
   import PageHeader from "@/components/PageHeader";
   import { getCurrency } from '@/api/showroom'
   import { useRoute } from 'vue-router'
+  
   const route = useRoute()
 
   definePageMeta({
@@ -151,7 +152,7 @@
     }
   });
 
-  const getPieceDetails = () => getCurrency(route.params.id).then(res => console.log(res.data));
+  const getPieceDetails = () => getCurrency(route.query.id).then(res => console.log(res.data));
 
   getPieceDetails();
 </script>
