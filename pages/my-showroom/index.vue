@@ -2,7 +2,7 @@
   <div>
     <PageHeader title="My Showroom" subtitle="Here is my collecion of currencies" />
 
-    <FiltersSection :filters="filters" />
+    <FiltersSection :filters="filters" :onFilter="filterData" />
 
     <StatisticsSection :currencies="currencies.value" />
 
@@ -16,6 +16,7 @@
   import StatisticsSection from "./Statistics";
   import ListSection from "./List";
   import { reactive } from 'vue'
+  import { getCurrencies } from '@/api/showroom'
 
   definePageMeta({
     layout: "landing",
@@ -143,4 +144,8 @@
       this.value = newCurrencies;
     }
   })
+
+  const filterData = () => getCurrencies(filters.value).then(res => console.log(res.data._rawValue));
+
+  filterData();
 </script>
