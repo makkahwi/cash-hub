@@ -84,7 +84,7 @@
           <td class="text-sm font-weight-normal">{{date}}</td>
           <td class="text-sm font-weight-normal">
             <NuxtLink
-              class="text-decoration-underline btn btn-success btn-sm"
+              class="btn btn-success btn-sm"
               :to="{
                 path: '/my-showroom/piece-details',
                 query: { id },
