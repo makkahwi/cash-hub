@@ -20,7 +20,7 @@
 <script setup>
 import image from "@/assets/img/profile-layout-header.jpg";
 import Sidenav from "~~/examples/Sidenav";
-import Footer from "~~/examples/Footer";
+import Footer from "~~/layouts/Footer";
 import setNavPills from "~~/assets/js/nav-pills";
 
 onMounted(() => {

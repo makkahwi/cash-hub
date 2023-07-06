@@ -46,8 +46,8 @@
 </template>
 
 <script setup>
-import NavbarTransparent from "@/examples/Navbar/Transparent";
-import FooterCentered from "@/examples/Footer/Centered";
+import NavbarTransparent from "@/layouts/Navbar";
+import FooterCentered from "@/layouts/Footer";
 
 definePageMeta({
   layout: false,

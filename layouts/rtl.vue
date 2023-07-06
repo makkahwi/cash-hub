@@ -16,8 +16,8 @@
 
 <script setup>
 import SidenavRTL from "@/examples/Sidenav/RTL";
-import NavbarRTL from "@/examples/Navbar/RTL";
-import FooterRTL from "@/examples/Footer/RTL";
+import NavbarRTL from "@/layouts/Navbar";
+import FooterRTL from "@/layouts/Footer";
 import Configurator from "~~/examples/Configurator";
 import { useNavStore } from "~~/stores/NavStore";
 
