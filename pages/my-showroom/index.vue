@@ -23,8 +23,17 @@
   });
 
   const filters = reactive({
-    value: {},
-    update(newFilter) {
+    value: {
+      type: ["banknotes", "coins"],
+      status: ["circuable", "outdated"],
+      continent: ["africa", "americas", "asia", "europe", "oceania"],
+      startDate: 1800,
+      endDate: new Date().getFullYear()
+    },
+    update(key, newFilter) {
+      this.value = {...this.value , [key]: this.value[key].includes(newFilter) ? [...this.value[key].filter(value => value !== newFilter)] : [...this.value[key], newFilter]};
+    },
+    replace(newFilter) {      
       this.value = {...this.value , ...newFilter};
     }
   })
