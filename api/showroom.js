@@ -7,11 +7,11 @@ export const getCurrencies = (filters) => {
 
   Object.keys(filters).forEach(key => 
     typeof filters[key] === "object" ? addArrays(filters, key) : finalFilters.push(`filters[${key}][${key === "startDate" ? '$gte' : "$lte"}]=${filters[key]}`)
-    );
+  );
 
-  return useFetch(`${baseUrl}/currencies?${finalFilters.join("&")}`);
+  return useFetch(`${baseUrl}/collections?${finalFilters.join("&")}`);
 };
 
-export const getCurrency = (id) => useFetch(`${baseUrl}/currencies/${id}`);
+export const getCurrency = (id) => useFetch(`${baseUrl}/collections/${id}`);
 
-export const getRelatedCurrencies = (id) => useFetch(`${baseUrl}/currencies`);
+export const getRelatedCurrencies = (id) => useFetch(`${baseUrl}/collections`);
