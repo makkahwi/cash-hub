@@ -1,12 +1,8 @@
-# Currencies Showroom
+# Currencies Showroom Client
 
-Welcome to my "Currencies Showroom"
+Vue.Js-Based Frontend Of Currencies Collection Showroom
 
-This originally is a coding project to refresh own knowldge of the frontend tech used (Vue.Js) & engage a new tech (Nuxt), but it was decided to kill two birds with one stone. So beside mastering the tech, it's also to build an actual & usable web app to serve "money collection" hobbyists.
-
-Are you a currency collector n wanna build an online catalog for your collections? This is a web app to publish one's collection of currencies to the world. As collectors would clone this product & use it to enlist their currencies, and the public could just browse their showrooms right away.
-
-## To-Do Tasks
+## Frontend To-Do Tasks
 
 - Centralize List View Options
 - Add Axios Library
@@ -21,38 +17,11 @@ Are you a currency collector n wanna build an online catalog for your collection
   - collection    (fPhoto, bPhoto, date, count)                           (collection OneToOne piece)
 - Auth data analysis
   - Counts of collected & targetted
-
-## Features
-
-- Login for system owner to access data manipulation features.
-- Public
-  - Landing introductory page.
-  - Public showroom page with filters.
-- Admin
-  - Statistics & charts dashboard (Counts, Targets, Edges, Map).
-  - Currencies managment module.
-
-## Future Works
-
-- Automated currencies evaluation (API to 3rd party).
-- Centralize source of zones, currencies, exchange rates, editions, pieces
-- Monthly progress (Timeline).
-- Generate PDF booklet.
-- Social media share of showroom / latest additions.
-- Admin & browser locatiolization.
-- Admin settings to modify theme colors.
-- Centralize & restructure components & subviews.
-- Expand to all sort of collectors (like stamps).
-- Build a centralized & community-contribution-based database for currency updates.
-  - Default sample images.
-  - Historic & latest gold evaluation.
-- Transform into a centralized web services for all collectors.
-  - Registration & subscriptions mgmt sys.
-  - Auto subdomain creation & deployment.
-
+ 
 ## How to start development
 
-- Clone repo to local machine
+- Fork repo to own Github account
+- Clnoe new repo to local machine
 - Cd to root directory
 - Run CLI command of...
     yarn
@@ -61,4 +30,10 @@ Are you a currency collector n wanna build an online catalog for your collection
 
 ## How to deploy & start using as a collector
 
-Cooming Soon...
+If you are not a web developer (coder / programmer), we are still working to provide you with an easy approach to build your own showroom. If you are a developer...
+
+- Deploy the backend first and make sure it's working fine.
+- Get the link of the backend deployed app.
+- Replace the "baseUrl" value in the following address...
+  api/showroom.js
+- Deploy to whatever service you see fit (like Vercel, Netlify, Heroku).
