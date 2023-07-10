@@ -8,10 +8,10 @@ Are you a currency collector n wanna build an online catalog for your collection
 
 ## To-Do Tasks
 
-- Form validation (filters + login)
-- Login function
 - Centralize List View Options
 - Add Axios Library
+- Form validation (filters + login)
+- Login function
 - CRUD of 
   - zone          (name, fullName, mapCode, continent)                    (zone OneToMany currency)
   - currency      (name, code, mostRecentEdition, fractionName, fraction) (currency ManyToOne zone, currency OneToOne exchangeRate, currency OneToMany edition)
