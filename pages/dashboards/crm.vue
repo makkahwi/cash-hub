@@ -211,13 +211,13 @@
 import backgroundImage from "@/assets/img/ivancik.jpg";
 import image from "@/assets/img/kal-visuals-square.jpg";
 
-import CategoriesList from "@/examples/cards/CategoriesList.vue";
-import MiniGradientLineChart from "~~/examples/charts/MiniGradientLineChart.vue";
-import Calendar from "~~/examples/Calendar.vue";
-import BackgroundBlogCard from "~~/pagesComponents/dashboards/crm/BackgroundBlogCard.vue";
-import MessageCard from "~~/pagesComponents/dashboards/crm/MessageCard.vue";
-import RankingListCard from "@/examples/cards/RankingListCard.vue";
-import PlaceholderCard from "@/examples/cards/PlaceholderCard.vue";
+import CategoriesList from "@/examples/cards/CategoriesList";
+import MiniGradientLineChart from "~~/examples/charts/MiniGradientLineChart";
+import Calendar from "~~/examples/Calendar";
+import BackgroundBlogCard from "~~/pagesComponents/dashboards/crm/BackgroundBlogCard";
+import MessageCard from "~~/pagesComponents/dashboards/crm/MessageCard";
+import RankingListCard from "@/examples/cards/RankingListCard";
+import PlaceholderCard from "@/examples/cards/PlaceholderCard";
 
 definePageMeta({
   layout: "default",

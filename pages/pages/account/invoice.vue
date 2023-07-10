@@ -137,11 +137,11 @@
 </template>
 
 <script setup>
-import NavPill from "~~/pagesComponents/pages/account/NavPill.vue";
+import NavPill from "~~/pagesComponents/pages/account/NavPill";
 import setNavPills from "~~/assets/js/nav-pills";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 onMounted(() => {
   setNavPills();

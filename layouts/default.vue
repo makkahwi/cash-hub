@@ -13,8 +13,8 @@
 
 <script setup>
 import Sidenav from "~~/examples/Sidenav";
-import Navbar from "~~/examples/Navbar";
-import Footer from "~~/examples/Footer";
+import Navbar from "~~/layouts/Navbar";
+import Footer from "~~/layouts/Footer";
 import Configurator from "~~/examples/Configurator";
 
 import { useNavStore } from "~~/stores/NavStore";

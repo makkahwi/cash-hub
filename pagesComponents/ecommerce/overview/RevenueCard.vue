@@ -68,5 +68,5 @@
 </template>
 
 <script setup>
-import GradientLineChart from "~~/examples/charts/GradientLineChart.vue";
+import GradientLineChart from "~~/examples/charts/GradientLineChart";
 </script>

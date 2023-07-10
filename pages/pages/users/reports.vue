@@ -82,11 +82,11 @@ import img1 from "@/assets/img/reports1.jpg";
 import img2 from "@/assets/img/reports2.jpg";
 import img3 from "@/assets/img/reports3.jpg";
 import img4 from "@/assets/img/reports4.jpg";
-import ComplexStatisticsCard from "~~/examples/cards/ComplexStatisticsCard.vue";
-import ReviewCard from "~~/pagesComponents/pages/users/ReviewCard.vue";
-import Table from "~~/pagesComponents/pages/users/Table.vue";
+import ComplexStatisticsCard from "~~/examples/cards/ComplexStatisticsCard";
+import ReviewCard from "~~/pagesComponents/pages/users/ReviewCard";
+import Table from "~~/pagesComponents/pages/users/Table";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

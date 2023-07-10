@@ -249,15 +249,15 @@
 </template>
 
 <script>
-import ProductInfo from "~~/pagesComponents/ecommerce/products/ProductInfo.vue";
-import Media from "~~/pagesComponents/ecommerce/products/Media.vue";
-import Socials from "~~/pagesComponents/ecommerce/products/Socials.vue";
-import Pricing from "~~/pagesComponents/ecommerce/products/Pricing.vue";
+import ProductInfo from "~~/pagesComponents/ecommerce/products/ProductInfo";
+import Media from "~~/pagesComponents/ecommerce/products/Media";
+import Socials from "~~/pagesComponents/ecommerce/products/Socials";
+import Pricing from "~~/pagesComponents/ecommerce/products/Pricing";
 
 import setNavPills from "~~/assets/js/nav-pills";
 
 definePageMeta({
-  layout: "profile-layout",
+  layout: false,
 });
 export default {
   components: {

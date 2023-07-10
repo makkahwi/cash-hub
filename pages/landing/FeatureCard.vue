@@ -6,7 +6,7 @@
           <i :class="icon" />
         </div>
 
-        <div class="my-auto ms-3">
+        <div class="my-auto ms-3 text-start">
           <h6>{{ title }}</h6>
         </div>
       </div>

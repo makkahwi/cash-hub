@@ -1,21 +1,23 @@
 <template>
-  <div>
-    <div
-      class="landing-bg h-100 bg-gradient-primary position-fixed w-100"
-    ></div>
-    <Sidenav />
-    <main class="main-content position-relative border-radius-lg">
+  <NuxtLayout name="authentication">
+    <template #navbar>
+      <Navbar btn-background="bg-gradient-success" />
+    </template>
+
+    <main class="main-content position-relative max-height-vh-100 h-100 w-100">
       <slot />
+
+      <Footer />
     </main>
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup>
-import Sidenav from "@/examples/Sidenav";
-import { useNavStore } from "~~/stores/NavStore";
-const navStore = useNavStore();
-navStore.sidenavType = "bg-default bg-transparent";
-onUnmounted(() => {
-  navStore.sidenavType = "bg-white";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import setNavPills from "@/assets/js/nav-pills.js";
+
+onMounted(() => {
+  setNavPills();
 });
 </script>

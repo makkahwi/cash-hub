@@ -150,19 +150,19 @@
 </template>
 
 <script setup>
-import NavPill from "~~/pagesComponents/pages/account/NavPill.vue";
-import MasterCard from "~~/examples/cards/MasterCard.vue";
-import DefaultInfoCard from "@/examples/cards/DefaultInfoCard.vue";
-import RankingListCard from "@/examples/cards/RankingListCard.vue";
-import RankingList from "@/examples/cards/RankingList.vue";
-import InvoiceCard from "@/pagesComponents/pages/account/InvoiceCard.vue";
-import PaymentMethodsCard from "@/pagesComponents/pages/account/PaymentMethodsCard.vue";
-import BillingCard from "@/pagesComponents/pages/account/BillingCard.vue";
+import NavPill from "~~/pagesComponents/pages/account/NavPill";
+import MasterCard from "~~/examples/cards/MasterCard";
+import DefaultInfoCard from "@/examples/cards/DefaultInfoCard";
+import RankingListCard from "@/examples/cards/RankingListCard";
+import RankingList from "@/examples/cards/RankingList";
+import InvoiceCard from "@/pagesComponents/pages/account/InvoiceCard";
+import PaymentMethodsCard from "@/pagesComponents/pages/account/PaymentMethodsCard";
+import BillingCard from "@/pagesComponents/pages/account/BillingCard";
 
 import setNavPills from "~~/assets/js/nav-pills";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 onMounted(() => {
   setNavPills();

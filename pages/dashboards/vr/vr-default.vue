@@ -206,10 +206,10 @@ import invision from "@/assets/img/small-logos/logo-invision.svg";
 import slack from "@/assets/img/small-logos/logo-slack.svg";
 import adobe from "@/assets/img/small-logos/logo-xd.svg";
 
-import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard.vue";
-import MemberCard from "~~/pagesComponents/dashboards/default/MemberCard.vue";
-import ProgressTrackCard from "~~/pagesComponents/dashboards/default/ProgressTrackCard.vue";
-import TodoList from "~~/pagesComponents/dashboards/default/TodoList.vue";
+import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard";
+import MemberCard from "~~/pagesComponents/dashboards/default/MemberCard";
+import ProgressTrackCard from "~~/pagesComponents/dashboards/default/ProgressTrackCard";
+import TodoList from "~~/pagesComponents/dashboards/default/TodoList";
 
 definePageMeta({
   layout: "vr-layout",

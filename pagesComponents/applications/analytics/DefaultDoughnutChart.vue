@@ -165,7 +165,7 @@
 </template>
 
 <script>
-import DoughnutChart from "~~/examples/charts/DoughnutChart.vue";
+import DoughnutChart from "~~/examples/charts/DoughnutChart";
 export default {
   name: "DefaultDoughnutChart",
   components: { DoughnutChart },

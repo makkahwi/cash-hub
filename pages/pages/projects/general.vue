@@ -144,15 +144,15 @@
 </template>
 
 <script setup>
-import StatisticsCard from "@/pagesComponents/pages/projects/StatisticsCard.vue";
-import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard.vue";
-import AnnouncementCard from "@/pagesComponents/pages/projects/AnnouncementCard.vue";
-import ProgressLineChart from "@/examples/charts/ProgressLineChart.vue";
-import ProgressDoughnutChart from "@/pagesComponents/pages/projects/ProgressDoughnutChart.vue";
-import TodoList from "@/pagesComponents/pages/projects/TodoList.vue";
+import StatisticsCard from "@/pagesComponents/pages/projects/StatisticsCard";
+import MiniStatisticsCard from "@/examples/cards/MiniStatisticsCard";
+import AnnouncementCard from "@/pagesComponents/pages/projects/AnnouncementCard";
+import ProgressLineChart from "@/examples/charts/ProgressLineChart";
+import ProgressDoughnutChart from "@/pagesComponents/pages/projects/ProgressDoughnutChart";
+import TodoList from "@/pagesComponents/pages/projects/TodoList";
 import image from "@/assets/img/team-3.jpg";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

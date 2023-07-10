@@ -71,13 +71,13 @@
 </template>
 
 <script>
-import UserInfo from "~~/pagesComponents/pages/users/UserInfo.vue";
-import Socials from "~~/pagesComponents/pages/users/Socials.vue";
-import Profile from "~~/pagesComponents/pages/users/Profile.vue";
-import UserAddress from "~~/pagesComponents/pages/users/Address.vue";
+import UserInfo from "~~/pagesComponents/pages/users/UserInfo";
+import Socials from "~~/pagesComponents/pages/users/Socials";
+import Profile from "~~/pagesComponents/pages/users/Profile";
+import UserAddress from "~~/pagesComponents/pages/users/Address";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   name: "NewUser",

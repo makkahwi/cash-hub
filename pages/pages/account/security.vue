@@ -213,11 +213,11 @@
 <script setup>
 // eslint-disable-next-line import/no-named-as-default
 import Choices from "choices.js";
-import NavPill from "~~/pagesComponents/pages/account/NavPill.vue";
+import NavPill from "~~/pagesComponents/pages/account/NavPill";
 import setNavPills from "~~/assets/js/nav-pills";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 onMounted(() => {
   setNavPills();

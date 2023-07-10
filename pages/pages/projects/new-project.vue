@@ -114,7 +114,7 @@ import { QuillEditor } from "@vueup/vue-quill";
 import Choices from "choices.js";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   components: { QuillEditor, flatPickr },

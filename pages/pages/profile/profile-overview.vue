@@ -531,9 +531,9 @@
   </div>
 </template>
 <script setup>
-import ProfileInfoCard from "@/pagesComponents/pages/profile/ProfileInfoCard.vue";
-import PlaceholderCard from "@/examples/cards/PlaceholderCard.vue";
-import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard.vue";
+import ProfileInfoCard from "@/pagesComponents/pages/profile/ProfileInfoCard";
+import PlaceholderCard from "@/examples/cards/PlaceholderCard";
+import DefaultProjectCard from "@/pagesComponents/pages/profile/DefaultProjectCard";
 import sophie from "@/assets/img/kal-visuals-square.jpg";
 import marie from "@/assets/img/marie.jpg";
 import ivana from "@/assets/img/ivana-square.jpg";
@@ -556,6 +556,6 @@ onMounted(() => {
   setTooltip(bootstrap);
 });
 definePageMeta({
-  layout: "profile-layout",
+  layout: false,
 });
 </script>

@@ -64,9 +64,9 @@
 </template>
 
 <script setup>
-import CardDetail from "~~/pagesComponents/dashboards/automotive/CardDetail.vue";
-import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard.vue";
-import PlayerCard from "~~/pagesComponents/dashboards/automotive/PlayerCard.vue";
+import CardDetail from "~~/pagesComponents/dashboards/automotive/CardDetail";
+import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard";
+import PlayerCard from "~~/pagesComponents/dashboards/automotive/PlayerCard";
 definePageMeta({
   layout: "default",
 });

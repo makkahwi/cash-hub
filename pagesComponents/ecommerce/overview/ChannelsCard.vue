@@ -84,5 +84,5 @@
 </template>
 
 <script setup>
-import PieChart from "~~/examples/charts/PieChart.vue";
+import PieChart from "~~/examples/charts/PieChart";
 </script>

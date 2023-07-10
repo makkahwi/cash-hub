@@ -21,9 +21,9 @@
   </div>
 </template>
 <script setup>
-import Navbar from "@/examples/Navbar";
+import Navbar from "@/layouts/Navbar";
 import Sidenav from "@/examples/Sidenav";
-import Footer from "@/examples/Footer";
+import Footer from "@/layouts/Footer";
 import Configurator from "~~/examples/Configurator";
 import setTooltip from "@/assets/js/tooltip.js";
 

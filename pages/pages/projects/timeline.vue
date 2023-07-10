@@ -147,10 +147,10 @@
 </template>
 
 <script>
-import TimelineList from "~~/examples/cards/TimelineList.vue";
-import TimelineItem from "~~/examples/cards/TimelineItem.vue";
+import TimelineList from "~~/examples/cards/TimelineList";
+import TimelineItem from "~~/examples/cards/TimelineItem";
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 export default {
   components: { TimelineList, TimelineItem },

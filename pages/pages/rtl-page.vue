@@ -230,24 +230,24 @@
 </template>
 
 <script setup>
-import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard.vue";
-import ProgressLineChart from "~~/examples/charts/ProgressLineChart.vue";
-import LineChart from "~~/examples/charts/LineChart.vue";
-import DefaultInfoCard from "~~/examples/cards/DefaultInfoCard.vue";
-import MasterCard from "~~/examples/cards/MasterCard.vue";
-import DefaultItem from "~~/examples/cards/DefaultItem.vue";
-import InfoCard from "~~/examples/cards/InfoCard.vue";
-import ControllerCard from "~~/pagesComponents/pages/widgets/ControllerCard.vue";
-import MiniInfoCard from "~~/examples/cards/MiniInfoCard.vue";
-import StepsCard from "~~/pagesComponents/pages/widgets/StepsCard.vue";
-import Calendar from "~~/examples/Calendar.vue";
-import CategoriesList from "~~/examples/cards/CategoriesList.vue";
-import MiniPlayerCard from "~~/examples/cards/MiniPlayerCard.vue";
-import TimelineList from "~~/examples/cards/TimelineList.vue";
-import TimelineItem from "~~/examples/cards/TimelineItem.vue";
+import MiniStatisticsCard from "~~/examples/cards/MiniStatisticsCard";
+import ProgressLineChart from "~~/examples/charts/ProgressLineChart";
+import LineChart from "~~/examples/charts/LineChart";
+import DefaultInfoCard from "~~/examples/cards/DefaultInfoCard";
+import MasterCard from "~~/examples/cards/MasterCard";
+import DefaultItem from "~~/examples/cards/DefaultItem";
+import InfoCard from "~~/examples/cards/InfoCard";
+import ControllerCard from "~~/pagesComponents/pages/widgets/ControllerCard";
+import MiniInfoCard from "~~/examples/cards/MiniInfoCard";
+import StepsCard from "~~/pagesComponents/pages/widgets/StepsCard";
+import Calendar from "~~/examples/Calendar";
+import CategoriesList from "~~/examples/cards/CategoriesList";
+import MiniPlayerCard from "~~/examples/cards/MiniPlayerCard";
+import TimelineList from "~~/examples/cards/TimelineList";
+import TimelineItem from "~~/examples/cards/TimelineItem";
 import bulbIcon from "@/assets/img/small-logos/icon-bulb.svg";
 
 definePageMeta({
-  layout: "rtl",
+  layout: false,
 });
 </script>

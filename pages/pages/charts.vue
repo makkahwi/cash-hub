@@ -88,18 +88,18 @@
   </div>
 </template>
 <script setup>
-import DefaultLineChart from "~~/examples/charts/DefaultLineChart.vue";
-import GradientLineChart from "~~/examples/charts/GradientLineChart.vue";
-import BarChart from "~~/pagesComponents/pages/widgets/BarChart.vue";
-import BarChartHorizontal from "~~/examples/charts/BarChartHorizontal.vue";
-import MixedChart from "~~/pagesComponents/pages/widgets/MixedChart.vue";
-import BubbleChart from "~~/pagesComponents/pages/widgets/BubbleChart.vue";
-import DoughnutChart from "~~/examples/charts/DoughnutChart.vue";
-import PieChart from "~~/examples/charts/PieChart.vue";
-import RadarChart from "~~/pagesComponents/pages/widgets/RadarChart.vue";
-import PolarChart from "~~/pagesComponents/pages/widgets/PolarChart.vue";
+import DefaultLineChart from "~~/examples/charts/DefaultLineChart";
+import GradientLineChart from "~~/examples/charts/GradientLineChart";
+import BarChart from "~~/pagesComponents/pages/widgets/BarChart";
+import BarChartHorizontal from "~~/examples/charts/BarChartHorizontal";
+import MixedChart from "~~/pagesComponents/pages/widgets/MixedChart";
+import BubbleChart from "~~/pagesComponents/pages/widgets/BubbleChart";
+import DoughnutChart from "~~/examples/charts/DoughnutChart";
+import PieChart from "~~/examples/charts/PieChart";
+import RadarChart from "~~/pagesComponents/pages/widgets/RadarChart";
+import PolarChart from "~~/pagesComponents/pages/widgets/PolarChart";
 
 definePageMeta({
-  layout: "default",
+  layout: false,
 });
 </script>

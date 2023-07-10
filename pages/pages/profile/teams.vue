@@ -338,10 +338,10 @@
   </div>
 </template>
 <script setup>
-import StoryAvatar from "@/pagesComponents/pages/profile/StoryAvatar.vue";
-import PostCard from "@/examples/cards/PostCard.vue";
-import TeamProfileCard from "@/pagesComponents/pages/profile/TeamProfileCard.vue";
-import EventCard from "@/pagesComponents/pages/profile/EventCard.vue";
+import StoryAvatar from "@/pagesComponents/pages/profile/StoryAvatar";
+import PostCard from "@/examples/cards/PostCard";
+import TeamProfileCard from "@/pagesComponents/pages/profile/TeamProfileCard";
+import EventCard from "@/pagesComponents/pages/profile/EventCard";
 import kal from "@/assets/img/kal-visuals-square.jpg";
 import marie from "@/assets/img/marie.jpg";
 import ivana from "@/assets/img/ivana-square.jpg";
@@ -413,6 +413,6 @@ onMounted(() => {
   setNavPills();
 });
 definePageMeta({
-  layout: "profile-layout",
+  layout: false,
 });
 </script>
