@@ -1,7 +1,7 @@
 <template>
     <div class="row">
       <div v-for="({icon, title, desc}, index) of features" :key="index" class="mb-4 col-lg-4 mb-lg-0">
-        <ComplexProjectCard
+        <FeatureCard
           icon="ni ni-box-2"
           :title="title"
           :description="desc"
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-  import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard";
+  import FeatureCard from "./FeatureCard";
 
   const features = [
     {icon: "", title: "Full-Detail Listing", desc: "You could enlist all the details you could ever think of about your currencies collection."},
