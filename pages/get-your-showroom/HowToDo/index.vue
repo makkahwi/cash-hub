@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <h5 class="text-justify">
-          If you are not a web developer (coder / programmer), soon we'll provide you with an easy approach to build your own showroom.
+          If you are not a web developer (coder / programmer), we are still working to provide you with an easy approach to build your own showroom.
           If you are a developer, you may visit the <a href="https://github.com/makkahwi/currencies-showroom" target="_blank" class="text-decoration-underline">Github repo</a> and follow instructions there.
         </h5>
 

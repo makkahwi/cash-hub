@@ -1,7 +1,7 @@
 <template>
   <PageSection sectionId="about" :title="`About ${productName.short}`">
     <h4 class="text-dark">
-      A web app for collectors to publish thier collection of currencies to
+      A web app for collectors to publish their collection of currencies to
       all the world
     </h4>
 
