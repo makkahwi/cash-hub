@@ -1,4 +1,4 @@
-# Currencies Showroom Client
+# Currencies Collection Showroom Client
 
 Vue.Js-Based Frontend Of Currencies Collection Showroom
 
