@@ -9,7 +9,7 @@
     <h5 class="text-justify">
       <ul class="lh-lg">
         <li>
-          Now user is required to upload an image of their collected currency piece. Later, an AI-based feature will be built to automatically find the appropriate photo for the piece to attach.
+          Now user is required to upload an image of their collected currency piece. Later, a feature will be built to automatically find the appropriate photo for the piece to attach.
         </li>
 
         <li>
