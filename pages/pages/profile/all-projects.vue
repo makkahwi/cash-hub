@@ -315,7 +315,7 @@
   </div>
 </template>
 <script setup>
-import ComplexProjectCard from "~~/pagesComponents/pages/profile/ComplexProjectCard";
+import ComplexProjectCard from "@/pages/landing/FeatureCard";
 import PlaceholderCard from "~~/examples/cards/PlaceholderCard";
 import team2 from "@/assets/img/team-2.jpg";
 import team3 from "@/assets/img/team-3.jpg";
