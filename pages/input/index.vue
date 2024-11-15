@@ -111,8 +111,12 @@
             <label>Zone Name</label>
             <select v-model="formData.zoneName" class="form-control" required>
               <option value="" disabled>Select Zone</option>
-              <option v-for="zone in currencyZones" :key="zone" :value="zone">
-                {{ zone }}
+              <option
+                v-for="zone in currencyZones"
+                :key="zone.mapCode"
+                :value="zone.name"
+              >
+                {{ zone.name }}
               </option>
             </select>
           </div>
@@ -207,11 +211,10 @@
 import { reactive } from "vue";
 import PageHeader from "@/components/PageHeader";
 import { addCurrency } from "~~/api/showroom";
+import { currencyZones } from "~~/utils/consts";
 
 const today = new Date();
-const defaultDate = ref(
-  today.toISOString().split("T")[0] // Extract YYYY-MM-DD
-);
+const defaultDate = ref(today.toISOString().split("T")[0]);
 
 const defaultFormValues = {
   name: "",
@@ -233,170 +236,6 @@ const defaultFormValues = {
 };
 
 const formData = reactive(defaultFormValues);
-
-const currencyZones = [
-  // Current
-  "Afghanistan",
-  "Albania",
-  "Algeria",
-  "Andorra",
-  "Angola",
-  "Argentina",
-  "Armenia",
-  "Australia",
-  "Azerbaijan",
-  "Bahamas",
-  "Bahrain",
-  "Bangladesh",
-  "Barbados",
-  "Belarus",
-  "Belize",
-  "Bhutan",
-  "Bolivia",
-  "Bosnia and Herzegovina",
-  "Botswana",
-  "Brazil",
-  "Brunei",
-  "Bulgaria",
-  "Burundi",
-  "Cambodia",
-  "Canada",
-  "Cape Verde",
-  "Chile",
-  "China",
-  "Colombia",
-  "Comoros",
-  "Congo (Democratic Republic)",
-  "Costa Rica",
-  "Croatia",
-  "Cuba",
-  "Czech Republic",
-  "Denmark",
-  "Djibouti",
-  "Dominican Republic",
-  "East Caribbean Currency Union",
-  "Egypt",
-  "El Salvador",
-  "Euro Area / Eurozone",
-  "Fiji",
-  "Gambia",
-  "Georgia",
-  "Ghana",
-  "Guatemala",
-  "Guinea",
-  "Honduras",
-  "Hong Kong",
-  "Hungary",
-  "Iceland",
-  "India",
-  "Indonesia",
-  "Iran",
-  "Iraq",
-  "Israel",
-  "Jamaica",
-  "Japan",
-  "Jordan",
-  "Kazakhstan",
-  "Kenya",
-  "Kuwait",
-  "Kyrgyzstan",
-  "Laos",
-  "Lebanon",
-  "Lesotho",
-  "Liberia",
-  "Libya",
-  "Macau",
-  "Madagascar",
-  "Malawi",
-  "Malaysia",
-  "Maldives",
-  "Mauritania",
-  "Mauritius",
-  "Mexico",
-  "Moldova",
-  "Mongolia",
-  "Morocco",
-  "Mozambique",
-  "Myanmar",
-  "Namibia",
-  "Nepal",
-  "New Zealand",
-  "Nicaragua",
-  "Nigerian Currency Zone",
-  "North Korea",
-  "Norway",
-  "Oman",
-  "Pakistan",
-  "Panama",
-  "Papua New Guinea",
-  "Paraguay",
-  "Peru",
-  "Philippines",
-  "Poland",
-  "Qatar",
-  "Romania",
-  "Russia",
-  "Rwanda",
-  "Saudi Arabia",
-  "Serbia",
-  "Seychelles",
-  "Sierra Leone",
-  "Singapore",
-  "Solomon Islands",
-  "Somalia",
-  "South Africa",
-  "South Korea",
-  "South Sudan",
-  "Sri Lanka",
-  "Sudan",
-  "Suriname",
-  "Swaziland",
-  "Sweden",
-  "Switzerland",
-  "Syria",
-  "Taiwan",
-  "Tajikistan",
-  "Tanzania",
-  "Thailand",
-  "Tonga",
-  "Trinidad and Tobago",
-  "Tunisia",
-  "Turkey",
-  "Turkmenistan",
-  "Uganda",
-  "Ukraine",
-  "United Arab Emirates",
-  "United Kingdom",
-  "United States",
-  "Uruguay",
-  "Uzbekistan",
-  "Vanuatu",
-  "Venezuela",
-  "Vietnam",
-  "West African CFA Franc Zone",
-  "Yemen",
-  "Zambia",
-  "Zimbabwe",
-
-  // Past
-  "Austro-Hungarian Empire",
-  "Belgium-Luxembourg Economic Union",
-  "Czechoslovakia",
-  "East Germany",
-  "German Empire",
-  "Guinea-Bissau Currency Zone (Pre-CFA Franc Integration)",
-  "Kingdom of Hawaii",
-  "Ottoman Empire",
-  "Prussia",
-  "Rhodesia",
-  "Soviet Union",
-  "Spanish Empire",
-  "Unified Kingdom of Italy (Pre-Euro)",
-  "Weimar Republic",
-  "West Germany",
-  "Yugoslavia",
-  "Zaire",
-];
 
 const handleSubmit = () => {
   addCurrency(formData);
