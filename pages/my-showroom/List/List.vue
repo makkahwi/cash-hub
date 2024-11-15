@@ -1,55 +1,84 @@
 <template>
   <table class="table table-flush">
     <tbody>
-      <tr  v-for="({id,name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
+      <tr
+        v-for="(
+          {
+            id,
+            name,
+            code,
+            mostRecentEdition,
+            fractionName,
+            fraction,
+            order,
+            year,
+            value,
+            type,
+            fPhoto,
+            bPhoto,
+            date,
+            count,
+            zoneName,
+            fullName,
+            mapCode,
+            continent,
+            valuePerUSD,
+          },
+          i
+        ) of currencies"
+        :key="i"
+      >
         <td class="row">
           <div class="col-md-2">
-            <img
-              :src="fPhoto"
-              class="w-100"
-              :style="{ maxWidth: '200px' }"
-            />
+            <img :src="fPhoto" class="w-100" :style="{ maxWidth: '200px' }" />
           </div>
 
           <div class="col-md-8 row text-start">
             <div class="col-md-2">Continent</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{continent}}</span>
+              <span class="font-weight-bolder">{{ continent }}</span>
             </div>
 
             <div class="col-md-2">Nation</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{zoneName}}</span>
+              <span class="font-weight-bolder">{{ zoneName }}</span>
             </div>
 
             <div class="col-md-2">Currency</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{code}}</span>
+              <span class="font-weight-bolder">{{ code }}</span>
             </div>
 
             <div class="col-md-2">Type</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{type}}</span>
+              <span class="font-weight-bolder">{{ type }}</span>
             </div>
 
             <div class="col-md-2">Unit</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{name}}</span>
+              <span class="font-weight-bolder">{{ name }}</span>
             </div>
 
             <div class="col-md-2">Value</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{value}}</span>
+              <span class="font-weight-bolder">{{ value }}</span>
             </div>
 
             <div class="col-md-2">Circability</div>
             <div class="col-md-2">
-              <span :class="`font-weight-bolder fw-bold text-${mostRecentEdition === order ? 'success' : 'danger'}`">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</span>
+              <span
+                :class="`font-weight-bolder fw-bold text-${
+                  mostRecentEdition === order ? 'success' : 'danger'
+                }`"
+                >{{
+                  mostRecentEdition === order ? "Circuable" : "Outdated"
+                }}</span
+              >
             </div>
 
             <div class="col-md-2">Collected @</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{date}}</span>
+              <span class="font-weight-bolder">{{ date }}</span>
             </div>
           </div>
 
@@ -71,10 +100,10 @@
 </template>
 
 <script setup>
-  defineProps({
-    currencies: {
-      type: Array,
-      default: [],
-    },
-  })
+defineProps({
+  currencies: {
+    type: Array,
+    default: [],
+  },
+});
 </script>

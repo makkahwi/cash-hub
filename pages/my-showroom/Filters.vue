@@ -1,5 +1,8 @@
 <template>
-  <PageSection title="Filters" subtitle="Filter what you wanna see of the collection">
+  <PageSection
+    title="Filters"
+    subtitle="Filter what you wanna see of the collection"
+  >
     <form @submit="onSubmit">
       <div class="row text-start">
         <div class="mx-auto col-md-3 multisteps-form__content">
@@ -12,7 +15,7 @@
               name="type"
               value="Banknotes"
               :checked="filters.value.type.includes('banknotes')"
-              @change="e => filters.update('type', 'banknotes')"
+              @change="(e) => filters.update('type', 'banknotes')"
             />
 
             <label class="custom-control-label"> Banknotes </label>
@@ -25,7 +28,7 @@
               name="type"
               value="Coins"
               :checked="filters.value.type.includes('coins')"
-              @change="e => filters.update('type', 'coins')"
+              @change="(e) => filters.update('type', 'coins')"
             />
 
             <label class="custom-control-label"> Coins </label>
@@ -40,7 +43,7 @@
               name="status"
               value="Circuable"
               :checked="filters.value.status.includes('circuable')"
-              @change="e => filters.update('status', 'circuable')"
+              @change="(e) => filters.update('status', 'circuable')"
             />
 
             <label class="custom-control-label"> Circuable </label>
@@ -53,7 +56,7 @@
               name="status"
               value="Outdated"
               :checked="filters.value.status.includes('outdated')"
-              @change="e => filters.update('status', 'outdated')"
+              @change="(e) => filters.update('status', 'outdated')"
             />
 
             <label class="custom-control-label"> Outdated </label>
@@ -70,7 +73,7 @@
               name="continent"
               value="Africa"
               :checked="filters.value.continent.includes('africa')"
-              @change="e => filters.update('continent', 'africa')"
+              @change="(e) => filters.update('continent', 'africa')"
             />
 
             <label class="custom-control-label"> Africa </label>
@@ -83,7 +86,7 @@
               name="continent"
               value="Americas"
               :checked="filters.value.continent.includes('americas')"
-              @change="e => filters.update('continent', 'americas')"
+              @change="(e) => filters.update('continent', 'americas')"
             />
 
             <label class="custom-control-label"> Americas </label>
@@ -96,7 +99,7 @@
               name="continent"
               value="Asia"
               :checked="filters.value.continent.includes('asia')"
-              @change="e => filters.update('continent', 'asia')"
+              @change="(e) => filters.update('continent', 'asia')"
             />
 
             <label class="custom-control-label"> Asia </label>
@@ -109,7 +112,7 @@
               name="continent"
               value="Europe"
               :checked="filters.value.continent.includes('europe')"
-              @change="e => filters.update('continent', 'europe')"
+              @change="(e) => filters.update('continent', 'europe')"
             />
 
             <label class="custom-control-label"> Europe </label>
@@ -122,7 +125,7 @@
               name="continent"
               value="Oceania"
               :checked="filters.value.continent.includes('oceania')"
-              @change="e => filters.update('continent', 'oceania')"
+              @change="(e) => filters.update('continent', 'oceania')"
             />
 
             <label class="custom-control-label"> Oceania </label>
@@ -143,13 +146,13 @@
               step="1"
               name="startDate"
               :value="filters.value.startDate"
-              @change="e => filters.replace({startDate: e.target.value})"
+              @change="(e) => filters.replace({ startDate: e.target.value })"
             />
           </div>
 
           <div>
             <label>End Year</label>
-            
+
             <input
               class="multisteps-form__input form-control"
               type="number"
@@ -158,11 +161,13 @@
               step="1"
               name="endDate"
               :value="filters.value.endDate"
-              @change="e => filters.replace({endDate: e.target.value})"
+              @change="(e) => filters.replace({ endDate: e.target.value })"
             />
           </div>
 
-          <button class="btn btn-success mt-4 float-end" type="submit">Filter</button>
+          <button class="btn btn-success mt-4 float-end" type="submit">
+            Filter
+          </button>
         </div>
       </div>
     </form>
@@ -170,21 +175,21 @@
 </template>
 
 <script setup>
-  import PageSection from "@/components/PageSection";
+import PageSection from "@/components/PageSection";
 
-  const props = defineProps({
-    filters: {
-      type: Object,
-      default: {},
-    },    
-    onFilter: {
-      type: Function,
-      default: () => false,
-    },    
-  })
+const props = defineProps({
+  filters: {
+    type: Object,
+    default: {},
+  },
+  onFilter: {
+    type: Function,
+    default: () => false,
+  },
+});
 
-  const onSubmit = e => {
-    e.preventDefault();
-    props.onFilter();      
-  };
+const onSubmit = (e) => {
+  e.preventDefault();
+  props.onFilter();
+};
 </script>

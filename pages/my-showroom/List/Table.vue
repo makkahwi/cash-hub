@@ -66,22 +66,51 @@
       </thead>
 
       <tbody>
-        <tr class="align-middle" v-for="({id,name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of currencies" :key="i">
+        <tr
+          class="align-middle"
+          v-for="(
+            {
+              id,
+              name,
+              code,
+              mostRecentEdition,
+              fractionName,
+              fraction,
+              order,
+              year,
+              value,
+              type,
+              fPhoto,
+              bPhoto,
+              date,
+              count,
+              zoneName,
+              fullName,
+              mapCode,
+              continent,
+              valuePerUSD,
+            },
+            i
+          ) of currencies"
+          :key="i"
+        >
           <td class="text-sm font-weight-normal">
-            <img
-              :src="fPhoto"
-              class="w-100"
-              :style="{ maxWidth: '150px' }"
-            />
+            <img :src="fPhoto" class="w-100" :style="{ maxWidth: '150px' }" />
           </td>
-          <td class="text-sm font-weight-normal">{{continent}}</td>
-          <td class="text-sm font-weight-normal">{{zoneName}}</td>
-          <td class="text-sm font-weight-normal">{{code}}</td>
-          <td class="text-sm font-weight-normal">{{type}}</td>
-          <td class="text-sm font-weight-normal">{{name}}</td>
-          <td class="text-sm font-weight-normal">{{value}}</td>
-          <td :class="`text-sm fw-bold text-${mostRecentEdition === order ? 'success' : 'danger'}`">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</td>
-          <td class="text-sm font-weight-normal">{{date}}</td>
+          <td class="text-sm font-weight-normal">{{ continent }}</td>
+          <td class="text-sm font-weight-normal">{{ zoneName }}</td>
+          <td class="text-sm font-weight-normal">{{ code }}</td>
+          <td class="text-sm font-weight-normal">{{ type }}</td>
+          <td class="text-sm font-weight-normal">{{ name }}</td>
+          <td class="text-sm font-weight-normal">{{ value }}</td>
+          <td
+            :class="`text-sm fw-bold text-${
+              mostRecentEdition === order ? 'success' : 'danger'
+            }`"
+          >
+            {{ mostRecentEdition === order ? "Circuable" : "Outdated" }}
+          </td>
+          <td class="text-sm font-weight-normal">{{ date }}</td>
           <td class="text-sm font-weight-normal">
             <NuxtLink
               class="btn btn-success btn-sm"
@@ -100,10 +129,10 @@
 </template>
 
 <script setup>
-  defineProps({
-    currencies: {
-      type: Array,
-      default: [],
-    },
-  })
+defineProps({
+  currencies: {
+    type: Array,
+    default: [],
+  },
+});
 </script>
