@@ -74,7 +74,7 @@ const router = useRouter();
 const handleLogin = async () => {
   try {
     const response = await login(password.value);
-    router.push({ name: "Dashboard" });
+    router.push("/input");
 
     console.log("Login successful:", response);
   } catch (error) {
