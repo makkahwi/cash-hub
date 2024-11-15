@@ -42,6 +42,7 @@
     "@popperjs/core": "2.11.6",
     "@vueup/vue-quill": "1.0.0",
     "apexcharts": "3.36.3",
+    "axios": "^1.7.7",
     "bootstrap": "5.2.2",
     "choices.js": "10.1.0",
     "dropzone": "6.0.0-beta.2",
