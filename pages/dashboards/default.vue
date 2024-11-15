@@ -225,7 +225,7 @@
                 },
                 {
                   brand: {
-                    logo: 'https://arromi.net',
+                    logo: 'https://suhaib.dev',
                     name: 'Webdev',
                   },
                   badge: { text: 'working', color: 'info' },

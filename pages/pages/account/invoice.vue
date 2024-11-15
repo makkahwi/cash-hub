@@ -112,7 +112,7 @@
                   </p>
                   <h6 class="text-secondary mb-0">
                     email:
-                    <span class="text-dark">support@arromi.net</span>
+                    <span class="text-dark">support@suhaib.dev</span>
                   </h6>
                 </div>
                 <div class="col-lg-7 text-md-end mt-md-0 mt-3">
