@@ -2,113 +2,145 @@
   <PageHeader title="Piece Details" />
 
   <PageSection>
-    <div class="row">
+    <div class="text-float-end text-end text-sm font-weight-normal">
+      <NuxtLink
+        class="btn btn-success btn-sm"
+        :to="{
+          path: '/my-showroom',
+        }"
+      >
+        Back
+      </NuxtLink>
+    </div>
+
+    <div v-if="loading" class="text-center">
+      <p>Loading currency details...</p>
+    </div>
+
+    <div v-else-if="error" class="text-center text-danger">
+      <p>{{ error }}</p>
+    </div>
+
+    <div v-else class="row">
       <div class="text-center col-xl-5 col-lg-6">
         <img
+          v-if="piece.fPhoto"
           class="shadow-lg w-100 border-radius"
-          :src="piece.value.fPhoto"
+          :src="piece.fPhoto"
+          alt="front"
+        />
+        <img
+          v-else
+          class="shadow-lg w-100 border-radius"
+          src="https://t3.ftcdn.net/jpg/02/73/18/48/360_F_273184815_uOmhKYLSlx3hQWNsGciu1EfbKrf7g5bQ.jpg"
           alt="front"
         />
 
         <img
+          v-if="piece.bPhoto"
           class="shadow-lg w-100 border-radius mt-4"
-          :src="piece.value.bPhoto"
+          :src="piece.bPhoto"
           alt="back"
+        />
+        <img
+          v-else
+          class="shadow-lg w-100 border-radius"
+          src="https://t3.ftcdn.net/jpg/02/73/18/48/360_F_273184815_uOmhKYLSlx3hQWNsGciu1EfbKrf7g5bQ.jpg"
+          alt="front"
         />
       </div>
 
       <div class="mx-auto col-lg-5 text-start">
-        <h3 class="mt-4 mt-lg-0">
-          {{ piece.value.code }} {{ piece.value.value }}
-        </h3>
+        <h3 class="mt-4 mt-lg-0">{{ piece.code }} {{ piece.value }}</h3>
 
         <table class="w-100 table-responsive">
           <tbody>
             <tr>
               <td class="font-weight-bold">Continent</td>
-              <td class="font-weight-bolder">{{ piece.value.continent }}</td>
+              <td class="font-weight-bolder">{{ piece.continent || "N/A" }}</td>
             </tr>
 
             <tr>
-              <td class="font-weight-bold">Nation</td>
-              <td class="font-weight-bolder">{{ piece.value.zoneName }}</td>
+              <td class="font-weight-bold">Country</td>
+              <td class="font-weight-bolder">
+                {{ piece.countryName || "N/A" }}
+              </td>
             </tr>
 
             <tr>
-              <td class="font-weight-bold">Currency</td>
-              <td class="font-weight-bolder">{{ piece.value.code }}</td>
+              <td class="font-weight-bold">Country Full Name</td>
+              <td class="font-weight-bolder">
+                {{ piece.countryFullName || "N/A" }}
+              </td>
+            </tr>
+
+            <tr>
+              <td class="font-weight-bold">Currency Name</td>
+              <td class="font-weight-bolder">{{ piece.name || "N/A" }}</td>
+            </tr>
+
+            <tr>
+              <td class="font-weight-bold">Currency Code</td>
+              <td class="font-weight-bolder">{{ piece.code || "N/A" }}</td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Edition No.</td>
-              <td class="font-weight-bolder">{{ piece.value.edition }}</td>
+              <td class="font-weight-bolder">{{ piece.edition || "N/A" }}</td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Edition Issue Year</td>
-              <td class="font-weight-bolder">{{ piece.value.year }}</td>
-            </tr>
-
-            <tr>
-              <td class="font-weight-bold">Most Recent Edition</td>
-              <td class="font-weight-bolder badge badge-success">
-                {{
-                  piece.value.mostRecentEdition === piece.value.edition
-                    ? "Yes"
-                    : "No"
-                }}
-              </td>
+              <td class="font-weight-bolder">{{ piece.year || "N/A" }}</td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Circability</td>
               <td
                 :class="`font-weight-bolder badge badge-${
-                  piece.value.status === 'Circulable' ? 'success' : 'danger'
+                  piece.status === 'Circulable' ? 'success' : 'danger'
                 }`"
               >
-                {{ piece.value.status }}
+                {{ piece.status || "N/A" }}
               </td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Type</td>
-              <td class="font-weight-bolder">{{ piece.value.type }}</td>
+              <td class="font-weight-bolder">{{ piece.type || "N/A" }}</td>
             </tr>
 
-            <tr>
-              <td class="font-weight-bold">Unit</td>
-              <td class="font-weight-bolder">{{ piece.value.name }}</td>
-            </tr>
-
-            <tr>
+            <tr v-if="piece.fractionName">
               <td class="font-weight-bold">Fraction Unit</td>
-              <td class="font-weight-bolder">{{ piece.value.fractionName }}</td>
+              <td class="font-weight-bolder">
+                {{ piece.fractionName || "N/A" }}
+              </td>
             </tr>
 
-            <tr>
+            <tr v-if="piece.fraction">
               <td class="font-weight-bold">Fractions Count</td>
-              <td class="font-weight-bolder">{{ piece.value.fraction }}</td>
+              <td class="font-weight-bolder">{{ piece.fraction || "N/A" }}</td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Value</td>
-              <td class="font-weight-bolder">{{ piece.value.value }}</td>
-            </tr>
-
-            <tr>
-              <td class="font-weight-bold">USD to JOD Exchange Rate</td>
-              <td class="font-weight-bolder">JOD 0.71</td>
-            </tr>
-
-            <tr>
-              <td class="font-weight-bold">JOD to USD Exchange Rate</td>
-              <td class="font-weight-bolder">USD 1.42</td>
+              <td class="font-weight-bolder">{{ piece.value || "N/A" }}</td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Collection Date</td>
-              <td class="font-weight-bolder">{{ piece.value.date }}</td>
+              <td class="font-weight-bolder">
+                {{ formatDate(piece.date) || "N/A" }}
+              </td>
+            </tr>
+
+            <tr>
+              <td class="font-weight-bold">Exchange Rates</td>
+              <td class="font-weight-bolder">
+                {{ "USD To Local: " + (piece.usdToLocal || "N/A") }}
+                <br />
+                {{ "Local To USD: " + (1 / piece.usdToLocal || "N/A") }}
+              </td>
             </tr>
           </tbody>
         </table>
@@ -116,15 +148,16 @@
     </div>
   </PageSection>
 
-  <RelatedPieces :pieceId="route.query.id" />
+  <!-- <RelatedPieces :pieceId="route.query.id" /> -->
 </template>
 
 <script setup>
 import PageSection from "@/components/PageSection";
-import RelatedPieces from "./RelatedPieces";
+// import RelatedPieces from "./RelatedPieces";
 import PageHeader from "@/components/PageHeader";
-import { getCurrency } from "@/api/showroom";
 import { useRoute } from "vue-router";
+import { ref } from "vue";
+import { getCurrencyById } from "@/api/showroom";
 
 const route = useRoute();
 
@@ -132,37 +165,47 @@ definePageMeta({
   layout: "landing",
 });
 
-const piece = reactive({
-  value: {
-    name: "Dinar",
-    code: "JOD",
-    mostRecentEdition: 5,
-    fractionName: "Piastre",
-    fraction: 100,
-    edition: 5,
-    year: 2022,
-    value: 50,
-    type: "Banknote",
-    fPhoto: "https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg",
-    bPhoto:
-      "https://upload.wikimedia.org/wikipedia/ar/7/7d/50_%D8%AF%D9%8A%D9%86%D8%A7%D8%B1_%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%8C_%D8%A7%D9%84%D9%88%D8%AC%D9%87_%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%8C_%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3_%282022%29.png",
-    date: "Jan 2023",
-    count: 1,
-    zoneName: "Jordan",
-    fullName: "Hashemite Kingdom of Jordan",
-    mapCode: "JO",
-    continent: "Asia",
-    usdToLocal: 0.71,
-  },
-  update(newCurrency) {
-    this.value = newCurrency;
-  },
-});
+const piece = ref({});
+const loading = ref(true);
+const error = ref(null);
 
-const getPieceDetails = () =>
-  getCurrency(route.query.id).then((res) =>
-    piece.update(res.data._rawValue.data.attributes)
-  );
+const formatDate = (date) => {
+  if (!date) return null;
+
+  const parsedDate = new Date(date);
+  if (isNaN(parsedDate)) return "Invalid Date";
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    year: "numeric",
+  }).format(parsedDate);
+};
+
+const getPieceDetails = async () => {
+  try {
+    loading.value = true;
+    const id = route.query.id;
+
+    if (!id) {
+      error.value = "Invalid currency ID.";
+      return;
+    }
+
+    const response = await getCurrencyById(id);
+
+    if (!response) {
+      error.value = "Currency details not found.";
+      return;
+    }
+
+    piece.value = response;
+  } catch (err) {
+    error.value = "Failed to fetch currency details.";
+    console.error(err);
+  } finally {
+    loading.value = false;
+  }
+};
 
 getPieceDetails();
 </script>
