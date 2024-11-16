@@ -8,16 +8,16 @@ Vue.Js-Based Frontend Of Currencies Collection Showroom
 - Add Axios Library
 - Form validation (filters + login)
 - Login function
-- CRUD of 
+- CRUD of
   - zone          (name, fullName, mapCode, continent)                    (zone OneToMany currency)
   - currency      (name, code, mostRecentEdition, fractionName, fraction) (currency ManyToOne zone, currency OneToOne exchangeRate, currency OneToMany edition)
-  - exchangeRate  (valuePerUSD)                                           (exchangeRate OneToOne currency)
-  - edition       (order, year)                                           (edition ManyToOne zone, edition OneToMany piece)
+  - exchangeRate  (usdToLocal)                                           (exchangeRate OneToOne currency)
+  - edition       (, year)                                           (edition ManyToOne zone, edition OneToMany piece)
   - piece         (value, type)                                           (piece ManyToOne edition, piece oneToMany collection)
   - collection    (fPhoto, bPhoto, date, count)                           (collection OneToOne piece)
 - Auth data analysis
   - Counts of collected & targetted
- 
+
 ## How to start development
 
 - Fork repo to own Github account

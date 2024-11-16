@@ -3,18 +3,18 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <NuxtLink
-          v-for="({to, title}, i) of links"
+          v-for="({ to, title }, i) of links"
           :to="to"
           class="text-secondary mx-2"
           :key="i"
         >
-          {{title}}
+          {{ title }}
         </NuxtLink>
       </div>
 
       <div class="col-lg-8 my-5 text-center">
         <a
-          v-for="({link, icon}, i) of socialMediaLinks"
+          v-for="({ link, icon }, i) of socialMediaLinks"
           :href="link"
           target="_blank"
           class="text-secondary me-4"
@@ -23,12 +23,12 @@
           <span :class="`text-lg ${icon}`"></span>
         </a>
       </div>
-      
+
       <div class="col-lg-8">
         <p class="text-secondary my-0">
           Crafted with Care by
-          <a href="https://arromi.net/" target="_blank" class="text-secondary"
-            >Arromi Creatives</a
+          <a href="https://suhaib.dev/" target="_blank" class="text-secondary"
+            >Suhaib Ahmad</a
           >
           ©
           {{ new Date().getFullYear() }}
@@ -39,6 +39,6 @@
 </template>
 
 <script setup>
-  import PageSection from "@/components/PageSection"
-  import { links, socialMediaLinks } from "@/consts.js"
+import PageSection from "@/components/PageSection";
+import { links, socialMediaLinks } from "@/consts.js";
 </script>

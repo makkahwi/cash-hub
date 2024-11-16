@@ -1,17 +1,24 @@
-const baseUrl = "http://localhost:1337/api";
+import service from ".";
 
-export const getCurrencies = (filters) => {
-  const finalFilters = [];
-
-  const addArrays = (list,key) => list[key].forEach((value,i) => finalFilters.push(`filters[${key}][$eq][${i}]=${value}`));
-
-  Object.keys(filters).forEach(key => 
-    typeof filters[key] === "object" ? addArrays(filters, key) : finalFilters.push(`filters[${key}][${key === "startDate" ? '$gte' : "$lte"}]=${filters[key]}`)
-  );
-
-  return useFetch(`${baseUrl}/collections?${finalFilters.join("&")}`);
+export const addCurrency = async (data) => {
+  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null");
+  return await service.post(`currencies/${user.localId}.json`, data);
 };
 
-export const getCurrency = (id) => useFetch(`${baseUrl}/collections/${id}`);
+export const getCurrencies = async () => {
+  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null")
+  return await service.get(`currencies/${user.localId}.json`).then((res) => {
+    return res
+      ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
+      : [];
+  });
+};
 
-export const getRelatedCurrencies = (id) => useFetch(`${baseUrl}/collections`);
+export const getCurrencyById = async (id) => {
+  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null");
+  return await service
+    .get(`currencies/${user.localId}/${id}.json`)
+    .then((res) => {
+      return res ? { id, ...res } : null;
+    });
+};

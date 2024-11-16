@@ -10,7 +10,7 @@
               :badge="{ color: 'dark', label: '+15% since last week' }"
               description="They're slowed down by their perception of themselves."
               :action="{
-                route: 'https://arromi.net',
+                route: 'https://suhaib.dev',
                 label: 'View more',
               }"
             />
@@ -93,7 +93,7 @@
               todo: 'Check status',
               date: '24 March 2019',
               id: '#2414_VR4sf3',
-              company: 'Arromi Creatives',
+              company: 'Suhaib Ahmad',
               action: [
                 { route: 'javascript:;', label: 'Action' },
                 { route: 'javascript:;', label: 'Some other action' },

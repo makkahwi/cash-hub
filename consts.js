@@ -5,16 +5,17 @@ export const links = [
 ];
 
 export const socialMediaLinks = [
-    { link: "https://www.github.com/arromi.creatives", icon: "fab fa-github" },
-    { link: "https://www.linkedin.com/arromi.creatives", icon: "fab fa-linkedin" },
-    { link: "https://www.facebook.com/arromi.creatives", icon: "fab fa-facebook" },
-    { link: "https://www.instagram.com/arromi.creatives", icon: "fab fa-instagram" },
-    { link: "https://wasap.my/962788424973", icon: "fab fa-whatsapp" },
-    { link: "https://t.me/makkahwi", icon: "fab fa-telegram" },
-    { link: "mailto:arromi.creatives@gmail.com", icon: "fa fa-envelope" },
-  ];
+  { link: "https://Suhaib.dev", icon: "fas fa-globe" },
+  { link: "https://www.github.com/makkahwi", icon: "fab fa-github" },
+  { link: "https://www.linkedin.com/in/makkahwi", icon: "fab fa-linkedin" },
+  { link: "https://www.facebook.com/makkahwi", icon: "fab fa-facebook" },
+  { link: "https://www.instagram.com/makkahwi", icon: "fab fa-instagram" },
+  { link: "https://wasap.my/962788424973", icon: "fab fa-whatsapp" },
+  { link: "https://t.me/makkahwi", icon: "fab fa-telegram" },
+  { link: "mailto:SuhaibAhmadAi@hotmail.com", icon: "fa fa-envelope" },
+];
 
 export const productName = {
   full: "Currencies Collection Showroom",
-  short: "CCS"
-}
+  short: "CCS",
+};

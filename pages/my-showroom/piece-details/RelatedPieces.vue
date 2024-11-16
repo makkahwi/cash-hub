@@ -43,32 +43,62 @@
         </thead>
 
         <tbody>
-          <tr v-for="({id,name,code,mostRecentEdition,fractionName,fraction,order,year,value,type,fPhoto,bPhoto,date,count,zoneName,fullName,mapCode,continent,valuePerUSD}, i) of list.value" :key="i">
+          <tr
+            v-for="(
+              {
+                id,
+                name,
+                code,
+                mostRecentEdition,
+                fractionName,
+                fraction,
+                edition,
+                year,
+                value,
+                type,
+                status,
+                fPhoto,
+                bPhoto,
+                date,
+                count,
+                zoneName,
+                fullName,
+                mapCode,
+                continent,
+                usdToLocal,
+              },
+              i
+            ) of list.value"
+            :key="i"
+          >
             <td>
               <div class="d-flex py-1">
                 <div>
-                  <img
-                    :src="fPhoto"
-                    class="avatar avatar-md w-100"
-                  />
+                  <img :src="fPhoto" class="avatar avatar-md w-100" />
                 </div>
 
                 <div class="d-flex flex-column justify-content-center ms-3">
-                  <h6 class="mb-0 text-sm">{{type}}</h6>
+                  <h6 class="mb-0 text-sm">{{ type }}</h6>
                 </div>
               </div>
             </td>
 
             <td>
-              <p class="text-sm text-secondary mb-0">{{name}}</p>
+              <p class="text-sm text-secondary mb-0">{{ name }}</p>
             </td>
 
-            <td>{{value}}</td>
+            <td>{{ value }}</td>
 
-            <td :class="`align-middle text-sm fw-bold text-${mostRecentEdition === order ? 'success' : 'danger'}`">{{mostRecentEdition === order ? 'Circuable' : 'Outdated'}}</td>
+            <td
+              :class="`align-middle text-sm fw-bold text-${
+                status === 'Circulable' ? 'success' : 'danger'
+              }`"
+            >
+              {{ status }}
+            </td>
 
             <td class="align-middle">
-              <span class="text-secondary text-sm">{{date}}</span>
+              <span class="text-secondary text-sm">{{ date }}</span>
             </td>
 
             <td class="align-middle text-sm">
@@ -92,44 +122,54 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
-  import { getRelatedCurrencies } from '@/api/showroom'
+// import { getRelatedCurrencies } from "@/api/showroom";
 
-  const list = reactive({
-    value: [
-      {
-        name: "Dinar",
-        code: "JOD",
-        mostRecentEdition: 5,
-        fractionName: "Piastre",
-        fraction: 100,
-        order: 5,
-        year: 2022,
-        value: 50,
-        type: "Banknote",
-        fPhoto: "https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg",
-        bPhoto: "https://upload.wikimedia.org/wikipedia/ar/7/7d/50_%D8%AF%D9%8A%D9%86%D8%A7%D8%B1_%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%8C_%D8%A7%D9%84%D9%88%D8%AC%D9%87_%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%8C_%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3_%282022%29.png",
-        date: "Jan 2023",
-        count: 1,
-        zoneName: "Jordan",
-        fullName: "Hashemite Kingdom of Jordan",
-        mapCode: "JO",
-        continent: "Asia",
-        valuePerUSD: 0.71
-      }
-    ],
-    update(newCurrencies) {
-      this.value = newCurrencies;
-    }
-  });
+const list = reactive({
+  value: [
+    {
+      name: "Dinar",
+      code: "JOD",
+      mostRecentEdition: 5,
+      fractionName: "Piastre",
+      fraction: 100,
+      edition: 5,
+      year: 2022,
+      value: 50,
+      type: "Banknote",
+      fPhoto:
+        "https://static.timesofisrael.com/www/uploads/2023/01/50dinars.jpg",
+      bPhoto:
+        "https://upload.wikimedia.org/wikipedia/ar/7/7d/50_%D8%AF%D9%8A%D9%86%D8%A7%D8%B1_%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%8C_%D8%A7%D9%84%D9%88%D8%AC%D9%87_%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%8C_%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3_%282022%29.png",
+      date: "Jan 2023",
+      count: 1,
+      zoneName: "Jordan",
+      fullName: "Hashemite Kingdom of Jordan",
+      mapCode: "JO",
+      continent: "Asia",
+      usdToLocal: 0.71,
+    },
+  ],
+  update(newCurrencies) {
+    this.value = newCurrencies;
+  },
+});
 
-  const props = defineProps({
-    pieceId: {
-      type: Number,
-      default: 0,
-    },  
-  })
+const props = defineProps({
+  pieceId: {
+    type: Number,
+    default: 0,
+  },
+});
 
-  const getRelatedList = () => getRelatedCurrencies(props.pieceId).then(res => list.update(res.data._rawValue.data.map(({attributes, id}) => ({id, ...attributes}))));
+// const getRelatedList = () =>
+//   getRelatedCurrencies(props.pieceId).then((res) =>
+//     list.update(
+//       res.data._rawValue.data.map(({ attributes, id }) => ({
+//         id,
+//         ...attributes,
+//       }))
+//     )
+//   );
 
-  getRelatedList();
+// getRelatedList();
 </script>

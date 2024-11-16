@@ -127,7 +127,7 @@
                 color: 'success',
               },
               {
-                title: 'Arromi Creatives',
+                title: 'Suhaib Ahmad',
                 date: '26 March 2020, at 08:30 AM',
                 amount: '+ $ 2,500',
                 icon: 'fa-arrow-up',

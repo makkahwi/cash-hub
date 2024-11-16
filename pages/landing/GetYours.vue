@@ -15,7 +15,7 @@
     >
       Have It Now
     </NuxtLink>
-  </PageSection >
+  </PageSection>
 </template>
 
 <script setup>

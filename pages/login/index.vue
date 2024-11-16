@@ -28,32 +28,32 @@
 
               <p class="my-3">Enter password to access your dashboard</p>
 
-              <form role="form">
+              <form @submit.prevent="handleLogin">
                 <ArgonInput
                   type="password"
-                  placeholder="Will be available soon"
-                  disabled
+                  v-model="password"
+                  placeholder="Enter your password"
+                  required
                 />
 
                 <div class="text-center">
                   <ArgonButton
-                    type="button"
+                    type="submit"
                     color="success"
                     variant="gradient"
                     size="lg"
                     class="mt-3 mb-0"
-                    disabled
                   >
                     Access
                   </ArgonButton>
                 </div>
               </form>
 
-              <NuxtLink to="/login">
+              <!-- <NuxtLink to="/login">
                 <p class="mt-4 text-muted text-sm">
                   Get Password Reset Link @ Your Email
                 </p>
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
           </div>
         </div>
@@ -64,8 +64,25 @@
 
 <script setup>
 import headerImg from "@/assets/img/currencies.jpg";
+import { ref } from "vue";
+import { login } from "~~/api/auth";
+
+const password = ref("");
+
+const handleLogin = async () => {
+  try {
+    const response = await login(password.value);
+    window.location.reload();
+    window.location.href = "/input";
+
+    console.log("Login successful:", response);
+  } catch (error) {
+    console.error("Login failed:", error.message);
+  }
+};
 
 definePageMeta({
   layout: "landing",
+  middleware: "public",
 });
 </script>

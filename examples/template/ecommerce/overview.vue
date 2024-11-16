@@ -13,7 +13,7 @@
         :dropdown="[
           {
             label: 'Last 7 days',
-            route: 'https://arromi.net/',
+            route: 'https://suhaib.dev/',
           },
           {
             label: 'Last week',

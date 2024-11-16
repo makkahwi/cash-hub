@@ -39,7 +39,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">John Michael</h6>
-                  <p class="text-xs text-secondary mb-0">john@arromi.net</p>
+                  <p class="text-xs text-secondary mb-0">john@suhaib.dev</p>
                 </div>
               </div>
             </td>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Alexa Liras</h6>
-                  <p class="text-xs text-secondary mb-0">alexa@arromi.net</p>
+                  <p class="text-xs text-secondary mb-0">alexa@suhaib.dev</p>
                 </div>
               </div>
             </td>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Laurent Perrier</h6>
-                  <p class="text-xs text-secondary mb-0">laurent@arromi.net</p>
+                  <p class="text-xs text-secondary mb-0">laurent@suhaib.dev</p>
                 </div>
               </div>
             </td>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Michael Levi</h6>
-                  <p class="text-xs text-secondary mb-0">michael@arromi.net</p>
+                  <p class="text-xs text-secondary mb-0">michael@suhaib.dev</p>
                 </div>
               </div>
             </td>
@@ -187,7 +187,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                   <h6 class="mb-0 text-xs">Richard Gran</h6>
-                  <p class="text-xs text-secondary mb-0">richard@arromi.net</p>
+                  <p class="text-xs text-secondary mb-0">richard@suhaib.dev</p>
                 </div>
               </div>
             </td>

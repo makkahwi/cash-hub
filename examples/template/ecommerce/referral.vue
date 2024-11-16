@@ -134,7 +134,7 @@
                     >
                       <img
                         class="w-50 position-relative z-index-2"
-                        src="../../assets/img/illustrations/icon-documentation.svg"
+                        src="../../../assets/img/illustrations/icon-documentation.svg"
                         alt="illustration"
                       />
                     </div>

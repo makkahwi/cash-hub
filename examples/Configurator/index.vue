@@ -132,13 +132,13 @@
           </div>
         </div>
         <hr class="horizontal dark my-sm-4" />
-        <a class="btn btn-success w-100" href="https://www.arromi.net"
+        <a class="btn btn-success w-100" href="https://www.suhaib.dev"
           >Buy now</a
         >
-        <a class="btn bg-gradient-dark w-100" href="https://www.arromi.net"
+        <a class="btn bg-gradient-dark w-100" href="https://www.suhaib.dev"
           >Free demo</a
         >
-        <a class="btn btn-outline-dark w-100" href="https://www.arromi.net"
+        <a class="btn btn-outline-dark w-100" href="https://www.suhaib.dev"
           >View documentation</a
         >
         <div class="text-center w-100">
@@ -148,7 +148,7 @@
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star arromicreatives/vue-argon-dashboard-pro on GitHub"
+            aria-label="Star on GitHub"
             >Star</a
           >
           <h6 class="mt-3">Thank you for sharing!</h6>

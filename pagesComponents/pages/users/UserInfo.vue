@@ -33,7 +33,7 @@
             id="company"
             class="multisteps-form__input"
             type="text"
-            placeholder="eg. Arromi Creatives"
+            placeholder="eg. Suhaib Ahmad"
           />
         </div>
         <div class="col-12 col-sm-6 mt-3 mt-sm-0">
