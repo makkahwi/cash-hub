@@ -5,6 +5,9 @@
     },
     "utils/*.js": {
       "runtime": "nodejs18.x"
+    },
+    "**/**/*.js": {
+      "runtime": "nodejs18.x"
     }
   }
 }
