@@ -12,7 +12,7 @@ Vue.Js-Based Frontend Of Currencies Collection Showroom
   - zone          (name, fullName, mapCode, continent)                    (zone OneToMany currency)
   - currency      (name, code, mostRecentEdition, fractionName, fraction) (currency ManyToOne zone, currency OneToOne exchangeRate, currency OneToMany edition)
   - exchangeRate  (valuePerUSD)                                           (exchangeRate OneToOne currency)
-  - edition       (order, year)                                           (edition ManyToOne zone, edition OneToMany piece)
+  - edition       (, year)                                           (edition ManyToOne zone, edition OneToMany piece)
   - piece         (value, type)                                           (piece ManyToOne edition, piece oneToMany collection)
   - collection    (fPhoto, bPhoto, date, count)                           (collection OneToOne piece)
 - Auth data analysis

@@ -52,7 +52,7 @@
                 mostRecentEdition,
                 fractionName,
                 fraction,
-                order,
+                edition,
                 year,
                 value,
                 type,
@@ -90,10 +90,10 @@
 
             <td
               :class="`align-middle text-sm fw-bold text-${
-                mostRecentEdition === order ? 'success' : 'danger'
+                mostRecentEdition === edition ? 'success' : 'danger'
               }`"
             >
-              {{ mostRecentEdition === order ? "Circuable" : "Outdated" }}
+              {{ mostRecentEdition === edition ? "Circuable" : "Outdated" }}
             </td>
 
             <td class="align-middle">
@@ -131,7 +131,7 @@ const list = reactive({
       mostRecentEdition: 5,
       fractionName: "Piastre",
       fraction: 100,
-      order: 5,
+      edition: 5,
       year: 2022,
       value: 50,
       type: "Banknote",

@@ -55,7 +55,7 @@ const currencies = reactive({
       mostRecentEdition: 5,
       fractionName: "Piastre",
       fraction: 100,
-      order: 5,
+      edition: 5,
       year: 2022,
       value: 20,
       type: "Banknote",

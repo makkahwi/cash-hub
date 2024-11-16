@@ -9,7 +9,7 @@
           mostRecentEdition,
           fractionName,
           fraction,
-          order,
+          edition,
           year,
           value,
           type,
@@ -34,7 +34,7 @@
           :img="fPhoto"
           :label="code + ' ' + value + ' ' + type"
           :action="{
-            color: mostRecentEdition === order ? 'success' : 'danger',
+            color: mostRecentEdition === edition ? 'success' : 'danger',
             label: 'View Details',
             link: {
               path: '/my-showroom/piece-details',

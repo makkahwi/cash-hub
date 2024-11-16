@@ -10,7 +10,7 @@
             mostRecentEdition,
             fractionName,
             fraction,
-            order,
+            edition,
             year,
             value,
             type,
@@ -68,10 +68,10 @@
             <div class="col-md-2">
               <span
                 :class="`font-weight-bolder fw-bold text-${
-                  mostRecentEdition === order ? 'success' : 'danger'
+                  mostRecentEdition === edition ? 'success' : 'danger'
                 }`"
                 >{{
-                  mostRecentEdition === order ? "Circuable" : "Outdated"
+                  mostRecentEdition === edition ? "Circuable" : "Outdated"
                 }}</span
               >
             </div>

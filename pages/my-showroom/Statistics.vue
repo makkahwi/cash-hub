@@ -42,14 +42,14 @@ const statsData = () => [
     title: "Count of Circuable Pieces",
     value: "455",
     value: props.currencies.filter(
-      ({ mostRecentEdition, order }) => mostRecentEdition == order
+      ({ mostRecentEdition, edition }) => mostRecentEdition == edition
     )?.length,
   },
   {
     title: "Count of Outdated Pieces",
     value: "455",
     value: props.currencies.filter(
-      ({ mostRecentEdition, order }) => mostRecentEdition != order
+      ({ mostRecentEdition, edition }) => mostRecentEdition != edition
     )?.length,
   },
   {

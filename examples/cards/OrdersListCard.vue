@@ -21,7 +21,7 @@
           <tbody>
             <tr
               v-for="(
-                { title: listTitle, order, values, info, image, icon }, index
+                { title: listTitle, edition, values, info, image, icon }, index
               ) in lists"
               :key="index"
             >
@@ -36,7 +36,7 @@
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="mb-0 text-sm">{{ listTitle }}</h6>
                     <p class="mb-0 text-sm font-weight-bold text-secondary">
-                      <span class="text-success">{{ order }}</span>
+                      <span class="text-success">{{ edition }}</span>
                       orders
                     </p>
                   </div>
@@ -97,7 +97,7 @@ defineProps({
     required: true,
     values: Array,
     title: String,
-    order: String,
+    edition: String,
     info: String,
     image: String,
     icon: String,

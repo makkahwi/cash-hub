@@ -76,7 +76,7 @@
               mostRecentEdition,
               fractionName,
               fraction,
-              order,
+              edition,
               year,
               value,
               type,
@@ -105,10 +105,10 @@
           <td class="text-sm font-weight-normal">{{ value }}</td>
           <td
             :class="`text-sm fw-bold text-${
-              mostRecentEdition === order ? 'success' : 'danger'
+              mostRecentEdition === edition ? 'success' : 'danger'
             }`"
           >
-            {{ mostRecentEdition === order ? "Circuable" : "Outdated" }}
+            {{ mostRecentEdition === edition ? "Circuable" : "Outdated" }}
           </td>
           <td class="text-sm font-weight-normal">{{ date }}</td>
           <td class="text-sm font-weight-normal">

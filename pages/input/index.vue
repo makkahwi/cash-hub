@@ -68,7 +68,7 @@
           <div class="col-sm-6 col-md-3">
             <label>Edition Number</label>
             <input
-              v-model="formData.order"
+              v-model="formData.edition"
               class="form-control"
               type="number"
               placeholder="eg. 5"
@@ -222,7 +222,7 @@ const defaultFormValues = {
   mostRecentEdition: null,
   fractionName: "",
   fraction: null,
-  order: null,
+  edition: null,
   year: null,
   value: null,
   type: "",

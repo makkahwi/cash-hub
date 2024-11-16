@@ -41,7 +41,7 @@
 
             <tr>
               <td class="font-weight-bold">Edition No.</td>
-              <td class="font-weight-bolder">{{ piece.value.order }}</td>
+              <td class="font-weight-bolder">{{ piece.value.edition }}</td>
             </tr>
 
             <tr>
@@ -53,7 +53,7 @@
               <td class="font-weight-bold">Most Recent Edition</td>
               <td class="font-weight-bolder badge badge-success">
                 {{
-                  piece.value.mostRecentEdition === piece.value.order
+                  piece.value.mostRecentEdition === piece.value.edition
                     ? "Yes"
                     : "No"
                 }}
@@ -64,13 +64,13 @@
               <td class="font-weight-bold">Circability</td>
               <td
                 :class="`font-weight-bolder badge badge-${
-                  piece.value.mostRecentEdition === piece.value.order
+                  piece.value.mostRecentEdition === piece.value.edition
                     ? 'success'
                     : 'danger'
                 }`"
               >
                 {{
-                  piece.value.mostRecentEdition === piece.value.order
+                  piece.value.mostRecentEdition === piece.value.edition
                     ? "Circuable"
                     : "Outdated"
                 }}
@@ -145,7 +145,7 @@ const piece = reactive({
     mostRecentEdition: 5,
     fractionName: "Piastre",
     fraction: 100,
-    order: 5,
+    edition: 5,
     year: 2022,
     value: 50,
     type: "Banknote",
