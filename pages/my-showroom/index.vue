@@ -28,11 +28,13 @@ definePageMeta({
 
 const filters = reactive({
   value: {
-    type: ["banknotes", "coins"],
+    type: ["Banknote", "Coin"],
     status: ["Circulable", "Outdated"],
-    continent: ["africa", "americas", "asia", "europe", "oceania"],
-    startDate: 1800,
-    endDate: new Date().getFullYear(),
+    continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+    startYear: 1800,
+    endYear: new Date().getFullYear(),
+    startDate: new Date(),
+    endDate: new Date(),
   },
   update(key, newFilter) {
     this.value = {
@@ -50,27 +52,18 @@ const filters = reactive({
 const currencies = reactive({
   value: [
     {
-      id: 2,
-      name: "Dinar",
-      code: "JOD",
-      mostRecentEdition: 5,
-      fractionName: "Piastre",
-      fraction: 100,
-      edition: 5,
-      year: 2022,
-      value: 20,
-      type: "Banknote",
-      fPhoto:
-        "https://upload.wikimedia.org/wikipedia/ar/d/d3/20_%D8%AF%D9%8A%D9%86%D8%A7%D8%B1_%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%8C_%D8%A7%D9%84%D9%88%D8%AC%D9%87_%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%D8%8C_%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3_%282022%29.png",
-      bPhoto:
-        "https://upload.wikimedia.org/wikipedia/ar/d/d3/20_%D8%AF%D9%8A%D9%86%D8%A7%D8%B1_%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%8C_%D8%A7%D9%84%D9%88%D8%AC%D9%87_%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%D8%8C_%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3_%282022%29.png",
-      date: "Jan 2023",
-      count: 1,
       zoneName: "Jordan",
-      fullName: "Hashemite Kingdom of Jordan",
-      mapCode: "JO",
-      continent: "Asia",
+      zoneFullName: "The Hashemite Kingdom Of Jordan",
+      name: "Jordanian Dinar",
+      code: "JOD",
+      edition: 5,
+      year: 2023,
       usdToLocal: 0.71,
+      date: "2023-01-01",
+      value: 50,
+      continent: "Asia",
+      type: "Banknote",
+      status: "Circulable",
     },
   ],
   update(newCurrencies) {
@@ -78,8 +71,31 @@ const currencies = reactive({
   },
 });
 
-const filterData = () =>
+const filterData = () => {
   getCurrencies(filters.value).then((res) => {
+    // const filteredData = res.filter((currency) => {
+    //   console.log("Checking currency:", currency);
+
+    //   return (
+    //     (!filters.value.type.length ||
+    //       filters.value.type.includes(currency.type)) &&
+    //     (!filters.value.status.length ||
+    //       filters.value.status.includes(currency.status)) &&
+    //     (!filters.value.continent.length ||
+    //       filters.value.continent.includes(currency.continent)) &&
+    //     (currency.year || 0) >= filters.value.startYear &&
+    //     (currency.year || 0) <= filters.value.endYear &&
+    //     (!filters.value.startDate ||
+    //       (currency.date &&
+    //         new Date(currency.date) >= new Date(filters.value.startDate))) &&
+    //     (!filters.value.endDate ||
+    //       (currency.date &&
+    //         new Date(currency.date) <= new Date(filters.value.endDate)))
+    //   );
+    // });
+
+    // console.log({ filteredData, res });
+
     currencies.update(
       res.map(({ fPhoto, bPhoto, ...rest }) => ({
         ...rest,
@@ -88,6 +104,7 @@ const filterData = () =>
       }))
     );
   });
+};
 
 filterData();
 </script>

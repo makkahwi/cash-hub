@@ -1,174 +1,131 @@
 <template>
   <PageSection
     title="Filters"
-    subtitle="Filter what you wanna see of the collection"
+    subtitle="Filter the currencies you want to view"
   >
-    <form @submit="onSubmit">
-      <div class="row text-start">
-        <div class="mx-auto col-md-3 multisteps-form__content">
-          <h6 class="my-3">Per Type</h6>
-
-          <div>
+    <form @submit.prevent="onSubmit">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <h6 class="text-start my-4">By Type</h6>
+          <div
+            class="form-check"
+            v-for="type in ['Banknote', 'Coin']"
+            :key="type"
+          >
             <input
-              class="form-check-input border"
+              class="form-check-input"
               type="checkbox"
-              name="type"
-              value="Banknotes"
-              :checked="filters.value.type.includes('banknotes')"
-              @change="(e) => filters.update('type', 'banknotes')"
+              :value="type"
+              :checked="filters.value.type.includes(type)"
+              @change="toggleFilter('type', type)"
+              id="type-{{ type }}"
             />
-
-            <label class="custom-control-label"> Banknotes </label>
+            <label :for="'type-' + type">{{ type }}</label>
           </div>
 
-          <div>
+          <h6 class="text-start my-4">By Status</h6>
+          <div
+            class="form-check"
+            v-for="status in ['Circulable', 'Outdated']"
+            :key="status"
+          >
             <input
-              class="form-check-input border"
+              class="form-check-input"
               type="checkbox"
-              name="type"
-              value="Coins"
-              :checked="filters.value.type.includes('coins')"
-              @change="(e) => filters.update('type', 'coins')"
+              :value="status"
+              :checked="filters.value.status.includes(status)"
+              @change="toggleFilter('status', status)"
+              id="status-{{ status }}"
             />
-
-            <label class="custom-control-label"> Coins </label>
-          </div>
-
-          <h6 class="my-3">Per Status</h6>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="status"
-              value="Circulable"
-              :checked="filters.value.status.includes('Circulable')"
-              @change="(e) => filters.update('status', 'Circulable')"
-            />
-
-            <label class="custom-control-label"> Circulable </label>
-          </div>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="status"
-              value="Outdated"
-              :checked="filters.value.status.includes('Outdated')"
-              @change="(e) => filters.update('status', 'Outdated')"
-            />
-
-            <label class="custom-control-label"> Outdated </label>
+            <label :for="'status-' + status">{{ status }}</label>
           </div>
         </div>
 
-        <div class="mx-auto col-md-3 multisteps-form__content">
-          <h6 class="my-3">Per Continent</h6>
-
-          <div>
+        <div class="col-md-3">
+          <h6 class="text-start my-4">By Continent</h6>
+          <div
+            class="form-check"
+            v-for="continent in [
+              'Africa',
+              'Americas',
+              'Asia',
+              'Europe',
+              'Oceania',
+            ]"
+            :key="continent"
+          >
             <input
-              class="form-check-input border"
+              class="form-check-input"
               type="checkbox"
-              name="continent"
-              value="Africa"
-              :checked="filters.value.continent.includes('africa')"
-              @change="(e) => filters.update('continent', 'africa')"
+              :value="continent"
+              :checked="filters.value.continent.includes(continent)"
+              @change="toggleFilter('continent', continent)"
+              id="continent-{{ continent }}"
             />
-
-            <label class="custom-control-label"> Africa </label>
-          </div>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="continent"
-              value="Americas"
-              :checked="filters.value.continent.includes('americas')"
-              @change="(e) => filters.update('continent', 'americas')"
-            />
-
-            <label class="custom-control-label"> Americas </label>
-          </div>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="continent"
-              value="Asia"
-              :checked="filters.value.continent.includes('asia')"
-              @change="(e) => filters.update('continent', 'asia')"
-            />
-
-            <label class="custom-control-label"> Asia </label>
-          </div>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="continent"
-              value="Europe"
-              :checked="filters.value.continent.includes('europe')"
-              @change="(e) => filters.update('continent', 'europe')"
-            />
-
-            <label class="custom-control-label"> Europe </label>
-          </div>
-
-          <div>
-            <input
-              class="form-check-input border"
-              type="checkbox"
-              name="continent"
-              value="Oceania"
-              :checked="filters.value.continent.includes('oceania')"
-              @change="(e) => filters.update('continent', 'oceania')"
-            />
-
-            <label class="custom-control-label"> Oceania </label>
+            <label :for="'continent-' + continent">
+              {{ continent }}
+            </label>
           </div>
         </div>
 
-        <div class="mx-auto col-md-3 multisteps-form__content">
-          <h6 class="my-3">Per Issuing Year</h6>
-
+        <div class="col-md-3">
+          <h6 class="text-start my-4">By Issuing Year</h6>
           <div class="mb-3">
-            <label>Start Year</label>
-
+            <label class="form-label">Start Year</label>
             <input
-              class="multisteps-form__input form-control"
+              class="form-control"
               type="number"
-              min="1"
+              min="1800"
               :max="new Date().getFullYear()"
-              step="1"
-              name="startDate"
-              :value="filters.value.startDate"
-              @change="(e) => filters.replace({ startDate: e.target.value })"
+              :value="filters.value.startYear"
+              @input="updateFilter('startYear', $event.target.value)"
             />
           </div>
-
           <div>
-            <label>End Year</label>
-
+            <label class="form-label">End Year</label>
             <input
-              class="multisteps-form__input form-control"
+              class="form-control"
               type="number"
-              min="1"
+              min="1800"
               :max="new Date().getFullYear()"
-              step="1"
-              name="endDate"
-              :value="filters.value.endDate"
-              @change="(e) => filters.replace({ endDate: e.target.value })"
+              :value="filters.value.endYear"
+              @input="updateFilter('endYear', $event.target.value)"
             />
           </div>
-
-          <button class="btn btn-success mt-4 float-end" type="submit">
-            Filter
-          </button>
         </div>
+
+        <div class="col-md-3">
+          <h6 class="text-start my-4">By Collection Date</h6>
+          <div class="mb-3">
+            <label class="form-label">Start Date</label>
+            <input
+              class="form-control"
+              type="date"
+              :value="filters.value.startDate"
+              @input="updateFilter('startDate', $event.target.value)"
+            />
+          </div>
+          <div>
+            <label class="form-label">End Date</label>
+            <input
+              class="form-control"
+              type="date"
+              :value="filters.value.endDate"
+              @input="updateFilter('endDate', $event.target.value)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 text-end">
+        <button type="submit" class="btn btn-primary">Apply Filters</button>
+        <button
+          type="button"
+          class="btn btn-secondary ms-2"
+          @click="resetFilters"
+        >
+          Reset
+        </button>
       </div>
     </form>
   </PageSection>
@@ -180,16 +137,38 @@ import PageSection from "@/components/PageSection";
 const props = defineProps({
   filters: {
     type: Object,
-    default: {},
+    required: true,
   },
   onFilter: {
     type: Function,
-    default: () => false,
+    required: true,
   },
 });
 
+const toggleFilter = (key, value) => {
+  props.filters.update(key, value);
+};
+
+const updateFilter = (key, value) => {
+  props.filters.replace({ [key]: value });
+};
+
+const resetFilters = () => {
+  props.filters.replace({
+    type: ["Banknote", "Coin"],
+    status: ["Circulable", "Outdated"],
+    continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+    startYear: 1800,
+    endYear: new Date().getFullYear(),
+    startDate: null,
+    endDate: null,
+  });
+};
+
 const onSubmit = (e) => {
   e.preventDefault();
+  console.log("props.filters", props.filters);
+
   props.onFilter();
 };
 </script>
