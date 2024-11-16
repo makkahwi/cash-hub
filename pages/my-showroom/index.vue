@@ -26,6 +26,8 @@ definePageMeta({
   layout: "landing",
 });
 
+const formatDate = (date) => date.toISOString().split("T")[0];
+
 const filters = reactive({
   value: {
     type: ["Banknote", "Coin"],
@@ -33,8 +35,8 @@ const filters = reactive({
     continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     startYear: 1800,
     endYear: new Date().getFullYear(),
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: formatDate(new Date("2000-01-01")),
+    endDate: formatDate(new Date()),
   },
   update(key, newFilter) {
     this.value = {

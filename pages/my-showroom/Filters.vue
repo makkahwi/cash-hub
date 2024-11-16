@@ -17,7 +17,7 @@
               type="checkbox"
               :value="type"
               :checked="filters.value.type.includes(type)"
-              @change="toggleFilter('type', type)"
+              @change="(e) => toggleFilter('type', type, e)"
               id="type-{{ type }}"
             />
             <label :for="'type-' + type">{{ type }}</label>
@@ -34,7 +34,7 @@
               type="checkbox"
               :value="status"
               :checked="filters.value.status.includes(status)"
-              @change="toggleFilter('status', status)"
+              @change="(e) => toggleFilter('status', status, e)"
               id="status-{{ status }}"
             />
             <label :for="'status-' + status">{{ status }}</label>
@@ -59,7 +59,7 @@
               type="checkbox"
               :value="continent"
               :checked="filters.value.continent.includes(continent)"
-              @change="toggleFilter('continent', continent)"
+              @change="(e) => toggleFilter('continent', continent, e)"
               id="continent-{{ continent }}"
             />
             <label :for="'continent-' + continent">
@@ -76,6 +76,7 @@
               class="form-control"
               type="number"
               min="1800"
+              required
               :max="new Date().getFullYear()"
               :value="filters.value.startYear"
               @input="updateFilter('startYear', $event.target.value)"
@@ -87,6 +88,7 @@
               class="form-control"
               type="number"
               min="1800"
+              required
               :max="new Date().getFullYear()"
               :value="filters.value.endYear"
               @input="updateFilter('endYear', $event.target.value)"
@@ -101,6 +103,7 @@
             <input
               class="form-control"
               type="date"
+              required
               :value="filters.value.startDate"
               @input="updateFilter('startDate', $event.target.value)"
             />
@@ -110,6 +113,7 @@
             <input
               class="form-control"
               type="date"
+              required
               :value="filters.value.endDate"
               @input="updateFilter('endDate', $event.target.value)"
             />
@@ -145,8 +149,19 @@ const props = defineProps({
   },
 });
 
-const toggleFilter = (key, value) => {
-  props.filters.update(key, value);
+const toggleFilter = (key, value, event) => {
+  const currentValues = [...props.filters.value[key]];
+
+  if (currentValues.includes(value)) {
+    if (currentValues.length === 1) {
+      event.target.checked = true;
+      return;
+    }
+    const updatedValues = currentValues.filter((item) => item !== value);
+    props.filters.replace({ [key]: updatedValues });
+  } else {
+    props.filters.replace({ [key]: [...currentValues, value] });
+  }
 };
 
 const updateFilter = (key, value) => {
