@@ -21,5 +21,6 @@ export const login = async (password) => {
 
 export const logout = async () => {
   localStorage.removeItem("user");
+  window.location.reload();
   return { success: true };
 };

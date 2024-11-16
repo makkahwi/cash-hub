@@ -243,5 +243,6 @@ const handleSubmit = () => {
 
 definePageMeta({
   layout: "landing",
+  middleware: "auth",
 });
 </script>

@@ -66,15 +66,14 @@
 import headerImg from "@/assets/img/currencies.jpg";
 import { ref } from "vue";
 import { login } from "~~/api/auth";
-import { useRouter } from "vue-router";
 
 const password = ref("");
-const router = useRouter();
 
 const handleLogin = async () => {
   try {
     const response = await login(password.value);
-    router.push("/input");
+    window.location.reload();
+    window.location.href = "/input";
 
     console.log("Login successful:", response);
   } catch (error) {
@@ -84,5 +83,6 @@ const handleLogin = async () => {
 
 definePageMeta({
   layout: "landing",
+  middleware: "public",
 });
 </script>
