@@ -59,13 +59,51 @@ const currencies = reactive({
 });
 
 const filterData = () => {
-  getCurrencies(filters.value).then((res) => {
+  getCurrencies().then((res) => {
     currencies.update(
-      res.map(({ fPhoto, bPhoto, ...rest }) => ({
-        ...rest,
-        fPhoto: fPhoto || photoPlaceholder,
-        bPhoto: bPhoto || photoPlaceholder,
-      }))
+      res
+        .filter((currency) => {
+          let result = true;
+
+          const filterByValueProps = ["type", "status", "continent"];
+          const filterByRangeProps = ["date", "year"];
+
+          filterByValueProps.forEach((prop) => {
+            if (!filters.value[prop].includes(currency[prop])) {
+              result = false;
+            }
+          });
+
+          filterByRangeProps.forEach((prop) => {
+            const capitalizedStr = prop.charAt(0).toUpperCase() + prop.slice(1);
+
+            const startQuery = `start${capitalizedStr}`;
+            const endQuery = `end${capitalizedStr}`;
+
+            if (currency[prop]) {
+              if (
+                formatDate(new Date(filters.value[startQuery])) >
+                formatDate(new Date(currency[prop]))
+              ) {
+                result = false;
+              }
+
+              if (
+                formatDate(new Date(filters.value[endQuery])) <
+                formatDate(new Date(currency[prop]))
+              ) {
+                result = false;
+              }
+            }
+          });
+
+          return result;
+        })
+        .map(({ fPhoto, bPhoto, ...rest }) => ({
+          ...rest,
+          fPhoto: fPhoto || photoPlaceholder,
+          bPhoto: bPhoto || photoPlaceholder,
+        }))
     );
   });
 };

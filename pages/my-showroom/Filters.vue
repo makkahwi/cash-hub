@@ -168,6 +168,8 @@ const updateFilter = (key, value) => {
   props.filters.replace({ [key]: value });
 };
 
+const formatDate = (date) => date.toISOString().split("T")[0];
+
 const resetFilters = () => {
   props.filters.replace({
     type: ["Banknote", "Coin"],
@@ -175,14 +177,13 @@ const resetFilters = () => {
     continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     startYear: 1800,
     endYear: new Date().getFullYear(),
-    startDate: null,
-    endDate: null,
+    startDate: formatDate(new Date("2000-01-01")),
+    endDate: formatDate(new Date()),
   });
 };
 
 const onSubmit = (e) => {
   e.preventDefault();
-  console.log("props.filters", props.filters);
 
   props.onFilter();
 };

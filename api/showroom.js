@@ -5,16 +5,13 @@ export const addCurrency = async (data) => {
   return await service.post(`currencies/${user.localId}.json`, data);
 };
 
-export const getCurrencies = async (filters) => {
-  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null");
-  const queryString = new URLSearchParams(filters).toString();
-  return await service
-    .get(`currencies/${user.localId}.json?${queryString}`)
-    .then((res) => {
-      return res
-        ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
-        : [];
-    });
+export const getCurrencies = async () => {
+  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null")
+  return await service.get(`currencies/${user.localId}.json`).then((res) => {
+    return res
+      ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
+      : [];
+  });
 };
 
 export const getCurrencyById = async (id) => {
