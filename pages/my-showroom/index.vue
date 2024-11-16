@@ -16,7 +16,7 @@
 <script setup>
 import PageHeader from "@/components/PageHeader";
 import FiltersSection from "./Filters";
-import StatisticsSection from "./Statistics";
+import StatisticsSection from "./statistics";
 import ListSection from "./List";
 import { reactive } from "vue";
 import { getCurrencies } from "@/api/showroom";
