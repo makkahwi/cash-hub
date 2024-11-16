@@ -69,6 +69,6 @@
     "vue3-apexcharts": "1.4.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=16 <19"
   }
 }
