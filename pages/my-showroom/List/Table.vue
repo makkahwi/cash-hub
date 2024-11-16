@@ -18,7 +18,7 @@
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
-            Nation
+            Nation / Area
           </th>
 
           <th
@@ -85,7 +85,7 @@
               bPhoto,
               date,
               count,
-              countryName,
+              zoneName,
               fullName,
               mapCode,
               continent,
@@ -99,7 +99,7 @@
             <img :src="fPhoto" class="w-100" :style="{ maxWidth: '150px' }" />
           </td>
           <td class="text-sm font-weight-normal">{{ continent }}</td>
-          <td class="text-sm font-weight-normal">{{ countryName }}</td>
+          <td class="text-sm font-weight-normal">{{ zoneName }}</td>
           <td class="text-sm font-weight-normal">{{ code }}</td>
           <td class="text-sm font-weight-normal">{{ type }}</td>
           <td class="text-sm font-weight-normal">{{ name }}</td>

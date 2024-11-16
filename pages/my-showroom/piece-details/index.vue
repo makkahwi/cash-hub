@@ -51,14 +51,14 @@
             <tr>
               <td class="font-weight-bold">Country</td>
               <td class="font-weight-bolder">
-                {{ piece.countryName || "N/A" }}
+                {{ piece.zoneName || "N/A" }}
               </td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Country Full Name</td>
               <td class="font-weight-bolder">
-                {{ piece.countryFullName || "N/A" }}
+                {{ piece.zoneFullName || "N/A" }}
               </td>
             </tr>
 

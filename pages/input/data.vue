@@ -71,7 +71,7 @@ export default {
                 ...item,
                 continent: continents[continentCode],
                 type,
-                countryFullName: item.countryFullName || item.countryName,
+                zoneFullName: item.zoneFullName || item.zoneName,
                 status,
               }));
 

@@ -21,6 +21,7 @@
           fullName,
           mapCode,
           continent,
+          status,
           usdToLocal,
         },
         i
@@ -30,7 +31,7 @@
     >
       <div class="card border px-2 py-4 border-2 mx-1 my-2">
         <CardView
-          :title="zoneName + ' ' + name"
+          :title="status + ' ' + name"
           :img="fPhoto"
           :label="code + ' ' + value + ' ' + type"
           :action="{

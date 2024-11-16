@@ -40,7 +40,7 @@
               <span class="font-weight-bolder">{{ continent }}</span>
             </div>
 
-            <div class="col-md-2">Nation</div>
+            <div class="col-md-2">Nation / Area</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">{{ zoneName }}</span>
             </div>
