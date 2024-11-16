@@ -73,7 +73,7 @@ const handleLogin = async () => {
   try {
     const response = await login(password.value);
     window.location.reload();
-    window.location.href = "/input";
+    window.location.href = "/dashboard";
 
     console.log("Login successful:", response);
   } catch (error) {
