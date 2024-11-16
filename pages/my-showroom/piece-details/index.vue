@@ -2,9 +2,9 @@
   <PageHeader title="Piece Details" />
 
   <PageSection>
-    <div class="text-float-end text-end text-sm font-weight-normal">
+    <div class="text-end mb-3 text-sm font-weight-normal">
       <NuxtLink
-        class="btn btn-success btn-sm"
+        class="btn btn-success btn-lg"
         :to="{
           path: '/my-showroom',
         }"
@@ -22,6 +22,10 @@
     </div>
 
     <div v-else class="row">
+      <div class="col-12 text-start">
+        <h2 class="my-4 mt-lg-0">{{ piece.code }} {{ piece.value }}</h2>
+      </div>
+
       <div class="text-center col-xl-5 col-lg-6">
         <img
           class="shadow-lg w-100 border-radius"
@@ -37,8 +41,6 @@
       </div>
 
       <div class="mx-auto col-lg-5 text-start">
-        <h3 class="mt-4 mt-lg-0">{{ piece.code }} {{ piece.value }}</h3>
-
         <table class="w-100 table-responsive">
           <tbody>
             <tr>
