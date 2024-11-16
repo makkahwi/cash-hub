@@ -50,22 +50,7 @@ const filters = reactive({
 });
 
 const currencies = reactive({
-  value: [
-    {
-      zoneName: "Jordan",
-      zoneFullName: "The Hashemite Kingdom Of Jordan",
-      name: "Jordanian Dinar",
-      code: "JOD",
-      edition: 5,
-      year: 2023,
-      usdToLocal: 0.71,
-      date: "2023-01-01",
-      value: 50,
-      continent: "Asia",
-      type: "Banknote",
-      status: "Circulable",
-    },
-  ],
+  value: [],
   update(newCurrencies) {
     this.value = newCurrencies;
   },
@@ -73,29 +58,6 @@ const currencies = reactive({
 
 const filterData = () => {
   getCurrencies(filters.value).then((res) => {
-    // const filteredData = res.filter((currency) => {
-    //   console.log("Checking currency:", currency);
-
-    //   return (
-    //     (!filters.value.type.length ||
-    //       filters.value.type.includes(currency.type)) &&
-    //     (!filters.value.status.length ||
-    //       filters.value.status.includes(currency.status)) &&
-    //     (!filters.value.continent.length ||
-    //       filters.value.continent.includes(currency.continent)) &&
-    //     (currency.year || 0) >= filters.value.startYear &&
-    //     (currency.year || 0) <= filters.value.endYear &&
-    //     (!filters.value.startDate ||
-    //       (currency.date &&
-    //         new Date(currency.date) >= new Date(filters.value.startDate))) &&
-    //     (!filters.value.endDate ||
-    //       (currency.date &&
-    //         new Date(currency.date) <= new Date(filters.value.endDate)))
-    //   );
-    // });
-
-    // console.log({ filteredData, res });
-
     currencies.update(
       res.map(({ fPhoto, bPhoto, ...rest }) => ({
         ...rest,
