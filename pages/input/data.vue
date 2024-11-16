@@ -42,7 +42,7 @@ export default {
             const status =
               parseInt(key.split(" ")[0], 10) % 2 !== 0
                 ? "Circulable"
-                : "Not Circulable";
+                : "Outdated";
 
             const final = data
               .filter((item) =>

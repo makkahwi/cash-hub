@@ -34,7 +34,7 @@
           :img="fPhoto"
           :label="code + ' ' + value + ' ' + type"
           :action="{
-            color: mostRecentEdition === edition ? 'success' : 'danger',
+            color: status === 'Circulable' ? 'success' : 'danger',
             label: 'View Details',
             link: {
               path: '/my-showroom/piece-details',

@@ -39,7 +39,7 @@ const statsData = () => [
     value: props.currencies.filter(({ type }) => type == "Coin")?.length,
   },
   {
-    title: "Count of Circuable Pieces",
+    title: "Count of Circulable Pieces",
     value: "455",
     value: props.currencies.filter(
       ({ mostRecentEdition, edition }) => mostRecentEdition == edition

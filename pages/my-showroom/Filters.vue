@@ -41,12 +41,12 @@
               class="form-check-input border"
               type="checkbox"
               name="status"
-              value="Circuable"
-              :checked="filters.value.status.includes('circuable')"
-              @change="(e) => filters.update('status', 'circuable')"
+              value="Circulable"
+              :checked="filters.value.status.includes('Circulable')"
+              @change="(e) => filters.update('status', 'Circulable')"
             />
 
-            <label class="custom-control-label"> Circuable </label>
+            <label class="custom-control-label"> Circulable </label>
           </div>
 
           <div>
@@ -55,8 +55,8 @@
               type="checkbox"
               name="status"
               value="Outdated"
-              :checked="filters.value.status.includes('outdated')"
-              @change="(e) => filters.update('status', 'outdated')"
+              :checked="filters.value.status.includes('Outdated')"
+              @change="(e) => filters.update('status', 'Outdated')"
             />
 
             <label class="custom-control-label"> Outdated </label>

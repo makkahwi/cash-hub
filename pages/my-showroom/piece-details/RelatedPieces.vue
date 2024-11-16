@@ -56,6 +56,7 @@
                 year,
                 value,
                 type,
+                status,
                 fPhoto,
                 bPhoto,
                 date,
@@ -90,10 +91,10 @@
 
             <td
               :class="`align-middle text-sm fw-bold text-${
-                mostRecentEdition === edition ? 'success' : 'danger'
+                status === 'Circulable' ? 'success' : 'danger'
               }`"
             >
-              {{ mostRecentEdition === edition ? "Circuable" : "Outdated" }}
+              {{ status }}
             </td>
 
             <td class="align-middle">

@@ -81,6 +81,7 @@
               value,
               type,
               fPhoto,
+              status,
               bPhoto,
               date,
               count,
@@ -105,10 +106,10 @@
           <td class="text-sm font-weight-normal">{{ value }}</td>
           <td
             :class="`text-sm fw-bold text-${
-              mostRecentEdition === edition ? 'success' : 'danger'
+              status === 'Circulable' ? 'success' : 'danger'
             }`"
           >
-            {{ mostRecentEdition === edition ? "Circuable" : "Outdated" }}
+            {{ status }}
           </td>
           <td class="text-sm font-weight-normal">{{ date }}</td>
           <td class="text-sm font-weight-normal">

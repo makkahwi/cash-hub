@@ -64,16 +64,10 @@
               <td class="font-weight-bold">Circability</td>
               <td
                 :class="`font-weight-bolder badge badge-${
-                  piece.value.mostRecentEdition === piece.value.edition
-                    ? 'success'
-                    : 'danger'
+                  piece.value.status === 'Circulable' ? 'success' : 'danger'
                 }`"
               >
-                {{
-                  piece.value.mostRecentEdition === piece.value.edition
-                    ? "Circuable"
-                    : "Outdated"
-                }}
+                {{ piece.value.status }}
               </td>
             </tr>
 

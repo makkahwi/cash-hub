@@ -16,6 +16,7 @@
             type,
             fPhoto,
             bPhoto,
+            status,
             date,
             count,
             zoneName,
@@ -68,11 +69,9 @@
             <div class="col-md-2">
               <span
                 :class="`font-weight-bolder fw-bold text-${
-                  mostRecentEdition === edition ? 'success' : 'danger'
+                  status === 'Circulable' ? 'success' : 'danger'
                 }`"
-                >{{
-                  mostRecentEdition === edition ? "Circuable" : "Outdated"
-                }}</span
+                >{{ status }}</span
               >
             </div>
 

@@ -28,7 +28,7 @@ definePageMeta({
 const filters = reactive({
   value: {
     type: ["banknotes", "coins"],
-    status: ["circuable", "outdated"],
+    status: ["Circulable", "Outdated"],
     continent: ["africa", "americas", "asia", "europe", "oceania"],
     startDate: 1800,
     endDate: new Date().getFullYear(),
