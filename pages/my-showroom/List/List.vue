@@ -35,6 +35,11 @@
           </div>
 
           <div class="col-md-8 row text-start">
+            <div class="col-md-2">Type</div>
+            <div class="col-md-2">
+              <span class="font-weight-bolder">{{ type }}</span>
+            </div>
+
             <div class="col-md-2">Continent</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">{{ continent }}</span>
@@ -45,24 +50,19 @@
               <span class="font-weight-bolder">{{ zoneName }}</span>
             </div>
 
-            <div class="col-md-2">Currency</div>
+            <div class="col-md-2">Currency Code</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">{{ code }}</span>
-            </div>
-
-            <div class="col-md-2">Type</div>
-            <div class="col-md-2">
-              <span class="font-weight-bolder">{{ type }}</span>
-            </div>
-
-            <div class="col-md-2">Unit</div>
-            <div class="col-md-2">
-              <span class="font-weight-bolder">{{ name }}</span>
             </div>
 
             <div class="col-md-2">Value</div>
             <div class="col-md-2">
               <span class="font-weight-bolder">{{ value }}</span>
+            </div>
+
+            <div class="col-md-2">Currency Name</div>
+            <div class="col-md-2">
+              <span class="font-weight-bolder">{{ name }}</span>
             </div>
 
             <div class="col-md-2">Circability</div>
@@ -73,6 +73,11 @@
                 }`"
                 >{{ status }}</span
               >
+            </div>
+
+            <div class="col-md-2">USD => Local</div>
+            <div class="col-md-2">
+              <span class="font-weight-bolder">{{ usdToLocal }}</span>
             </div>
 
             <div class="col-md-2">Collected @</div>

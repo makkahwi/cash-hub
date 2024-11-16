@@ -12,6 +12,12 @@
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
+            Type
+          </th>
+
+          <th
+            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+          >
             Continent
           </th>
 
@@ -24,25 +30,13 @@
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
-            Currency
-          </th>
-
-          <th
-            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-          >
-            Type
+            Value
           </th>
 
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
             Currency Name
-          </th>
-
-          <th
-            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-          >
-            Value
           </th>
 
           <th
@@ -96,14 +90,17 @@
           :key="i"
         >
           <td class="text-sm font-weight-normal">
-            <img :src="fPhoto" class="w-100" :style="{ maxWidth: '150px' }" />
+            <img
+              :src="fPhoto || bPhoto"
+              class="w-100"
+              :style="{ maxWidth: '150px' }"
+            />
           </td>
+          <td class="text-sm font-weight-normal">{{ type }}</td>
           <td class="text-sm font-weight-normal">{{ continent }}</td>
           <td class="text-sm font-weight-normal">{{ zoneName }}</td>
-          <td class="text-sm font-weight-normal">{{ code }}</td>
-          <td class="text-sm font-weight-normal">{{ type }}</td>
-          <td class="text-sm font-weight-normal">{{ name }}</td>
           <td class="text-sm font-weight-normal">{{ value }}</td>
+          <td class="text-sm font-weight-normal">{{ name }}</td>
           <td
             :class="`text-sm fw-bold text-${
               status === 'Circulable' ? 'success' : 'danger'
