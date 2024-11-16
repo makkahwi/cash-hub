@@ -158,7 +158,7 @@ const piece = reactive({
     fullName: "Hashemite Kingdom of Jordan",
     mapCode: "JO",
     continent: "Asia",
-    valuePerUSD: 0.71,
+    usdToLocal: 0.71,
   },
   update(newCurrency) {
     this.value = newCurrency;

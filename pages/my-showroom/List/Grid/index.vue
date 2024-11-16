@@ -21,7 +21,7 @@
           fullName,
           mapCode,
           continent,
-          valuePerUSD,
+          usdToLocal,
         },
         i
       ) of currencies"

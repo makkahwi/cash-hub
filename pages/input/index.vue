@@ -149,7 +149,7 @@
           <div class="col-sm-6 col-md-3">
             <label>Value Per USD</label>
             <input
-              v-model="formData.valuePerUSD"
+              v-model="formData.usdToLocal"
               class="form-control"
               type="number"
               step="0.01"
@@ -232,7 +232,7 @@ const defaultFormValues = {
   zoneName: "",
   mapCode: "",
   continent: "",
-  valuePerUSD: null,
+  usdToLocal: null,
 };
 
 const formData = reactive(defaultFormValues);

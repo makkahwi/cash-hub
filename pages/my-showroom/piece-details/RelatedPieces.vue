@@ -64,7 +64,7 @@
                 fullName,
                 mapCode,
                 continent,
-                valuePerUSD,
+                usdToLocal,
               },
               i
             ) of list.value"
@@ -145,7 +145,7 @@ const list = reactive({
       fullName: "Hashemite Kingdom of Jordan",
       mapCode: "JO",
       continent: "Asia",
-      valuePerUSD: 0.71,
+      usdToLocal: 0.71,
     },
   ],
   update(newCurrencies) {
