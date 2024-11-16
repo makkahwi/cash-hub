@@ -9,7 +9,7 @@
             <NuxtLink class="w-100" to="/">
               <img
                 class="w-100 border-radius-lg"
-                src="../../assets/img/default.png"
+                src="../../../assets/img/default.png"
                 alt="default page"
               />
             </NuxtLink>
@@ -19,7 +19,7 @@
           >
             <img
               class="w-100 border-radius-lg"
-              src="../../assets/img/automotive.png"
+              src="../../../assets/img/automotive.png"
               alt="default page"
             />
           </div>
@@ -28,7 +28,7 @@
           >
             <img
               class="w-100 border-radius-lg"
-              src="../../assets/img/crm.png"
+              src="../../../assets/img/crm.png"
               alt="default page"
             />
           </div>

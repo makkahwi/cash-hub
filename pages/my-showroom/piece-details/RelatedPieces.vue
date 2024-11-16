@@ -122,7 +122,7 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
-import { getRelatedCurrencies } from "@/api/showroom";
+// import { getRelatedCurrencies } from "@/api/showroom";
 
 const list = reactive({
   value: [
@@ -161,15 +161,15 @@ const props = defineProps({
   },
 });
 
-const getRelatedList = () =>
-  getRelatedCurrencies(props.pieceId).then((res) =>
-    list.update(
-      res.data._rawValue.data.map(({ attributes, id }) => ({
-        id,
-        ...attributes,
-      }))
-    )
-  );
+// const getRelatedList = () =>
+//   getRelatedCurrencies(props.pieceId).then((res) =>
+//     list.update(
+//       res.data._rawValue.data.map(({ attributes, id }) => ({
+//         id,
+//         ...attributes,
+//       }))
+//     )
+//   );
 
-getRelatedList();
+// getRelatedList();
 </script>
