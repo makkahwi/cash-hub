@@ -20,6 +20,7 @@ import StatisticsSection from "./Statistics";
 import ListSection from "./List";
 import { reactive } from "vue";
 import { getCurrencies } from "@/api/showroom";
+import { photoPlaceholder } from "@/utils/consts";
 
 definePageMeta({
   layout: "landing",
@@ -79,7 +80,13 @@ const currencies = reactive({
 
 const filterData = () =>
   getCurrencies(filters.value).then((res) => {
-    currencies.update(res);
+    currencies.update(
+      res.map(({ fPhoto, bPhoto, ...rest }) => ({
+        ...rest,
+        fPhoto: fPhoto || photoPlaceholder,
+        bPhoto: bPhoto || photoPlaceholder,
+      }))
+    );
   });
 
 filterData();

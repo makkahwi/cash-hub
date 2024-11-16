@@ -169,3 +169,6 @@ export const currencyZones = [
   { name: "Yugoslavia", mapCode: "YU", currencyCode: "YUD" },
   { name: "Zaire", mapCode: "ZR", currencyCode: "ZRN" },
 ];
+
+export const photoPlaceholder =
+  "https://t3.ftcdn.net/jpg/02/73/18/48/360_F_273184815_uOmhKYLSlx3hQWNsGciu1EfbKrf7g5bQ.jpg";

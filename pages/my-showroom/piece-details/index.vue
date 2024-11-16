@@ -24,29 +24,15 @@
     <div v-else class="row">
       <div class="text-center col-xl-5 col-lg-6">
         <img
-          v-if="piece.fPhoto"
           class="shadow-lg w-100 border-radius"
           :src="piece.fPhoto"
           alt="front"
         />
-        <img
-          v-else
-          class="shadow-lg w-100 border-radius"
-          src="https://t3.ftcdn.net/jpg/02/73/18/48/360_F_273184815_uOmhKYLSlx3hQWNsGciu1EfbKrf7g5bQ.jpg"
-          alt="front"
-        />
 
         <img
-          v-if="piece.bPhoto"
           class="shadow-lg w-100 border-radius mt-4"
           :src="piece.bPhoto"
           alt="back"
-        />
-        <img
-          v-else
-          class="shadow-lg w-100 border-radius"
-          src="https://t3.ftcdn.net/jpg/02/73/18/48/360_F_273184815_uOmhKYLSlx3hQWNsGciu1EfbKrf7g5bQ.jpg"
-          alt="front"
         />
       </div>
 
@@ -158,6 +144,7 @@ import PageHeader from "@/components/PageHeader";
 import { useRoute } from "vue-router";
 import { ref } from "vue";
 import { getCurrencyById } from "@/api/showroom";
+import { photoPlaceholder } from "@/utils/consts";
 
 const route = useRoute();
 
@@ -198,7 +185,11 @@ const getPieceDetails = async () => {
       return;
     }
 
-    piece.value = response;
+    piece.value = {
+      ...response,
+      fPhoto: response.fPhoto || photoPlaceholder,
+      bPhoto: response.bPhoto || photoPlaceholder,
+    };
   } catch (err) {
     error.value = "Failed to fetch currency details.";
     console.error(err);
