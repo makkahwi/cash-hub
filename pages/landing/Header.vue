@@ -35,10 +35,13 @@
 <script setup>
 import PageHeader from "@/components/PageHeader";
 import { productName } from "@/consts.js";
+import { links } from "@/consts.js";
 
-const buttons = [
-  { to: "#about", title: "Find Out More" },
-  { to: "/my-showroom", title: "Browse My Showroom" },
-  { to: "/get-your-showroom", title: "Build Your Showroom" },
-];
+const buttons = [{ to: "#about", title: "Find Out More" }];
+
+links
+  .filter(({ to }) => to !== "/" && to !== "")
+  .forEach((element) => {
+    buttons.push(element);
+  });
 </script>

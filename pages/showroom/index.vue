@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      title="My Showroom"
+      title="Showroom"
       subtitle="Here is my collection of currencies"
     />
 

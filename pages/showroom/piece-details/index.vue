@@ -6,7 +6,7 @@
       <NuxtLink
         class="btn btn-success btn-lg"
         :to="{
-          path: '/my-showroom',
+          path: '/showroom',
         }"
       >
         Back

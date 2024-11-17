@@ -105,7 +105,7 @@
               <NuxtLink
                 class="btn btn-success btn-sm text-white"
                 :to="{
-                  path: '/my-showroom/piece-details',
+                  path: '/showroom/piece-details',
                   query: { id },
                 }"
                 external

@@ -90,7 +90,7 @@
             <NuxtLink
               class="btn btn-success d-flex justify-content-center align-items-center"
               :to="{
-                path: '/my-showroom/piece-details',
+                path: '/showroom/piece-details',
                 query: { id },
               }"
             >
