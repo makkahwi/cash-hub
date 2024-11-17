@@ -8,7 +8,7 @@ This is originally a coding project to learn the frontend tech used (Vue.Js), bu
 
 Are you a currency collector n wanna build an online catalog for your collections? This is it
 
-It's a web app to publish one's collection of currencies from all the world to all the world. Where collectors would clone this project & deploy it to enlist their currencies, and the public could just browse their showrooms right away.
+It's a web app to publish one's collection of currencies from all the world to all the world. Where collectors would clone this app & deploy it to enlist their currencies, and the public could just browse their showrooms anywhere anytime.
 
 ## Features
 

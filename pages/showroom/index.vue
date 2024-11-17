@@ -1,9 +1,6 @@
 <template>
   <div>
-    <PageHeader
-      title="Showroom"
-      subtitle="Here is my collection of currencies"
-    />
+    <PageHeader title="Showroom" />
 
     <FiltersSection :filters="filters" :onFilter="filterData" />
 

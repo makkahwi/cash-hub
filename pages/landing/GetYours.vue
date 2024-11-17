@@ -1,20 +1,19 @@
 <template>
-  <PageSection>
-    <h3 class="text-dark">You would like to have your own</h3>
-    <h2 class="text-success mb-6">Currencies Showroom?</h2>
+  <PageSection
+    class="get-yours-section py-5"
+    title="Want Your Own Currencies Showroom?"
+  >
+    <div class="container text-center">
+      <p>Follow the link below to build your showroom effortlessly.</p>
+      <p>(No coding skills required!)</p>
 
-    <p class="text-dark">
-      You may visit this link & follow the instructions to build your own
-    </p>
-
-    <p class="text-dark">(You don't need to be a coder to do it)</p>
-
-    <NuxtLink
-      to="/get-your-showroom"
-      class="btn btn-success btn-xs m-3 p-3 px-5"
-    >
-      Have It Now
-    </NuxtLink>
+      <NuxtLink
+        to="/get-your-showroom"
+        class="btn btn-success btn-lg px-5 mt-3"
+      >
+        Get Started
+      </NuxtLink>
+    </div>
   </PageSection>
 </template>
 

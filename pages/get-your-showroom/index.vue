@@ -1,9 +1,6 @@
 <template>
   <div>
-    <PageHeader
-      title="Get Your Showroom"
-      :subtitle="`If you are interested to have your own ${productName.short}, follow the steps below to get it. Don't worry, even if you are not a developer, you could still build your own copy.`"
-    />
+    <PageHeader title="Get Your Showroom" />
 
     <HowToDoSection />
   </div>
