@@ -2,11 +2,14 @@
   <div class="card">
     <div class="p-3 card-body">
       <div class="d-flex">
-        <div class="p-2 avatar avatar-xl bg-gradient-success border-radius-md">
+        <div
+          v-if="icon"
+          class="p-2 avatar avatar-xl bg-success border-radius-md me-3"
+        >
           <i :class="icon" />
         </div>
 
-        <div class="my-auto ms-3 text-start">
+        <div class="my-auto text-start">
           <h6>{{ title }}</h6>
         </div>
       </div>

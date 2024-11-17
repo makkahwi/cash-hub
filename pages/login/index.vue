@@ -7,9 +7,7 @@
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
       }"
-    >
-      <span class="mask bg-gradient-dark opacity-6"></span>
-    </div>
+    ></div>
 
     <div class="container">
       <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
@@ -40,7 +38,6 @@
                   <ArgonButton
                     type="submit"
                     color="success"
-                    variant="gradient"
                     size="lg"
                     class="mt-3 mb-0"
                   >

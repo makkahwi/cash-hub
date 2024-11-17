@@ -1,11 +1,11 @@
 <template>
   <div class="overflow-hidden">
     <nav
-      class="navbar navbar-expand-lg top-0 start-3 end-3 z-index-5 position-fixed mt-4 bg-gradient-success rounded-3 shadow-none"
+      class="navbar navbar-expand-lg top-0 start-3 end-3 z-index-5 position-fixed mt-4 bg-success rounded-3 shadow-none"
     >
       <div class="container">
         <NuxtLink class="navbar-brand font-weight-bolder text-black" to="/">
-          {{ productName.short }}
+          <img src="@/assets/img/brand/Logo.png" height="50px" />
         </NuxtLink>
 
         <button
@@ -39,15 +39,6 @@
                 class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
               >
                 {{ title }}
-              </NuxtLink>
-            </li>
-
-            <li v-if="token" class="mx-2 nav-item dropdown dropdown-hover">
-              <NuxtLink
-                to="/dashboard"
-                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
-              >
-                Your Dashboard
               </NuxtLink>
             </li>
           </ul>

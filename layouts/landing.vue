@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="authentication">
     <template #navbar>
-      <Navbar btn-background="bg-gradient-success" />
+      <Navbar btn-background="bg-success" />
     </template>
 
     <main class="main-content position-relative max-height-vh-100 h-100 w-100">

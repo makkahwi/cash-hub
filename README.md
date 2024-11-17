@@ -1,82 +1,173 @@
 # Currencies Collection Showroom Client
 
-Vue.Js-Based Frontend Of Currencies Collection Showroom
+**Vue.js-Based Frontend for Currencies Collection Showroom**
 
-Welcome to my ["Currencies Collection Showroom"](https://currencies-showroom.vercel.app/), a Vue.Js & Firebase based open-source project
+Welcome to the [**Currencies Collection Showroom**](https://currencies-showroom.vercel.app/), a Vue.js and Firebase-based open-source project designed for currency collectors to build and showcase their collections online.
 
-This is originally a coding project to learn the frontend tech used (Vue.Js), but it was decided to kill two birds with one stone. So beside mastering the tech, it's also to build an actual & usable web app to serve "money collection" hobbyists.
+Originally a coding project to master Vue.js, this app was developed to serve both as a learning platform and a practical, user-friendly tool for "money collection" enthusiasts.
 
-Are you a currency collector n wanna build an online catalog for your collections? This is it
+Are you a currency collector looking to create an online catalog for your collection? This app is the perfect solution!
 
-It's a web app to publish one's collection of currencies from all the world to all the world. Where collectors would clone this project & deploy it to enlist their currencies, and the public could just browse their showrooms right away.
+This web app enables collectors to publish their collections of currencies from around the world. Collectors can clone, customize, and deploy their own versions of the app, while the public can browse their showrooms anywhere and anytime.
 
 ## Features
 
-- Full-Detail Listing: You could enlist all the details you could ever think of about your currencies collection.
-- Automated Market Evaluation: Once you enlist a currency, the system added up its circular value to total value estimation.
-- Best Techs Involved: Techs of Vue.Js 3 & Firebase of Node.Js were the best to serve the project and its purposes.
-- A showroom page for public to browse the collection with filter options.
-- Secured login for showroom owner to access data manipulation features.
-- Statistics & charts dashboard (Counts, Targets, Edges, Map) for owner as well.
+- **Comprehensive Listings**  
+  Enlist detailed information about your currencies, including type, value, continent, zone, and more.
+  
+- **Interactive Showroom**  
+  Public visitors can browse your collection using advanced filtering options.
+  
+- **Market Insights**  
+  Automated total value estimation for your collection based on circulable values.
+
+- **Secured Access**  
+  Admin-only access for data manipulation with Firebase authentication.
+
+- **Advanced Statistics**  
+  A dedicated dashboard showcasing charts, maps, and key statistics like total counts, collection value, and rare pieces.
+
+- **Modern Tech Stack**  
+  Built with Vue.js 3 and Firebase for an optimized, scalable, and responsive web experience.
 
 ## Coming Soon Features
 
-As of this moment, you could use the admin panel (Firebase app) to add the currencies collection and the public showroom (Vue.Js app) to view them. Soon, a new admin panel will be built to not only include data input controls, but also a dashboard to provide reports & data analysis about the collection.
+- **Enhanced Admin Dashboard**  
+  A feature-rich panel for currency management, detailed reports, and advanced data analysis.
+  
+- **Social Media Integration**  
+  Share your showroom or latest additions on popular platforms.
+  
+- **Custom Themes**  
+  Admin settings for personalized theme color options.
 
 ## Future Works
 
-- Now user is required to upload an image of their collected currency piece. Later, a feature will be built to automatically find the appropriate photo for the piece to attach.
-- Expand the project uses like any other sort of collections showrooming or even other uses like photos gallery.
-- This is an open-source project with potential to get fund & turn it into a profitable project (like making it a SaaS product).
-- Automated currencies evaluation (API to 3rd party).
-- Centralize source of zones, currencies, exchange rates, editions, pieces
-- Monthly progress (Timeline).
-- Generate PDF booklet.
-- Social media share of showroom / latest additions.
-- Admin & browser locatiolization.
-- Admin settings to modify theme colors.
-- Centralize & restructure components & subviews.
-- Expand to all sort of collectors (like stamps).
-- Build a centralized & community-contribution-based database for currency updates.
-  - Default sample images.
-  - Historic & latest gold evaluation.
-- Transform into a centralized web services for all collectors.
-  - Registration & subscriptions mgmt sys.
-  - Auto subdomain creation & deployment.
-- Platform for several users
+- **Automatic Photo Integration**  
+  Automatically find and attach appropriate images for each currency piece.
 
-## How to deploy & start using as a collector
+- **Expansion to Other Collections**  
+  Extend the app to support other types of collections, such as stamps or photos.
 
-If you are not a web developer (coder / programmer), we are still working to provide you with an easy approach to build your own showroom. If you are a developer...
+- **Open-Source Contributions**  
+  Build a centralized database with community-contributed updates, including:
+  - Default images.
+  - Historical and latest gold value evaluations.
 
-- App is split into two seperated github repos. You may visit each of them to follow progress.
-- [Frontend](https://github.com/makkahwi/ccs-client)
-- [Backend](https://github.com/makkahwi/ccs-be)
+- **Advanced Features**  
+  - Generate a PDF catalog of your collection.
+  - Automated currency evaluation via integration with third-party APIs.
+  - Monthly progress tracking with timelines.
+  - Localization for administrators and browsers.
+
+- **Centralized Services**  
+  - Support for user registrations and subscriptions.
+  - Automated subdomain creation for personal showrooms.
+  - SaaS platform for collectors with community-driven updates and premium features.
+
+## How to Deploy & Start Using as a Collector
+
+If you're not a developer, we're working on providing a simple, non-technical setup process.
+
+For developers:
+
+1. Clone the [repository](https://github.com/makkahwi/currencies-collection-showroom/).
+2. Follow the steps in the **Developer Notes** section below.
 
 ## Developer Notes
 
-### Frontend To-Do Tasks
+### Frontend Development To-Do
 
-- Centralize List View Options
-- Add Axios Library
-- Form validation (filters + login)
-- Login function
-- CRUD of
-  - zone          (name, fullName, mapCode, continent)                    (zone OneToMany currency)
-  - currency      (name, code, mostRecentEdition, fractionName, fraction) (currency ManyToOne zone, currency OneToOne exchangeRate, currency OneToMany edition)
-  - exchangeRate  (usdToLocal)                                           (exchangeRate OneToOne currency)
-  - edition       (, year)                                           (edition ManyToOne zone, edition OneToMany piece)
-  - piece         (value, type)                                           (piece ManyToOne edition, piece oneToMany collection)
-  - collection    (fPhoto, bPhoto, date, count)                           (collection OneToOne piece)
-- Auth data analysis
-  - Counts of collected & targetted
+- Centralize reusable list view components.
+- Add Axios for better API integration.
+- Implement comprehensive form validation.
+- Implement login functionality with Firebase authentication.
+- CRUD Features:
+  - **Zone Management**: Add, edit, and delete zones (continent, mapCode, etc.).
+  - **Currency Management**: Manage currencies (name, code, fraction, etc.).
+  - **Exchange Rate**: Manage currency-to-USD exchange rates.
+  - **Edition Management**: Organize and manage currency editions by year.
+  - **Piece Management**: Add and manage individual pieces in a collection.
+  - **Collection Management**: Upload and manage photos, dates, and details for individual collections.
+  
+- Analytics:
+  - Track counts of collected and targeted currencies.
 
-### How to start development
+### How to Start Development
 
-- Fork repo to own Github account
-- Clnoe new repo to local machine
-- Cd to root directory
-- Run CLI command of...
-    yarn
-- Run CLI command of...
-    yarn dev
+1. **Fork the repository** to your GitHub account.
+2. **Clone the forked repository** to your local machine.
+3. Navigate to the project root directory:
+  cd currencies-collection-showroom
+4. Install dependencies:
+  yarn
+5. Start the development server:  
+  yarn dev
+6. Open your browser and navigate to the development server URL (usually `http://localhost:3000`) to view the application.
+7. Make changes to the code as needed, and watch for live updates using Vue's Hot Module Replacement (HMR).
+
+## Contribution Guidelines
+
+Contributions are welcome! If you’d like to enhance the app, fix a bug, or add new features:
+
+1. Fork the repository.
+2. Create a feature branch:
+  git checkout -b feature-name
+3. Commit your changes with descriptive messages:
+  git commit -m "Add: feature description"
+4. Push your changes:  
+  git push origin feature-name
+5. Create a pull request on the original repository for review.
+
+## Technology Stack
+
+- Frontend: Vue.js 3, Vite
+- Backend: Firebase Realtime Database, Firebase Authentication
+- UI Framework: Bootstrap 5
+- Charts and Visualization: ApexCharts
+- Development Tools: Yarn, ESLint, Prettier
+
+## Support
+
+If you encounter any issues, have questions, or want to suggest improvements, feel free to:
+
+1. Open an issue on the [GitHub repository](https://github.com/makkahwi/currencies-collection-showroom/issues).
+2. Reach out to the project maintainer via the contact information provided in the repository.
+3. Join the discussions on the repository to collaborate with other contributors.
+
+We appreciate your feedback and contributions to make the "Currencies Collection Showroom" better for everyone!
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+To contribute:
+
+1. Fork the project.
+2. Create your feature branch: `git checkout -b feature/YourFeatureName`.
+3. Commit your changes: `git commit -m 'Add some YourFeatureName'`.
+4. Push to the branch: `git push origin feature/YourFeatureName`.
+5. Open a pull request.
+
+Please ensure your code adheres to the project's guidelines and is well-documented.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Acknowledgements
+
+- [Vue.js](https://vuejs.org/) - The frontend framework that powers this app.
+- [Firebase](https://firebase.google.com/) - The backend platform used for data storage and authentication.
+- [Bootstrap](https://getbootstrap.com/) - The CSS framework for responsive design.
+- All contributors who have helped build and improve this project.
+
+## Contact
+
+If you have any questions about the project, feel free to reach out:
+
+- **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
+- **Personal Website**: [Suhaib.dev](https://www.Suhaib.dev/)
+- **GitHub Repository**: [Currencies Collection Showroom](https://github.com/makkahwi/currencies-collection-showroom/)
+
+Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for currency collectors worldwide.

@@ -1,8 +1,15 @@
-export const links = [
-  { to: "/", title: "Home" },
-  { to: "/my-showroom", title: "My Showroom" },
-  { to: "/get-your-showroom", title: "Get Your Showroom" },
-];
+export const links =
+  process.client && JSON.parse(localStorage.getItem("user"))?.idToken
+    ? [
+        { to: "/", title: "Home" },
+        { to: "/showroom", title: "Your Showroom" },
+        { to: "/dashboard", title: "Your Dashboard" },
+      ]
+    : [
+        { to: "/", title: "Home" },
+        { to: "/showroom", title: "Showroom" },
+        { to: "/get-your-showroom", title: "Get Your Showroom" },
+      ];
 
 export const socialMediaLinks = [
   { link: "https://Suhaib.dev", icon: "fas fa-globe" },

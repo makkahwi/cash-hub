@@ -5,7 +5,7 @@
     </div>
 
     <div class="px-1 pb-0 card-body">
-      <p class="mb-2 text-sm text-gradient text-dark">{{ label }}</p>
+      <p class="mb-2 text-sm text-success text-success">{{ label }}</p>
 
       <h5 class="mb-4">{{ title }}</h5>
 

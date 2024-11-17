@@ -38,7 +38,7 @@
             color: status === 'Circulable' ? 'success' : 'danger',
             label: 'View Details',
             link: {
-              path: '/my-showroom/piece-details',
+              path: '/showroom/piece-details',
               query: { id },
             },
           }"

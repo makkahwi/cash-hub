@@ -1,5 +1,5 @@
 <template>
-  <thead class="table-dark text-center">
+  <thead class="table-success text-center">
     <tr>
       <th colspan="7"><h4 class="my-3 text-white">By Status</h4></th>
     </tr>
