@@ -2,9 +2,13 @@
   <PageHeader class="text-white py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-12 mb-4">
-          <h1 class="display-4 text-white fw-bold">
-            {{ productName.full }} ({{ productName.short }})
+        <div
+          class="col-md-12 mb-4 d-flex justify-content-center align-items-end"
+        >
+          <img src="@/assets/img/brand/logo-white.png" width="120vw" />
+
+          <h1 class="display-5 text-white fw-bold">
+            {{ productName.full }}
           </h1>
         </div>
 

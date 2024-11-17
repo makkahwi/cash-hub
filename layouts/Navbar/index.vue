@@ -5,7 +5,7 @@
     >
       <div class="container">
         <NuxtLink class="navbar-brand font-weight-bolder text-black" to="/">
-          {{ productName.short }}
+          <img src="@/assets/img/brand/Logo.png" height="50px" />
         </NuxtLink>
 
         <button
