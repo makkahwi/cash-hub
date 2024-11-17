@@ -3,16 +3,22 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <h5 class="text-justify">
-          If you are not a web developer (coder / programmer), we are still
-          working to provide you with an easy approach to build your own
-          showroom. If you are a developer, you may visit the
+          We are still working to provide an easy approach to build your own
+          showroom. Yet in the timebeing, you could engage our dear helper of
           <a
-            href="https://github.com/makkahwi/currencies-showroom"
+            href="https://chat.openai.com/"
+            target="_blank"
+            class="text-decoration-underline"
+            >Chat GPT</a
+          >
+          to help you do it. Just hand GPT the instructions @
+          <a
+            href="https://github.com/makkahwi/currencies-collection-showroom/blob/main/README.md"
             target="_blank"
             class="text-decoration-underline"
             >Github repo</a
           >
-          and follow instructions there.
+          and it will help u to do it.
         </h5>
 
         <!-- <h5 class="text-justify">
