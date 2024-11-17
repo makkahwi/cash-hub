@@ -122,7 +122,7 @@
       </div>
 
       <div class="mt-4 text-end">
-        <button type="submit" class="btn btn-primary">Apply Filters</button>
+        <button type="submit" class="btn btn-success">Apply Filters</button>
         <button
           type="button"
           class="btn btn-secondary ms-2"

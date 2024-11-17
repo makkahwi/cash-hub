@@ -1,5 +1,5 @@
 <template>
-  <PageSection bg="light" p="5 px-8" m="0 mt-5">
+  <PageSection bg="light" p="5 px-8" m="0">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <NuxtLink
@@ -17,7 +17,7 @@
           v-for="({ link, icon }, i) of socialMediaLinks"
           :href="link"
           target="_blank"
-          class="text-secondary me-4"
+          class="text-dark me-4"
           :key="i"
         >
           <span :class="`text-lg ${icon}`"></span>

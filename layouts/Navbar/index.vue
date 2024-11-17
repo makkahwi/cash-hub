@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <nav
-      class="navbar navbar-expand-lg top-0 start-3 end-3 z-index-5 position-fixed mt-4 bg-gradient-success rounded-3 shadow-none"
+      class="navbar navbar-expand-lg top-0 start-3 end-3 z-index-5 position-fixed mt-4 bg-success rounded-3 shadow-none"
     >
       <div class="container">
         <NuxtLink class="navbar-brand font-weight-bolder text-black" to="/">

@@ -3,21 +3,21 @@
     <div class="d-flex justify-content-center mb-3">
       <button
         class="btn mx-2"
-        :class="showByType ? 'btn-primary' : 'btn-outline-primary'"
+        :class="showByType ? 'btn-success' : 'btn-outline-success'"
         @click="toggleStatistics('showByType')"
       >
         By Type
       </button>
       <button
         class="btn mx-2"
-        :class="showByStatus ? 'btn-primary' : 'btn-outline-primary'"
+        :class="showByStatus ? 'btn-success' : 'btn-outline-success'"
         @click="toggleStatistics('showByStatus')"
       >
         By Status
       </button>
     </div>
 
-    <table class="table w-100 table-bordered border-dark">
+    <table class="table w-100 table-bordered border-success">
       <ByType v-if="showByType" :currencies="props.currencies" />
 
       <tbody v-if="showByType">

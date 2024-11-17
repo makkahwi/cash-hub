@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2 class="text-center my-4">Restructured Data Viewer</h2>
-    <button class="btn btn-primary mb-4" @click="fetchAndProcessData">
+    <button class="btn btn-success mb-4" @click="fetchAndProcessData">
       Fetch and Process Data
     </button>
 

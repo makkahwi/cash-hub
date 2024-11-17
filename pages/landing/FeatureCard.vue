@@ -4,7 +4,7 @@
       <div class="d-flex">
         <div
           v-if="icon"
-          class="p-2 avatar avatar-xl bg-gradient-success border-radius-md me-3"
+          class="p-2 avatar avatar-xl bg-success border-radius-md me-3"
         >
           <i :class="icon" />
         </div>
