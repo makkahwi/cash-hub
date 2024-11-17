@@ -23,8 +23,8 @@
               v-for="({ to, title }, i) of buttons"
               :to="to"
               :key="i"
-              class="btn btn-outline-light btn-lg me-2 my-1"
-              ><span class="text-white"> {{ title }}</span>
+              class="btn btn-light btn-lg me-2 my-1"
+              ><span class="text-dark"> {{ title }}</span>
             </NuxtLink>
           </div>
         </div>
