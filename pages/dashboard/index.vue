@@ -10,100 +10,17 @@
 
       <form @submit.prevent="handleSubmit">
         <div class="mt-3 row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <label>Name</label>
-            <input
-              v-model="formData.name"
-              class="form-control"
-              type="text"
-              placeholder="eg. Dinar"
-              required
-            />
-          </div>
-
-          <div class="mt-3 col-12 col-sm-6 col-md-3 mt-sm-0">
-            <label>Code</label>
-            <input
-              v-model="formData.code"
-              class="form-control"
-              type="text"
-              placeholder="eg. JOD"
-              required
-            />
-          </div>
-
           <div class="col-sm-6 col-md-3">
-            <label>Most Recent Edition</label>
-            <input
-              v-model="formData.mostRecentEdition"
-              class="form-control"
-              type="number"
-              placeholder="eg. 5"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Fraction Name</label>
-            <input
-              v-model="formData.fractionName"
-              class="form-control"
-              type="text"
-              placeholder="eg. Piastre"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Fraction Size</label>
-            <input
-              v-model="formData.fraction"
-              class="form-control"
-              type="number"
-              placeholder="eg. 100"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Edition Number</label>
-            <input
-              v-model="formData.edition"
-              class="form-control"
-              type="number"
-              placeholder="eg. 5"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Year</label>
-            <input
-              v-model="formData.year"
-              class="form-control"
-              type="number"
-              placeholder="eg. 2022"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Value</label>
-            <input
-              v-model="formData.value"
-              class="form-control"
-              type="number"
-              placeholder="eg. 20"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <label>Type</label>
-            <select v-model="formData.type" class="form-control" required>
-              <option value="" disabled>Select Type</option>
-              <option value="Banknote">Banknote</option>
-              <option value="Coin">Coin</option>
+            <label>Continent</label>
+            <select v-model="formData.continent" class="form-control" required>
+              <option value="" disabled>Select Continent</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Australia">Australia</option>
+              <option value="Antarctica">Antarctica</option>
             </select>
           </div>
 
@@ -122,28 +39,122 @@
           </div>
 
           <div class="col-sm-6 col-md-3">
-            <label>Map Code</label>
+            <label>Zone Full Name</label>
             <input
-              v-model="formData.mapCode"
+              v-model="formData.zoneFullName"
               class="form-control"
               type="text"
-              placeholder="eg. JO"
+              placeholder="eg. The Hashemite Kingdom of Jordan"
+              required
+            />
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <label>Currency Name</label>
+            <input
+              v-model="formData.name"
+              class="form-control"
+              type="text"
+              placeholder="eg. Dinar"
+              required
+            />
+          </div>
+
+          <div class="mt-3 col-12 col-sm-6 col-md-3 mt-sm-0">
+            <label>Currency Code</label>
+            <input
+              v-model="formData.code"
+              class="form-control"
+              type="text"
+              placeholder="eg. JOD"
               required
             />
           </div>
 
           <div class="col-sm-6 col-md-3">
-            <label>Continent</label>
-            <select v-model="formData.continent" class="form-control" required>
-              <option value="" disabled>Select Continent</option>
-              <option value="Africa">Africa</option>
-              <option value="Asia">Asia</option>
-              <option value="Europe">Europe</option>
-              <option value="North America">North America</option>
-              <option value="South America">South America</option>
-              <option value="Australia">Australia</option>
-              <option value="Antarctica">Antarctica</option>
+            <label>Fraction Name</label>
+            <input
+              v-model="formData.fractionName"
+              class="form-control"
+              type="text"
+              placeholder="eg. Piastre"
+              required
+            />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Fraction Size</label>
+            <input
+              v-model="formData.fractionSize"
+              class="form-control"
+              type="number"
+              placeholder="eg. 100"
+              required
+            />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Edition No.</label>
+            <input
+              v-model="formData.edition"
+              class="form-control"
+              type="number"
+              placeholder="eg. 5"
+            />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Edition Issue Year</label>
+            <input
+              v-model="formData.year"
+              class="form-control"
+              type="number"
+              placeholder="eg. 2022"
+            />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Circability</label>
+            <select v-model="formData.status" class="form-control" required>
+              <option value="" disabled>Select Status</option>
+              <option
+                v-for="zone in ['Circulable', 'Outdated']"
+                :key="zone"
+                :value="zone"
+              >
+                {{ zone }}
+              </option>
             </select>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Type</label>
+            <select v-model="formData.type" class="form-control" required>
+              <option value="" disabled>Select Type</option>
+              <option value="Banknote">Banknote</option>
+              <option value="Coin">Coin</option>
+            </select>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Value</label>
+            <input
+              v-model="formData.value"
+              class="form-control"
+              type="number"
+              placeholder="eg. 20"
+              required
+            />
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <label>Collection Date</label>
+            <input
+              v-model="formData.date"
+              class="form-control"
+              type="date"
+              placeholder="eg. Jan 2023"
+            />
           </div>
 
           <div class="col-sm-6 col-md-3">
@@ -159,24 +170,12 @@
           </div>
 
           <div class="col-sm-6 col-md-3">
-            <label>Acquire Date</label>
-            <input
-              v-model="formData.date"
-              class="form-control"
-              type="date"
-              placeholder="eg. Jan 2023"
-              required
-            />
-          </div>
-
-          <div class="col-sm-6 col-md-3">
             <label>Front Photo URL</label>
             <input
               v-model="formData.fPhoto"
               class="form-control"
               type="url"
               placeholder="Front photo URL"
-              required
             />
           </div>
 
@@ -187,7 +186,6 @@
               class="form-control"
               type="url"
               placeholder="Back photo URL"
-              required
             />
           </div>
         </div>
@@ -217,22 +215,22 @@ const today = new Date();
 const defaultDate = ref(today.toISOString().split("T")[0]);
 
 const defaultFormValues = {
+  continent: "",
+  zoneName: "",
+  zoneFullName: "",
   name: "",
   code: "",
-  mostRecentEdition: null,
   fractionName: "",
-  fraction: null,
+  fractionSize: null,
   edition: null,
   year: null,
-  value: null,
+  status: "",
   type: "",
+  value: null,
+  date: defaultDate,
+  usdToLocal: null,
   fPhoto: "",
   bPhoto: "",
-  date: defaultDate,
-  zoneName: "",
-  mapCode: "",
-  continent: "",
-  usdToLocal: null,
 };
 
 const formData = reactive(defaultFormValues);
