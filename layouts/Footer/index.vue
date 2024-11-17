@@ -27,7 +27,7 @@
       <div class="col-lg-8">
         <p class="text-secondary my-0">
           Crafted with Care by
-          <a href="https://suhaib.dev/" target="_blank" class="text-secondary"
+          <a href="https://Suhaib.dev/" target="_blank" class="text-secondary"
             >Suhaib Ahmad</a
           >
           ©
