@@ -27,7 +27,7 @@ const features = [
   {
     icon: "",
     title: "Best Techs Involved",
-    desc: "Techs of Vue.Js 3 & Strapi of Node.Js were the best to serve the project and its purposes.",
+    desc: "Techs of Vue.Js 3 & Firebase of Node.Js were the best to serve the project and its purposes.",
   },
 ];
 </script>

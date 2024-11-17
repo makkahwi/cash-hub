@@ -2,7 +2,7 @@
 
 Vue.Js-Based Frontend Of Currencies Collection Showroom
 
-Welcome to my ["Currencies Collection Showroom"](https://currencies-showroom.vercel.app/), a Vue.Js & Strapi based open-source project
+Welcome to my ["Currencies Collection Showroom"](https://currencies-showroom.vercel.app/), a Vue.Js & Firebase based open-source project
 
 This is originally a coding project to learn the frontend tech used (Vue.Js), but it was decided to kill two birds with one stone. So beside mastering the tech, it's also to build an actual & usable web app to serve "money collection" hobbyists.
 
@@ -14,14 +14,14 @@ It's a web app to publish one's collection of currencies from all the world to a
 
 - Full-Detail Listing: You could enlist all the details you could ever think of about your currencies collection.
 - Automated Market Evaluation: Once you enlist a currency, the system added up its circular value to total value estimation.
-- Best Techs Involved: Techs of Vue.Js 3 & Strapi of Node.Js were the best to serve the project and its purposes.
+- Best Techs Involved: Techs of Vue.Js 3 & Firebase of Node.Js were the best to serve the project and its purposes.
 - A showroom page for public to browse the collection with filter options.
 - Secured login for showroom owner to access data manipulation features.
 - Statistics & charts dashboard (Counts, Targets, Edges, Map) for owner as well.
 
 ## Coming Soon Features
 
-As of this moment, you could use the admin panel (Strapi app) to add the currencies collection and the public showroom (Vue.Js app) to view them. Soon, a new admin panel will be built to not only include data input controls, but also a dashboard to provide reports & data analysis about the collection.
+As of this moment, you could use the admin panel (Firebase app) to add the currencies collection and the public showroom (Vue.Js app) to view them. Soon, a new admin panel will be built to not only include data input controls, but also a dashboard to provide reports & data analysis about the collection.
 
 ## Future Works
 
