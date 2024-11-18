@@ -20,7 +20,7 @@ This guide will help you set up your own instance of the Currencies Collection S
 - Click on 'Create a project', and follow the prompts to create a new Firebase project.
 - Once your project is created, navigate to the Project settings (gear icon next to Project Overview).
 - Here, click on the web icon "</>" under "Your apps" to register a new web application.
-- Follow the steps to register your app, and make note of your Firebase configuration data of API Key.
+- Follow the steps to register your app, and make note of your Firebase API Key.
 - Navigate to the 'Realtime Database' section (under 'Build') and create a database for storing your data.
 - Navigate to 'Rules' tab @ 'Realtime Database' and set up the rules to be as following...
 

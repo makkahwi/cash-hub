@@ -6,7 +6,7 @@
     <div class="container my-5 text-justify">
       <div class="row">
         <div class="col-12">
-          <h2 class="mb-3">Prerequisites</h2>
+          <h3 class="mb-3">Prerequisites</h3>
 
           <ul class="list-group list-group-flush">
             <li class="list-group-item">A GitHub account</li>
@@ -18,7 +18,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Step 1: Clone the GitHub Repository</h2>
+          <h3 class="mb-3">Step 1: Clone the GitHub Repository</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to GitHub and go to the project's repository:
@@ -41,7 +41,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Step 2: Set Up Firebase</h2>
+          <h3 class="mb-3">Step 2: Set Up Firebase</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to your Firebase account and go to the Firebase console.
@@ -56,12 +56,12 @@
               Overview).
             </li>
             <li class="list-group-item">
-              Here, click on the web icon <strong>"&lt;/&gt;"</strong> under
-              "Your apps" to register a new web application.
+              Here, click on the web icon <strong>&lt;/&gt;</strong> under
+              <strong>Your apps</strong> to register a new web application.
             </li>
             <li class="list-group-item">
               Follow the steps to register your app, and make note of your
-              Firebase configuration data of API Key.
+              Firebase API Key.
             </li>
             <li class="list-group-item">
               Navigate to the <strong>Realtime Database</strong> section (under
@@ -92,12 +92,14 @@
             </li>
             <li class="list-group-item">
               Add a user with the email & password you want to use in your app
-              in the "Users" tab.
+              in the <strong>Users</strong> tab.
             </li>
             <li class="list-group-item">
-              Navigate to the <strong>Settings</strong> tab in "Authentication,"
-              then to "User Actions," and uncheck "Enable create (sign-up)" and
-              "Enable delete."
+              Navigate to the <strong>Settings</strong> tab in
+              <strong>Authentication</strong>, then to
+              <strong>User Actions</strong>, and uncheck
+              <strong>Enable create (sign-up)</strong> and
+              <strong>Enable delete</strong>.
             </li>
           </ol>
         </div>
@@ -105,7 +107,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Step 3: Deploy to Vercel</h2>
+          <h3 class="mb-3">Step 3: Deploy to Vercel</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to your Vercel account and click on "Add New" &gt;
@@ -137,7 +139,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Step 4: Customize Your Project</h2>
+          <h3 class="mb-3">Step 4: Customize Your Project</h3>
           <p>
             You can customize your new showroom by updating configurations,
             modifying styles, or enhancing functionality directly from your
@@ -149,10 +151,10 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Conclusion</h2>
+          <h3 class="mb-3">Conclusion</h3>
           <p>
             Congratulations! You now have your own instance of the Currencies
-            Collection Showroom. You can log in and start inserting your
+            Collection Showroom. You can login and start inserting your
             collection data.
           </p>
         </div>
@@ -160,7 +162,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h2 class="mb-3">Need More Help?</h2>
+          <h3 class="mb-3">Need More Help?</h3>
           <p>
             If you encounter any issues or have questions, feel free to reach
             out via
