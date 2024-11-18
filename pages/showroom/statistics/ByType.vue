@@ -1,7 +1,7 @@
 <template>
-  <thead class="table-success text-center">
+  <thead class="bg-success text-white">
     <tr>
-      <th colspan="7"><h4 class="my-3 text-white">By Type</h4></th>
+      <th colspan="7"><h4 class="my-2 text-white">By Type</h4></th>
     </tr>
 
     <tr>
