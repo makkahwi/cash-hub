@@ -1,9 +1,10 @@
 import axios from "axios";
 import { logout } from "./auth";
 
+const config = useRuntimeConfig().public;
+
 const service = axios.create({
-  baseURL:
-    "https://currency-showroom-default-rtdb.europe-west1.firebasedatabase.app",
+  baseURL: config.firebaseDbUrl,
   headers: {
     "Content-Type": "application/json",
   },

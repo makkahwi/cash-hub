@@ -42,7 +42,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  runtimeConfig: {
+    public: {
+      firebaseApiKey: process.env.VUE_APP_FIREBASE_API_KEY || "",
+      firebaseDbUrl: process.env.VUE_APP_FIREBASE_DB_URL || "",
+    },
+  },
   components: {
     global: true,
     dirs: ["~/components/icons", "~/components"],
