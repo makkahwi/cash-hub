@@ -124,7 +124,7 @@
           <div class="card-body p-3">
             <p class="text-muted text-sm mb-4 mt-sm-5 mt-3">
               Two-factor authentication adds an additional layer of security to
-              your account by requiring more than just a password to log in.
+              your account by requiring more than just a password to login.
             </p>
             <div class="card">
               <div class="card-body border-radius-lg bg-gradient-dark p-3">

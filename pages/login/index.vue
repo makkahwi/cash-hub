@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-6">
     <div
       class="page-header align-items-start min-vh-50 pt-5 pb-11"
       :style="{
@@ -18,15 +18,22 @@
                 <img
                   class="avatar avatar-xxl shadow-lg border border-white"
                   alt="Image placeholder"
-                  src="@/assets/img/profile.jpg"
+                  src="@/assets/img/brand/logo.jpg"
                 />
               </div>
 
-              <h4 class="mb-0 font-weight-bolder">Suhaib Ahmad</h4>
-
-              <p class="my-3">Enter password to access your dashboard</p>
+              <p class="my-3">
+                Enter email & password to access your dashboard
+              </p>
 
               <form @submit.prevent="handleLogin">
+                <ArgonInput
+                  type="email"
+                  v-model="email"
+                  placeholder="Enter your email"
+                  required
+                />
+
                 <ArgonInput
                   type="password"
                   v-model="password"
@@ -64,11 +71,12 @@ import headerImg from "@/assets/img/currencies.jpg";
 import { ref } from "vue";
 import { login } from "~~/api/auth";
 
+const email = ref("");
 const password = ref("");
 
 const handleLogin = async () => {
   try {
-    const response = await login(password.value);
+    const response = await login(email.value, password.value);
     window.location.reload();
     window.location.href = "/dashboard";
 

@@ -2,13 +2,20 @@
   <PageSection sectionId="about" :title="`About ${productName.short}`">
     <div class="container text-center">
       <p class="lead">
-        A web app for collectors to publish their collection of currencies to
-        the world.
+        A web app open-source project designed for currency collectors to build
+        and showcase their collections online.
       </p>
 
       <p>
-        Clone this app and use it to showcase your currencies so the public can
-        browse your showroom anytime, anywhere.
+        Are you a currency collector looking to create an online catalog for
+        your collection? This app is the perfect solution!
+      </p>
+
+      <p>
+        This web app enables collectors to publish their collections of
+        currencies from around the world. Collectors can clone, customize, and
+        deploy their own versions of the app, while the public can browse their
+        showrooms anywhere and anytime.
       </p>
     </div>
 
