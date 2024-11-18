@@ -1,11 +1,16 @@
 <template>
-  <div class="row">
+  <div class="row justify-content-center">
     <div
       v-for="({ icon, title, desc }, index) of features"
       :key="index"
-      class="mb-4 col-lg-4 mb-lg-0"
+      class="col-lg-4 mb-4"
     >
-      <FeatureCard icon="ni ni-box-2" :title="title" :description="desc" />
+      <FeatureCard
+        class="h-100"
+        :icon="icon"
+        :title="title"
+        :description="desc"
+      />
     </div>
   </div>
 </template>
@@ -15,19 +20,29 @@ import FeatureCard from "./FeatureCard";
 
 const features = [
   {
-    icon: "",
-    title: "Full-Detail Listing",
-    desc: "You could enlist all the details you could ever think of about your currencies collection.",
+    icon: "ni ni-bullet-list-67",
+    title: "Comprehensive Listings",
+    desc: "Enlist detailed information about your currencies, including type, value, continent, zone, and more.",
   },
   {
-    icon: "",
-    title: "Automated Market Evaluation",
-    desc: "Once you enlist a currency, the system added up its circular value to total value estimation.",
+    icon: "ni ni-glasses-2",
+    title: "Interactive Showroom",
+    desc: "Public visitors can browse your collection using advanced filtering options.",
   },
   {
-    icon: "",
-    title: "Best Techs Involved",
-    desc: "Techs of Vue.Js 3 & Firebase of Node.Js were the best to serve the project and its purposes.",
+    icon: "ni ni-support-16",
+    title: "Secured Access",
+    desc: "Admin-only access for data manipulation with Firebase authentication.",
+  },
+  {
+    icon: "ni ni-bulb-61",
+    title: "Open-Source",
+    desc: "Totally transparency and ability for any web developer to contribute and enhance.",
+  },
+  {
+    icon: "ni ni-settings",
+    title: "Modern Tech Stack",
+    desc: "Built with Vue.js 3 and Firebase for an optimized, scalable, and responsive web experience.",
   },
 ];
 </script>
