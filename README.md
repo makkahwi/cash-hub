@@ -62,11 +62,6 @@ This web app enables collectors to publish their collections of currencies from 
 
 ## Developer Notes
 
-### To-Do List
-
-- Centralize reusable list view component codes.
-- Implement comprehensive input-form validation.
-
 ### How to Start Development
 
 1. **Fork the repository** to your GitHub account.
