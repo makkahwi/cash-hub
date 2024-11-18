@@ -96,6 +96,8 @@ Contributions are welcome! If you’d like to enhance the app, fix a bug, or add
   git push origin feature-name
 5. Create a pull request on the original repository for review.
 
+You also may help financially [![financially](https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red)](https://github.com/sponsors/makkahwi)
+
 ## Technology Stack
 
 - Frontend: Vue.js 3, Vite
