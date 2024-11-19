@@ -85,6 +85,20 @@ This web app enables collectors to publish their collections of currencies from 
 6. Open your browser and navigate to the development server URL (usually `http://localhost:3000`) to view the application.
 7. Make changes to the code as needed, and watch for live updates using Vue's Hot Module Replacement (HMR).
 
+### How to Report an Issue
+
+We welcome contributions and feedback! To report a bug, suggest a feature, or request support:
+
+1. Go to the [Issues](https://github.com/currencies-collection-showroom/issues) tab of this repository.
+2. Click on **New Issue**.
+3. Select the appropriate issue template:
+   - **Bug Report**: If you found a bug or error in the app.
+   - **Feature Request**: If you have an idea for a new feature or improvement.
+4. Fill out the form with as much detail as possible.
+5. Submit the issue, and we’ll review it as soon as possible.
+
+Thank you for helping improve the app!
+
 ## Contribution Guidelines
 
 Contributions are welcome! If you’d like to enhance the app, fix a bug, or add new features:
