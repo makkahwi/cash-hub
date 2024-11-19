@@ -100,7 +100,7 @@ You also may help financially [![financially](https://img.shields.io/badge/Spons
 
 ## Technology Stack
 
-- Frontend: Vue.js 3, Vite
+- Frontend: Vue.js 3, Nuxt
 - Backend: Firebase Realtime Database, Firebase Authentication
 - UI Framework: Bootstrap 5
 - Charts and Visualization: ApexCharts
@@ -136,7 +136,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Acknowledgements
 
-- [Vue.js](https://vuejs.org/) - The frontend framework that powers this app.
+- [Nuxt.js](https://nuxt.com/) - The frontend framework that powers this app.
 - [Firebase](https://firebase.google.com/) - The backend platform used for data storage and authentication.
 - [Bootstrap](https://getbootstrap.com/) - The CSS framework for responsive design.
 - All contributors who have helped build and improve this project.
