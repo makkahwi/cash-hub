@@ -1,5 +1,7 @@
 # Currencies Collection Showroom
 
+![Logo](public/Logo.png)
+
 Welcome to the [**Currencies Collection Showroom**](https://currencies-showroom.vercel.app/), a Vue.js and Firebase-based open-source project designed for currency collectors to build and showcase their collections online.
 
 Are you a currency collector looking to create an online catalog for your collection? This app is the perfect solution!
