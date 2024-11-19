@@ -58,13 +58,11 @@ This web app enables collectors to publish their collections of currencies from 
   - Automated subdomain creation for personal showrooms.
   - SaaS platform for collectors with community-driven updates and premium features.
 
-## How to Get Started
+## How to Deploy & Start Using as a Collector
 
 [Clone Project Instructions](./CloneProject.md)
 
 [Demo Live](https://currencies-showroom.vercel.app/) (Developer's Own Showroom)
-
-## How to Deploy & Start Using as a Collector
 
 ## Developer Notes
 
