@@ -150,6 +150,23 @@ To contribute:
 
 Please ensure your code adheres to the project's guidelines and is well-documented.
 
+## ⭐ Show Your Support
+
+If you find this project helpful or interesting, please **star this repository**!  
+
+It helps others discover this project, and it shows your support for open-source development.  
+
+👉 **[Click here to star the repo](https://github.com/makkahwi/currencies-collection-showroom/stargazers)** 👈  
+[![GitHub stars](https://img.shields.io/github/stars/makkahwi/currencies-collection-showroom?style=social)](https://github.com/makkahwi/currencies-collection-showroom/stargazers)
+
+### Why Star This Repo?
+
+- 🔍 Increase the visibility of this project in the GitHub community.
+- 💬 Encourage more developers to contribute and collaborate.
+- 💡 Help us continue improving and expanding the app with your support!
+
+Thank you for your interest in **Currencies Collection Showroom**! 😊
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
