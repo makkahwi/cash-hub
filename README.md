@@ -1,5 +1,7 @@
 # Currencies Collection Showroom
 
+![Logo](public/Logo.png)
+
 Welcome to the [**Currencies Collection Showroom**](https://currencies-showroom.vercel.app/), a Vue.js and Firebase-based open-source project designed for currency collectors to build and showcase their collections online.
 
 Are you a currency collector looking to create an online catalog for your collection? This app is the perfect solution!
@@ -83,6 +85,20 @@ This web app enables collectors to publish their collections of currencies from 
 6. Open your browser and navigate to the development server URL (usually `http://localhost:3000`) to view the application.
 7. Make changes to the code as needed, and watch for live updates using Vue's Hot Module Replacement (HMR).
 
+### How to Report an Issue
+
+We welcome contributions and feedback! To report a bug, suggest a feature, or request support:
+
+1. Go to the [Issues](https://github.com/currencies-collection-showroom/issues) tab of this repository.
+2. Click on **New Issue**.
+3. Select the appropriate issue template:
+   - **Bug Report**: If you found a bug or error in the app.
+   - **Feature Request**: If you have an idea for a new feature or improvement.
+4. Fill out the form with as much detail as possible.
+5. Submit the issue, and we’ll review it as soon as possible.
+
+Thank you for helping improve the app!
+
 ## Contribution Guidelines
 
 Contributions are welcome! If you’d like to enhance the app, fix a bug, or add new features:
@@ -96,9 +112,11 @@ Contributions are welcome! If you’d like to enhance the app, fix a bug, or add
   git push origin feature-name
 5. Create a pull request on the original repository for review.
 
+You also may help financially [![financially](https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red)](https://github.com/sponsors/makkahwi)
+
 ## Technology Stack
 
-- Frontend: Vue.js 3, Vite
+- Frontend: Vue.js 3, Nuxt
 - Backend: Firebase Realtime Database, Firebase Authentication
 - UI Framework: Bootstrap 5
 - Charts and Visualization: ApexCharts
@@ -134,7 +152,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Acknowledgements
 
-- [Vue.js](https://vuejs.org/) - The frontend framework that powers this app.
+- [Nuxt.js](https://nuxt.com/) - The frontend framework that powers this app.
 - [Firebase](https://firebase.google.com/) - The backend platform used for data storage and authentication.
 - [Bootstrap](https://getbootstrap.com/) - The CSS framework for responsive design.
 - All contributors who have helped build and improve this project.
