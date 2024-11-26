@@ -58,22 +58,46 @@ This web app enables collectors to publish their collections of currencies from 
   - Automated subdomain creation for personal showrooms.
   - SaaS platform for collectors with community-driven updates and premium features.
 
-## How to Get Started
+## How to Deploy & Start Using as a Collector
 
 [Clone Project Instructions](./CloneProject.md)
 
 [Demo Live](https://currencies-showroom.vercel.app/) (Developer's Own Showroom)
 
-## How to Deploy & Start Using as a Collector
-
 ## Developer Notes
+
+### Technology Stack
+
+- Frontend: Vue.js 3, Nuxt
+- Backend: Firebase Realtime Database, Firebase Authentication
+- UI Framework: Bootstrap 5
+- Charts and Visualization: ApexCharts
+- Development Tools: Yarn, ESLint, Prettier
+
+### Contribution Guidelines
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+To contribute:
+
+1. Fork the project.
+2. Create your feature branch: `git checkout -b feature/YourFeatureName`.
+3. Commit your changes: `git commit -m 'Add some YourFeatureName'`.
+4. Push to the branch: `git push origin feature/YourFeatureName`.
+5. Open a pull request.
+
+Please ensure your code adheres to the project's guidelines and is well-documented.
 
 ### How to Start Development
 
 1. **Fork the repository** to your GitHub account.
 2. **Clone the forked repository** to your local machine.
 3. Navigate to the project root directory:
-  cd currencies-collection-showroom
+
+  ```bash
+    cd currencies-collection-showroom
+  ```
+
 4. Install dependencies:
 
   ```bash
@@ -96,37 +120,14 @@ We welcome contributions and feedback! To report a bug, suggest a feature, or re
 1. Go to the [Issues](https://github.com/currencies-collection-showroom/issues) tab of this repository.
 2. Click on **New Issue**.
 3. Select the appropriate issue template:
+
    - **Bug Report**: If you found a bug or error in the app.
    - **Feature Request**: If you have an idea for a new feature or improvement.
+
 4. Fill out the form with as much detail as possible.
 5. Submit the issue, and we’ll review it as soon as possible.
 
-Thank you for helping improve the app!
-
-## Contribution Guidelines
-
-Contributions are welcome! If you’d like to enhance the app, fix a bug, or add new features:
-
-1. Fork the repository.
-2. Create a feature branch:
-  git checkout -b feature-name
-3. Commit your changes with descriptive messages:
-  git commit -m "Add: feature description"
-4. Push your changes:  
-  git push origin feature-name
-5. Create a pull request on the original repository for review.
-
-You also may help financially [![financially](https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red)](https://github.com/sponsors/makkahwi)
-
-## Technology Stack
-
-- Frontend: Vue.js 3, Nuxt
-- Backend: Firebase Realtime Database, Firebase Authentication
-- UI Framework: Bootstrap 5
-- Charts and Visualization: ApexCharts
-- Development Tools: Yarn, ESLint, Prettier
-
-## Support
+## Technical Support
 
 If you encounter any issues, have questions, or want to suggest improvements, feel free to:
 
@@ -136,19 +137,38 @@ If you encounter any issues, have questions, or want to suggest improvements, fe
 
 We appreciate your feedback and contributions to make the "Currencies Collection Showroom" better for everyone!
 
-## Contributing
+## ⭐ Support the Project ⭐
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Your support is vital to making **Currencies Collection Showroom** even better! Here’s how you can contribute and help spread the word:
 
-To contribute:
+### 🌟 As a Developer  
 
-1. Fork the project.
-2. Create your feature branch: `git checkout -b feature/YourFeatureName`.
-3. Commit your changes: `git commit -m 'Add some YourFeatureName'`.
-4. Push to the branch: `git push origin feature/YourFeatureName`.
-5. Open a pull request.
+Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](https://github.com/makkahwi/currencies-collection-showroom/#developer-notes) for more details on how to get started.
 
-Please ensure your code adheres to the project's guidelines and is well-documented.
+### ⭐ As a GitHub User  
+
+Starring our repository is a quick and easy way to show your support and help others discover this project.  
+
+👉 **[Click here to star the repo](https://github.com/makkahwi/currencies-collection-showroom/stargazers)** 👈  
+
+[![GitHub stars](https://img.shields.io/github/stars/makkahwi/currencies-collection-showroom?style=social)](https://github.com/makkahwi/currencies-collection-showroom/stargazers)
+
+### ❤️ GitHub Sponsors  
+
+Your financial support can accelerate the development of **Currencies Collection Showroom** by covering costs like hosting, integrations, and feature enhancements.
+
+👉 **[Become a Sponsor](https://github.com/sponsors/makkahwi)** 👈
+
+### 📣 Spread the Word
+
+Help us reach more users and contributors by sharing the project with your network!
+
+Click below to share on your favorite platform:
+
+- **[Share on Twitter (X)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+open-source+project+for+currency+collectors!+Currencies+Collection+Showroom+is+a+Vue.js+and+Firebase-based+app+that+lets+you+showcase+your+collections+online!+%23OpenSource+%23CurrencyCollector&url=https://github.com/makkahwi/currencies-collection-showroom/)**  
+- **[Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/makkahwi/currencies-collection-showroom/&title=Check+out+Currencies+Collection+Showroom!&summary=An+open-source+project+for+currency+collectors+to+showcase+their+collections+online.&source=)**  
+- **[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://github.com/makkahwi/currencies-collection-showroom/)**  
+- **[Share on Reddit](https://www.reddit.com/submit?url=https://github.com/makkahwi/currencies-collection-showroom/&title=Check+out+Currencies+Collection+Showroom%21)**  
 
 ## License
 
@@ -161,12 +181,16 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [Bootstrap](https://getbootstrap.com/) - The CSS framework for responsive design.
 - All contributors who have helped build and improve this project.
 
+## Meet the Developer
+
+This is **Suhaib Ahmad**, a software developer passionate about leveraging technology to improve health and wellness.
+
+- **Website:** [Suhaib.dev](https://www.suhaib.dev/)  
+- **GitHub:** [Makkahwi](https://github.com/makkahwi/)  
+- **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
+
 ## Contact
 
-If you have any questions about the project, feel free to reach out:
+If you have any questions about the project, feel free to reach out the developer.
 
-- **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
-- **Personal Website**: [Suhaib.dev](https://www.Suhaib.dev/)
-- **GitHub Repository**: [Currencies Collection Showroom](https://github.com/makkahwi/currencies-collection-showroom/)
-
-Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for currency collectors worldwide.
+Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for collectors worldwide.
