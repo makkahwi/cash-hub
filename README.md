@@ -66,6 +66,28 @@ This web app enables collectors to publish their collections of currencies from 
 
 ## Developer Notes
 
+### Technology Stack
+
+- Frontend: Vue.js 3, Nuxt
+- Backend: Firebase Realtime Database, Firebase Authentication
+- UI Framework: Bootstrap 5
+- Charts and Visualization: ApexCharts
+- Development Tools: Yarn, ESLint, Prettier
+
+### Contribution Guidelines
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+To contribute:
+
+1. Fork the project.
+2. Create your feature branch: `git checkout -b feature/YourFeatureName`.
+3. Commit your changes: `git commit -m 'Add some YourFeatureName'`.
+4. Push to the branch: `git push origin feature/YourFeatureName`.
+5. Open a pull request.
+
+Please ensure your code adheres to the project's guidelines and is well-documented.
+
 ### How to Start Development
 
 1. **Fork the repository** to your GitHub account.
@@ -99,32 +121,7 @@ We welcome contributions and feedback! To report a bug, suggest a feature, or re
 4. Fill out the form with as much detail as possible.
 5. Submit the issue, and we’ll review it as soon as possible.
 
-Thank you for helping improve the app!
-
-## Contribution Guidelines
-
-Contributions are welcome! If you’d like to enhance the app, fix a bug, or add new features:
-
-1. Fork the repository.
-2. Create a feature branch:
-  git checkout -b feature-name
-3. Commit your changes with descriptive messages:
-  git commit -m "Add: feature description"
-4. Push your changes:  
-  git push origin feature-name
-5. Create a pull request on the original repository for review.
-
-You also may help financially [![financially](https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red)](https://github.com/sponsors/makkahwi)
-
-## Technology Stack
-
-- Frontend: Vue.js 3, Nuxt
-- Backend: Firebase Realtime Database, Firebase Authentication
-- UI Framework: Bootstrap 5
-- Charts and Visualization: ApexCharts
-- Development Tools: Yarn, ESLint, Prettier
-
-## Support
+## Technical Support
 
 If you encounter any issues, have questions, or want to suggest improvements, feel free to:
 
@@ -134,36 +131,37 @@ If you encounter any issues, have questions, or want to suggest improvements, fe
 
 We appreciate your feedback and contributions to make the "Currencies Collection Showroom" better for everyone!
 
-## Contributing
+## ⭐ Support the Project ⭐
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Your support is vital to making **Currencies Collection Showroom** even better! Here’s how you can contribute and help spread the word:
 
-To contribute:
+### 🌟 As a Developer  
 
-1. Fork the project.
-2. Create your feature branch: `git checkout -b feature/YourFeatureName`.
-3. Commit your changes: `git commit -m 'Add some YourFeatureName'`.
-4. Push to the branch: `git push origin feature/YourFeatureName`.
-5. Open a pull request.
+Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](https://github.com/makkahwi/currencies-collection-showroom/#developer-notes) for more details on how to get started.
 
-Please ensure your code adheres to the project's guidelines and is well-documented.
+### ⭐ As a GitHub User  
 
-## ⭐ Show Your Support
-
-If you find this project helpful or interesting, please **star this repository**!  
-
-It helps others discover this project, and it shows your support for open-source development.  
+Starring our repository is a quick and easy way to show your support and help others discover this project.  
 
 👉 **[Click here to star the repo](https://github.com/makkahwi/currencies-collection-showroom/stargazers)** 👈  
+
 [![GitHub stars](https://img.shields.io/github/stars/makkahwi/currencies-collection-showroom?style=social)](https://github.com/makkahwi/currencies-collection-showroom/stargazers)
 
-### Why Star This Repo?
+### ❤️ GitHub Sponsors  
 
-- 🔍 Increase the visibility of this project in the GitHub community.
-- 💬 Encourage more developers to contribute and collaborate.
-- 💡 Help us continue improving and expanding the app with your support!
+Your financial support can accelerate the development of **Currencies Collection Showroom** by covering costs like hosting, integrations, and feature enhancements.
 
-Thank you for your interest in **Currencies Collection Showroom**! 😊
+👉 **[Become a Sponsor](https://github.com/sponsors/makkahwi)** 👈
+
+### 📣 Spread the Word  
+
+Help us reach more users and contributors by sharing the project with your network!  
+Click below to share on your favorite platform:
+
+- **[Share on Twitter (X)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+open-source+project+for+currency+collectors!+Currencies+Collection+Showroom+is+a+Vue.js+and+Firebase-based+app+that+lets+you+showcase+your+collections+online!+%23OpenSource+%23CurrencyCollector&url=https://github.com/makkahwi/currencies-collection-showroom/)**  
+- **[Share on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/makkahwi/currencies-collection-showroom/&title=Check+out+Currencies+Collection+Showroom!&summary=An+open-source+project+for+currency+collectors+to+showcase+their+collections+online.&source=)**  
+- **[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://github.com/makkahwi/currencies-collection-showroom/)**  
+- **[Share on Reddit](https://www.reddit.com/submit?url=https://github.com/makkahwi/currencies-collection-showroom/&title=Check+out+Currencies+Collection+Showroom%21)**  
 
 ## License
 
@@ -182,6 +180,5 @@ If you have any questions about the project, feel free to reach out:
 
 - **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
 - **Personal Website**: [Suhaib.dev](https://www.Suhaib.dev/)
-- **GitHub Repository**: [Currencies Collection Showroom](https://github.com/makkahwi/currencies-collection-showroom/)
 
-Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for currency collectors worldwide.
+Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for collectors worldwide.
