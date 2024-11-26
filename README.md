@@ -143,7 +143,7 @@ Your support is vital to making **Currencies Collection Showroom** even better! 
 
 ### 🌟 As a Developer  
 
-Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](https://github.com/makkahwi/currencies-collection-showroom/#developer-notes) for more details on how to get started.
+Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](#developer-notes) for more details on how to get started.
 
 ### ⭐ As a GitHub User  
 
