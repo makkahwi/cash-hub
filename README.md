@@ -93,7 +93,11 @@ Please ensure your code adheres to the project's guidelines and is well-document
 1. **Fork the repository** to your GitHub account.
 2. **Clone the forked repository** to your local machine.
 3. Navigate to the project root directory:
-  cd currencies-collection-showroom
+
+  ```bash
+    cd currencies-collection-showroom
+  ```
+
 4. Install dependencies:
 
   ```bash
@@ -116,8 +120,10 @@ We welcome contributions and feedback! To report a bug, suggest a feature, or re
 1. Go to the [Issues](https://github.com/currencies-collection-showroom/issues) tab of this repository.
 2. Click on **New Issue**.
 3. Select the appropriate issue template:
+
    - **Bug Report**: If you found a bug or error in the app.
    - **Feature Request**: If you have an idea for a new feature or improvement.
+
 4. Fill out the form with as much detail as possible.
 5. Submit the issue, and we’ll review it as soon as possible.
 
@@ -153,9 +159,10 @@ Your financial support can accelerate the development of **Currencies Collection
 
 👉 **[Become a Sponsor](https://github.com/sponsors/makkahwi)** 👈
 
-### 📣 Spread the Word  
+### 📣 Spread the Word
 
-Help us reach more users and contributors by sharing the project with your network!  
+Help us reach more users and contributors by sharing the project with your network!
+
 Click below to share on your favorite platform:
 
 - **[Share on Twitter (X)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+open-source+project+for+currency+collectors!+Currencies+Collection+Showroom+is+a+Vue.js+and+Firebase-based+app+that+lets+you+showcase+your+collections+online!+%23OpenSource+%23CurrencyCollector&url=https://github.com/makkahwi/currencies-collection-showroom/)**  
@@ -174,11 +181,16 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - [Bootstrap](https://getbootstrap.com/) - The CSS framework for responsive design.
 - All contributors who have helped build and improve this project.
 
+## Meet the Developer
+
+This is **Suhaib Ahmad**, a software developer passionate about leveraging technology to improve health and wellness.
+
+- **Website:** [Suhaib.dev](https://www.suhaib.dev/)  
+- **GitHub:** [Makkahwi](https://github.com/makkahwi/)  
+- **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
+
 ## Contact
 
-If you have any questions about the project, feel free to reach out:
-
-- **Email**: [SuhaibAhmadAi@hotmail.com](mailto:SuhaibAhmadAi@hotmail.com)
-- **Personal Website**: [Suhaib.dev](https://www.Suhaib.dev/)
+If you have any questions about the project, feel free to reach out the developer.
 
 Thank you for your interest in "Currencies Collection Showroom"! Together, we can make it the go-to solution for collectors worldwide.
