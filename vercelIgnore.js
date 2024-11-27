@@ -5,7 +5,13 @@ const changedFiles = execSync("git diff --name-only HEAD^ HEAD")
   .trim()
   .split("\n");
 
-const ignoredFiles = ["README.md", ".md", ".github/workflows/*"];
+const ignoredFiles = [
+  ".md",
+  ".github/*",
+  ".env.example",
+  ".gitignore",
+  "LICENSE",
+];
 
 const shouldDeploy = changedFiles.some(
   (file) => !ignoredFiles.some((ignore) => file.includes(ignore))
