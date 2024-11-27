@@ -1,12 +1,14 @@
-# Currencies Collection Showroom
+# Currencies Collection Showroom (CCS)
 
 ![Logo](public/Logo.png)
 
-Welcome to the [**Currencies Collection Showroom**](https://currencies-showroom.vercel.app/), a Vue.js and Firebase-based open-source project designed for currency collectors to build and showcase their collections online.
+Welcome to the [**Currencies Collection Showroom (CCS)**](https://currencies-showroom.vercel.app/), your gateway to organizing and showcasing your currency collection to the world. This open-source project is built to serve collectors while inviting contributions to grow its features and reach.
 
-Are you a currency collector looking to create an online catalog for your collection? This app is the perfect solution!
+## What is Currencies Collection Showroom?
 
-This web app enables collectors to publish their collections of currencies from around the world. Collectors can clone, customize, and deploy their own versions of the app, while the public can browse their showrooms anywhere and anytime.
+**Currencies Collection Showroom (CCS)** is a user-friendly web app designed for currency collectors who want to organize, document, and share their collections with others. Whether you’re a hobbyist or a professional collector, CCS provides an efficient platform to catalog detailed information about your currencies, including continent, zone, type, value, and more.
+
+**The best part?** CCS is open-source, so you can contribute to its development, suggest features, or even fork it to create your own customized version.
 
 ## Features
 
@@ -143,7 +145,7 @@ Your support is vital to making **Currencies Collection Showroom** even better! 
 
 ### 🌟 As a Developer  
 
-Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](https://github.com/makkahwi/currencies-collection-showroom/#developer-notes) for more details on how to get started.
+Dive into the codebase, identify bugs, or build new features. Check out our [Developer Notes](#developer-notes) for more details on how to get started.
 
 ### ⭐ As a GitHub User  
 
