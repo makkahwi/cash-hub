@@ -44,7 +44,7 @@
             </li>
           </ul>
 
-          <ul class="mx-auto navbar-nav navbar-nav-hover">
+          <ul class="mx-auto navbar-nav">
             <li class="nav-item">
               <NuxtLink
                 v-if="!token"
