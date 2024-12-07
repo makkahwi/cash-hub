@@ -1,0 +1,29 @@
+name: Collect PR Notes
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - dev
+
+jobs:
+  collect-pr-notes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check if PR was merged
+        if: github.event.pull_request.merged == true
+        run: echo "PR merged."
+
+      - name: Append PR description to dev notes
+        if: github.event.pull_request.merged == true
+        run: |
+          echo "- ${GITHUB_EVENT_PULL_REQUEST_TITLE}: ${GITHUB_EVENT_PULL_REQUEST_BODY}" >> dev_pr_notes.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dev_pr_notes.md
+          git commit -m "Add PR notes to dev_pr_notes.md"
+          git push
