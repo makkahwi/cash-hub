@@ -17,25 +17,27 @@
       </button>
     </div>
 
-    <table class="table w-100 table-bordered border-success">
-      <ByType v-if="showByType" :currencies="props.currencies" />
+    <div class="table-responsive">
+      <table class="table w-100 table-bordered border-success">
+        <ByType v-if="showByType" :currencies="props.currencies" />
 
-      <tbody v-if="showByType">
-        <tr>
-          <td colspan="7"></td>
-        </tr>
-      </tbody>
+        <tbody v-if="showByType">
+          <tr>
+            <td colspan="7"></td>
+          </tr>
+        </tbody>
 
-      <ByStatus v-if="showByStatus" :currencies="props.currencies" />
+        <ByStatus v-if="showByStatus" :currencies="props.currencies" />
 
-      <tbody v-if="showByStatus">
-        <tr>
-          <td colspan="7"></td>
-        </tr>
-      </tbody>
+        <tbody v-if="showByStatus">
+          <tr>
+            <td colspan="7"></td>
+          </tr>
+        </tbody>
 
-      <ByContinent :currencies="props.currencies" />
-    </table>
+        <ByContinent :currencies="props.currencies" />
+      </table>
+    </div>
   </PageSection>
 </template>
 
