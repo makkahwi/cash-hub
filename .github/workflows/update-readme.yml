@@ -25,8 +25,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Makkahwi[Bot]"
+          git config --global user.email "Makkahwi[Bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Update README version to ${GITHUB_REF_NAME}"
           git push
