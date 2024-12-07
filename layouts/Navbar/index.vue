@@ -37,18 +37,20 @@
               <NuxtLink
                 :to="to"
                 class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
+                @click="closeNavbar"
               >
                 {{ title }}
               </NuxtLink>
             </li>
           </ul>
 
-          <ul class="navbar-nav d-lg-block d-none">
+          <ul class="mx-auto navbar-nav">
             <li class="nav-item">
               <NuxtLink
                 v-if="!token"
                 to="/login"
                 class="mb-0 btn btn-sm me-1 bg-white text-dark"
+                @click="closeNavbar"
               >
                 Login
               </NuxtLink>
@@ -70,7 +72,6 @@
 
 <script setup>
 import { links } from "@/consts.js";
-import { productName } from "@/consts.js";
 import { ref, onMounted } from "vue";
 import { logout } from "@/api/auth";
 
@@ -81,6 +82,18 @@ const handleLogout = () => {
   if (process.client) {
     localStorage.removeItem("user");
     token.value = null;
+  }
+};
+
+const closeNavbar = () => {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navigation = document.getElementById("navigation");
+
+  if (navbarToggler && navigation) {
+    const isExpanded = navbarToggler.getAttribute("aria-expanded") === "true";
+    if (isExpanded) {
+      navbarToggler.click();
+    }
   }
 };
 
