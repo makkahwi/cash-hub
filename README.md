@@ -68,6 +68,10 @@ Welcome to the [**Currencies Collection Showroom (CCS)**](https://currencies-sho
 
 ## Developer Notes
 
+### ChangeLog
+
+For a full list of changes, see the [Changelog](./CHANGELOG.md).
+
 ### Technology Stack
 
 - Frontend: Vue.js 3, Nuxt
