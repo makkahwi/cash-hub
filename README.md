@@ -2,7 +2,7 @@
 
 Current Version: `vX.X.X`
 
-![Logo](public/Logo.png)
+![Logo](public/LogoText.png)
 
 Welcome to the [**Currencies Collection Showroom (CCS)**](https://currencies-showroom.vercel.app/), your gateway to organizing and showcasing your currency collection to the world. This open-source project is built to serve collectors while inviting contributions to grow its features and reach.
 

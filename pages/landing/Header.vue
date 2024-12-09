@@ -5,7 +5,7 @@
         <div
           class="col-md-12 mb-4 d-flex justify-content-center align-items-end"
         >
-          <img src="@/assets/img/brand/logo-white.png" width="120vw" />
+          <img src="@/assets/img/brand/logo-text-white.png" width="120vw" />
 
           <h1 class="display-5 text-white fw-bold">
             {{ productName.full }}

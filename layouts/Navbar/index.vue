@@ -5,7 +5,7 @@
     >
       <div class="container">
         <NuxtLink class="navbar-brand font-weight-bolder text-black" to="/">
-          <img src="@/assets/img/brand/Logo.png" height="50px" />
+          <img src="@/assets/img/brand/logo-white.png" height="50px" />
         </NuxtLink>
 
         <button
