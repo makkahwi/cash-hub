@@ -9,7 +9,7 @@
         </NuxtLink>
 
         <button
-          class="shadow-none navbar-toggler ms-2"
+          class="shadow-none navbar-toggler ms-2 bg-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navigation"

@@ -12,7 +12,7 @@
           </h1>
         </div>
 
-        <div class="col-md-6 mb-4">
+        <div class="col-md-6 order-2 order-md-1 mb-4">
           <p class="lead mb-4">
             Are you a currency collector and want to build an online catalog for
             your collections? This is the perfect solution!
@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 order-1 order-md-2 text-center">
           <img
             src="@/assets/img/header.png"
             class="img-fluid"
