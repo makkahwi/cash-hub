@@ -125,7 +125,7 @@ Please ensure your code adheres to the project's guidelines and is well-document
 
 We welcome contributions and feedback! To report a bug, suggest a feature, or request support:
 
-1. Go to the [Issues](https://github.com/cash-hub/issues) tab of this repository.
+1. Go to the [Issues](https://github.com/makkahwi/cash-hub/issues) tab of this repository.
 2. Click on **New Issue**.
 3. Select the appropriate issue template:
 
