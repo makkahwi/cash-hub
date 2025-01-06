@@ -4,12 +4,12 @@
       class="navbar navbar-expand-lg top-0 start-3 end-3 z-index-5 position-fixed mt-4 bg-success rounded-3 shadow-none"
     >
       <div class="container">
-        <NuxtLink class="navbar-brand font-weight-bolder text-black" to="/">
-          <img src="@/assets/img/brand/Logo.png" height="50px" />
+        <NuxtLink class="navbar-brand font-weight-bolder text-white" to="/">
+          <img src="@/assets/img/brand/logo-white.png" height="50px" />
         </NuxtLink>
 
         <button
-          class="shadow-none navbar-toggler ms-2"
+          class="shadow-none navbar-toggler ms-2 bg-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navigation"
@@ -36,7 +36,7 @@
             >
               <NuxtLink
                 :to="to"
-                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-dark"
+                class="cursor-pointer nav-link ps-2 d-flex justify-content-between align-items-center text-white"
                 @click="closeNavbar"
               >
                 {{ title }}
@@ -49,7 +49,7 @@
               <NuxtLink
                 v-if="!token"
                 to="/login"
-                class="mb-0 btn btn-sm me-1 bg-white text-dark"
+                class="mb-0 btn btn-sm me-1 bg-white text-success"
                 @click="closeNavbar"
               >
                 Login
@@ -57,7 +57,7 @@
 
               <button
                 v-else
-                class="mb-0 btn btn-sm me-1 bg-white text-dark"
+                class="mb-0 btn btn-sm me-1 bg-white text-success"
                 @click="handleLogout"
               >
                 Logout

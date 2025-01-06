@@ -6,7 +6,7 @@
     <div class="container my-5 text-justify">
       <div class="row">
         <div class="col-12">
-          <h3 class="mb-3">Prerequisites</h3>
+          <h3 class="mb-3 text-success">Prerequisites</h3>
 
           <ul class="list-group list-group-flush">
             <li class="list-group-item">A GitHub account</li>
@@ -18,7 +18,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Step 1: Clone the GitHub Repository</h3>
+          <h3 class="mb-3 text-success">Step 1: Clone the GitHub Repository</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to GitHub and go to the project's repository:
@@ -41,7 +41,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Step 2: Set Up Firebase</h3>
+          <h3 class="mb-3 text-success">Step 2: Set Up Firebase</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to your Firebase account and go to the Firebase console.
@@ -107,7 +107,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Step 3: Deploy to Vercel</h3>
+          <h3 class="mb-3 text-success">Step 3: Deploy to Vercel</h3>
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to your Vercel account and click on "Add New" &gt;
@@ -139,7 +139,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Step 4: Customize Your Project</h3>
+          <h3 class="mb-3 text-success">Step 4: Customize Your Project</h3>
           <p>
             You can customize your new showroom by updating configurations,
             modifying styles, or enhancing functionality directly from your
@@ -151,7 +151,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Conclusion</h3>
+          <h3 class="mb-3 text-success">Conclusion</h3>
           <p>
             Congratulations! You now have your own instance of the Currencies
             Collection Showroom. You can login and start inserting your
@@ -162,7 +162,7 @@
 
       <div class="row my-5">
         <div class="col-12">
-          <h3 class="mb-3">Need More Help?</h3>
+          <h3 class="mb-3 text-success">Need More Help?</h3>
           <p>
             If you encounter any issues or have questions, feel free to reach
             out via

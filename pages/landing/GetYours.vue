@@ -1,7 +1,7 @@
 <template>
   <PageSection
     class="get-yours-section py-5"
-    title="Want Your Own Currencies Showroom?"
+    title="Want Your Own Currencies Hub?"
   >
     <div class="container text-center">
       <p>Follow the link below to build your showroom effortlessly.</p>

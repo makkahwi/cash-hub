@@ -1,6 +1,6 @@
 {
-  "name": "currencies-showroom-fe",
-  "description": "A Vue.js Project",
+  "name": "currencies-archiving-and-sharing-hub",
+  "description": "A Vue.js-Firebase Project of Currencies Archiving & Sharing Hub",
   "version": "1.1.0",
   "private": true,
   "author": {

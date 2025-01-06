@@ -1,6 +1,6 @@
-# Step-by-Step Guide to Setting Up the Currencies Collection Showroom
+# Step-by-Step Guide to Setting Up the Currencies Archiving & Sharing Hub
 
-This guide will help you set up your own instance of the Currencies Collection Showroom using GitHub, Firebase, and Vercel.
+This guide will help you set up your own instance of the Currencies Archiving & Sharing Hub using GitHub, Firebase, and Vercel.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ This guide will help you set up your own instance of the Currencies Collection S
 
 ## Step 1: Clone the GitHub Repository
 
-- Log in to GitHub and go to the project's repository: [Currencies Collection Showroom](https://github.com/makkahwi/currencies-collection-showroom)
+- Log in to GitHub and go to the project's repository: [Currencies Archiving & Sharing Hub](https://github.com/makkahwi/cash-hub)
 - In the top-right corner of the page, click Fork.
 - This will create a copy of the repository in your GitHub account.
 
@@ -44,7 +44,7 @@ This guide will help you set up your own instance of the Currencies Collection S
 - Click on "Import Project" and then "Import Git Repository".
 - Connect your GitHub account if not already connected.
 - Select the repository you forked in Step 1.
-- Name project as you wish, maybe something like "yournanme-currencies-collection-showroom". This will be within your app URL.
+- Name project as you wish, maybe something like "yournanme-cash-hub". This will be within your app URL.
 - Add "Environment Variables" for your Firebase configuration:
   - VUE_APP_FIREBASE_API_KEY with value of API key you noted earlier.
   - VUE_APP_FIREBASE_DB_URL with value of database URL you noted earlier.
@@ -56,7 +56,7 @@ Once deployed, you can customize your new showroom by updating configurations, m
 
 ## Conclusion
 
-Congratulations! You now have your own instance of the Currencies Collection Showroom. You may login and start inserting your collection data.
+Congratulations! You now have your own instance of the Currencies Archiving & Sharing Hub. You may login and start inserting your collection data.
 
 ## Need More Help?
 
