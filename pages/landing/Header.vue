@@ -33,7 +33,7 @@
           <img
             src="@/assets/img/header.png"
             class="img-fluid"
-            alt="Currencies Showroom"
+            alt="Currencies Hub"
           />
         </div>
       </div>

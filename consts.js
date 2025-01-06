@@ -23,6 +23,6 @@ export const socialMediaLinks = [
 ];
 
 export const productName = {
-  full: "Currencies Collection Showroom",
-  short: "CCS",
+  full: "Currencies Archiving & Sharing Hub",
+  short: "CASH",
 };

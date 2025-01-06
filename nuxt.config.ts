@@ -3,14 +3,14 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: "Currencies Collection Showroom",
+      title: "CASH | Currencies Archiving & Sharing Hub",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
           name: "description",
-          content: "Currencies Collection Showroom by Suhaib Ahmad",
+          content: "Currencies Archiving & Sharing Hub by Suhaib Ahmad",
         },
       ],
       link: [

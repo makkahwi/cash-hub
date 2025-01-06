@@ -27,13 +27,13 @@
           <p class="text-justify">
             Then you are to fork (duplicate) both of my github repositories
             <a
-              href="https://github.com/makkahwi/currencies-showroom-client/"
+              href="https://github.com/makkahwi/cash-hub-client/"
               target="_blank"
               class="text-decoration-underline"
             >
               one </a
             >&<a
-              href="https://github.com/makkahwi/currencies-showroom-server"
+              href="https://github.com/makkahwi/cash-hub-server"
               target="_blank"
               class="text-decoration-underline"
             >
@@ -77,7 +77,7 @@
         <template #answer>
           <p class="text-justify">
             It is time to deploy the second repository (the one called
-            "currencies-showroom-server") on Netlify following
+            "cash-hub-server") on Netlify following
             <a
               href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository"
               target="_blank"
@@ -94,9 +94,8 @@
 
         <template #answer>
           <p class="text-justify">
-            Get the URL of the just deployed repository
-            (currencies-showroom-server), then do deploy the other repository
-            following
+            Get the URL of the just deployed repository (cash-hub-server), then
+            do deploy the other repository following
             <a
               href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository"
               target="_blank"
@@ -116,10 +115,9 @@
 
         <template #answer>
           <p class="text-justify">
-            Get the URL of the just deployed repository
-            (currencies-showroom-client), then get back to the settings of
-            "currencies-showroom-server" and add an environment variable of
-            following values
+            Get the URL of the just deployed repository (cash-hub-client), then
+            get back to the settings of "cash-hub-server" and add an environment
+            variable of following values
           </p>
 
           <p class="text-justify">"FRONTEND_URL"="your-url-here"</p>
