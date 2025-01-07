@@ -1,7 +1,7 @@
 <template>
   <PageSection
     :title="'Step-by-Step Guide to Setting Up Your ' + productName.full"
-    subtitle="This guide will help you set up your own instance of the Currencies Collection Showroom using GitHub, Firebase, and Vercel."
+    subtitle="This guide will help you set up your own instance of the Currencies Archiving & Sharing Hub using GitHub, Firebase, and Vercel."
   >
     <div class="container my-5 text-justify">
       <div class="row">
@@ -22,11 +22,8 @@
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to GitHub and go to the project's repository:
-              <a
-                href="https://github.com/makkahwi/currencies-collection-showroom"
-                target="_blank"
-              >
-                Currencies Collection Showroom
+              <a href="https://github.com/makkahwi/cash-hub" target="_blank">
+                Currencies Archiving & Sharing Hub
               </a>
             </li>
             <li class="list-group-item">
@@ -154,7 +151,7 @@
           <h3 class="mb-3 text-success">Conclusion</h3>
           <p>
             Congratulations! You now have your own instance of the Currencies
-            Collection Showroom. You can login and start inserting your
+            Archiving & Sharing Hub. You can login and start inserting your
             collection data.
           </p>
         </div>
@@ -167,7 +164,7 @@
             If you encounter any issues or have questions, feel free to reach
             out via
             <a
-              href="https://github.com/makkahwi/currencies-collection-showroom/discussions"
+              href="https://github.com/makkahwi/cash-hub/discussions"
               target="_blank"
               >GitHub discussions</a
             >
