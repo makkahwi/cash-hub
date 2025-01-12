@@ -1,0 +1,742 @@
+[
+  {
+    "continent": "Africa",
+    "name": "Algeria"
+  },
+  {
+    "continent": "Africa",
+    "name": "Angola"
+  },
+  {
+    "continent": "Africa",
+    "name": "Benin (1975-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Botswana"
+  },
+  {
+    "continent": "Africa",
+    "name": "Burkina Faso"
+  },
+  {
+    "continent": "Africa",
+    "name": "Burundi"
+  },
+  {
+    "continent": "Africa",
+    "name": "Cameroon (1960-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Cape Verde"
+  },
+  {
+    "continent": "Africa",
+    "name": "Central African Republic"
+  },
+  {
+    "continent": "Africa",
+    "name": "Central African States"
+  },
+  {
+    "continent": "Africa",
+    "name": "Chad"
+  },
+  {
+    "continent": "Africa",
+    "name": "Chile"
+  },
+  {
+    "continent": "Africa",
+    "name": "Comoro Islands"
+  },
+  {
+    "continent": "Africa",
+    "name": "Congo, Democratic Republic of the"
+  },
+  {
+    "continent": "Africa",
+    "name": "Congo, Republic of the"
+  },
+  {
+    "continent": "Africa",
+    "name": "Djibouti"
+  },
+  {
+    "continent": "Africa",
+    "name": "Egypt"
+  },
+  {
+    "continent": "Africa",
+    "name": "Equatorial Guinea"
+  },
+  {
+    "continent": "Africa",
+    "name": "Eritrea"
+  },
+  {
+    "continent": "Africa",
+    "name": "Ethiopia"
+  },
+  {
+    "continent": "Africa",
+    "name": "Gabon"
+  },
+  {
+    "continent": "Africa",
+    "name": "Gambia, The"
+  },
+  {
+    "continent": "Africa",
+    "name": "Ghana (1957-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Guinea"
+  },
+  {
+    "continent": "Africa",
+    "name": "Guinea-Bissau (1976-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Guyana"
+  },
+  {
+    "continent": "Africa",
+    "name": "Ivory Coast"
+  },
+  {
+    "continent": "Africa",
+    "name": "Kenya"
+  },
+  {
+    "continent": "Africa",
+    "name": "Kingdom of Eswatini (2018-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Liberia"
+  },
+  {
+    "continent": "Africa",
+    "name": "Libya"
+  },
+  {
+    "continent": "Africa",
+    "name": "Madagascar"
+  },
+  {
+    "continent": "Africa",
+    "name": "Malawi"
+  },
+  {
+    "continent": "Africa",
+    "name": "Mali (1960-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Mauritania"
+  },
+  {
+    "continent": "Africa",
+    "name": "Mauritius"
+  },
+  {
+    "continent": "Africa",
+    "name": "Morocco"
+  },
+  {
+    "continent": "Africa",
+    "name": "Mozambique"
+  },
+  {
+    "continent": "Africa",
+    "name": "Namibia (1990-date)"
+  },
+  {
+    "continent": "Africa",
+    "name": "Niger"
+  },
+  {
+    "continent": "Africa",
+    "name": "Nigeria"
+  },
+  {
+    "continent": "Africa",
+    "name": "Rwanda"
+  },
+  {
+    "continent": "Africa",
+    "name": "Senegal"
+  },
+  {
+    "continent": "Africa",
+    "name": "Seychelles"
+  },
+  {
+    "continent": "Africa",
+    "name": "Sierra Leone"
+  },
+  {
+    "continent": "Africa",
+    "name": "Somalia"
+  },
+  {
+    "continent": "Africa",
+    "name": "South Africa"
+  },
+  {
+    "continent": "Africa",
+    "name": "South Sudan"
+  },
+  {
+    "continent": "Africa",
+    "name": "Sudan"
+  },
+  {
+    "continent": "Africa",
+    "name": "Tanzania"
+  },
+  {
+    "continent": "Africa",
+    "name": "Togo"
+  },
+  {
+    "continent": "Africa",
+    "name": "Tunisia"
+  },
+  {
+    "continent": "Africa",
+    "name": "Uganda"
+  },
+  {
+    "continent": "Africa",
+    "name": "Western African States"
+  },
+  {
+    "continent": "Africa",
+    "name": "Zambia"
+  },
+  {
+    "continent": "Africa",
+    "name": "Zimbabwe (1980-date)"
+  },
+  {
+    "continent": "Americas",
+    "name": "Argentina"
+  },
+  {
+    "continent": "Americas",
+    "name": "Bahamas, The"
+  },
+  {
+    "continent": "Americas",
+    "name": "Barbados"
+  },
+  {
+    "continent": "Americas",
+    "name": "Belize (1973-date)"
+  },
+  {
+    "continent": "Americas",
+    "name": "Bolivia"
+  },
+  {
+    "continent": "Americas",
+    "name": "Canada"
+  },
+  {
+    "continent": "Americas",
+    "name": "Colombia"
+  },
+  {
+    "continent": "Americas",
+    "name": "Costa Rica"
+  },
+  {
+    "continent": "Americas",
+    "name": "Cuba"
+  },
+  {
+    "continent": "Americas",
+    "name": "Dominican Republic (1844-date)"
+  },
+  {
+    "continent": "Americas",
+    "name": "Eastern Caribbean States"
+  },
+  {
+    "continent": "Americas",
+    "name": "Ecuador"
+  },
+  {
+    "continent": "Americas",
+    "name": "El Salvador"
+  },
+  {
+    "continent": "Americas",
+    "name": "Guatemala"
+  },
+  {
+    "continent": "Americas",
+    "name": "Haiti (1804-date)"
+  },
+  {
+    "continent": "Americas",
+    "name": "Honduras"
+  },
+  {
+    "continent": "Americas",
+    "name": "Jamaica"
+  },
+  {
+    "continent": "Americas",
+    "name": "Mexico"
+  },
+  {
+    "continent": "Americas",
+    "name": "Nicaragua"
+  },
+  {
+    "continent": "Americas",
+    "name": "Panama"
+  },
+  {
+    "continent": "Americas",
+    "name": "Paraguay"
+  },
+  {
+    "continent": "Americas",
+    "name": "Peru"
+  },
+  {
+    "continent": "Americas",
+    "name": "Suriname"
+  },
+  {
+    "continent": "Americas",
+    "name": "Trinidad and Tobago"
+  },
+  {
+    "continent": "Americas",
+    "name": "United States"
+  },
+  {
+    "continent": "Americas",
+    "name": "Uruguay"
+  },
+  {
+    "continent": "Americas",
+    "name": "Venezuela"
+  },
+  {
+    "continent": "Asia",
+    "name": "Abkhazia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Afghanistan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Armenia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Azerbaijan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Bahrain"
+  },
+  {
+    "continent": "Asia",
+    "name": "Bangladesh"
+  },
+  {
+    "continent": "Asia",
+    "name": "Bhutan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Brunei"
+  },
+  {
+    "continent": "Asia",
+    "name": "Cambodia"
+  },
+  {
+    "continent": "Asia",
+    "name": "China, People's Republic of"
+  },
+  {
+    "continent": "Asia",
+    "name": "Cyprus"
+  },
+  {
+    "continent": "Asia",
+    "name": "Georgia (1991-date)"
+  },
+  {
+    "continent": "Asia",
+    "name": "Hong Kong"
+  },
+  {
+    "continent": "Asia",
+    "name": "India"
+  },
+  {
+    "continent": "Asia",
+    "name": "Indonesia (1949-date)"
+  },
+  {
+    "continent": "Asia",
+    "name": "Iran"
+  },
+  {
+    "continent": "Asia",
+    "name": "Iraq"
+  },
+  {
+    "continent": "Asia",
+    "name": "Israel"
+  },
+  {
+    "continent": "Asia",
+    "name": "Japan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Jordan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Kazakhstan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Kuwait"
+  },
+  {
+    "continent": "Asia",
+    "name": "Kyrgyzstan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Laos"
+  },
+  {
+    "continent": "Asia",
+    "name": "Lebanon"
+  },
+  {
+    "continent": "Asia",
+    "name": "Macau"
+  },
+  {
+    "continent": "Asia",
+    "name": "Malaysia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Maldives"
+  },
+  {
+    "continent": "Asia",
+    "name": "Mongolia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Myanmar"
+  },
+  {
+    "continent": "Asia",
+    "name": "Nepal"
+  },
+  {
+    "continent": "Asia",
+    "name": "North Korea"
+  },
+  {
+    "continent": "Asia",
+    "name": "Oman"
+  },
+  {
+    "continent": "Asia",
+    "name": "Pakistan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Papua New Guinea"
+  },
+  {
+    "continent": "Asia",
+    "name": "Philippines"
+  },
+  {
+    "continent": "Asia",
+    "name": "Qatar"
+  },
+  {
+    "continent": "Asia",
+    "name": "Russia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Saudi Arabia"
+  },
+  {
+    "continent": "Asia",
+    "name": "Singapore"
+  },
+  {
+    "continent": "Asia",
+    "name": "South Korea"
+  },
+  {
+    "continent": "Asia",
+    "name": "Syria"
+  },
+  {
+    "continent": "Asia",
+    "name": "Tajikistan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Thailand"
+  },
+  {
+    "continent": "Asia",
+    "name": "Timor-Leste (2002-date)"
+  },
+  {
+    "continent": "Asia",
+    "name": "Turkey"
+  },
+  {
+    "continent": "Asia",
+    "name": "Turkmenistan"
+  },
+  {
+    "continent": "Asia",
+    "name": "United Arab Emirates"
+  },
+  {
+    "continent": "Asia",
+    "name": "Uzbekistan"
+  },
+  {
+    "continent": "Asia",
+    "name": "Vietnam"
+  },
+  {
+    "continent": "Asia",
+    "name": "Yemen"
+  },
+  {
+    "continent": "Europe",
+    "name": "Albania"
+  },
+  {
+    "continent": "Europe",
+    "name": "Andorra"
+  },
+  {
+    "continent": "Europe",
+    "name": "Austria"
+  },
+  {
+    "continent": "Europe",
+    "name": "Belarus"
+  },
+  {
+    "continent": "Europe",
+    "name": "Belgium"
+  },
+  {
+    "continent": "Europe",
+    "name": "Benelux"
+  },
+  {
+    "continent": "Europe",
+    "name": "Bosnia and Herzegovina"
+  },
+  {
+    "continent": "Europe",
+    "name": "Bulgaria"
+  },
+  {
+    "continent": "Europe",
+    "name": "Croatia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Czech Republic"
+  },
+  {
+    "continent": "Europe",
+    "name": "Denmark"
+  },
+  {
+    "continent": "Europe",
+    "name": "Estonia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Eurozone"
+  },
+  {
+    "continent": "Europe",
+    "name": "Finland"
+  },
+  {
+    "continent": "Europe",
+    "name": "France"
+  },
+  {
+    "continent": "Europe",
+    "name": "Germany, Federal Republic of"
+  },
+  {
+    "continent": "Europe",
+    "name": "Greece"
+  },
+  {
+    "continent": "Europe",
+    "name": "Hungary"
+  },
+  {
+    "continent": "Europe",
+    "name": "Iceland"
+  },
+  {
+    "continent": "Europe",
+    "name": "Ireland"
+  },
+  {
+    "continent": "Europe",
+    "name": "Italy"
+  },
+  {
+    "continent": "Europe",
+    "name": "Latvia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Lithuania"
+  },
+  {
+    "continent": "Europe",
+    "name": "Luxembourg"
+  },
+  {
+    "continent": "Europe",
+    "name": "Malta"
+  },
+  {
+    "continent": "Europe",
+    "name": "Moldova"
+  },
+  {
+    "continent": "Europe",
+    "name": "Montenegro"
+  },
+  {
+    "continent": "Europe",
+    "name": "Netherlands"
+  },
+  {
+    "continent": "Europe",
+    "name": "North Macedonia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Norway"
+  },
+  {
+    "continent": "Europe",
+    "name": "Poland"
+  },
+  {
+    "continent": "Europe",
+    "name": "Portugal"
+  },
+  {
+    "continent": "Europe",
+    "name": "Romania"
+  },
+  {
+    "continent": "Europe",
+    "name": "Scotland"
+  },
+  {
+    "continent": "Europe",
+    "name": "Serbia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Slovakia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Slovenia"
+  },
+  {
+    "continent": "Europe",
+    "name": "Spain"
+  },
+  {
+    "continent": "Europe",
+    "name": "Sweden"
+  },
+  {
+    "continent": "Europe",
+    "name": "Switzerland"
+  },
+  {
+    "continent": "Europe",
+    "name": "Ukraine"
+  },
+  {
+    "continent": "Europe",
+    "name": "United Kingdom"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Australia"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Fiji"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Marshall Islands"
+  },
+  {
+    "continent": "Oceania",
+    "name": "New Zealand"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Samoa"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Solomon Islands"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Tonga"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Tuvalu"
+  },
+  {
+    "continent": "Oceania",
+    "name": "Vanuatu"
+  }
+]
