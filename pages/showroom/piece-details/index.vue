@@ -58,6 +58,7 @@
             <tr>
               <td class="font-weight-bold">Country Full Name</td>
               <td class="font-weight-bolder">
+                <img :src="piece.flag" height="15px" />{{ " " }}
                 {{ piece.zoneFullName || "N/A" }}
               </td>
             </tr>

@@ -66,6 +66,7 @@
             {
               id,
               name,
+              flag,
               code,
               mostRecentEdition,
               fractionName,
@@ -98,7 +99,9 @@
           </td>
           <td class="text-sm font-weight-normal">{{ type }}</td>
           <td class="text-sm font-weight-normal">{{ continent }}</td>
-          <td class="text-sm font-weight-normal">{{ zoneName }}</td>
+          <td class="text-sm font-weight-normal">
+            <img :src="flag" height="15px" /> {{ zoneName }}
+          </td>
           <td class="text-sm font-weight-normal">{{ value }}</td>
           <td class="text-sm font-weight-normal">{{ name }}</td>
           <td

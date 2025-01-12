@@ -7,6 +7,7 @@
             id,
             name,
             code,
+            flag,
             mostRecentEdition,
             fractionName,
             fraction,
@@ -47,6 +48,7 @@
 
             <div class="col-md-2">Nation / Area</div>
             <div class="col-md-2">
+              <img :src="flag" height="15px" />{{ " " }}
               <span class="font-weight-bolder">{{ zoneName }}</span>
             </div>
 
