@@ -13,7 +13,8 @@ const jsonFilesData = () => {
   const currencies = currenciesData;
 
   const finalData = currencies
-    // .filter(({ type }) => type != "banknote")
+    .filter(({ value }) => value.length < 20)
+    .filter(({ _ }, i) => i < 2000)
     .map(
       (
         {
@@ -50,11 +51,12 @@ const jsonFilesData = () => {
           type: type == "banknote" ? "Banknote" : "Coin",
           usdToLocal: 1,
           value: value || 3,
-          year: issue_start_year || 2025,
+          year: parseInt(String(issue_start_year)) || 2025,
           zoneFullName: country.name || "The Hashemite Kingdom Of Jordan",
           zoneName: country.name || "Jordan",
           fPhoto: front_image,
           bPhoto: back_image,
+          date: "2024-12-12",
         };
       }
     );
