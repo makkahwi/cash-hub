@@ -13,7 +13,10 @@ const jsonFilesData = () => {
   const currencies = currenciesData;
 
   const finalData = currencies
-    .filter(({ value }) => value.length < 20)
+    .filter(
+      ({ value, issue_start_year }) =>
+        value.length < 15 && parseInt(String(issue_start_year)) >= 1800
+    )
     .filter(({ _ }, i) => i < 2000)
     .map(
       (
