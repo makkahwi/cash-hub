@@ -59,6 +59,7 @@ const filterData = () => {
   getCurrencies().then((res) => {
     currencies.update(
       res
+        .filter(({ _ }, i) => i < 3000)
         .sort((a, b) => {
           // Sort by type: Banknote first, then Coin
           const typeOrder = ["Banknote", "Coin"];

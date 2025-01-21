@@ -11,7 +11,6 @@ const jsonFilesData = () => {
     .filter(
       ({ issue_start_year }) => parseInt(String(issue_start_year)) >= 1800
     )
-    .filter(({ _ }, i) => i < 500)
     .map(
       (
         {

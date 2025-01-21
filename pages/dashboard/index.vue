@@ -57,11 +57,23 @@
                     formData.collectedCurrencies.length > 0 ||
                     (formData.zoneName && formData.type && formData.value)
                   "
-                  v-for="{ img, label, value } of options"
+                  v-for="{
+                    front_image,
+                    back_image,
+                    label,
+                    value,
+                    issue_start_year,
+                    issue_end_year,
+                  } of options"
                   :key="value"
                   class="col-12 col-sm-6 col-md-4 col-lg-2 text-center"
                 >
-                  <img :src="img" class="mb-3" />
+                  <img :src="front_image" class="mb-3" />
+                  <img :src="back_image" class="mb-3" />
+
+                  <br />
+
+                  <h6>{{ issue_start_year }} - {{ issue_end_year }}</h6>
 
                   <br />
 
@@ -156,6 +168,13 @@ watch(
   }
 );
 
+watch(
+  () => formData.type,
+  (newType) => {
+    formData.value = "";
+  }
+);
+
 const formInputs = () => [
   {
     title: "Zone Information",
@@ -167,7 +186,7 @@ const formInputs = () => [
         type: "select",
         options: dbData.continents
           .map(({ name, id }) => ({ value: id, label: name }))
-          .sort((a, b) => (a.value < b.value ? -1 : 1)),
+          .sort((a, b) => (a.name < b.name ? -1 : 1)),
       },
       {
         name: "zoneName",
@@ -187,7 +206,7 @@ const formInputs = () => [
                 []
               )
               .filter(({ continent }) => continent == formData.continent)
-              .sort((a, b) => (a.value < b.value ? -1 : 1))
+              .sort((a, b) => (a.label < b.label ? -1 : 1))
           : [],
       },
     ],
@@ -214,9 +233,15 @@ const formInputs = () => [
                   ({ country_id, type }) =>
                     country_id == formData.zoneName && type == formData.type
                 )
-                .map(({ value, name }) => ({
-                  value: value + " " + name,
-                }))
+                .sort((a, b) => (a.value < b.value ? -1 : 1))
+                .sort((a, b) => (a.name < b.name ? -1 : 1))
+                .reduce(
+                  (final, { name, value }) =>
+                    final.find((already) => already.value == value + " " + name)
+                      ? final
+                      : [...final, { value: value + " " + name }],
+                  []
+                )
             : [],
       },
     ],
@@ -238,11 +263,25 @@ const formInputs = () => [
               country_id == formData.zoneName &&
               type == formData.type
           )
-          .map(({ id, name, value, front_image, back_image }) => ({
-            img: front_image || back_image,
-            value: id,
-            label: value + " " + name,
-          })),
+          .sort((a, b) => (a.issue_start_year < b.issue_start_year ? -1 : 1))
+          .map(
+            ({
+              id,
+              name,
+              value,
+              front_image,
+              back_image,
+              issue_start_year,
+              issue_end_year,
+            }) => ({
+              front_image: front_image || back_image,
+              back_image: back_image || front_image,
+              issue_start_year,
+              issue_end_year,
+              value: id,
+              label: value + " " + name,
+            })
+          ),
       },
     ],
   },
