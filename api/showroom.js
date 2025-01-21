@@ -9,10 +9,9 @@ export const addCurrency = async (data) => {
 const jsonFilesData = () => {
   const finalData = dbData.currencies
     .filter(
-      ({ value, issue_start_year }) =>
-        value.length < 15 && parseInt(String(issue_start_year)) >= 1800
+      ({ issue_start_year }) => parseInt(String(issue_start_year)) >= 1800
     )
-    .filter(({ _ }, i) => i < 2000)
+    .filter(({ _ }, i) => i < 500)
     .map(
       (
         {
@@ -27,6 +26,7 @@ const jsonFilesData = () => {
           name,
           type,
           value,
+          originalText,
         },
         i
       ) => {

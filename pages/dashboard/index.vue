@@ -177,13 +177,16 @@ const formInputs = () => [
         options: formData.continent
           ? dbData.countries
               .reduce(
-                (final, { name, continent_id }) =>
+                (final, { id, name, continent_id }) =>
                   final.find((already) => already.value == name)
                     ? final
-                    : [...final, { value: name, continent_id }],
+                    : [
+                        ...final,
+                        { value: id, label: name, continent: continent_id },
+                      ],
                 []
               )
-              .filter(({ continent }) => continent == formData.continent_id)
+              .filter(({ continent }) => continent == formData.continent)
               .sort((a, b) => (a.value < b.value ? -1 : 1))
           : [],
       },
@@ -208,16 +211,12 @@ const formInputs = () => [
           formData.type && formData.zoneName
             ? dbData.currencies
                 .filter(
-                  ({ type }) =>
-                    type.toLowerCase() == formData.type.toLowerCase()
+                  ({ country_id, type }) =>
+                    country_id == formData.zoneName && type == formData.type
                 )
-                .reduce(
-                  (final, { value }) =>
-                    final.find((already) => already.value == value)
-                      ? final
-                      : [...final, { value }],
-                  []
-                )
+                .map(({ value, name }) => ({
+                  value: value + " " + name,
+                }))
             : [],
       },
     ],
@@ -232,15 +231,17 @@ const formInputs = () => [
         type: "checklist-photo",
         options: dbData.currencies
           .filter(
-            ({ type, value, id }) =>
-              formData.collectedCurrencies.includes(id) ||
-              (type.toLowerCase() == formData.type.toLowerCase() &&
-                value.toLowerCase() == formData.value.toLowerCase())
+            ({ type, value, id, country_id, name }) =>
+              // formData.collectedCurrencies.includes(id) ||
+              type == formData.type &&
+              formData.value == value + " " + name &&
+              country_id == formData.zoneName &&
+              type == formData.type
           )
-          .map(({ id, name, front_image }) => ({
-            img: front_image,
+          .map(({ id, name, value, front_image, back_image }) => ({
+            img: front_image || back_image,
             value: id,
-            label: name,
+            label: value + " " + name,
           })),
       },
     ],
