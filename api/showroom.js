@@ -17,7 +17,6 @@ const jsonFilesData = () => {
           back_image,
           code,
           country_id,
-          db_id,
           front_image,
           id,
           issue_end_year,
@@ -45,14 +44,19 @@ const jsonFilesData = () => {
           fractionSize: 100,
           name: name || "Dinar",
           status: "Circulable",
-          type: type == "banknote" ? "Banknote" : "Coin",
-          usdToLocal: 1,
+          type,
+          usdToLocalNow: 1,
+          usdToLocalAtIssueTime: 1,
+          usdToLocalAtCollectionTime: 1,
           value: value || 3,
-          year: parseInt(String(issue_start_year)) || 2025,
+          firstYear:
+            parseInt(String(issue_start_year)) || new Date().getFullYear(),
+          lastYear:
+            parseInt(String(issue_end_year)) || new Date().getFullYear(),
           zoneFullName: country.name || "The Hashemite Kingdom Of Jordan",
           zoneName: country.name || "Jordan",
-          fPhoto: front_image,
-          bPhoto: back_image,
+          fPhoto: front_image || back_image,
+          bPhoto: back_image || front_image,
           date: "2024-12-12",
         };
       }

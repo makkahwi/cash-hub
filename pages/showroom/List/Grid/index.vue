@@ -22,7 +22,9 @@
           mapCode,
           continent,
           status,
-          usdToLocal,
+          usdToLocalNow,
+          usdToLocalAtIssueTime,
+          usdToLocalAtCollectionTime,
         },
         i
       ) of currencies"

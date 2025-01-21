@@ -24,7 +24,9 @@
             fullName,
             mapCode,
             continent,
-            usdToLocal,
+            usdToLocalNow,
+            usdToLocalAtIssueTime,
+            usdToLocalAtCollectionTime,
           },
           i
         ) of currencies"
@@ -79,7 +81,7 @@
 
             <div class="col-md-2">USD => Local</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{ usdToLocal }}</span>
+              <span class="font-weight-bolder">{{ usdToLocalNow }}</span>
             </div>
 
             <div class="col-md-2">Collected @</div>

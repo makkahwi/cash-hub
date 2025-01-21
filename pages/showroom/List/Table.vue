@@ -84,7 +84,9 @@
               fullName,
               mapCode,
               continent,
-              usdToLocal,
+              usdToLocalNow,
+              usdToLocalAtIssueTime,
+              usdToLocalAtCollectionTime,
             },
             i
           ) of currencies"
