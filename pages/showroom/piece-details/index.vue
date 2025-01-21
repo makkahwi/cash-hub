@@ -26,26 +26,33 @@
         <h2 class="my-4 mt-lg-0">{{ piece.code }} {{ piece.value }}</h2>
       </div>
 
-      <div class="text-center col-xl-5 col-lg-6">
+      <div class="text-center col-lg-6">
         <img
-          class="shadow-lg w-100 border-radius"
+          class="shadow-lg border-radius"
+          height="200"
           :src="piece.fPhoto"
           alt="front"
         />
+      </div>
 
+      <div class="text-center col-lg-6">
         <img
-          class="shadow-lg w-100 border-radius mt-4"
+          class="shadow-lg border-radius"
+          height="200"
           :src="piece.bPhoto"
           alt="back"
         />
       </div>
 
-      <div class="mx-auto col-lg-5 text-start">
+      <div class="mx-auto col-lg-12 text-start mt-6">
         <table class="w-100 table-responsive">
           <tbody>
             <tr>
               <td class="font-weight-bold">Continent</td>
-              <td class="font-weight-bolder">{{ piece.continent || "N/A" }}</td>
+              <td class="font-weight-bolder">
+                <i :class="`fas fa-globe-${piece.continent.toLowerCase()}`" />
+                {{ piece.continent || "N/A" }}
+              </td>
             </tr>
 
             <tr>
@@ -53,9 +60,7 @@
               <td class="font-weight-bolder">
                 {{ piece.zoneName || "N/A" }}
               </td>
-            </tr>
 
-            <tr>
               <td class="font-weight-bold">Country Full Name</td>
               <td class="font-weight-bolder">
                 <img :src="piece.flag" height="15px" />{{ " " }}
@@ -64,23 +69,41 @@
             </tr>
 
             <tr>
-              <td class="font-weight-bold">Currency Name</td>
-              <td class="font-weight-bolder">{{ piece.name || "N/A" }}</td>
+              <td colspan="4"><hr /></td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Currency Code</td>
               <td class="font-weight-bolder">{{ piece.code || "N/A" }}</td>
+
+              <td class="font-weight-bold">Fraction Size</td>
+              <td class="font-weight-bolder">
+                {{ piece.fractionSize || "N/A" }}
+              </td>
+            </tr>
+
+            <tr v-if="piece.fractionName || piece.fractionSize">
+              <td class="font-weight-bold">Currency Name</td>
+              <td class="font-weight-bolder">{{ piece.name || "N/A" }}</td>
+
+              <td class="font-weight-bold">Fraction Name</td>
+              <td class="font-weight-bolder">
+                {{ piece.fractionName || "N/A" }}
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4"><hr /></td>
             </tr>
 
             <tr>
               <td class="font-weight-bold">Edition No.</td>
               <td class="font-weight-bolder">{{ piece.edition || "N/A" }}</td>
-            </tr>
 
-            <tr>
-              <td class="font-weight-bold">Edition Issue Year</td>
-              <td class="font-weight-bolder">{{ piece.year || "N/A" }}</td>
+              <td class="font-weight-bold">Edition Issue Years</td>
+              <td class="font-weight-bolder">
+                {{ piece.firstYear || "N/A" }} - {{ piece.lastYear || "N/A" }}
+              </td>
             </tr>
 
             <tr>
@@ -95,25 +118,19 @@
             </tr>
 
             <tr>
-              <td class="font-weight-bold">Type</td>
-              <td class="font-weight-bolder">{{ piece.type || "N/A" }}</td>
-            </tr>
-
-            <tr v-if="piece.fractionName">
-              <td class="font-weight-bold">Fraction Unit</td>
-              <td class="font-weight-bolder">
-                {{ piece.fractionName || "N/A" }}
-              </td>
-            </tr>
-
-            <tr v-if="piece.fraction">
-              <td class="font-weight-bold">Fractions Count</td>
-              <td class="font-weight-bolder">{{ piece.fraction || "N/A" }}</td>
+              <td colspan="4"><hr /></td>
             </tr>
 
             <tr>
+              <td class="font-weight-bold">Type</td>
+              <td class="font-weight-bolder">{{ piece.type || "N/A" }}</td>
+
               <td class="font-weight-bold">Value</td>
               <td class="font-weight-bolder">{{ piece.value || "N/A" }}</td>
+            </tr>
+
+            <tr>
+              <td colspan="4"><hr /></td>
             </tr>
 
             <tr>
@@ -121,14 +138,43 @@
               <td class="font-weight-bolder">
                 {{ formatDate(piece.date) || "N/A" }}
               </td>
-            </tr>
 
-            <tr>
               <td class="font-weight-bold">Exchange Rates</td>
               <td class="font-weight-bolder">
-                {{ "USD To Local: " + (piece.usdToLocal || "N/A") }}
-                <br />
-                {{ "Local To USD: " + (1 / piece.usdToLocal || "N/A") }}
+                <table class="table w-100 table-responsive">
+                  <tr>
+                    <td></td>
+                    <td>Now</td>
+                    <td>At Collection Time</td>
+                    <td>At Issue Time</td>
+                  </tr>
+
+                  <tr>
+                    <td>USD To Local</td>
+                    <td>
+                      {{ piece.usdToLocalNow || "N/A" }}
+                    </td>
+                    <td>
+                      {{ piece.usdToLocalAtCollectionTime || "N/A" }}
+                    </td>
+                    <td>
+                      {{ piece.usdToLocalAtIssueTime || "N/A" }}
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Local To USD</td>
+                    <td>
+                      {{ 1 / piece.usdToLocalNow || "N/A" }}
+                    </td>
+                    <td>
+                      {{ 1 / piece.usdToLocalAtCollectionTime || "N/A" }}
+                    </td>
+                    <td>
+                      {{ 1 / piece.usdToLocalAtIssueTime || "N/A" }}
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </tbody>
