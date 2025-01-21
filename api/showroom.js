@@ -1,7 +1,5 @@
 import service from ".";
-import countriesData from "./countries.json";
-import countriesWithContinents from "./countriesWithContinents.json";
-import currenciesData from "./currencies.json";
+import dbData from "./db.json";
 
 export const addCurrency = async (data) => {
   const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null");
@@ -9,7 +7,7 @@ export const addCurrency = async (data) => {
 };
 
 const jsonFilesData = () => {
-  const finalData = currenciesData
+  const finalData = dbData.currencies
     .filter(
       ({ value, issue_start_year }) =>
         value.length < 15 && parseInt(String(issue_start_year)) >= 1800
@@ -32,7 +30,7 @@ const jsonFilesData = () => {
         },
         i
       ) => {
-        const country = countriesData.find(({ id }) => id == country_id);
+        const country = dbData.countries.find(({ id }) => id == country_id);
 
         // const { id, code, flag, level, name, status, wikidata_id } = country;
 
@@ -40,9 +38,9 @@ const jsonFilesData = () => {
           id: i,
           code: code || "JOD",
           flag: country.flag,
-          continent: countriesWithContinents.find(
-            ({ name }) => name == country.name
-          )?.continent,
+          continent: dbData.continents.find(
+            ({ id }) => id == country?.continent_id
+          )?.name,
           edition: 5,
           fractionName: "Cent",
           fractionSize: 100,

@@ -113,9 +113,7 @@ import { reactive, watch } from "vue";
 import PageHeader from "@/components/PageHeader";
 import { addCurrency } from "~~/api/showroom";
 import { currencyZones } from "~~/utils/consts";
-import countriesData from "../../api/countries.json";
-import currenciesData from "../../api/currencies.json";
-import countriesWithContinents from "../../api/countriesWithContinents.json";
+import dbData from "../../api/db.json";
 
 const updateSelection = (value) => {
   const selectedArray = this.formData.collectedCurrencies;
@@ -167,14 +165,8 @@ const formInputs = () => [
         label: "Continent",
         required: true,
         type: "select",
-        options: countriesWithContinents
-          .reduce(
-            (final, { continent }) =>
-              final.find((already) => already.value == continent)
-                ? final
-                : [...final, { value: continent }],
-            []
-          )
+        options: dbData.continents
+          .map(({ name, id }) => ({ value: id, label: name }))
           .sort((a, b) => (a.value < b.value ? -1 : 1)),
       },
       {
@@ -183,15 +175,15 @@ const formInputs = () => [
         required: true,
         type: "select",
         options: formData.continent
-          ? countriesWithContinents
+          ? dbData.countries
               .reduce(
-                (final, { name, continent }) =>
+                (final, { name, continent_id }) =>
                   final.find((already) => already.value == name)
                     ? final
-                    : [...final, { value: name, continent }],
+                    : [...final, { value: name, continent_id }],
                 []
               )
-              .filter(({ continent }) => continent == formData.continent)
+              .filter(({ continent }) => continent == formData.continent_id)
               .sort((a, b) => (a.value < b.value ? -1 : 1))
           : [],
       },
@@ -214,7 +206,7 @@ const formInputs = () => [
         type: "select",
         options:
           formData.type && formData.zoneName
-            ? currenciesData
+            ? dbData.currencies
                 .filter(
                   ({ type }) =>
                     type.toLowerCase() == formData.type.toLowerCase()
@@ -238,7 +230,7 @@ const formInputs = () => [
         label: "Currencies To Add",
         required: true,
         type: "checklist-photo",
-        options: currenciesData
+        options: dbData.currencies
           .filter(
             ({ type, value, id }) =>
               formData.collectedCurrencies.includes(id) ||
