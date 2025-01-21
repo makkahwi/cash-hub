@@ -73,7 +73,7 @@
             <div class="col-md-2">
               <span
                 :class="`font-weight-bolder fw-bold text-${
-                  status === 'Circulable' ? 'success' : 'danger'
+                  status === 'Current' ? 'success' : 'danger'
                 }`"
                 >{{ status }}</span
               >

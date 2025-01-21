@@ -61,7 +61,7 @@ const jsonFilesData = () => {
           fractionName: "Cent",
           fractionSize: 100,
           name: name || "Dinar",
-          status: "Circulable",
+          status: "Current",
           type,
           usdToLocalNow: 1,
           usdToLocalAtIssueTime: 1,

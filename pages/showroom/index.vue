@@ -28,7 +28,7 @@ const formatDate = (date) => date.toISOString().split("T")[0];
 const filters = reactive({
   value: {
     type: ["Banknote", "Coin"],
-    status: ["Circulable", "Outdated"],
+    status: ["Current", "Discontinued"],
     continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     startYear: 1800,
     endYear: new Date().getFullYear(),
@@ -70,8 +70,8 @@ const filterData = () => {
               typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
             if (typeComparison !== 0) return typeComparison;
 
-            // Sort by status: Circulable first, then Outdated
-            const statusOrder = ["Circulable", "Outdated"];
+            // Sort by status: Current first, then Discontinued
+            const statusOrder = ["Current", "Discontinued"];
             const statusComparison =
               statusOrder.indexOf(a.status) - statusOrder.indexOf(b.status);
             if (statusComparison !== 0) return statusComparison;

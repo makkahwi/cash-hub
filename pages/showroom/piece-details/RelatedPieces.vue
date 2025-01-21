@@ -93,7 +93,7 @@
 
             <td
               :class="`align-middle text-sm fw-bold text-${
-                status === 'Circulable' ? 'success' : 'danger'
+                status === 'Current' ? 'success' : 'danger'
               }`"
             >
               {{ status }}

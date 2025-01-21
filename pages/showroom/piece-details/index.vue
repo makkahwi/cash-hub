@@ -110,7 +110,7 @@
               <td class="font-weight-bold">Circability</td>
               <td
                 :class="`font-weight-bolder badge badge-${
-                  piece.status === 'Circulable' ? 'success' : 'danger'
+                  piece.status === 'Current' ? 'success' : 'danger'
                 }`"
               >
                 {{ piece.status || "N/A" }}

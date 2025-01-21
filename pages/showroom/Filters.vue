@@ -26,7 +26,7 @@
           <h6 class="text-start my-4">By Status</h6>
           <div
             class="form-check"
-            v-for="status in ['Circulable', 'Outdated']"
+            v-for="status in ['Current', 'Discontinued']"
             :key="status"
           >
             <input
@@ -173,7 +173,7 @@ const formatDate = (date) => date.toISOString().split("T")[0];
 const resetFilters = () => {
   props.filters.replace({
     type: ["Banknote", "Coin"],
-    status: ["Circulable", "Outdated"],
+    status: ["Current", "Discontinued"],
     continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     startYear: 1800,
     endYear: new Date().getFullYear(),

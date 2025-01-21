@@ -108,7 +108,7 @@
           <td class="text-sm font-weight-normal">{{ name }}</td>
           <td
             :class="`text-sm fw-bold text-${
-              status === 'Circulable' ? 'success' : 'danger'
+              status === 'Current' ? 'success' : 'danger'
             }`"
           >
             {{ status }}

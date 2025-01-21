@@ -17,12 +17,12 @@
 
   <tbody>
     <tr>
-      <td><strong>Circulable Pieces</strong></td>
+      <td><strong>Current Pieces</strong></td>
       <td>
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Africa" && status === "Circulable"
+              continent === "Africa" && status === "Current"
           ).length
         }}
       </td>
@@ -30,7 +30,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Americas" && status === "Circulable"
+              continent === "Americas" && status === "Current"
           ).length
         }}
       </td>
@@ -38,7 +38,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Asia" && status === "Circulable"
+              continent === "Asia" && status === "Current"
           ).length
         }}
       </td>
@@ -46,7 +46,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Europe" && status === "Circulable"
+              continent === "Europe" && status === "Current"
           ).length
         }}
       </td>
@@ -54,25 +54,24 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Oceania" && status === "Circulable"
+              continent === "Oceania" && status === "Current"
           ).length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(({ status }) => status === "Circulable")
-            .length
+          props.currencies.filter(({ status }) => status === "Current").length
         }}
       </td>
     </tr>
 
     <tr>
-      <td><strong>Outdated Pieces</strong></td>
+      <td><strong>Discontinued Pieces</strong></td>
       <td>
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Africa" && status === "Outdated"
+              continent === "Africa" && status === "Discontinued"
           ).length
         }}
       </td>
@@ -80,7 +79,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Americas" && status === "Outdated"
+              continent === "Americas" && status === "Discontinued"
           ).length
         }}
       </td>
@@ -88,7 +87,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Asia" && status === "Outdated"
+              continent === "Asia" && status === "Discontinued"
           ).length
         }}
       </td>
@@ -96,7 +95,7 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Europe" && status === "Outdated"
+              continent === "Europe" && status === "Discontinued"
           ).length
         }}
       </td>
@@ -104,13 +103,14 @@
         {{
           props.currencies.filter(
             ({ continent, status }) =>
-              continent === "Oceania" && status === "Outdated"
+              continent === "Oceania" && status === "Discontinued"
           ).length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(({ status }) => status === "Outdated").length
+          props.currencies.filter(({ status }) => status === "Discontinued")
+            .length
         }}
       </td>
     </tr>

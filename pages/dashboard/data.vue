@@ -41,8 +41,8 @@ export default {
               parseInt(key.split(" ")[0], 10) <= 2 ? "Banknote" : "Coin";
             const status =
               parseInt(key.split(" ")[0], 10) % 2 !== 0
-                ? "Circulable"
-                : "Outdated";
+                ? "Current"
+                : "Discontinued";
 
             const final = data
               .filter((item) =>
