@@ -112,8 +112,15 @@
         </fieldset>
       </div>
 
-      <!-- Submit Button -->
-      <div class="mt-4 text-end">
+      <!-- Submit Buttons-->
+      <div class="mt-4 btn-group float-end">
+        <button
+          type="button"
+          @click="resetForm"
+          class="btn btn-outline-success"
+        >
+          Reset
+        </button>
         <button type="submit" class="btn btn-success">Submit</button>
       </div>
     </form>
@@ -141,6 +148,16 @@ const defaultFormValues = {
 };
 
 const formData = reactive(defaultFormValues);
+
+const resetForm = () => {
+  formData.continent = "";
+  formData.zoneName = "";
+  formData.type = "";
+  formData.value = "";
+  formData.collectedCurrencies = [];
+  formData.date = new Date().toISOString().split("T")[0];
+  formData.note = "";
+};
 
 const updateSelection = (value) => {
   const selectedArray = formData.collectedCurrencies;
