@@ -127,19 +127,6 @@ import { addCurrency } from "~~/api/showroom";
 import { currencyZones } from "~~/utils/consts";
 import dbData from "../../api/db.json";
 
-const updateSelection = (value) => {
-  const selectedArray = this.formData.collectedCurrencies;
-  if (selectedArray.includes(value)) {
-    // Remove the value if it's already selected
-    this.formData.collectedCurrencies = selectedArray.filter(
-      (item) => item !== value
-    );
-  } else {
-    // Add the value if it's not already selected
-    this.formData.collectedCurrencies.push(value);
-  }
-};
-
 const defaultFormValues = {
   continent: "",
   zoneName: "",
@@ -152,6 +139,20 @@ const defaultFormValues = {
 };
 
 const formData = reactive(defaultFormValues);
+
+const updateSelection = (value) => {
+  const selectedArray = formData.collectedCurrencies;
+
+  if (selectedArray.includes(value)) {
+    // Remove the value if it's already selected
+    formData.collectedCurrencies = selectedArray.filter(
+      (item) => item !== value
+    );
+  } else {
+    // Add the value if it's not already selected
+    formData.collectedCurrencies.push(value);
+  }
+};
 
 watch(
   () => formData.continent,
@@ -254,34 +255,39 @@ const formInputs = () => [
         label: "Currencies To Add",
         required: true,
         type: "checklist-photo",
-        options: dbData.currencies
-          .filter(
-            ({ type, value, id, country_id, name }) =>
-              // formData.collectedCurrencies.includes(id) ||
-              type == formData.type &&
-              formData.value == value + " " + name &&
-              country_id == formData.zoneName &&
-              type == formData.type
-          )
-          .sort((a, b) => (a.issue_start_year < b.issue_start_year ? -1 : 1))
-          .map(
-            ({
-              id,
-              name,
-              value,
-              front_image,
-              back_image,
-              issue_start_year,
-              issue_end_year,
-            }) => ({
-              front_image: front_image || back_image,
-              back_image: back_image || front_image,
-              issue_start_year,
-              issue_end_year,
-              value: id,
-              label: value + " " + name,
-            })
-          ),
+        options:
+          formData.value || formData.collectedCurrencies
+            ? dbData.currencies
+                .filter(
+                  ({ type, value, id, country_id, name }) =>
+                    formData.collectedCurrencies.includes(id) ||
+                    (type == formData.type &&
+                      formData.value == value + " " + name &&
+                      country_id == formData.zoneName &&
+                      type == formData.type)
+                )
+                .sort((a, b) =>
+                  a.issue_start_year < b.issue_start_year ? -1 : 1
+                )
+                .map(
+                  ({
+                    id,
+                    name,
+                    value,
+                    front_image,
+                    back_image,
+                    issue_start_year,
+                    issue_end_year,
+                  }) => ({
+                    front_image: front_image || back_image,
+                    back_image: back_image || front_image,
+                    issue_start_year,
+                    issue_end_year,
+                    value: id,
+                    label: value + " " + name,
+                  })
+                )
+            : [],
       },
     ],
   },
