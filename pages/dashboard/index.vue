@@ -123,7 +123,10 @@
 <script setup>
 import { reactive, watch } from "vue";
 import PageHeader from "@/components/PageHeader";
-import { addCurrency } from "~~/api/showroom";
+import {
+  addCollectedCurrencies,
+  getCollectedCurrencies,
+} from "~~/api/showroom";
 import { currencyZones } from "~~/utils/consts";
 import dbData from "../../api/db.json";
 
@@ -134,7 +137,6 @@ const defaultFormValues = {
   value: "",
   collectedCurrencies: [],
   date: new Date().toISOString().split("T")[0],
-  price: 0,
   note: "",
 };
 
@@ -299,12 +301,12 @@ const formInputs = () => [
         label: "Purchase Date",
         type: "date",
       },
-      {
-        name: "price",
-        label: "Purchase Price",
-        type: "number",
-        step: 0.01,
-      },
+      // {
+      //   name: "price",
+      //   label: "Purchase Price",
+      //   type: "number",
+      //   step: 0.01,
+      // },
       {
         name: "note",
         label: "Note",
@@ -315,7 +317,7 @@ const formInputs = () => [
 ];
 
 const handleSubmit = () => {
-  addCurrency(formData);
+  addCollectedCurrencies(formData);
 };
 
 definePageMeta({

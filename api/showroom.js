@@ -2,29 +2,29 @@ import service from ".";
 import dbData from "./db.json";
 
 export const getCollectedCurrencies = async () => {
-  return await service.get(`collection`).then((res) => {
+  return await service.get(`collection.json`).then((res) => {
     return res
       ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
       : [];
   });
 };
 
-export const addCurrency = async ({
+export const addCollectedCurrencies = async ({
   collectedCurrencies,
   date,
-  price,
+  // price,
   note,
 }) => {
-  // const original = getCollectedCurrencies();
-  return await service.patch(`collection`, [
-    // ...original,
-    collectedCurrencies.map((id) => ({
+  collectedCurrencies.map(async (id) => {
+    const row = {
       id,
       date,
       note,
-      price,
-    })),
-  ]);
+      // price,
+    };
+
+    return await service.post(`collection.json`, row);
+  });
 };
 
 const jsonFilesData = () => {
@@ -33,28 +33,25 @@ const jsonFilesData = () => {
       ({ issue_start_year }) => parseInt(String(issue_start_year)) >= 1800
     )
     .map(
-      (
-        {
-          back_image,
-          code,
-          country_id,
-          front_image,
-          id,
-          issue_end_year,
-          issue_start_year,
-          name,
-          type,
-          value,
-          originalText,
-        },
-        i
-      ) => {
+      ({
+        back_image,
+        code,
+        country_id,
+        front_image,
+        id,
+        issue_end_year,
+        issue_start_year,
+        name,
+        type,
+        value,
+        originalText,
+      }) => {
         const country = dbData.countries.find(({ id }) => id == country_id);
 
         // const { id, code, flag, level, name, status, wikidata_id } = country;
 
         return {
-          id: i,
+          id: id,
           code: code || "JOD",
           flag: country.flag,
           continent: dbData.continents.find(
@@ -86,7 +83,7 @@ const jsonFilesData = () => {
   return finalData;
 };
 
-export const getCurrencies = async () => {
+export const getPiecesData = async () => {
   return jsonFilesData();
 
   const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null")
@@ -97,7 +94,7 @@ export const getCurrencies = async () => {
   });
 };
 
-export const getCurrencyById = async (findId) => {
+export const getPieceDataById = async (findId) => {
   const finalData = jsonFilesData();
 
   return finalData.find(({ id }) => id == findId);

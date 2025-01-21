@@ -192,7 +192,7 @@ import PageSection from "@/components/PageSection";
 import PageHeader from "@/components/PageHeader";
 import { useRoute } from "vue-router";
 import { ref } from "vue";
-import { getCurrencyById } from "@/api/showroom";
+import { getPieceDataById, getCollectedCurrencies } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
 
 const route = useRoute();
@@ -227,17 +227,22 @@ const getPieceDetails = async () => {
       return;
     }
 
-    const response = await getCurrencyById(id);
+    const pieceData = await getPieceDataById(id);
+    const collectionData = await getCollectedCurrencies();
+    const collectedPieceData = collectionData.find(
+      (collected) => collected.id == id
+    );
 
-    if (!response) {
+    if (!pieceData) {
       error.value = "Currency details not found.";
       return;
     }
 
     piece.value = {
-      ...response,
-      fPhoto: response.fPhoto || photoPlaceholder,
-      bPhoto: response.bPhoto || photoPlaceholder,
+      ...pieceData,
+      ...collectedPieceData,
+      fPhoto: pieceData.fPhoto || photoPlaceholder,
+      bPhoto: pieceData.bPhoto || photoPlaceholder,
     };
   } catch (err) {
     error.value = "Failed to fetch currency details.";
