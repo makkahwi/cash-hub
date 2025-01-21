@@ -44,6 +44,8 @@ const jsonFilesData = () => {
         name,
         type,
         value,
+        fractionName,
+        fractionSize,
         originalText,
       }) => {
         const country = dbData.countries.find(({ id }) => id == country_id);
@@ -58,8 +60,8 @@ const jsonFilesData = () => {
             ({ id }) => id == country?.continent_id
           )?.name,
           edition: 5,
-          fractionName: "Cent",
-          fractionSize: 100,
+          fractionName: fractionName || "Cent",
+          fractionSize: fractionSize || 100,
           name: name || "Dinar",
           status: "Current",
           type,
