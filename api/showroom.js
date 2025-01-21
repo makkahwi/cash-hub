@@ -1,9 +1,30 @@
 import service from ".";
 import dbData from "./db.json";
 
-export const addCurrency = async (data) => {
-  const user = { localId: "123" }; // JSON.parse(localStorage.getItem("user") || "null");
-  return await service.post(`currencies/${user.localId}.json`, data);
+export const getCollectedCurrencies = async () => {
+  return await service.get(`collection`).then((res) => {
+    return res
+      ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
+      : [];
+  });
+};
+
+export const addCurrency = async ({
+  collectedCurrencies,
+  date,
+  price,
+  note,
+}) => {
+  // const original = getCollectedCurrencies();
+  return await service.patch(`collection`, [
+    // ...original,
+    collectedCurrencies.map((id) => ({
+      id,
+      date,
+      note,
+      price,
+    })),
+  ]);
 };
 
 const jsonFilesData = () => {
