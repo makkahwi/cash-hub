@@ -55,7 +55,7 @@ export default defineNuxtConfig({
   },
   components: {
     global: true,
-    dirs: ["~/components/icons", "~/components"],
+    dirs: ["~/components/Icons", "~/components"],
   },
   imports: {
     autoImport: true,
