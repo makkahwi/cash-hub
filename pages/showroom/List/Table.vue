@@ -65,6 +65,7 @@
           v-for="(
             {
               id,
+              dbId,
               name,
               flag,
               code,
@@ -127,7 +128,10 @@
                 <i class="fas fa-edit" />
               </NuxtLink>
 
-              <button class="btn btn-danger btn-sm px-2">
+              <button
+                class="btn btn-danger btn-sm px-2"
+                @click="deleteRecord(dbId)"
+              >
                 <i class="fas fa-trash" />
               </button>
             </div>
@@ -150,6 +154,14 @@
 </template>
 
 <script setup>
+import { deleteCollectedCurrency } from "@/api/showroom";
+
+const deleteRecord = (id) => {
+  deleteCollectedCurrency(id).then(() => {
+    window.location.reload();
+  });
+};
+
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 

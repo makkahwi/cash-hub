@@ -5,6 +5,7 @@
         v-for="(
           {
             id,
+            dbId,
             name,
             code,
             flag,
@@ -102,7 +103,9 @@
                 View & Edit
               </NuxtLink>
 
-              <button class="btn btn-danger">Delete</button>
+              <button class="btn btn-danger" @click="deleteRecord(dbId)">
+                Delete
+              </button>
             </div>
 
             <NuxtLink
@@ -123,6 +126,14 @@
 </template>
 
 <script setup>
+import { deleteCollectedCurrency } from "@/api/showroom";
+
+const deleteRecord = (id) => {
+  deleteCollectedCurrency(id).then(() => {
+    window.location.reload();
+  });
+};
+
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 

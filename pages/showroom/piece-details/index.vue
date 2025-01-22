@@ -197,8 +197,14 @@
             <tr v-if="loggedIn">
               <td class="font-weight-bold py-4" colspan="1">Private Notes</td>
 
-              <td class="font-weight-bolder text-dark py-4" colspan="3">
+              <td class="font-weight-bolder py-4">
                 {{ piece.note }}
+              </td>
+
+              <td class="font-weight-bold py-4" colspan="1">Purchase Price</td>
+
+              <td class="font-weight-bolder py-4">
+                {{ piece.price }}
               </td>
             </tr>
 
@@ -212,7 +218,7 @@
                     <tr>
                       <td colspan="2" class="py-3">
                         <label>Note (Not Shared Publicly)</label>
-                        <input class="form-control" :value="piece.note" />
+                        <input class="form-control" v-model="formData.note" />
                       </td>
                     </tr>
 
@@ -223,7 +229,7 @@
                           class="form-control"
                           type="number"
                           step="0.01"
-                          :value="piece.price"
+                          v-model="formData.price"
                         />
                       </td>
 
@@ -232,20 +238,26 @@
                         <input
                           class="form-control"
                           type="date"
-                          :value="piece.date"
+                          v-model="formData.date"
                         />
                       </td>
                     </tr>
 
                     <tr>
                       <td class="py-3">
-                        <button class="btn btn-danger">
+                        <button
+                          class="btn btn-danger"
+                          @click="deleteRecord(piece.dbId)"
+                        >
                           <i class="fa fa-trash"></i> Delete Collection Record
                         </button>
                       </td>
 
                       <td class="py-3 text-end">
-                        <button class="btn btn-warning">
+                        <button
+                          class="btn btn-warning"
+                          @click="updateRecord(piece.dbId)"
+                        >
                           <i class="fa fa-edit"></i> Update Collection Record
                         </button>
                       </td>
@@ -267,35 +279,25 @@
 import PageSection from "@/components/PageSection";
 // import RelatedPieces from "./RelatedPieces";
 import PageHeader from "@/components/PageHeader";
-import { useRoute } from "vue-router";
-import { ref } from "vue";
-import { getPieceDataById, getCollectedCurrencies } from "@/api/showroom";
+import { useRoute, useRouter } from "vue-router";
+import { reactive, watch, ref } from "vue";
+import {
+  getPieceDataById,
+  getCollectedCurrencies,
+  updateCollectedCurrency,
+  deleteCollectedCurrency,
+} from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
 
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 
 const route = useRoute();
-
-definePageMeta({
-  layout: "landing",
-});
+const router = useRouter();
 
 const piece = ref({});
 const loading = ref(true);
 const error = ref(null);
-
-const formatDate = (date) => {
-  if (!date) return null;
-
-  const parsedDate = new Date(date);
-  if (isNaN(parsedDate)) return "Invalid Date";
-
-  return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    year: "numeric",
-  }).format(parsedDate);
-};
 
 const getPieceDetails = async () => {
   try {
@@ -332,5 +334,46 @@ const getPieceDetails = async () => {
   }
 };
 
-getPieceDetails();
+await getPieceDetails();
+
+const defaultFormValues = {
+  price: piece.value.price || "",
+  date: piece.value.date || "",
+  note: piece.value.note || "",
+};
+
+const formData = reactive(defaultFormValues);
+
+const updateRecord = (id) => {
+  updateCollectedCurrency(id, {
+    id: piece.value.id,
+    price: formData.price,
+    date: formData.date,
+    note: formData.note,
+  }).then(() => {
+    router.push("/showroom");
+  });
+};
+
+const deleteRecord = (id) => {
+  deleteCollectedCurrency(id).then(() => {
+    router.push("/showroom");
+  });
+};
+
+const formatDate = (date) => {
+  if (!date) return null;
+
+  const parsedDate = new Date(date);
+  if (isNaN(parsedDate)) return "Invalid Date";
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    year: "numeric",
+  }).format(parsedDate);
+};
+
+definePageMeta({
+  layout: "landing",
+});
 </script>
