@@ -54,7 +54,7 @@
           <th
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
-            Details
+            Actions
           </th>
         </tr>
       </thead>
@@ -115,7 +115,25 @@
           </td>
           <td class="text-sm font-weight-normal">{{ date }}</td>
           <td class="text-sm font-weight-normal">
+            <div v-if="loggedIn" class="btn-group">
+              <NuxtLink
+                class="btn btn-success btn-sm px-2"
+                :to="{
+                  path: '/showroom/piece-details',
+                  query: { id },
+                }"
+              >
+                <i class="fas fa-eye" />{{ " | " }}
+                <i class="fas fa-edit" />
+              </NuxtLink>
+
+              <button class="btn btn-danger btn-sm px-2">
+                <i class="fas fa-trash" />
+              </button>
+            </div>
+
             <NuxtLink
+              v-else
               class="btn btn-success btn-sm"
               :to="{
                 path: '/showroom/piece-details',
@@ -132,6 +150,9 @@
 </template>
 
 <script setup>
+const loggedIn =
+  process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
+
 defineProps({
   currencies: {
     type: Array,

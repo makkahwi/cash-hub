@@ -406,7 +406,7 @@ const formInputs = () => [
       // },
       {
         name: "note",
-        label: "Note",
+        label: "Private Note (Not Shared Publicly)",
         type: "text",
       },
     ],

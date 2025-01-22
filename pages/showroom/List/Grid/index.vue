@@ -38,7 +38,7 @@
           :label="code + ' ' + value + ' ' + type"
           :action="{
             color: status === 'Current' ? 'success' : 'danger',
-            label: 'View Details',
+            label: loggedIn ? 'View & Edit' : 'View Details',
             link: {
               path: '/showroom/piece-details',
               query: { id },
@@ -52,6 +52,9 @@
 
 <script setup>
 import CardView from "./CardView";
+
+const loggedIn =
+  process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 
 defineProps({
   currencies: {

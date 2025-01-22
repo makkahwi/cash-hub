@@ -4,7 +4,7 @@ import dbData from "./db.json";
 export const getCollectedCurrencies = async () => {
   return await service.get(`collection.json`).then((res) => {
     return res
-      ? Object.entries(res).map(([id, values]) => ({ id, ...values }))
+      ? Object.entries(res).map(([id, values]) => ({ dbId: id, ...values }))
       : [];
   });
 };
@@ -25,6 +25,14 @@ export const addCollectedCurrencies = async ({
 
     return await service.post(`collection.json`, row);
   });
+};
+
+export const updateCollectedCurrency = async (id, data) => {
+  return await service.patch(`collection/${id}.json`, data);
+};
+
+export const deleteCollectedCurrency = async (id) => {
+  return await service.delete(`collection/${id}.json`);
 };
 
 const jsonFilesData = () => {
@@ -54,30 +62,27 @@ const jsonFilesData = () => {
 
         return {
           id: id,
-          code: code || "JOD",
+          code: code,
           flag: country.flag,
           continent: dbData.continents.find(
             ({ id }) => id == country?.continent_id
           )?.name,
           edition: 5,
-          fractionName: fractionName || "Cent",
-          fractionSize: fractionSize || 100,
-          name: name || "Dinar",
+          fractionName: fractionName,
+          fractionSize: fractionSize,
+          name: name,
           status: "Current",
           type,
           usdToLocalNow: 1,
           usdToLocalAtIssueTime: 1,
           usdToLocalAtCollectionTime: 1,
-          value: value || 3,
-          firstYear:
-            parseInt(String(issue_start_year)) || new Date().getFullYear(),
-          lastYear:
-            parseInt(String(issue_end_year)) || new Date().getFullYear(),
-          zoneFullName: country.name || "The Hashemite Kingdom Of Jordan",
-          zoneName: country.name || "Jordan",
+          value: value,
+          firstYear: parseInt(String(issue_start_year)),
+          lastYear: parseInt(String(issue_end_year)),
+          zoneFullName: country.name,
+          zoneName: country.name,
           fPhoto: front_image || back_image,
           bPhoto: back_image || front_image,
-          date: "2024-12-12",
         };
       }
     );

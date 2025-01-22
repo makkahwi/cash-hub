@@ -91,14 +91,29 @@
           </div>
 
           <div class="col-md-2 align-middle text-center py-5">
+            <div v-if="loggedIn" class="btn-group-vertical">
+              <NuxtLink
+                class="btn btn-success"
+                :to="{
+                  path: '/showroom/piece-details',
+                  query: { id },
+                }"
+              >
+                View & Edit
+              </NuxtLink>
+
+              <button class="btn btn-danger">Delete</button>
+            </div>
+
             <NuxtLink
+              v-else
               class="btn btn-success d-flex justify-content-center align-items-center"
               :to="{
                 path: '/showroom/piece-details',
                 query: { id },
               }"
             >
-              View Details
+              {{ loggedIn ? "View & Edit" : "View Details" }}
             </NuxtLink>
           </div>
         </td>
@@ -108,6 +123,9 @@
 </template>
 
 <script setup>
+const loggedIn =
+  process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
+
 defineProps({
   currencies: {
     type: Array,

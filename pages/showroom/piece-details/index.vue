@@ -138,10 +138,18 @@
               <td class="font-weight-bolder">
                 {{ formatDate(piece.date) || "N/A" }}
               </td>
+            </tr>
 
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+
+            <tr>
               <td class="font-weight-bold">Exchange Rates</td>
-              <td class="font-weight-bolder">
-                <table class="table w-100 table-responsive">
+              <td class="font-weight-bolder" colspan="3">
+                <table
+                  class="table-bordered w-100 table-responsive align-middle text-center"
+                >
                   <tr>
                     <td></td>
                     <td>Now</td>
@@ -150,7 +158,7 @@
                   </tr>
 
                   <tr>
-                    <td>USD To Local</td>
+                    <td class="text-start">USD To Local</td>
                     <td>
                       {{ piece.usdToLocalNow || "N/A" }}
                     </td>
@@ -163,7 +171,7 @@
                   </tr>
 
                   <tr>
-                    <td>Local To USD</td>
+                    <td class="text-start">Local To USD</td>
                     <td>
                       {{ 1 / piece.usdToLocalNow || "N/A" }}
                     </td>
@@ -174,6 +182,75 @@
                       {{ 1 / piece.usdToLocalAtIssueTime || "N/A" }}
                     </td>
                   </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+
+            <tr v-if="loggedIn">
+              <td class="font-weight-bold"><h5>Private Section</h5></td>
+            </tr>
+
+            <tr v-if="loggedIn">
+              <td class="font-weight-bold py-4" colspan="1">Private Notes</td>
+
+              <td class="font-weight-bolder text-dark py-4" colspan="3">
+                {{ piece.note }}
+              </td>
+            </tr>
+
+            <tr v-if="loggedIn">
+              <td class="font-weight-bold">Actions</td>
+              <td class="font-weight-bolder" colspan="3">
+                <table
+                  class="table-borderless w-100 table-responsive align-middle"
+                >
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="py-3">
+                        <label>Note (Not Shared Publicly)</label>
+                        <input class="form-control" :value="piece.note" />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-3">
+                        <label>Purchase Price (Not Shared Publicly)</label>
+                        <input
+                          class="form-control"
+                          type="number"
+                          step="0.01"
+                          :value="piece.price"
+                        />
+                      </td>
+
+                      <td class="py-3">
+                        <label>Collection Date</label>
+                        <input
+                          class="form-control"
+                          type="date"
+                          :value="piece.date"
+                        />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-3">
+                        <button class="btn btn-danger">
+                          <i class="fa fa-trash"></i> Delete Collection Record
+                        </button>
+                      </td>
+
+                      <td class="py-3 text-end">
+                        <button class="btn btn-warning">
+                          <i class="fa fa-edit"></i> Update Collection Record
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </td>
             </tr>
@@ -194,6 +271,9 @@ import { useRoute } from "vue-router";
 import { ref } from "vue";
 import { getPieceDataById, getCollectedCurrencies } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
+
+const loggedIn =
+  process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 
 const route = useRoute();
 
