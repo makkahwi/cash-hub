@@ -414,7 +414,9 @@ const formInputs = () => [
 ];
 
 const handleSubmit = () => {
-  addCollectedCurrencies(formData);
+  addCollectedCurrencies(formData).then(() => {
+    clearSelections();
+  });
 };
 
 definePageMeta({
