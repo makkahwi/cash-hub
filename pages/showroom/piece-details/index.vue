@@ -50,7 +50,9 @@
             <tr>
               <td class="font-weight-bold">Continent</td>
               <td class="font-weight-bolder">
-                <i :class="`fas fa-globe-${piece.continent.toLowerCase()}`" />
+                <i
+                  :class="`fas fa-globe-${generateContinentIcon(piece.continent)}`"
+                />
                 {{ piece.continent || "N/A" }}
               </td>
             </tr>
@@ -198,13 +200,13 @@
               <td class="font-weight-bold py-4" colspan="1">Private Notes</td>
 
               <td class="font-weight-bolder py-4">
-                {{ piece.note }}
+                {{ piece.note || "N/A" }}
               </td>
 
               <td class="font-weight-bold py-4" colspan="1">Purchase Price</td>
 
               <td class="font-weight-bolder py-4">
-                {{ piece.price }}
+                {{ piece.price || "N/A" }}
               </td>
             </tr>
 
@@ -298,6 +300,15 @@ const router = useRouter();
 const piece = ref({});
 const loading = ref(true);
 const error = ref(null);
+
+const generateContinentIcon = (continent) => {
+  switch (continent) {
+    case "Oceania":
+      return "asia";
+    default:
+      return continent.toLowerCase();
+  }
+};
 
 const getPieceDetails = async () => {
   try {
