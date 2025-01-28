@@ -10,9 +10,7 @@
 
     <StatisticsSection :currencies="currencies.value" />
 
-    <WishList
-      :currencies="currencies.value.filter(({ id }) => inWishList(id))"
-    />
+    <WishList :currencies="currencies.value" />
 
     <ListSection :currencies="currencies.value" :noCollection="true" />
   </div>
@@ -28,9 +26,6 @@ import { getPiecesData, getCollectedCurrencies } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
 import { jsonDataProcess } from "@/utils/functions";
 import WishList from "./WishList";
-import { useWishlist } from "@/composables/useWishlist";
-
-const { inWishList } = useWishlist();
 
 const formatDate = (date) => date.toISOString().split("T")[0];
 
