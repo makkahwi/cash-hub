@@ -52,9 +52,6 @@
 
 <script setup>
 import CardView from "./CardView";
-import { useWishlist } from "@/composables/useWishlist";
-
-const { wishList, inWishList, setWishList } = useWishlist();
 
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;

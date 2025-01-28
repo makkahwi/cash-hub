@@ -156,9 +156,7 @@
                 class="btn btn-success btn-sm px-2"
                 @click="setWishList(id)"
               >
-                {{
-                  inWishList(id) ? "Remove From Wish List" : "Add To Wish List"
-                }}
+                {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
               </button>
             </div>
           </td>

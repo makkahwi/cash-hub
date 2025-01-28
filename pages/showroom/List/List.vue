@@ -110,16 +110,21 @@
               </button>
             </div>
 
-            <NuxtLink
-              v-else
-              class="btn btn-success d-flex justify-content-center align-items-center"
-              :to="{
-                path: '/piece-details',
-                query: { id, noCollection },
-              }"
-            >
-              View Details
-            </NuxtLink>
+            <div v-else class="btn-group-vertical">
+              <NuxtLink
+                class="btn btn-success d-flex justify-content-center align-items-center"
+                :to="{
+                  path: '/piece-details',
+                  query: { id, noCollection },
+                }"
+              >
+                View Details
+              </NuxtLink>
+
+              <button class="btn btn-success px-2" @click="setWishList(id)">
+                {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
+              </button>
+            </div>
           </div>
         </td>
       </tr>
