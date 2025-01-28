@@ -150,7 +150,7 @@
                   <tr>
                     <td></td>
                     <td>Now</td>
-                    <td>At Collection Time</td>
+                    <td v-if="noCollection !== 'true'">At Collection Time</td>
                     <td>At Issue Time</td>
                   </tr>
 
@@ -159,7 +159,7 @@
                     <td>
                       {{ piece.usdToLocalNow || "N/A" }}
                     </td>
-                    <td>
+                    <td v-if="noCollection !== 'true'">
                       {{ piece.usdToLocalAtCollectionTime || "N/A" }}
                     </td>
                     <td>
@@ -172,7 +172,7 @@
                     <td>
                       {{ 1 / piece.usdToLocalNow || "N/A" }}
                     </td>
-                    <td>
+                    <td v-if="noCollection !== 'true'">
                       {{ 1 / piece.usdToLocalAtCollectionTime || "N/A" }}
                     </td>
                     <td>
@@ -187,11 +187,11 @@
               <td colspan="4"><hr /></td>
             </tr>
 
-            <tr v-if="loggedIn">
+            <tr v-if="loggedIn && noCollection !== 'true'">
               <td class="font-weight-bold"><h5>Private Section</h5></td>
             </tr>
 
-            <tr v-if="loggedIn">
+            <tr v-if="loggedIn && noCollection !== 'true'">
               <td class="font-weight-bold py-4" colspan="1">Private Notes</td>
 
               <td class="font-weight-bolder py-4">
@@ -205,7 +205,7 @@
               </td>
             </tr>
 
-            <tr v-if="loggedIn">
+            <tr v-if="loggedIn && noCollection !== 'true'">
               <td class="font-weight-bold">Actions</td>
               <td class="font-weight-bolder" colspan="3">
                 <table
@@ -299,6 +299,8 @@ const router = useRouter();
 const piece = ref({});
 const loading = ref(true);
 const error = ref(null);
+
+const noCollection = route.query.noCollection;
 
 const generateContinentIcon = (continent) => {
   switch (continent) {

@@ -41,7 +41,7 @@
             label: loggedIn && !noCollection ? 'View & Edit' : 'View Details',
             link: {
               path: '/piece-details',
-              query: { id },
+              query: { id, noCollection },
             },
           }"
         />

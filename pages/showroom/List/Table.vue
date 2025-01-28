@@ -126,7 +126,7 @@
                 class="btn btn-success btn-sm px-2"
                 :to="{
                   path: '/piece-details',
-                  query: { id },
+                  query: { id, noCollection },
                 }"
               >
                 <i class="fas fa-eye" />{{ " | " }}
@@ -146,7 +146,7 @@
               class="btn btn-success btn-sm"
               :to="{
                 path: '/piece-details',
-                query: { id },
+                query: { id, noCollection },
               }"
             >
               View

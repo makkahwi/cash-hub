@@ -99,7 +99,7 @@
                 class="btn btn-success"
                 :to="{
                   path: '/piece-details',
-                  query: { id },
+                  query: { id, noCollection },
                 }"
               >
                 View & Edit
@@ -115,7 +115,7 @@
               class="btn btn-success d-flex justify-content-center align-items-center"
               :to="{
                 path: '/piece-details',
-                query: { id },
+                query: { id, noCollection },
               }"
             >
               View Details
