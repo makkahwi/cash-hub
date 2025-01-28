@@ -18,7 +18,6 @@ import Footer from "~~/layouts/Footer";
 import Configurator from "~~/examples/Configurator";
 
 import { useNavStore } from "~~/stores/NavStore";
-import setTooltip from "~~/assets/js/tooltip";
 
 const navStore = useNavStore();
 const isCollapsed = computed(() => {
@@ -26,7 +25,6 @@ const isCollapsed = computed(() => {
 });
 
 onMounted(() => {
-  setTooltip(navStore.bootstrap);
   if (process.client) {
     if (window.innerWidth < 768)
       if (

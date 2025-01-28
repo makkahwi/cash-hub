@@ -1,14 +1,12 @@
 import { defineStore } from "pinia";
-import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
 
 export const useNavStore = defineStore("NavStore", {
   // state
   state: () => {
     return {
-      bootstrap: bootstrap,
       isSidenavCollapsed: false,
       showConfig: false,
-      sidenavType: 'bg-white',
+      sidenavType: "bg-white",
       navFixed: false,
       darkMode: false,
     };

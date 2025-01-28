@@ -25,7 +25,6 @@ import Navbar from "@/layouts/Navbar";
 import Sidenav from "@/examples/Sidenav";
 import Footer from "@/layouts/Footer";
 import Configurator from "~~/examples/Configurator";
-import setTooltip from "@/assets/js/tooltip.js";
 
 import bg from "@/assets/img/vr-bg.jpg";
 
@@ -34,9 +33,6 @@ import { useNavStore } from "~~/stores/NavStore";
 const navStore = useNavStore();
 const isCollapsed = computed(() => {
   return navStore.isSidenavCollapsed;
-});
-onMounted(() => {
-  setTooltip(navStore.bootstrap);
 });
 useHead({
   bodyAttrs: {

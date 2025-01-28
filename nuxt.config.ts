@@ -25,7 +25,21 @@ export default defineNuxtConfig({
         },
         {
           rel: "stylesheet",
-          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+          integrity:
+            "sha384-PnYqj9rDQSYVvdGe9ZmBlAFYQz6sk7NY8nT6NA6wN1ZlP5I9HUZ6cCqY9PAu6OHy",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+          integrity:
+            "sha384-rbsA2VBKQBo8zYoykiYF51lfPCl9I0oZ4xqOFScq4j78M91j5wDoflZ5qT5tRG3b",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css",
         },
       ],
       script: [
@@ -40,8 +54,10 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js",
-          type: "text/javascript",
+          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+          integrity:
+            "sha384-OERcA2B0MzVxLVrZJ6ZPlLhZ3Z9Qht9I1NT67x57UqqvflhF3BhhVZnnwJMyJ9Zx",
+          crossorigin: "anonymous",
           defer: true,
         },
       ],
