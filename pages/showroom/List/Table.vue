@@ -105,7 +105,9 @@
           <td class="text-sm font-weight-normal">
             <img :src="flag" height="15px" /> {{ zoneName }}
           </td>
-          <td class="text-sm font-weight-normal">{{ value }}</td>
+          <td class="text-sm font-weight-normal">
+            {{ value.toLocaleString() }}
+          </td>
           <td class="text-sm font-weight-normal">{{ name }}</td>
           <td
             :class="`text-sm fw-bold text-${

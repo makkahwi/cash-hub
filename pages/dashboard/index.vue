@@ -321,7 +321,13 @@ const formInputs = () => [
                   (final, { name, value }) =>
                     final.find((already) => already.value == value + " " + name)
                       ? final
-                      : [...final, { value: value + " " + name }],
+                      : [
+                          ...final,
+                          {
+                            value: value + " " + name,
+                            label: value.toLocaleString() + " " + name,
+                          },
+                        ],
                   []
                 )
             : [],
@@ -353,7 +359,7 @@ const formInputs = () => [
               issue_start_year,
               issue_end_year,
               value: id,
-              label: value + " " + name,
+              label: value.toLocaleString() + " " + name,
             })
           ),
         options: formData.value
@@ -383,7 +389,7 @@ const formInputs = () => [
                   issue_start_year,
                   issue_end_year,
                   value: id,
-                  label: value + " " + name,
+                  label: value.toLocaleString() + " " + name,
                 })
               )
           : [],

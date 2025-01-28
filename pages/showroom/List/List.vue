@@ -62,7 +62,9 @@
 
             <div class="col-md-2">Value</div>
             <div class="col-md-2">
-              <span class="font-weight-bolder">{{ value }}</span>
+              <span class="font-weight-bolder">{{
+                value.toLocaleString()
+              }}</span>
             </div>
 
             <div class="col-md-2">Currency Name</div>

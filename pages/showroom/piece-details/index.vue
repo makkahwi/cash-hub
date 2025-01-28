@@ -23,7 +23,9 @@
 
     <div v-else class="row">
       <div class="col-12 text-start">
-        <h2 class="my-4 mt-lg-0">{{ piece.code }} {{ piece.value }}</h2>
+        <h2 class="my-4 mt-lg-0">
+          {{ piece.code }} {{ piece.value.toLocaleString() }}
+        </h2>
       </div>
 
       <div class="text-center col-lg-6">
