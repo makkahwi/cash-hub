@@ -17,11 +17,23 @@
         </select>
       </div>
 
-      <TableView v-if="type.value == 'table'" :currencies="currencies" />
+      <TableView
+        v-if="type.value == 'table'"
+        :currencies="currencies"
+        :noCollection="noCollection"
+      />
 
-      <ListView v-if="type.value == 'list'" :currencies="currencies" />
+      <ListView
+        v-if="type.value == 'list'"
+        :currencies="currencies"
+        :noCollection="noCollection"
+      />
 
-      <GridView v-if="type.value == 'grid'" :currencies="currencies" />
+      <GridView
+        v-if="type.value == 'grid'"
+        :currencies="currencies"
+        :noCollection="noCollection"
+      />
     </div>
   </PageSection>
 </template>
@@ -44,6 +56,10 @@ defineProps({
   currencies: {
     type: Array,
     default: [],
+  },
+  noCollection: {
+    type: Boolean,
+    required: false,
   },
 });
 </script>

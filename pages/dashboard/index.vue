@@ -1,5 +1,5 @@
 <template>
-  <PageHeader title="Collection Dashboard" />
+  <PageHeader title="Dashboard" />
 
   <div class="p-6 bg-white m-0">
     <div class="container mt-5">
@@ -15,7 +15,7 @@
         </div>
 
         <div v-for="{ path, name } in routes" :key="path" class="col-md-6">
-          <NuxtLink :to="path" class="btn btn-success w-100">
+          <NuxtLink :to="'/dashboard' + path" class="btn btn-success w-100">
             {{ name }}
           </NuxtLink>
         </div>
@@ -28,8 +28,8 @@
 import PageHeader from "@/components/PageHeader";
 
 const routes = [
-  { name: "Add To Your Collection", path: "/dashboard/add-to-collection" },
-  { name: "Check Your Targeting List", path: "/dashboard/targeting" },
+  { name: "Add To Your Collection", path: "/add-to-collection" },
+  { name: "Check Your Targeting List", path: "/targeting" },
 ];
 
 definePageMeta({

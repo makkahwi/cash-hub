@@ -46,6 +46,7 @@
           </th>
 
           <th
+            v-if="!noCollection"
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
             Collected @
@@ -116,13 +117,15 @@
           >
             {{ status }}
           </td>
-          <td class="text-sm font-weight-normal">{{ date }}</td>
+          <td class="text-sm font-weight-normal" v-if="!noCollection">
+            {{ date }}
+          </td>
           <td class="text-sm font-weight-normal">
-            <div v-if="loggedIn" class="btn-group">
+            <div v-if="loggedIn && !noCollection" class="btn-group">
               <NuxtLink
                 class="btn btn-success btn-sm px-2"
                 :to="{
-                  path: '/showroom/piece-details',
+                  path: '/piece-details',
                   query: { id },
                 }"
               >
@@ -142,7 +145,7 @@
               v-else
               class="btn btn-success btn-sm"
               :to="{
-                path: '/showroom/piece-details',
+                path: '/piece-details',
                 query: { id },
               }"
             >
@@ -171,6 +174,10 @@ defineProps({
   currencies: {
     type: Array,
     default: [],
+  },
+  noCollection: {
+    type: Boolean,
+    required: false,
   },
 });
 </script>

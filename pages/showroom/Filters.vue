@@ -5,7 +5,7 @@
   >
     <form @submit.prevent="onSubmit">
       <div class="row g-4">
-        <div class="col-md-3">
+        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Type</h6>
           <div
             class="form-check"
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Continent</h6>
           <div
             class="form-check"
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Issuing Year</h6>
           <div class="mb-3">
             <label class="form-label">Start Year</label>
@@ -96,7 +96,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3" v-if="!noCollection">
           <h6 class="text-start my-4">By Collection Date</h6>
           <div class="mb-3">
             <label class="form-label">Start Date</label>
@@ -146,6 +146,10 @@ const props = defineProps({
   onFilter: {
     type: Function,
     required: true,
+  },
+  noCollection: {
+    type: Boolean,
+    required: false,
   },
 });
 

@@ -87,18 +87,18 @@
               <span class="font-weight-bolder">{{ usdToLocalNow }}</span>
             </div>
 
-            <div class="col-md-2">Collected @</div>
-            <div class="col-md-2">
+            <div class="col-md-2" v-if="!noCollection">Collected @</div>
+            <div class="col-md-2" v-if="!noCollection">
               <span class="font-weight-bolder">{{ date }}</span>
             </div>
           </div>
 
           <div class="col-md-2 align-middle text-center py-5">
-            <div v-if="loggedIn" class="btn-group-vertical">
+            <div v-if="loggedIn && !noCollection" class="btn-group-vertical">
               <NuxtLink
                 class="btn btn-success"
                 :to="{
-                  path: '/showroom/piece-details',
+                  path: '/piece-details',
                   query: { id },
                 }"
               >
@@ -114,11 +114,11 @@
               v-else
               class="btn btn-success d-flex justify-content-center align-items-center"
               :to="{
-                path: '/showroom/piece-details',
+                path: '/piece-details',
                 query: { id },
               }"
             >
-              {{ loggedIn ? "View & Edit" : "View Details" }}
+              View Details
             </NuxtLink>
           </div>
         </td>
@@ -143,6 +143,10 @@ defineProps({
   currencies: {
     type: Array,
     default: [],
+  },
+  noCollection: {
+    type: Boolean,
+    required: false,
   },
 });
 </script>

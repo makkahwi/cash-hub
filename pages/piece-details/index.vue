@@ -3,14 +3,7 @@
 
   <PageSection>
     <div class="text-end mb-3 text-sm font-weight-normal">
-      <NuxtLink
-        class="btn btn-success btn-lg"
-        :to="{
-          path: '/showroom',
-        }"
-      >
-        Back
-      </NuxtLink>
+      <button class="btn btn-success btn-lg" @click="goBack">Back</button>
     </div>
 
     <div v-if="loading" class="text-center">
@@ -293,6 +286,10 @@ import {
 } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
 
+const goBack = () => {
+  window.history.length > 1 ? window.history.back() : navigateTo("/");
+};
+
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;
 
@@ -364,13 +361,13 @@ const updateRecord = (id) => {
     date: formData.date,
     note: formData.note,
   }).then(() => {
-    router.push("/showroom");
+    goBack();
   });
 };
 
 const deleteRecord = (id) => {
   deleteCollectedCurrency(id).then(() => {
-    router.push("/showroom");
+    goBack();
   });
 };
 

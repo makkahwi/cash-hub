@@ -38,9 +38,9 @@
           :label="code + ' ' + value + ' ' + type"
           :action="{
             color: status === 'Current' ? 'success' : 'danger',
-            label: loggedIn ? 'View & Edit' : 'View Details',
+            label: loggedIn && !noCollection ? 'View & Edit' : 'View Details',
             link: {
-              path: '/showroom/piece-details',
+              path: '/piece-details',
               query: { id },
             },
           }"
@@ -60,6 +60,10 @@ defineProps({
   currencies: {
     type: Array,
     default: [],
+  },
+  noCollection: {
+    type: Boolean,
+    required: false,
   },
 });
 </script>
