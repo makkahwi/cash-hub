@@ -129,6 +129,9 @@
 
 <script setup>
 import { deleteCollectedCurrency } from "@/api/showroom";
+import { useWishlist } from "@/composables/useWishlist";
+
+const { wishList, inWishList, setWishList } = useWishlist();
 
 const deleteRecord = (id) => {
   deleteCollectedCurrency(id).then(() => {

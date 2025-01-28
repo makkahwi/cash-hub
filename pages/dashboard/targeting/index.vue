@@ -10,6 +10,10 @@
 
     <StatisticsSection :currencies="currencies.value" />
 
+    <WishList
+      :currencies="currencies.value.filter(({ id }) => inWishList(id))"
+    />
+
     <ListSection :currencies="currencies.value" :noCollection="true" />
   </div>
 </template>
@@ -22,10 +26,10 @@ import ListSection from "@/pages/showroom/List";
 import { reactive } from "vue";
 import { getPiecesData, getCollectedCurrencies } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
+import WishList from "./WishList";
+import { useWishlist } from "@/composables/useWishlist";
 
-definePageMeta({
-  layout: "landing",
-});
+const { inWishList } = useWishlist();
 
 const formatDate = (date) => date.toISOString().split("T")[0];
 
@@ -145,4 +149,8 @@ const filterData = () => {
 };
 
 filterData();
+
+definePageMeta({
+  layout: "landing",
+});
 </script>

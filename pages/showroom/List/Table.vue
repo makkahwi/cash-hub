@@ -141,16 +141,26 @@
               </button>
             </div>
 
-            <NuxtLink
-              v-else
-              class="btn btn-success btn-sm"
-              :to="{
-                path: '/piece-details',
-                query: { id, noCollection },
-              }"
-            >
-              View
-            </NuxtLink>
+            <div v-else class="btn-group">
+              <NuxtLink
+                class="btn btn-primary btn-sm"
+                :to="{
+                  path: '/piece-details',
+                  query: { id, noCollection },
+                }"
+              >
+                View
+              </NuxtLink>
+
+              <button
+                class="btn btn-success btn-sm px-2"
+                @click="setWishList(id)"
+              >
+                {{
+                  inWishList(id) ? "Remove From Wish List" : "Add To Wish List"
+                }}
+              </button>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -160,6 +170,9 @@
 
 <script setup>
 import { deleteCollectedCurrency } from "@/api/showroom";
+import { useWishlist } from "@/composables/useWishlist";
+
+const { inWishList, setWishList } = useWishlist();
 
 const deleteRecord = (id) => {
   deleteCollectedCurrency(id).then(() => {
