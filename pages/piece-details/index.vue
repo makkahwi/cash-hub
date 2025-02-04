@@ -25,7 +25,7 @@
         <img
           class="shadow-lg border-radius"
           height="200"
-          :src="piece.fPhoto"
+          :src="getOriginalPhoto(piece.fPhoto)"
           alt="front"
         />
       </div>
@@ -34,7 +34,7 @@
         <img
           class="shadow-lg border-radius"
           height="200"
-          :src="piece.bPhoto"
+          :src="getOriginalPhoto(piece.bPhoto)"
           alt="back"
         />
       </div>
@@ -285,6 +285,7 @@ import {
   deleteCollectedCurrency,
 } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
+import { getOriginalPhoto } from "@/utils/functions";
 
 const goBack = () => {
   window.history.length > 1 ? window.history.back() : navigateTo("/");
