@@ -73,8 +73,14 @@
                     :key="value"
                     class="col-12 col-sm-6 col-md-4 col-lg-2 text-center"
                   >
-                    <img :src="front_image" class="mb-3" />
-                    <img :src="back_image" class="mb-3" />
+                    <img
+                      :src="getOriginalPhoto(front_image)"
+                      class="mb-3 w-100"
+                    />
+                    <img
+                      :src="getOriginalPhoto(back_image)"
+                      class="mb-3 w-100"
+                    />
 
                     <br />
 
@@ -118,8 +124,14 @@
                     :key="value"
                     class="col-12 col-sm-6 col-md-4 col-lg-2 text-center"
                   >
-                    <img :src="front_image" class="mb-3" />
-                    <img :src="back_image" class="mb-3" />
+                    <img
+                      :src="getOriginalPhoto(front_image)"
+                      class="mb-3 w-100"
+                    />
+                    <img
+                      :src="getOriginalPhoto(back_image)"
+                      class="mb-3 w-100"
+                    />
 
                     <br />
 
@@ -194,6 +206,7 @@ import {
 } from "~~/api/showroom";
 import { currencyZones } from "~~/utils/consts";
 import dbData from "../../../api/db.json";
+import { getOriginalPhoto } from "@/utils/functions";
 
 const defaultFormValues = {
   continent: "",
