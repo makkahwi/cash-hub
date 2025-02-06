@@ -208,6 +208,7 @@ import { getOriginalPhoto } from "@/utils/functions";
 
 const defaultFormValues = {
   continent: "",
+  currency: "",
   zoneName: "",
   type: "",
   value: "",
