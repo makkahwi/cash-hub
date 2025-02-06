@@ -71,7 +71,7 @@ export const getOriginalPhoto = (url) => {
   const currentSubString = "-180.jpg";
   const newSubString = "-original.jpg";
 
-  if (url.endsWith(currentSubString)) {
+  if (url?.endsWith(currentSubString)) {
     return url.slice(0, -currentSubString.length) + newSubString;
   }
 

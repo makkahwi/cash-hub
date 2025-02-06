@@ -36,54 +36,54 @@ export const deleteCollectedCurrency = async (id) => {
 };
 
 const jsonFilesData = () => {
-  const finalData = dbData.currencies
+  const finalData = dbData.currencyPieces
     .filter(
-      ({ issue_start_year }) => parseInt(String(issue_start_year)) >= 1800
+      ({ issue_start_year }) => parseInt(String(issue_start_year)) >= 1900
     )
     .map(
       ({
-        back_image,
-        code,
-        country_id,
-        front_image,
         id,
-        issue_end_year,
-        issue_start_year,
-        name,
-        type,
+        currency_id,
         value,
-        fractionName,
-        fractionSize,
+        type,
+        issue_start_year,
+        issue_end_year,
+        front_image,
+        back_image,
         originalText,
       }) => {
-        const country = dbData.countries.find(({ id }) => id == country_id);
+        const currency = dbData.currencies.find(({ id }) => id == currency_id);
+        const country = dbData.countries.find(
+          ({ id }) => id == currency?.country_id
+        );
+        const continent = dbData.continents.find(
+          ({ id }) => id == country?.continent_id
+        );
 
-        // const { id, code, flag, level, name, status, wikidata_id } = country;
-
-        return {
-          id: id,
-          code: code,
-          flag: country.flag,
-          continent: dbData.continents.find(
-            ({ id }) => id == country?.continent_id
-          )?.name,
+        const final = {
+          id,
+          code: currency?.code,
+          flag: country?.flag,
+          continent: continent?.name,
           edition: 5,
-          fractionName: fractionName,
-          fractionSize: fractionSize,
-          name: name,
+          fractionName: currency?.fractionName,
+          fractionSize: currency?.fractionSize,
+          name: currency?.name,
           status: "Current",
           type,
           usdToLocalNow: 1,
           usdToLocalAtIssueTime: 1,
           usdToLocalAtCollectionTime: 1,
-          value: value,
+          value,
           firstYear: parseInt(String(issue_start_year)),
           lastYear: parseInt(String(issue_end_year)),
-          zoneFullName: country.name,
-          zoneName: country.name,
+          zoneFullName: country?.name,
+          zoneName: country?.name,
           fPhoto: front_image || back_image,
           bPhoto: back_image || front_image,
         };
+
+        return final;
       }
     );
 

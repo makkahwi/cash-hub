@@ -32,12 +32,10 @@
               :key="y"
               :class="`col-md-${type == 'checklist-photo' || fullWidth ? 12 : 4}`"
             >
-              <label for="continent" class="form-label"
-                >{{ label
-                }}<span class="text-danger">{{
-                  required ? " *" : ""
-                }}</span></label
-              >
+              <label class="form-label"
+                >{{ label }}
+                <span class="text-danger">{{ required ? " *" : "" }}</span>
+              </label>
 
               <select
                 v-model="formData[name]"
@@ -55,13 +53,13 @@
               <div v-else-if="type == 'checklist-photo'">
                 <div class="row my-3">
                   <h6
-                    v-if="formData.zoneName && formData.type && formData.value"
+                    v-if="formData.currency && formData.type && formData.value"
                   >
                     Select {{ label }}...
                   </h6>
 
                   <div
-                    v-if="formData.zoneName && formData.type && formData.value"
+                    v-if="formData.currency && formData.type && formData.value"
                     v-for="{
                       front_image,
                       back_image,
@@ -227,6 +225,7 @@ const clearSelections = () => {
 const resetForm = () => {
   clearSelections();
   formData.continent = "";
+  formData.currency = "";
   formData.zoneName = "";
   formData.type = "";
   formData.value = "";
@@ -252,6 +251,7 @@ watch(
   () => formData.continent,
   (newContinent) => {
     formData.zoneName = "";
+    formData.currency = "";
     formData.value = "";
   }
 );
@@ -259,6 +259,14 @@ watch(
 watch(
   () => formData.zoneName,
   (newZoneName) => {
+    formData.currency = "";
+    formData.value = "";
+  }
+);
+
+watch(
+  () => formData.currency,
+  (newType) => {
     formData.value = "";
   }
 );
@@ -290,9 +298,11 @@ const formInputs = () => [
         type: "select",
         options: formData.continent
           ? dbData.countries
+              .filter(({ continent_id }) => continent_id == formData.continent)
+              .sort((a, b) => (a.name < b.name ? -1 : 1))
               .reduce(
                 (final, { id, name, continent_id }) =>
-                  final.find((already) => already.value == name)
+                  final.find((already) => already.value == id)
                     ? final
                     : [
                         ...final,
@@ -300,8 +310,6 @@ const formInputs = () => [
                       ],
                 []
               )
-              .filter(({ continent }) => continent == formData.continent)
-              .sort((a, b) => (a.label < b.label ? -1 : 1))
           : [],
       },
     ],
@@ -309,6 +317,30 @@ const formInputs = () => [
   {
     title: "Currency Details",
     inputs: [
+      {
+        name: "currency",
+        label: "Currency",
+        required: true,
+        type: "select",
+        options: formData.zoneName
+          ? dbData.currencies
+              .filter(({ country_id }) => country_id == formData.zoneName)
+              .sort((a, b) => (a.name < b.name ? -1 : 1))
+              .reduce(
+                (final, { id, name }) =>
+                  final.find((already) => already.value == id)
+                    ? final
+                    : [
+                        ...final,
+                        {
+                          value: id,
+                          label: name,
+                        },
+                      ],
+                []
+              )
+          : [],
+      },
       {
         name: "type",
         label: "Currency Type",
@@ -322,23 +354,23 @@ const formInputs = () => [
         required: true,
         type: "select",
         options:
-          formData.type && formData.zoneName
-            ? dbData.currencies
+          formData.type && formData.currency
+            ? dbData.currencyPieces
                 .filter(
-                  ({ country_id, type }) =>
-                    country_id == formData.zoneName && type == formData.type
+                  ({ currency_id, type }) =>
+                    parseInt(currency_id) == parseInt(formData.currency) &&
+                    type == formData.type
                 )
                 .sort((a, b) => (a.value < b.value ? -1 : 1))
-                .sort((a, b) => (a.name < b.name ? -1 : 1))
                 .reduce(
-                  (final, { name, value }) =>
-                    final.find((already) => already.value == value + " " + name)
+                  (final, { value }) =>
+                    final.find((already) => already.value == value)
                       ? final
                       : [
                           ...final,
                           {
-                            value: value + " " + name,
-                            label: value.toLocaleString() + " " + name,
+                            value,
+                            label: value.toLocaleString(),
                           },
                         ],
                   []
@@ -355,7 +387,7 @@ const formInputs = () => [
         label: "Currencies To Add",
         required: true,
         type: "checklist-photo",
-        allOptions: dbData.currencies
+        allOptions: dbData.currencyPieces
           .filter(({ id }) => formData.collectedCurrencies.includes(id))
           .map(
             ({
@@ -372,17 +404,16 @@ const formInputs = () => [
               issue_start_year,
               issue_end_year,
               value: id,
-              label: value.toLocaleString() + " " + name,
+              label: value.toLocaleString(),
             })
           ),
         options: formData.value
-          ? dbData.currencies
+          ? dbData.currencyPieces
               .filter(
-                ({ type, value, id, country_id, name }) =>
+                ({ type, value, id, currency_id, name }) =>
                   type == formData.type &&
-                  formData.value == value + " " + name &&
-                  country_id == formData.zoneName &&
-                  type == formData.type
+                  parseFloat(value) == parseFloat(formData.value) &&
+                  parseInt(currency_id) == parseInt(formData.currency)
               )
               .sort((a, b) =>
                 a.issue_start_year < b.issue_start_year ? -1 : 1
@@ -402,7 +433,7 @@ const formInputs = () => [
                   issue_start_year,
                   issue_end_year,
                   value: id,
-                  label: value.toLocaleString() + " " + name,
+                  label: value.toLocaleString(),
                 })
               )
           : [],
