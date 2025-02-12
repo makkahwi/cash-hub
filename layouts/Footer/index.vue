@@ -40,5 +40,5 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
-import { links, socialMediaLinks } from "@/consts.js";
+import { links, socialMediaLinks } from "@/utils/consts";
 </script>

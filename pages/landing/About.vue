@@ -26,5 +26,5 @@
 <script setup>
 import PageSection from "@/components/PageSection";
 import FeaturesSection from "./Features";
-import { productName } from "@/consts.js";
+import { productName } from "@/utils/consts";
 </script>

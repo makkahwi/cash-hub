@@ -9,7 +9,7 @@
 <script setup>
 import HowToDoSection from "./HowToDo";
 import PageHeader from "@/components/PageHeader";
-import { productName } from "@/consts.js";
+import { productName } from "@/utils/consts";
 
 definePageMeta({
   layout: "landing",

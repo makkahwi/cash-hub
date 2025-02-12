@@ -181,7 +181,7 @@
 import PageSection from "@/components/PageSection";
 import Option1 from "./Option1";
 import Option2 from "./Option2";
-import { productName } from "@/consts.js";
+import { productName } from "@/utils/consts";
 
 definePageMeta({
   layout: false,

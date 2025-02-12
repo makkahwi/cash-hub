@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-import { links } from "@/consts.js";
+import { links } from "@/utils/consts";
 import { ref, onMounted } from "vue";
 import { logout } from "@/api/auth";
 

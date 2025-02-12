@@ -43,8 +43,8 @@
 
 <script setup>
 import PageHeader from "@/components/PageHeader";
-import { productName } from "@/consts.js";
-import { links } from "@/consts.js";
+import { productName } from "@/utils/consts";
+import { links } from "@/utils/consts";
 
 const buttons = [{ to: "#about", title: "Find Out More" }];
 
