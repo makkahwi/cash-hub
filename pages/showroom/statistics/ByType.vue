@@ -5,13 +5,13 @@
     </tr>
 
     <tr>
-      <th>Type</th>
-      <th>Africa</th>
-      <th>Americas</th>
-      <th>Asia</th>
-      <th>Europe</th>
-      <th>Oceania</th>
-      <th>Total</th>
+      <th class="text-white">Type</th>
+      <th class="text-white">Africa</th>
+      <th class="text-white">Americas</th>
+      <th class="text-white">Asia</th>
+      <th class="text-white">Europe</th>
+      <th class="text-white">Oceania</th>
+      <th class="text-white">Total</th>
     </tr>
   </thead>
 
