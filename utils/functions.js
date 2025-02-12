@@ -13,11 +13,11 @@ export const jsonDataProcess = (all) =>
     if (statusComparison !== 0) return statusComparison;
 
     // Sort by continent: Alphabetically
-    const continentComparison = a.continent.localeCompare(b.continent);
+    const continentComparison = a.continent?.localeCompare(b.continent);
     if (continentComparison !== 0) return continentComparison;
 
     // Sort by zoneName: Alphabetically
-    const zoneNameComparison = a.zoneName.localeCompare(b.zoneName);
+    const zoneNameComparison = a.zoneName?.localeCompare(b.zoneName);
     if (zoneNameComparison !== 0) return zoneNameComparison;
 
     // Sort by edition: Descending (highest to lowest)

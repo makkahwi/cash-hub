@@ -30,8 +30,6 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
-          integrity:
-            "sha384-rbsA2VBKQBo8zYoykiYF51lfPCl9I0oZ4xqOFScq4j78M91j5wDoflZ5qT5tRG3b",
           crossorigin: "anonymous",
         },
         {
@@ -51,9 +49,8 @@ export default defineNuxtConfig({
           async: true,
         },
         {
+          type: "text/javascript",
           src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
-          integrity:
-            "sha384-OERcA2B0MzVxLVrZJ6ZPlLhZ3Z9Qht9I1NT67x57UqqvflhF3BhhVZnnwJMyJ9Zx",
           crossorigin: "anonymous",
           defer: true,
         },
