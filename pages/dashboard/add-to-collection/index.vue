@@ -202,7 +202,6 @@ import {
   addCollectedCurrencies,
   getCollectedCurrencies,
 } from "~~/api/showroom";
-import { currencyZones } from "~~/utils/consts";
 import dbData from "../../../api/db.json";
 import { getOriginalPhoto } from "@/utils/functions";
 

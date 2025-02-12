@@ -45,13 +45,7 @@
           <h6 class="text-start my-4">By Continent</h6>
           <div
             class="form-check"
-            v-for="continent in [
-              'Africa',
-              'Americas',
-              'Asia',
-              'Europe',
-              'Oceania',
-            ]"
+            v-for="continent in continents"
             :key="continent"
           >
             <input
@@ -137,6 +131,7 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
+import { continents } from "@/utils/consts";
 
 const props = defineProps({
   filters: {
@@ -178,7 +173,7 @@ const resetFilters = () => {
   props.filters.replace({
     type: ["Banknote", "Coin"],
     status: ["Current", "Discontinued"],
-    continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+    continent: continents,
     startYear: 1800,
     endYear: new Date().getFullYear(),
     startDate: formatDate(new Date("2000-01-01")),

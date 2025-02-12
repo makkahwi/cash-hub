@@ -17,7 +17,7 @@ import StatisticsSection from "./statistics";
 import ListSection from "./List";
 import { reactive } from "vue";
 import { getPiecesData, getCollectedCurrencies } from "@/api/showroom";
-import { photoPlaceholder } from "@/utils/consts";
+import { photoPlaceholder, continents } from "@/utils/consts";
 import { jsonDataProcess, dataFilter } from "@/utils/functions";
 
 definePageMeta({
@@ -30,7 +30,7 @@ const filters = reactive({
   value: {
     type: ["Banknote", "Coin"],
     status: ["Current", "Discontinued"],
-    continent: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+    continent: continents,
     startYear: 1800,
     endYear: new Date().getFullYear(),
     startDate: formatDate(new Date("2000-01-01")),

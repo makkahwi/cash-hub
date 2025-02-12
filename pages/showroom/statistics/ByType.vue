@@ -6,11 +6,9 @@
 
     <tr>
       <th class="text-white">Type</th>
-      <th class="text-white">Africa</th>
-      <th class="text-white">Americas</th>
-      <th class="text-white">Asia</th>
-      <th class="text-white">Europe</th>
-      <th class="text-white">Oceania</th>
+      <th v-for="continent in continents" class="text-white">
+        {{ continent }}
+      </th>
       <th class="text-white">Total</th>
     </tr>
   </thead>
@@ -107,6 +105,8 @@
 </template>
 
 <script setup>
+import { continents } from "@/utils/consts";
+
 const props = defineProps({
   currencies: {
     type: Array,
