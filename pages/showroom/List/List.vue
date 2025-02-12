@@ -18,7 +18,7 @@
             type,
             fPhoto,
             bPhoto,
-            status,
+            current,
             date,
             count,
             zoneName,
@@ -76,10 +76,11 @@
             <div class="col-md-2">
               <span
                 :class="`font-weight-bolder fw-bold text-${
-                  status === 'Current' ? 'success' : 'danger'
+                  current ? 'success' : 'danger'
                 }`"
-                >{{ status }}</span
               >
+                {{ renderStatusLabel(current) }}
+              </span>
             </div>
 
             <div class="col-md-2">USD => Local</div>
@@ -139,6 +140,7 @@
 <script setup>
 import { deleteCollectedCurrency } from "@/api/showroom";
 import { useWishlist } from "@/composables/useWishlist";
+import { renderStatusLabel } from "@/utils/functions";
 
 const { wishList, inWishList, setWishList } = useWishlist();
 

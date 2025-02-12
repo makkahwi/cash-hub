@@ -46,6 +46,7 @@ const jsonFilesData = () => {
         currency_id,
         value,
         type,
+        current,
         issue_start_year,
         issue_end_year,
         front_image,
@@ -69,7 +70,13 @@ const jsonFilesData = () => {
           fractionName: currency?.fractionName,
           fractionSize: currency?.fractionSize,
           name: currency?.name,
-          status: "Current",
+          current: true,
+          // current: country.current
+          //   ? currency.current
+          //     ? current
+          //     : false
+          //   : false,
+          // If country is halted, or currency is halted, then get piece own data.
           type,
           usdToLocalNow: 1,
           usdToLocalAtIssueTime: 1,

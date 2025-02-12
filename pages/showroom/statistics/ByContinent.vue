@@ -18,37 +18,32 @@
       <td><strong>Total Pieces</strong></td>
       <td>
         {{
-          props.currencies.filter(
-            ({ continent, status }) => continent === "Africa"
-          ).length
+          props.currencies.filter(({ continent }) => continent === "Africa")
+            .length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(
-            ({ continent, status }) => continent === "Americas"
-          ).length
+          props.currencies.filter(({ continent }) => continent === "Americas")
+            .length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(
-            ({ continent, status }) => continent === "Asia"
-          ).length
+          props.currencies.filter(({ continent }) => continent === "Asia")
+            .length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(
-            ({ continent, status }) => continent === "Europe"
-          ).length
+          props.currencies.filter(({ continent }) => continent === "Europe")
+            .length
         }}
       </td>
       <td>
         {{
-          props.currencies.filter(
-            ({ continent, status }) => continent === "Oceania"
-          ).length
+          props.currencies.filter(({ continent }) => continent === "Oceania")
+            .length
         }}
       </td>
       <td>

@@ -56,7 +56,7 @@
                 year,
                 value,
                 type,
-                status,
+                current,
                 fPhoto,
                 bPhoto,
                 date,
@@ -93,10 +93,10 @@
 
             <td
               :class="`align-middle text-sm fw-bold text-${
-                status === 'Current' ? 'success' : 'danger'
+                current ? 'success' : 'danger'
               }`"
             >
-              {{ status }}
+              {{ renderStatusLabel(current) }}
             </td>
 
             <td class="align-middle">
@@ -124,6 +124,7 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
+import { renderStatusLabel } from "@/utils/functions";
 // import { getRelatedCurrencies } from "@/api/showroom";
 
 const list = reactive({

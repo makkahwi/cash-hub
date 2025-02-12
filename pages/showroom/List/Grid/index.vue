@@ -21,7 +21,7 @@
           fullName,
           mapCode,
           continent,
-          status,
+          current,
           usdToLocalNow,
           usdToLocalAtIssueTime,
           usdToLocalAtCollectionTime,
@@ -33,11 +33,11 @@
     >
       <div class="card border px-2 py-4 border-2 mx-1 my-2">
         <CardView
-          :title="status + ' ' + name"
+          :title="renderStatusLabel(current) + ' ' + name"
           :img="fPhoto"
           :label="code + ' ' + value + ' ' + type"
           :action="{
-            color: status === 'Current' ? 'success' : 'danger',
+            color: current ? 'success' : 'danger',
             label: loggedIn && !notShowroom ? 'View & Edit' : 'View Details',
             link: {
               path: '/piece-details',
@@ -52,6 +52,7 @@
 
 <script setup>
 import CardView from "./CardView";
+import { renderStatusLabel } from "@/utils/functions";
 
 const loggedIn =
   process.client && JSON.parse(localStorage.getItem("user"))?.idToken;

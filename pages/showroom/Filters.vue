@@ -26,18 +26,19 @@
           <h6 class="text-start my-4">By Status</h6>
           <div
             class="form-check"
-            v-for="status in ['Current', 'Discontinued']"
-            :key="status"
+            v-for="status in statuses"
+            :key="status.label"
           >
             <input
               class="form-check-input"
               type="checkbox"
-              :value="status"
-              :checked="filters.value.status.includes(status)"
-              @change="(e) => toggleFilter('status', status, e)"
-              id="status-{{ status }}"
+              :value="status.value"
+              :checked="filters.value.current.includes(status.value)"
+              @change="(e) => toggleFilter('status', status.value, e)"
+              id="status-{{ status.label
+              }}"
             />
-            <label :for="'status-' + status">{{ status }}</label>
+            <label :for="'status-' + status.label">{{ status.label }}</label>
           </div>
         </div>
 
@@ -131,7 +132,7 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
-import { continents } from "@/utils/consts";
+import { continents, statuses } from "@/utils/consts";
 
 const props = defineProps({
   filters: {

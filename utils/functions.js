@@ -1,3 +1,5 @@
+import { statuses } from "@/utils/consts";
+
 export const jsonDataProcess = (all) =>
   all.sort((a, b) => {
     // Sort by type: Banknote first, then Coin
@@ -6,11 +8,8 @@ export const jsonDataProcess = (all) =>
       typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
     if (typeComparison !== 0) return typeComparison;
 
-    // Sort by status: Current first, then Discontinued
-    const statusOrder = ["Current", "Discontinued"];
-    const statusComparison =
-      statusOrder.indexOf(a.status) - statusOrder.indexOf(b.status);
-    if (statusComparison !== 0) return statusComparison;
+    // ✅ Sort by current status: true first, then false
+    if (a.current !== b.current) return b.current - a.current;
 
     // Sort by continent: Alphabetically
     const continentComparison = a.continent?.localeCompare(b.continent);
@@ -32,15 +31,26 @@ export const dataFilter = (data, filters) =>
   data.filter((currency) => {
     let result = true;
 
-    const filterByValueProps = ["type", "status", "continent"];
+    const filterByValueProps = ["type", "continent"];
     const filterByRangeProps = ["date", "year"];
 
+    // ✅ Handle `current` (boolean) separately
+    if (
+      "current" in filters.value &&
+      filters.value.current.length > 0 &&
+      !filters.value.current.includes(currency.current)
+    ) {
+      result = false;
+    }
+
+    // ✅ Apply filters for type & continent
     filterByValueProps.forEach((prop) => {
       if (!filters.value[prop].includes(currency[prop])) {
         result = false;
       }
     });
 
+    // ✅ Apply filters for date & year ranges
     filterByRangeProps.forEach((prop) => {
       const capitalizedStr = prop.charAt(0).toUpperCase() + prop.slice(1);
 
@@ -77,3 +87,9 @@ export const getOriginalPhoto = (url) => {
 
   return url;
 };
+
+export const renderStatusValue = (label) =>
+  statuses.find((status) => status.label == label)?.value;
+
+export const renderStatusLabel = (value) =>
+  statuses.find((status) => status.value == value)?.label;

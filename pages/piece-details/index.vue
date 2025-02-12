@@ -107,10 +107,10 @@
               <td class="font-weight-bold">Circability</td>
               <td
                 :class="`font-weight-bolder badge badge-${
-                  piece.status === 'Current' ? 'success' : 'danger'
+                  piece.current ? 'success' : 'danger'
                 }`"
               >
-                {{ piece.status || "N/A" }}
+                {{ renderStatusLabel(piece.current) }}
               </td>
             </tr>
 
@@ -285,7 +285,7 @@ import {
   deleteCollectedCurrency,
 } from "@/api/showroom";
 import { photoPlaceholder } from "@/utils/consts";
-import { getOriginalPhoto } from "@/utils/functions";
+import { getOriginalPhoto, renderStatusLabel } from "@/utils/functions";
 
 const goBack = () => {
   window.history.length > 1 ? window.history.back() : navigateTo("/");

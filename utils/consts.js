@@ -33,3 +33,8 @@ export const productName = {
   full: "Currencies Archiving & Sharing Hub",
   short: "CASH",
 };
+
+export const statuses = [
+  { value: true, label: "Current" },
+  { value: false, label: "Discontinued" },
+];

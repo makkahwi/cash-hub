@@ -78,7 +78,7 @@
               value,
               type,
               fPhoto,
-              status,
+              current,
               bPhoto,
               date,
               count,
@@ -110,12 +110,8 @@
             {{ value.toLocaleString() }}
           </td>
           <td class="text-sm font-weight-normal">{{ name }}</td>
-          <td
-            :class="`text-sm fw-bold text-${
-              status === 'Current' ? 'success' : 'danger'
-            }`"
-          >
-            {{ status }}
+          <td :class="`text-sm fw-bold text-${current ? 'success' : 'danger'}`">
+            {{ renderStatusLabel(current) }}
           </td>
           <td class="text-sm font-weight-normal" v-if="!notShowroom">
             {{ date }}
@@ -170,6 +166,7 @@
 <script setup>
 import { deleteCollectedCurrency } from "@/api/showroom";
 import { useWishlist } from "@/composables/useWishlist";
+import { renderStatusLabel } from "@/utils/functions";
 
 const { inWishList, setWishList } = useWishlist();
 
