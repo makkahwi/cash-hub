@@ -1,17 +1,33 @@
 <template>
   <PageSection
     :title="'Step-by-Step Guide to Setting Up Your ' + productName.full"
-    subtitle="This guide will help you set up your own instance of the Currencies Archiving & Sharing Hub using GitHub, Firebase, and Vercel."
+    :subtitle="
+      'This guide will help you set up your own instance of the ' +
+      productName.full +
+      ' using GitHub, Firebase, and Vercel, totally FREE OF CHARGE.'
+    "
   >
     <div class="container my-5 text-justify">
       <div class="row">
         <div class="col-12">
           <h3 class="mb-3 text-success">Prerequisites</h3>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">A GitHub account</li>
-            <li class="list-group-item">A Firebase (of Google) account</li>
-            <li class="list-group-item">A Vercel account</li>
+          <ul class="list-group">
+            <li class="list-group-item">
+              A <a href="https://github.com/" target="_blank">GitHub</a> free
+              account
+            </li>
+            <li class="list-group-item">
+              A
+              <a href="https://console.firebase.google.com" target="_blank"
+                >Firebase</a
+              >
+              free account
+            </li>
+            <li class="list-group-item">
+              A <a href="https://vercel.com/" target="_blank">Vercel</a> free
+              account
+            </li>
           </ul>
         </div>
       </div>
@@ -23,12 +39,19 @@
             <li class="list-group-item">
               Log in to GitHub and go to the project's repository:
               <a href="https://github.com/makkahwi/cash-hub" target="_blank">
-                Currencies Archiving & Sharing Hub
+                {{ productName.full }}
               </a>
             </li>
+
             <li class="list-group-item">
               In the top-right corner of the page, click <strong>Fork</strong>.
             </li>
+
+            <li class="list-group-item">
+              Name your version as you wish, but you might wanna name it
+              something like <strong>YourName-CASH</strong>.
+            </li>
+
             <li class="list-group-item">
               This will create a copy of the repository in your GitHub account.
             </li>
@@ -43,27 +66,33 @@
             <li class="list-group-item">
               Log in to your Firebase account and go to the Firebase console.
             </li>
+
             <li class="list-group-item">
               Click on <strong>Create a project</strong>, and follow the prompts
               to create a new Firebase project.
             </li>
+
             <li class="list-group-item">
               Once your project is created, navigate to the
               <strong>Project settings</strong> (gear icon next to Project
               Overview).
             </li>
+
             <li class="list-group-item">
-              Here, click on the web icon <strong>&lt;/&gt;</strong> under
+              Here, click on the icon (<strong>&lt;/&gt;</strong>) under
               <strong>Your apps</strong> to register a new web application.
             </li>
+
             <li class="list-group-item">
               Follow the steps to register your app, and make note of your
               Firebase API Key.
             </li>
+
             <li class="list-group-item">
               Navigate to the <strong>Realtime Database</strong> section (under
               "Build") and create a database for storing your data.
             </li>
+
             <li class="list-group-item">
               Navigate to the <strong>Rules</strong> tab in "Realtime Database"
               and set up the rules as below:
@@ -94,7 +123,7 @@
             <li class="list-group-item">
               Navigate to the <strong>Settings</strong> tab in
               <strong>Authentication</strong>, then to
-              <strong>User Actions</strong>, and uncheck
+              <strong>User Actions</strong>, and uncheck both
               <strong>Enable create (sign-up)</strong> and
               <strong>Enable delete</strong>.
             </li>
@@ -141,7 +170,7 @@
             You can customize your new showroom by updating configurations,
             modifying styles, or enhancing functionality directly from your
             project files on GitHub. Changes pushed to your GitHub repository
-            will automatically redeploy your application on Vercel.
+            will automatically redeploy / reflect on your application on Vercel.
           </p>
         </div>
       </div>
