@@ -155,6 +155,7 @@
               <button
                 class="btn btn-success btn-sm px-2"
                 @click="setWishList(id)"
+                v-if="noCollection"
               >
                 {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
               </button>

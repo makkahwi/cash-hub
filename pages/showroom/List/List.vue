@@ -121,7 +121,11 @@
                 View Details
               </NuxtLink>
 
-              <button class="btn btn-success px-2" @click="setWishList(id)">
+              <button
+                class="btn btn-success px-2"
+                @click="setWishList(id)"
+                v-if="noCollection"
+              >
                 {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
               </button>
             </div>
