@@ -41,7 +41,7 @@
                 class="btn btn-xs btn-success"
                 :to="{
                   path: '/piece-details',
-                  query: { id, noCollection: true },
+                  query: { id, notShowroom: true },
                 }"
               >
                 <i class="fas fa-eye" />

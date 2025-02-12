@@ -87,19 +87,19 @@
               <span class="font-weight-bolder">{{ usdToLocalNow }}</span>
             </div>
 
-            <div class="col-md-2" v-if="!noCollection">Collected @</div>
-            <div class="col-md-2" v-if="!noCollection">
+            <div class="col-md-2" v-if="!notShowroom">Collected @</div>
+            <div class="col-md-2" v-if="!notShowroom">
               <span class="font-weight-bolder">{{ date }}</span>
             </div>
           </div>
 
           <div class="col-md-2 align-middle text-center py-5">
-            <div v-if="loggedIn && !noCollection" class="btn-group-vertical">
+            <div v-if="loggedIn && !notShowroom" class="btn-group-vertical">
               <NuxtLink
                 class="btn btn-success"
                 :to="{
                   path: '/piece-details',
-                  query: { id, noCollection },
+                  query: { id, notShowroom },
                 }"
               >
                 View & Edit
@@ -115,7 +115,7 @@
                 class="btn btn-success d-flex justify-content-center align-items-center"
                 :to="{
                   path: '/piece-details',
-                  query: { id, noCollection },
+                  query: { id, notShowroom },
                 }"
               >
                 View Details
@@ -124,7 +124,7 @@
               <button
                 class="btn btn-success px-2"
                 @click="setWishList(id)"
-                v-if="noCollection"
+                v-if="notShowroom"
               >
                 {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
               </button>
@@ -156,7 +156,7 @@ defineProps({
     type: Array,
     default: [],
   },
-  noCollection: {
+  notShowroom: {
     type: Boolean,
     required: false,
   },

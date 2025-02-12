@@ -5,7 +5,7 @@
   >
     <form @submit.prevent="onSubmit">
       <div class="row g-4">
-        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
+        <div :class="notShowroom ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Type</h6>
           <div
             class="form-check"
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
+        <div :class="notShowroom ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Continent</h6>
           <div
             class="form-check"
@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <div :class="noCollection ? 'col-md-4' : 'col-md-3'">
+        <div :class="notShowroom ? 'col-md-4' : 'col-md-3'">
           <h6 class="text-start my-4">By Issuing Year</h6>
           <div class="mb-3">
             <label class="form-label">Start Year</label>
@@ -90,7 +90,7 @@
           </div>
         </div>
 
-        <div class="col-md-3" v-if="!noCollection">
+        <div class="col-md-3" v-if="!notShowroom">
           <h6 class="text-start my-4">By Collection Date</h6>
           <div class="mb-3">
             <label class="form-label">Start Date</label>
@@ -142,7 +142,7 @@ const props = defineProps({
     type: Function,
     required: true,
   },
-  noCollection: {
+  notShowroom: {
     type: Boolean,
     required: false,
   },

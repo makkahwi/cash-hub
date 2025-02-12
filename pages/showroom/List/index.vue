@@ -20,19 +20,19 @@
       <TableView
         v-if="type.value == 'table'"
         :currencies="currencies"
-        :noCollection="noCollection"
+        :notShowroom="notShowroom"
       />
 
       <ListView
         v-if="type.value == 'list'"
         :currencies="currencies"
-        :noCollection="noCollection"
+        :notShowroom="notShowroom"
       />
 
       <GridView
         v-if="type.value == 'grid'"
         :currencies="currencies"
-        :noCollection="noCollection"
+        :notShowroom="notShowroom"
       />
     </div>
   </PageSection>
@@ -57,7 +57,7 @@ defineProps({
     type: Array,
     default: [],
   },
-  noCollection: {
+  notShowroom: {
     type: Boolean,
     required: false,
   },

@@ -46,7 +46,7 @@
           </th>
 
           <th
-            v-if="!noCollection"
+            v-if="!notShowroom"
             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
           >
             Collected @
@@ -117,16 +117,16 @@
           >
             {{ status }}
           </td>
-          <td class="text-sm font-weight-normal" v-if="!noCollection">
+          <td class="text-sm font-weight-normal" v-if="!notShowroom">
             {{ date }}
           </td>
           <td class="text-sm font-weight-normal">
-            <div v-if="loggedIn && !noCollection" class="btn-group">
+            <div v-if="loggedIn && !notShowroom" class="btn-group">
               <NuxtLink
                 class="btn btn-success btn-sm px-2"
                 :to="{
                   path: '/piece-details',
-                  query: { id, noCollection },
+                  query: { id, notShowroom },
                 }"
               >
                 <i class="fas fa-eye" />{{ " | " }}
@@ -146,7 +146,7 @@
                 class="btn btn-primary btn-sm"
                 :to="{
                   path: '/piece-details',
-                  query: { id, noCollection },
+                  query: { id, notShowroom },
                 }"
               >
                 View
@@ -155,7 +155,7 @@
               <button
                 class="btn btn-success btn-sm px-2"
                 @click="setWishList(id)"
-                v-if="noCollection"
+                v-if="notShowroom"
               >
                 {{ inWishList(id) ? "WishList Remove" : "WishList Add" }}
               </button>
@@ -187,7 +187,7 @@ defineProps({
     type: Array,
     default: [],
   },
-  noCollection: {
+  notShowroom: {
     type: Boolean,
     required: false,
   },

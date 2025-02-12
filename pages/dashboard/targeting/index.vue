@@ -5,14 +5,14 @@
     <FiltersSection
       :filters="filters"
       :onFilter="filterData"
-      :noCollection="true"
+      :notShowroom="true"
     />
 
     <StatisticsSection :currencies="currencies.value" />
 
     <WishList :currencies="currencies.value" />
 
-    <ListSection :currencies="currencies.value" :noCollection="true" />
+    <ListSection :currencies="currencies.value" :notShowroom="true" />
   </div>
 </template>
 

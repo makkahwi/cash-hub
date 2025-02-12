@@ -38,10 +38,10 @@
           :label="code + ' ' + value + ' ' + type"
           :action="{
             color: status === 'Current' ? 'success' : 'danger',
-            label: loggedIn && !noCollection ? 'View & Edit' : 'View Details',
+            label: loggedIn && !notShowroom ? 'View & Edit' : 'View Details',
             link: {
               path: '/piece-details',
-              query: { id, noCollection },
+              query: { id, notShowroom },
             },
           }"
         />
@@ -61,7 +61,7 @@ defineProps({
     type: Array,
     default: [],
   },
-  noCollection: {
+  notShowroom: {
     type: Boolean,
     required: false,
   },
