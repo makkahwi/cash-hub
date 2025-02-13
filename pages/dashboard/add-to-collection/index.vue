@@ -416,7 +416,7 @@ const formInputs = () => [
                   parseInt(currency_id) == parseInt(formData.currency)
               )
               .sort((a, b) =>
-                a.issue_start_year < b.issue_start_year ? -1 : 1
+                a.issue_start_year > b.issue_start_year ? -1 : 1
               )
               .map(
                 ({

@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
+
   app: {
     head: {
       title: "CASH | Currencies Archiving & Sharing Hub",
@@ -57,23 +58,29 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   runtimeConfig: {
     public: {
       firebaseApiKey: process.env.VUE_APP_FIREBASE_API_KEY || "",
       firebaseDbUrl: process.env.VUE_APP_FIREBASE_DB_URL || "",
     },
   },
+
   components: {
     global: true,
     dirs: ["~/components/Icons", "~/components"],
   },
+
   imports: {
     autoImport: true,
   },
+
   css: [
     "@/assets/css/nucleo-svg.css",
     "@/assets/css/nucleo-icons.css",
     "@/assets/scss/argon-dashboard.scss",
   ],
+
   modules: ["@pinia/nuxt"],
+  compatibilityDate: "2025-02-13",
 });

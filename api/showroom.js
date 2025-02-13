@@ -70,12 +70,7 @@ const jsonFilesData = () => {
           fractionName: currency?.fractionName,
           fractionSize: currency?.fractionSize,
           name: currency?.name,
-          current: true,
-          // current: country.current
-          //   ? currency.current
-          //     ? current
-          //     : false
-          //   : false,
+          current,
           // If country is halted, or currency is halted, then get piece own data.
           type,
           usdToLocalNow: 1,
