@@ -67,24 +67,9 @@
             class="form-control"
             name="country"
             multiple
-            :value="filters.value.country"
-            @change="
-              (e) =>
-                console.log(
-                  'country',
-                  e.target.value,
-                  e.target.values,
-                  e.target,
-                  filters.value.country
-                )
-            "
+            v-model="filters.value.country"
           >
-            <option
-              class="form-check"
-              v-for="{ name } in countries()"
-              :key="name"
-              :value="name"
-            >
+            <option v-for="{ name } in countries()" :key="name" :value="name">
               {{ name }}
             </option>
           </select>
