@@ -154,12 +154,6 @@ import { statuses } from "@/utils/consts";
 import dbData from "../../api/db.json";
 
 const continents = dbData.continents.map(({ name }) => name);
-const countries = () =>
-  dbData.countries.filter(({ continent_id }) =>
-    filters.value.continent.includes(
-      dbData.continents.find(({ id }) => id == continent_id)?.name
-    )
-  );
 
 const props = defineProps({
   filters: {
@@ -175,6 +169,13 @@ const props = defineProps({
     required: false,
   },
 });
+
+const countries = () =>
+  dbData.countries.filter(({ continent_id }) =>
+    props.filters.value.continent.includes(
+      dbData.continents.find(({ id }) => id == continent_id)?.name
+    )
+  );
 
 const toggleFilter = (key, value, event) => {
   const currentValues = [...props.filters.value[key]];
