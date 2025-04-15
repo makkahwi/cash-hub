@@ -31,7 +31,7 @@ export const dataFilter = (data, filters) =>
   data.filter((currency) => {
     let result = true;
 
-    const filterByValueProps = ["type", "continent"];
+    const filterByValueProps = ["type", "continent", "country"];
     const filterByRangeProps = ["date", "year"];
 
     // ✅ Handle `current` (boolean) separately
@@ -43,7 +43,7 @@ export const dataFilter = (data, filters) =>
       result = false;
     }
 
-    // ✅ Apply filters for type & continent
+    // ✅ Apply filters for type & continent & country
     filterByValueProps.forEach((prop) => {
       if (!filters.value[prop].includes(currency[prop])) {
         result = false;

@@ -61,6 +61,24 @@
               {{ continent }}
             </label>
           </div>
+
+          <h6 class="text-start my-4">By Countries</h6>
+          <select
+            class="form-control"
+            name="country"
+            multiple
+            :value="filters.value.country"
+            @change="(e) => updateFilter('country', e)"
+          >
+            <option
+              class="form-check"
+              v-for="{ name } in countries()"
+              :key="name"
+              :value="name"
+            >
+              {{ name }}
+            </option>
+          </select>
         </div>
 
         <div :class="notShowroom ? 'col-md-4' : 'col-md-3'">
@@ -132,7 +150,16 @@
 
 <script setup>
 import PageSection from "@/components/PageSection";
-import { continents, statuses } from "@/utils/consts";
+import { statuses } from "@/utils/consts";
+import dbData from "../../api/db.json";
+
+const continents = dbData.continents.map(({ name }) => name);
+const countries = () =>
+  dbData.countries.filter(({ continent_id }) =>
+    filters.value.continent.includes(
+      dbData.continents.find(({ id }) => id == continent_id)?.name
+    )
+  );
 
 const props = defineProps({
   filters: {
@@ -175,6 +202,7 @@ const resetFilters = () => {
     type: ["Banknote", "Coin"],
     status: ["Current", "Discontinued"],
     continent: continents,
+    country: dbData.countries.map(({ name }) => name),
     startYear: 1800,
     endYear: new Date().getFullYear(),
     startDate: formatDate(new Date("2000-01-01")),
