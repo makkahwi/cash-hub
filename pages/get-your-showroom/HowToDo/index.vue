@@ -14,18 +14,18 @@
 
           <ul class="list-group">
             <li class="list-group-item">
-              A <a href="https://github.com/" target="_blank">GitHub</a> free
+              A <a href="https://github.com/" target="_blank" class="text-decoration-underline">GitHub</a> free
               account
             </li>
             <li class="list-group-item">
               A
-              <a href="https://console.firebase.google.com" target="_blank"
+              <a href="https://console.firebase.google.com" target="_blank" class="text-decoration-underline"
                 >Firebase</a
               >
               free account
             </li>
             <li class="list-group-item">
-              A <a href="https://vercel.com/" target="_blank">Vercel</a> free
+              A <a href="https://vercel.com/" target="_blank" class="text-decoration-underline">Vercel</a> free
               account
             </li>
           </ul>
@@ -38,7 +38,7 @@
           <ol class="list-group list-group-numbered">
             <li class="list-group-item">
               Log in to GitHub and go to the project's repository:
-              <a href="https://github.com/makkahwi/cash-hub" target="_blank">
+              <a href="https://github.com/makkahwi/cash-hub" target="_blank" class="text-decoration-underline">
                 {{ productName.full }}
               </a>
             </li>
@@ -53,7 +53,7 @@
             </li>
 
             <li class="list-group-item">
-              This will create a copy of the repository in your GitHub account.
+              This will create a copy of the repository (project source code) in your GitHub account.
             </li>
           </ol>
         </div>
@@ -99,7 +99,7 @@
               <pre><code>
 {
   "rules": {
-    ".read": "now < 1765562400000",
+    ".read": "now < 1797022800000",
     ".write": "auth !== null"
   }
 }
@@ -194,7 +194,7 @@
             out via
             <a
               href="https://github.com/makkahwi/cash-hub/discussions"
-              target="_blank"
+              target="_blank" class="text-decoration-underline"
               >GitHub discussions</a
             >
             on the project repository, or contact the project maintainer via the
