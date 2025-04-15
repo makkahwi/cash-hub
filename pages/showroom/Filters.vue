@@ -70,7 +70,13 @@
             :value="filters.value.country"
             @change="
               (e) =>
-                console.log('country', e.target.value, filters.value.country)
+                console.log(
+                  'country',
+                  e.target.value,
+                  e.target.values,
+                  e.target,
+                  filters.value.country
+                )
             "
           >
             <option
