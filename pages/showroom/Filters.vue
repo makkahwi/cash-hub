@@ -68,7 +68,10 @@
             name="country"
             multiple
             :value="filters.value.country"
-            @change="(e) => updateFilter('country', e)"
+            @change="
+              (e) =>
+                console.log('country', e.target.value, filters.value.country)
+            "
           >
             <option
               class="form-check"
