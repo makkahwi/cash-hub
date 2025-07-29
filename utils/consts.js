@@ -20,7 +20,10 @@ export const links =
 
 export const socialMediaLinks = [
   { link: "https://Suhaib.dev", icon: "fas fa-globe" },
-  { link: "https://www.linkedin.com/in/makkahwi", icon: "fab fa-linkedin" },
+  {
+    link: "https://www.linkedin.com/in/SuhaibAhmadAi",
+    icon: "fab fa-linkedin",
+  },
   { link: "https://www.github.com/makkahwi", icon: "fab fa-github" },
   { link: "https://www.facebook.com/makkahwi", icon: "fab fa-facebook" },
   { link: "https://www.instagram.com/makkahwi", icon: "fab fa-instagram" },
